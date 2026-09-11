@@ -9,7 +9,7 @@
 ## 1. Elevator Pitches
 
 ### 30-Second Pitch
-> "I analyzed 32,000+ searches across an apparel marketplace and identified a major conversion leak: shoppers typing specific 4+ word queries experienced an 8.2% zero-result rate and a 44% reformulation rate because our strict keyword search couldn't handle attribute over-specification. Instead of jumping to costly vector search or LLMs, I designed an Automated Query Relaxation engine that safely drops non-core modifiers while preserving category intent. In local benchmarks, it recovered 91.8% of unmatchable queries in under 39ms. My business model showed ~$1.8K annualized GMV at current boutique traffic, but scaled to $180K at 100x volume with zero marginal cloud cost—leading to my PM recommendation to validate with a lightweight live canary rather than building heavy infrastructure."
+> "I analyzed 32,000+ searches across an apparel marketplace and identified a major conversion leak: shoppers typing specific 4+ word queries experienced an 8.2% zero-result rate and a 44% reformulation rate because our strict keyword search couldn't handle attribute over-specification. Instead of jumping to costly vector search or LLMs, I designed an Automated Query Relaxation engine that safely drops non-core modifiers while preserving category intent. In local benchmarks, it recovered 91.8% of unmatchable queries in under 39ms. My business model showed ~$1.8K annualized GMV at current boutique traffic, but scaled to $180K at an illustrative 100x volume with no incremental third-party API costs—leading to my PM recommendation to validate with a lightweight live canary rather than building heavy infrastructure."
 
 ### 60-Second Pitch
 > "In e-commerce, high-intent shoppers frequently type descriptive, multi-attribute queries like *'women red silk evening dress'*. In our 1,600-SKU catalog, strict conjunctive search broke down on these queries: 4+ token searches had an 8.23% zero-result rate—4.6 times higher than head queries—and drove a 44.4% manual reformulation rate with only a 3.08% click-through rate.
@@ -28,13 +28,13 @@
 > In fashion, users search with compound attributes: gender, color, fabric, style, and category. Our legacy search required every single word to match. A shopper searching for *'vintage oversized black denim jacket'* received zero results even if we had fantastic black denim jackets, simply because the catalog didn't index the words 'vintage' or 'oversized'. The failure wasn't inventory; it was vocabulary over-specification.
 > 
 > **3. Solution Selection & Algorithm**:
-> I compared Query Relaxation against Autocomplete, Synonym Graphs, Fuzzy Matching, Vector Search, and LLMs. Query relaxation scored #1 (9.05/10) because it directly fixes over-specification, runs deterministically in <40ms, requires zero third-party API costs, and explains its changes to users. The engine preserves category tokens, generates 1-drop and 2-drop subsets, scores candidates using token rarity (IDF), enforces category and minimum-overlap guardrails, and renders explainable UI pills like *'Showing results for red dress (relaxed: silk, evening)'*.
+> I compared Query Relaxation against Autocomplete, Synonym Graphs, Fuzzy Matching, Vector Search, and LLMs. Query relaxation scored #1 (9.05/10) because it directly fixes over-specification, runs deterministically in <40ms, requires zero third-party API costs, and explains its changes to users. The engine preserves category tokens, generates 1-drop and 2-drop subsets, scores candidates using document-frequency-based modifier analysis, enforces category and minimum-overlap guardrails, and renders explainable UI pills like *'Showing results for red dress (relaxed: silk, evening)'*.
 > 
 > **4. Validation & Experiment Design**:
 > In benchmarks across 879 unmatchable queries, it achieved a 91.81% recovery rate, slashing zero-result rate from 98.2% to 8.4%. In our offline A/B simulator, we designed a user-level randomized experiment powered for a +3.5pp CTR lift. 
 > 
 > **5. Business Model & Capital Discipline**:
-> The model projected +$1,808 in annualized gross GMV (~$1,356 net after 25% cannibalization). At our current boutique scale of ~15.7 eligible searches/day, that does not justify a $28K+ dedicated search cluster. But because rule-based relaxation has zero marginal query cost, at 100x traffic it generates $180K/year. My PM recommendation is: deploy as an inexpensive serverless canary, verify that real shoppers actually convert on relaxed results, and only invest in dedicated infrastructure once traffic scale justifies it."
+> The model projected +$1,808 in annualized gross GMV (~$1,356 net after 25% cannibalization). At our current boutique scale of ~15.7 eligible searches/day, that does not justify a $28K+ dedicated search cluster. But because rule-based relaxation runs within existing compute without requiring an external paid search API, at an illustrative 100x traffic scale it generates $180K/year [MODELED]. My PM recommendation is: deploy as an inexpensive serverless canary, verify that real shoppers actually convert on relaxed results, and only invest in dedicated infrastructure once traffic scale justifies it."
 
 ---
 
@@ -66,9 +66,9 @@
 - **Caveat**: "The decision matrix weights reflect early-stage/boutique marketplace priorities (capital efficiency and low latency); an enterprise marketplace with millions of SKUs might weigh semantic recall higher."
 
 ### Q6: Why not start with an LLM query rewriter?
-- **Strong Answer**: "An LLM is the wrong tool for V1. It introduces 300ms to 1,000ms of latency, costs significant money on every query, hallucinates non-existent catalog attributes, and creates a non-deterministic black box that is difficult to debug or safely guardrail. Our core principle was: *use the simplest intervention that directly solves the diagnosed failure mode*."
-- **Supporting Metric**: An LLM adds $0.005–$0.02 per query in cloud inference costs; at scale, that erodes the modest margin of e-commerce fashion transactions `[PRODUCT ASSUMPTION]`.
-- **Caveat**: "Offline LLMs are excellent for generating offline synonym dictionaries and category taxonomies during indexing, just not in the online synchronous request path."
+- **Strong Answer**: "I did not choose LLM rewriting first because the diagnosed problem was structured and narrow enough to solve deterministically. An LLM approach could introduce additional latency, external API costs, operational complexity, and response variability that were unnecessary for our V1 hypothesis. Our core principle was: *use the simplest intervention that directly addresses the diagnosed failure mode*."
+- **Supporting Metric**: Over-specification accounts for 65% of zero-result searches in our failure taxonomy, which deterministic modifier relaxation resolves without external model dependencies [PRODUCT ASSUMPTION].
+- **Caveat**: "Offline LLMs can still be valuable asynchronously for generating synonym dictionaries and category taxonomies during indexing, but are unnecessary in the online synchronous request path."
 
 ### Q7: Why not start with Vector Search / Embeddings?
 - **Strong Answer**: "Vector search excels at semantic similarity and vocabulary mismatch (e.g., matching *'frock'* to *'dress'*), but struggles with strict e-commerce constraints like exact sizes, colors, and in-stock inventory. It also requires dedicated vector infrastructure, embedding maintenance pipelines, and continuous index synchronization. Query relaxation gave us 91.8% recovery immediately inside our existing database without new infrastructure."
@@ -80,15 +80,15 @@
   1. **Trigger**: Executes only when a query has $\ge 4$ meaningful tokens AND returns $< 3$ strict results.
   2. **Token Classification**: Identifies core category nouns (e.g., 'dress', 'jacket') and protects them from deletion, designating modifiers (colors, fabrics, occasions) as candidate drops.
   3. **Candidate Generation**: Generates 1-drop and 2-drop query subsets.
-  4. **Scoring & Ranking**: Scores candidates using IDF-based token weights and catalog frequency to drop the most restrictive modifier first.
+  4. **Scoring & Ranking**: Evaluates candidates using document-frequency-based modifier analysis, dropping the lowest-frequency non-core modifier first.
   5. **Guardrails**: Filters results through category consistency, active inventory checks, and minimum token overlap before rendering."
 - **Supporting Metric**: Benchmark achieved an average execution latency of 2.08ms strict and 38.53ms P95 relaxed, well within our $\le 50$ms algorithmic budget `[LOCAL BENCHMARK]`.
-- **Caveat**: "If a user query lacks an identifiable category noun, the engine falls back to dropping the lowest-IDF tokens across the board."
+- **Caveat**: "If a user query lacks an identifiable category noun, the engine falls back to dropping the lowest document-frequency tokens across the board."
 
 ### Q9: What guardrails did you put in place to protect user trust?
 - **Strong Answer**: "We implemented four strict guardrails:
   1. **Category Protection**: Core category nouns can never be dropped (a search for *'red leather jacket'* will never show *'red leather pants'*).
-  2. **Minimum Token Overlap**: A relaxed query must retain at least 50% of original tokens (or $\ge 2$ tokens).
+  2. **Minimum Token Overlap**: A relaxed query must retain at least 2 tokens (minimum 2-token overlap) to prevent losing core search context.
   3. **In-Stock Filtering**: Only products with active inventory ($>0$) are eligible for fallback display.
   4. **Explainable UI**: We never silently swap results. We render an explicit banner: *'Showing 8 results for red jacket (relaxed: leather)'*."
 - **Supporting Metric**: 100% of relaxed benchmark results satisfied category and inventory guardrails `[LOCAL BENCHMARK]`.
@@ -110,8 +110,7 @@
 - **Caveat**: "All revenue projections are modeled estimates based on static funnel conversion assumptions, not realized bank deposits."
 
 ### Q13: Your model only predicts ~$1,800/year at current traffic. Why build this at all?
-- **Strong Answer**: "Because this is a **capital discipline decision**, not an infrastructure pitch. Building a dedicated search cluster would be foolish—it would cost $28K to chase $1.8K. But our query relaxation engine is an in-memory algorithmic fallback that took minimal engineering hours and runs inside existing application compute with zero marginal query cost. 
-Furthermore, it fixes our most severe user experience dead-end. If marketplace traffic scales 100x to 1.5M searches, the exact same code delivers **+$180,900/year in net GMV** with zero additional infrastructure spend. We build it to eliminate customer churn and prepare for scale, not for immediate quarterly revenue."
+- **Strong Answer**: "At current scale, I would **not** justify a major infrastructure investment. The modeled return of ~$1,800/year clearly shows this is not an infrastructure play today. The reason to test query relaxation is that the intervention is relatively lightweight, directly addresses a verified discovery failure, and requires no incremental third-party API or dedicated cluster costs in our current architecture. I would run the canary first to validate actual customer purchase willingness, and only scale the investment if the live experiment clears our predefined product (+1.5pp CTR lift) and statistical thresholds."
 - **Supporting Metric**: 100x traffic scale yields +$180,869/year gross GMV with $0 added cloud infrastructure `[MODELED]`.
 - **Caveat**: "If engineering effort had required 6 months of dedicated headcount, the ROI would not have justified building it at current scale."
 

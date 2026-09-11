@@ -14,7 +14,7 @@ This case study analyzes search discovery failure across an apparel marketplace 
 
 To resolve this without expensive infrastructure, we evaluated six search technologies (Query Relaxation, Autocomplete, Synonym Graphs, Fuzzy Matching, Vector Search, and Conversational LLMs). We prioritized **Automated Query Relaxation** as the V1 intervention due to direct root-cause fit, sub-millisecond execution, deterministic explainability, and zero recurring cloud inference overhead. On local benchmarks across 879 unmatchable queries, our relaxation engine achieved a **91.81% algorithmic recovery rate** [LOCAL BENCHMARK], reducing strict ZRR from 98.21% down to 8.40% (-80.70 pp reduction) within a 38.53 ms P95 latency envelope (well within the $\le 50$ ms algorithmic budget and $\le 250$ ms end-to-end SLA).
 
-To evaluate production readiness, we built an offline A/B experiment simulator (user-level 50/50 hashing, two-proportion z-test) and a deterministic business impact model. Our model demonstrates that achieving our target +3.5 pp CTR lift yields **+$1,808.69 in gross annualized GMV** (or **+$1,356.52 net** at 25% cannibalization) [MODELED]. Crucially, our capital discipline analysis reveals that standalone return on current traffic (~15.7 searches/day) does not justify expensive dedicated infrastructure. However, because query relaxation has zero marginal query cost, an illustrative 100x traffic scenario yields **+$180.9K/year** with zero marginal development cost. 
+To evaluate production readiness, we built an offline A/B experiment simulator (user-level 50/50 hashing, two-proportion z-test) and a deterministic business impact model. Our model demonstrates that achieving our target +3.5 pp CTR lift yields **+$1,808.69 in gross annualized GMV** (or **+$1,356.52 net** at 25% cannibalization) [MODELED]. Crucially, our capital discipline analysis reveals that standalone return on current traffic (~15.7 searches/day) does not justify expensive dedicated infrastructure. However, because query relaxation runs within existing application compute with no incremental third-party search API cost, an illustrative 100x traffic scenario yields **+$180.9K/year** in modeled gross GMV [MODELED]. 
 
 **Final PM Recommendation**: Do not commit to costly infrastructure upfront. Validate customer purchase willingness by running a lightweight 50/50 live canary experiment. Ship if CTR lift $\ge +1.5\text{ pp}$ ($p < 0.05$); deprioritize if lift is statistically inconclusive or creates downstream quick-backs.
 
@@ -131,11 +131,11 @@ Automated Query Relaxation runs strict boolean search first, triggering fallback
          └─────────────┬─────────────┘
                        ▼
          ┌───────────────────────────┐
-         │ Scoring & Ranking         │ ──► Score by token rarity (IDF) & catalog density
+         │ Scoring & Ranking         │ ──► Document-frequency modifier analysis & ranking
          └─────────────┬─────────────┘
                        ▼
          ┌───────────────────────────┐
-         │ Guardrail Verification    │ ──► Category check, stock > 0, >=50% overlap
+         │ Guardrail Verification    │ ──► Category check, stock > 0, min 2-token overlap
          └─────────────┬─────────────┘
                        ▼
 [ Render Explainable Fallback UI: "Showing 8 results for red dress (relaxed: silk, evening)" ]
@@ -145,11 +145,11 @@ Automated Query Relaxation runs strict boolean search first, triggering fallback
 1. **Trigger Condition**: Query must contain $\ge 4$ meaningful tokens AND return $< 3$ strict results.
 2. **Modifier Identification & Category Protection**: Catalog taxonomy categorizes tokens. Category nouns (e.g., `"dress"`, `"boots"`, `"jeans"`) are marked protected and can **never** be dropped. Modifiers (colors, fabrics, occasions) are marked eligible for relaxation.
 3. **Candidate Generation**: System systematically generates 1-drop subsets (dropping 1 modifier) and 2-drop subsets.
-4. **Scoring & Ranking**: Candidates are scored by Inverse Document Frequency (IDF) rarity and catalog yield, prioritizing dropping the most restrictive non-core modifier first.
+4. **Scoring & Ranking**: Candidates are evaluated using document-frequency-based modifier analysis and catalog yield, prioritizing dropping the most restrictive non-core modifier first (lowest catalog document frequency).
 5. **Relevance & Safety Guardrails**:
    - **Category Guardrail**: Fallback results must strictly match the original category.
    - **Inventory Guardrail**: Products with zero stock (`inventory_units <= 0`) are excluded.
-   - **Minimum Token Overlap**: Relaxed query must retain $\ge 50\%$ of original tokens (or $\ge 2$ tokens).
+   - **Minimum Token Overlap**: Relaxed query must retain at least 2 tokens (minimum 2-token overlap to preserve query context).
 6. **Explainable UI Transparency**: The UI never silently swaps results. It renders: *"Showing 8 results for 'women red dress' (relaxed: silk, evening)"*.
 
 ### Local Algorithmic Benchmark Performance
@@ -281,7 +281,7 @@ A credible product manager evaluates engineering opportunity costs rather than c
 ### The Core PM Conclusion
 At current traffic scale (~15.7 eligible searches/day), this is **NOT an infrastructure investment case**. Committing $28.5K in dedicated search infrastructure to chase ~$1.8K in annual GMV would destroy capital.
 
-Instead, this is a **FEATURE VALIDATION opportunity**. Because Query Relaxation is implemented as an in-memory algorithmic fallback with **zero marginal query cost**, we can deploy it inside existing application compute.
+Instead, this is a **FEATURE VALIDATION opportunity**. Because Query Relaxation is implemented as an in-memory algorithmic fallback with **no incremental third-party search or API cost in the current architecture**, we can deploy it inside existing application compute.
 
 ### Recommended Action: RUN A LIGHTWEIGHT CANARY FIRST
 - **SHIP / SCALE CRITERIA**:
@@ -302,7 +302,7 @@ Instead, this is a **FEATURE VALIDATION opportunity**. Because Query Relaxation 
 A hallmark of rigorous product management is articulating why popular alternatives were rejected:
 
 ### 1. Why not LLMs first?
-- **Answer**: LLMs add 300–1,000 ms of latency (violating our $\le 50$ ms relaxation budget and $\le 250$ ms end-to-end SLA), introduce hallucination risks (inventing non-existent products), and incur recurring per-query API costs. Our problem was attribute over-specification, which simple set operations solve deterministically.
+- **Answer**: I did not choose LLM rewriting first because the diagnosed problem was structured and narrow enough to solve deterministically. An LLM approach could introduce additional latency, external API costs, infrastructure complexity, and response variability that were not necessary for the V1 hypothesis. Our primary failure mode was attribute over-specification, which rule-based modifier relaxation solves deterministically without external model dependencies.
 
 ### 2. Why not Vector Search first?
 - **Answer**: Dense embeddings require vector databases (Milvus, Pinecone), indexing pipelines, and embedding generation compute. While vector search excels at vocabulary mismatch (e.g., matching *"frock"* to *"dress"*), it struggles with strict e-commerce filters like exact colors, sizes, and stock availability. Query relaxation solved 91.8% of failures without new infrastructure.
@@ -384,7 +384,7 @@ CTR directly evaluates whether the search engine succeeded at its primary user j
 
 | # | Risk Factor | Impact | Mitigation Strategy | Monitoring Telemetry |
 |---|:---|:---|:---|:---|
-| **1** | **Relevance Degradation** | Low click quality, user distrust | Enforce $\ge 50\%$ token overlap; score candidates by token IDF rarity. | Search $\to$ PDP CTR; Quick-back bounce rate (<5s). |
+| **1** | **Relevance Degradation** | Low click quality, user distrust | Enforce minimum 2-token overlap; prioritize candidates by document-frequency modifier analysis. | Search $\to$ PDP CTR; Quick-back bounce rate (<5s). |
 | **2** | **Wrong-Category Fallbacks** | Showing pants for a dress search | Lock category nouns during token parsing; category terms can never be dropped. | Category mismatch audit rate in search debugger. |
 | **3** | **Out-of-Stock Products** | PDP drop-off at size selection | In-stock inventory check (`inventory_units > 0`) applied before fallback rendering. | Out-of-stock PDP display rate. |
 | **4** | **Query Intent Dilution** | Weakening original purchase intent | Limit relaxation to max 2 dropped tokens; prioritize 1-drop over 2-drop. | Drop-count distribution logs. |

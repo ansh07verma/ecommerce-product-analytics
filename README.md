@@ -26,7 +26,7 @@
 2. **Root Cause**: Over-specification. Shoppers use natural descriptive modifiers (color, fabric, occasion). Strict conjunctive boolean search fails when a single non-essential modifier misses catalog metadata, even when matching inventory exists.
 3. **The V1 Intervention**: Evaluated six search technologies via a weighted decision matrix. Selected **Automated Query Relaxation / Soft-Match Fallback** (#1 rank, 9.05 score) [PRODUCT ASSUMPTION] over vector search and LLMs because it directly fixes over-specification, runs deterministically in under 39ms, requires zero cloud API cost, and provides explainable fallback results.
 4. **Validation & Latency**: On local benchmarks across 879 unmatchable queries, relaxation achieved a **91.81% algorithmic recovery rate** [LOCAL BENCHMARK], reducing strict zero-result rate from 98.21% down to 8.40% (-80.70 pp reduction). P95 total latency was **38.53 ms** [LOCAL BENCHMARK], well within our $\le 50	ext{ ms}$ relaxation budget and $\le 250	ext{ ms}$ end-to-end Gateway SLA.
-5. **Experimentation & Business Impact**: Designed an offline A/B experiment (50/50 user hashing, two-proportion z-test) targeting a +3.5 pp CTR lift (76 days to power at ~15.7 searches/day) [MODELED]. Business modeling projects **+$1,808.69 in gross annualized GMV** (**+$1,356.52 net** at 25% cannibalization) [MODELED]. At 100x traffic scale, this grows to **+$180.9K/year** with zero marginal infrastructure cost.
+5. **Experimentation & Business Impact**: Designed an offline A/B experiment (50/50 user hashing, two-proportion z-test) targeting a +3.5 pp CTR lift (76 days to power at ~15.7 searches/day) [MODELED]. Business modeling projects **+$1,808.69 in gross annualized GMV** (**+$1,356.52 net** at 25% cannibalization) [MODELED]. At an illustrative 100x traffic scale, this grows to **+$180.9K/year** with no incremental third-party search API cost [MODELED].
 6. **PM Capital Discipline Decision**: **Validate before scaling.** At current boutique volume, standalone return does not justify a $28.5K dedicated search cluster [PRODUCT ASSUMPTION]. Recommendation is to deploy a lightweight canary experiment; ship if CTR lift $\ge +1.5	ext{ pp}$ ($p < 0.05$) [PRODUCT ASSUMPTION]; deprioritize if statistically inconclusive.
 
 ---
@@ -47,7 +47,7 @@
 | **Simulated Experiment Lift** | **+3.23 pp** ($p = 0.0141$) | `[SIMULATED]` | Offline A/B target scenario simulation |
 | **Annualized Gross GMV Impact** | **+$1,808.69 / year** | `[MODELED]` | Modeled at +3.5 pp CTR lift |
 | **Annualized Net GMV Impact** | **+$1,356.52 / year** | `[MODELED]` | Adjusted for 25% cannibalization |
-| **Illustrative 100x Scale GMV** | **+$180,869 / year** | `[MODELED]` | Scale potential with $0 marginal cloud cost |
+| **Illustrative 100x Scale GMV** | **+$180,869 / year** | `[MODELED]` | Illustrative scale potential with no incremental paid search API costs |
 | **Pre-Declared Ship Threshold**| **$\ge +1.5	ext{ pp}$ CTR ($p < 0.05$)** | `[PRODUCT ASSUMPTION]`| Canary go/no-go shipment criterion |
 
 *All project metrics carry strict provenance labels: `[OBSERVED]` (historical data), `[LOCAL BENCHMARK]` (catalog search engine), `[PRODUCT ASSUMPTION]` (planning inputs), `[SIMULATED]` (offline A/B generator), or `[MODELED]` (deterministic financial calculations).*
@@ -74,11 +74,11 @@
          └─────────────┬─────────────┘
                        ▼
          ┌───────────────────────────┐
-         │ Scoring & Ranking         │ ──► Score by token rarity (IDF) & catalog density
+         │ Scoring & Ranking         │ ──► Document-frequency modifier analysis & ranking
          └─────────────┬─────────────┘
                        ▼
          ┌───────────────────────────┐
-         │ Guardrail Verification    │ ──► Category check, stock > 0, >=50% overlap
+         │ Guardrail Verification    │ ──► Category check, stock > 0, min 2-token overlap
          └─────────────┬─────────────┘
                        ▼
 [ Render Explainable Fallback UI: "Showing 8 results for red dress (relaxed: silk, evening)" ]
@@ -105,7 +105,7 @@ To eliminate cross-document ambiguity, latency is governed by two complementary 
 - **Central Scenario**: +3.5 pp CTR lift $	o$ **+$297.32 gross GMV / 60 days** $	o$ **+$1,808.69 annualized gross GMV** [MODELED].
 - **Cannibalization Adjustment**: At 25% cannibalization discount, net impact is **+$1,356.52 / year** [MODELED].
 - **Capital Discipline Assessment**: Dedicated search cluster infrastructure is estimated at **$28,500 Year-1 cost** [PRODUCT ASSUMPTION — ILLUSTRATIVE PLANNING INPUT]. Building dedicated infrastructure for ~$1.8K annual revenue would destroy shareholder value.
-- **Strategic Recommendation**: Deploy query relaxation as a zero-marginal-cost in-memory service inside existing application compute. Validate with a live canary experiment before committing any capital.
+- **Strategic Recommendation**: Deploy query relaxation as an in-memory fallback service inside existing application compute with no incremental third-party API or dedicated cluster costs. Validate with a live canary experiment before committing any capital.
 
 ---
 
@@ -126,7 +126,7 @@ python src/final_prd_validation.py
 ### 2. Launch Search Health Dashboard
 ```bash
 # Generate the dashboard JSON & HTML
-python src/search_dashboard.py --html
+python src/search_dashboard.py --build-static
 
 # Open reports/search_dashboard.html in your browser
 # Or launch a local server:
