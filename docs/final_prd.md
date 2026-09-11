@@ -25,7 +25,7 @@
 # 1. Executive Summary
 
 ### Problem & Opportunity Overview
-In an e-commerce fashion marketplace, shoppers who formulate highly specific, multi-attribute queries represent our highest purchase intent. However, empirical analysis of 32,245 search events reveals a severe discovery failure: **[FACT]** 4+ token searches experience an **8.23% Zero-Result Rate (ZRR)** (898 events) compared to only **1.78%** on 1?3 token head queries. Furthermore, click-through engagement (**[FACT]** Search-to-PDP CTR) drops from **70.78%** on short queries to **62.95%** on 4+ token searches, and **44.39%** of these specific queries result in immediate, frustrated reformulations. This discovery breakdown affects 8,958 sessions (28.6% of marketplace traffic) and depresses session conversion to 13.01% (vs. 14.85% marketplace baseline).
+In an e-commerce fashion marketplace, shoppers who formulate highly specific, multi-attribute queries represent our highest purchase intent. However, empirical analysis of 32,245 search events reveals a severe discovery failure: **[FACT]** 4+ token searches experience an **8.23% Zero-Result Rate (ZRR)** (898 events) compared to only **1.78%** on 1-3 token head queries. Furthermore, click-through engagement (**[FACT]** Search-to-PDP CTR) drops from **70.78%** on short queries to **62.95%** on 4+ token searches, and **44.39%** of these specific queries result in immediate, frustrated reformulations. This discovery breakdown affects 8,958 sessions (28.6% of marketplace traffic) and depresses session conversion to 13.01% (vs. 14.85% marketplace baseline).
 
 ### Selected MVP Solution
 To resolve this discovery bottleneck, we specify **SOL-01: Automated Query Relaxation / Soft-Match Fallback**. When a high-intent shopper enters a specific query ($\ge 4$ tokens) and the primary strict retrieval returns fewer than 3 in-stock items, the search engine automatically intercepts the empty/sparse state, preserves the primary product category noun, drops the least-selective modifier, and returns up to 20 relevant partial-match products accompanied by a transparent user-facing notification banner (*"Showing closest matches for [Relaxed Query]"*).
@@ -47,7 +47,7 @@ Queries with 4 or more tokens (e.g., *"men black slim cotton shirt"*, *"women fl
 During our full-funnel diagnostic audit, four major funnel leaks were evaluated and prioritized using a multi-criteria RICE evaluation:
 1. **Search Discovery Failure (RICE: 64.0, Rank 1):** Top-of-funnel reach (8,958 sessions, 7,318 users). Fixing discovery expands the volume of qualified shoppers entering the checkout funnel.
 2. **Mobile Web Checkout Friction (RICE: 31.5, Rank 2):** Critical 13.48 pp Cart-to-Order conversion gap, but strictly downstream (touches 1,647 cart sessions). Retained as the secondary strategic priority.
-3. **Shipping Cliff Abandonment (RICE: 12.0, Rank 3):** Localized to the $38?$49.99 cart sub-tier (1,229 sessions).
+3. **Shipping Cliff Abandonment (RICE: 12.0, Rank 3):** Localized to the $38-$49.99 cart sub-tier (1,229 sessions).
 4. **PDP Size Stockout Rate (RICE: 9.9, Rank 4):** Catalog/supply-chain bounded friction (2,640 sessions).
 
 Search Discovery Failure was selected because **[INTERP]** upstream improvements compound through every subsequent funnel stage.
@@ -81,7 +81,7 @@ The marketplace loses substantial GMV from high-intent search abandonment. Speci
 
 ### 4.1 Canonical Evidence Table
 
-| Funnel Metric | Canonical Baseline (4+ Tokens) | Comparison Benchmark (1?3 Tokens) | Delta & Statistical Significance | Product Interpretation |
+| Funnel Metric | Canonical Baseline (4+ Tokens) | Comparison Benchmark (1-3 Tokens) | Delta & Statistical Significance | Product Interpretation |
 |:---|:---:|:---:|:---:|:---|
 | **Search Volume** | **10,914 searches** (33.85%) | **21,331 searches** (66.15%) | Total: 32,245 searches | **[FACT]** Specific queries represent 1 in every 3 searches. |
 | **Zero-Result Rate (ZRR)** | **8.23%** (898 events) | **1.78%** (380 events) | **+6.45 pp** ($Z = 28.08, p < 0.0001$) | **[FACT]** Specific queries are 4.6x more likely to yield zero hits. |
@@ -131,7 +131,7 @@ The following areas are explicitly **out of scope** for this MVP:
 ### 6.1 Target User Segments
 1. **Primary Segment: Multi-Attribute Fashion Shoppers:** Visitors formulating 4+ token queries seeking specific combinations of style, color, cut, and fabric.
 2. **Subgroup A Shoppers (Zero-Result Victims):** 898 query events where current strict search returns an empty state.
-3. **Subgroup B Shoppers (Sparse-Result Victims):** 43 query events where strict search returns only 1?2 items, providing insufficient browse choice.
+3. **Subgroup B Shoppers (Sparse-Result Victims):** 43 query events where strict search returns only 1-2 items, providing insufficient browse choice.
 
 ### 6.2 Representative Hypothetical Use Cases
 
@@ -160,7 +160,7 @@ The following areas are explicitly **out of scope** for this MVP:
        ?
 [Strict Conjunction Retrieval Executed]
        ?
-[0?2 Results Returned] (8.23% ZRR, 62.95% CTR, 3.08% on <3 results)
+[0-2 Results Returned] (8.23% ZRR, 62.95% CTR, 3.08% on <3 results)
        ?
 [Shopper Faces High Cognitive Friction] (44.39% Reformulation Rate)
        ?
@@ -224,7 +224,7 @@ The relaxation engine activates **if and only if**:
 ### 8.5 Output & Transparency
 - For **Subgroup A (0 strict hits):** Render relaxed items with prominent UI banner:  
   *"We couldn't find exact matches for all terms. Showing closest matches for [Relaxed Query] with [Dropped Term] removed."*
-- For **Subgroup B (1?2 strict hits):** Render the exact matches at top with badge *"Exact Matches"*, followed by relaxed candidates under section header *"You may also like these close matches"*.
+- For **Subgroup B (1-2 strict hits):** Render the exact matches at top with badge *"Exact Matches"*, followed by relaxed candidates under section header *"You may also like these close matches"*.
 
 ### 8.6 Failure Handling
 If fallback retrieval also yields zero items meeting the relevance threshold, the system gracefully falls back to displaying popular trending items in the inferred category with standard search assistance tips. The screen is never broken or left empty.
@@ -269,7 +269,7 @@ The paramount product risk of query relaxation is:
 
 ### 10.1 Core Safety Invariants
 1. **Category Invariant:** The system shall NEVER drop the primary product category noun if identified in the catalog lexicon.
-2. **Eligibility Gating:** The system shall NEVER execute relaxation on queries with 1?3 tokens (guards head queries).
+2. **Eligibility Gating:** The system shall NEVER execute relaxation on queries with 1-3 tokens (guards head queries).
 3. **Threshold Gating:** The system shall NEVER execute relaxation if strict search yields $\ge 3$ in-stock items.
 4. **Relevance Score Floor:** Candidate products with normalized BM25 text relevance $< 0.40$ shall be discarded.
 5. **Explicit Override:** The system shall always provide an immediate 1-tap affordance to view strict results.
@@ -448,14 +448,14 @@ To guarantee end-to-end analytical traceability:
 - **Strategic PM Trade-off Rationale:** While user-level randomization prevents cross-session inconsistency for repeat shoppers, empirical analysis shows that **[FACT] 84.4% of users in the marketplace conduct only 1?2 sessions**, and search queries reflect immediate, session-specific purchase intents. Furthermore, search engine caching infrastructure operates statelessly at the session layer. Session-level hashing prevents cross-treatment contamination within a visit, provides balanced sample allocation, and maximizes statistical power.
 
 ### 16.3 Experimental Arms
-- **Control Arm (50%):** Status quo strict retrieval. Returns exact count (including empty state on 0 hits and 1?2 items on sparse hits).
+- **Control Arm (50%):** Status quo strict retrieval. Returns exact count (including empty state on 0 hits and 1-2 items on sparse hits).
 - **Treatment Arm (50%):** MVP Query Relaxation. If results $< 3$ on 4+ tokens, executes modifier relaxation, returns up to 20 partial matches, and displays transparency banner.
 
 ### 16.4 Eligibility & Subgroups
 - **Eligibility:** `token_count >= 4` AND `strict_result_count < 3`.
 - **Subgroups Analyzed:**
   - **Subgroup A (0 Results):** 898 historical queries (95.4% of eligible searches).
-  - **Subgroup B (1?2 Results):** 43 historical queries (4.6% of eligible searches).
+  - **Subgroup B (1-2 Results):** 43 historical queries (4.6% of eligible searches).
 
 ### 16.5 Decision Rules & Stopping Criteria
 - **Ship (Success):** Statistically significant positive lift in Primary CTR ($p < 0.05$), ZRR reduction $> 5.0	ext{ pp}$, and all Guardrails green.
@@ -536,7 +536,7 @@ In an interview or executive presentation, a rigorous PM must be transparent abo
 1. **The Statistical Reality:** Because eligible low-result queries generate only ~16 searches/day in this single-catalog dataset, testing for a subtle $+1.0	ext{ pp}$ or $+2.0	ext{ pp}$ lift would take over 6 months to achieve statistical significance.
 2. **The Experiment Solution (Option C):** We randomize all 4+ token search users at the persistent user level (`hash(experiment_id + user_id) % 100`). For queries returning $\ge 3$ hits, both arms receive identical results. For queries returning $< 3$ hits, Treatment activates relaxation.
 3. **Pacing Plan:**
-   - **Phase 1 (Weeks 1?4 Canary Test):** Evaluates whether the intervention produces a large, transformational effect ($\ge +5.0	ext{ pp}$ lift, e.g. moving CTR from 3% to 8%+).
+   - **Phase 1 (Weeks 1-4 Canary Test):** Evaluates whether the intervention produces a large, transformational effect ($\ge +5.0	ext{ pp}$ lift, e.g. moving CTR from 3% to 8%+).
    - **Phase 2 (Multi-Category Rollout):** To detect moderate lifts ($+2.0	ext{ to }+3.5	ext{ pp}$), the experiment is expanded across broader fashion taxonomies to multiply daily eligible query volume by 3x?5x.
 
 ---
@@ -568,7 +568,7 @@ Phase 0 (Offline Audit) ??? Phase 1 (Shadow Traffic) ??? Phase 2 (5% Canary) ???
 An immediate rollback to 0% traffic shall be triggered if:
 1. **Latency Breach:** Search p95 latency exceeds **$250	ext{ ms}$** for $> 2	ext{ consecutive hours}$.
 2. **Relevance Degradation:** Quick-back bounce rate ($< 5	ext{s}$ duration) increases significantly ($p < 0.01$ or $\Delta > +1.0	ext{ pp}$).
-3. **Head Query Cannibalization:** Short-query (1?3 token) CTR drops significantly ($p < 0.05$).
+3. **Head Query Cannibalization:** Short-query (1-3 token) CTR drops significantly ($p < 0.05$).
 4. **Service Instability:** Relaxation API throws errors on $> 0.1\%$ of queries.
 
 ---
@@ -634,12 +634,12 @@ The MVP (SOL-01) is designed as a foundational stepping stone. It generates rich
 +---------------------------------------------------------------------------------------+
 |                               DISCOVERY PRODUCT ROADMAP                               |
 +------------------------------------+--------------------------------------------------+
-|  PHASE 1 (MVP ? Current Scope)     |  PHASE 2 (Q3 ? Guided Refinement & Precision)    |
+|  PHASE 1 (MVP -- Current Scope)     |  PHASE 2 (Q3 -- Guided Refinement & Precision)    |
 |  - SOL-01: Automated Relaxation    |  - SOL-02: Interactive Query Refinement Chips    |
 |  - Real-time Transparency Banner   |  - SOL-03: Attribute-Aware Facet Parsing         |
 |  - Baseline Intent Recovery        |  - Subgroup B Dedicated Split Grids              |
 +------------------------------------+--------------------------------------------------+
-|  PHASE 3 (Q4 ? Algorithmic Depth)  |  PHASE 4 (Next Year ? Intelligent Discovery)     |
+|  PHASE 3 (Q4 -- Algorithmic Depth)  |  PHASE 4 (Next Year -- Intelligent Discovery)     |
 |  - SOL-04: Attribute Field Weight  |  - SOL-08: Dense Vector / Hybrid Retrieval       |
 |  - SOL-06: Related Query Assist    |  - SOL-10: Personalized Discovery Ranking        |
 |  - Dynamic Category Expansion      |  - Conversational Discovery Interface            |
@@ -752,11 +752,11 @@ The existing synthetic dataset provides strong behavioral evidence, but the foll
 3. OPPORTUNITY:  Specific-query sessions convert at 13.01% (vs. 14.85% baseline). 
                  Recovering lost discovery captures unfulfilled GMV at zero acquisition cost.
                  
-4. SELECTED MVP: SOL-01 ? Automated Query Relaxation / Soft-Match Fallback.
+4. SELECTED MVP: SOL-01 -- Automated Query Relaxation / Soft-Match Fallback.
                  Preserves category nouns, drops least-selective modifier on <3 hits,
                  surfaces up to 20 partial matches with clear UI transparency messaging.
                  
-5. EXPERIMENT:   EXP-01 ? 50/50 Session-Level A/B Test running for ~4 weeks (~5,000 queries).
+5. EXPERIMENT:   EXP-01 -- 50/50 Session-Level A/B Test running for ~4 weeks (~5,000 queries).
                  Primary Metric: Search-to-PDP CTR on Eligible 4+ Token Queries.
                  Guardrails: Latency p95 < 250ms, Quick-Back Delta <= +1.0pp, Head CTR Neutral.
                  

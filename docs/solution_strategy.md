@@ -19,8 +19,8 @@ During our problem prioritization evaluation of four distinct funnel failure poi
 
 ### Validated Empirical Baseline (Empirical Baseline Ground Truth)
 - **[FACT] Search Volume & Specificity:** Out of 32,245 total search events across 31,328 sessions, 10,914 searches (33.85%) contain 4 or more query tokens.
-- **[FACT] Zero-Result Disparity:** 4+ token queries suffer a **8.23% Zero-Result Rate (ZRR)** (898 events), compared to only **1.78%** on 1?3 token head queries. This 6.45 percentage-point gap is statistically overwhelming ($Z = 28.08, p < 0.0001$).
-- **[FACT] Engagement Deficit:** Click-through rate (Search-to-PDP CTR) on 4+ token queries drops to **62.97%**, compared to **70.77%** on 1?3 token queries (7.80 pp deficit, $Z = 14.23, p < 0.0001$).
+- **[FACT] Zero-Result Disparity:** 4+ token queries suffer a **8.23% Zero-Result Rate (ZRR)** (898 events), compared to only **1.78%** on 1-3 token head queries. This 6.45 percentage-point gap is statistically overwhelming ($Z = 28.08, p < 0.0001$).
+- **[FACT] Engagement Deficit:** Click-through rate (Search-to-PDP CTR) on 4+ token queries drops to **62.97%**, compared to **70.77%** on 1-3 token queries (7.80 pp deficit, $Z = 14.23, p < 0.0001$).
 - **[FACT] High Reformulation Strain:** 44.39% of 4+ token searches result in an immediate query reformulation within the same session (vs. 42.41% for short queries), demonstrating that shoppers repeatedly attempt to self-correct their query when discovery fails.
 - **[FACT] Funnel Blast Radius:** Specific queries touch 8,958 unique sessions (28.6% of all sessions) and 7,318 unique users (45.7% of the active user base). The overall session conversion rate for specific-query sessions is 13.01% (1,165 orders), well below the 14.85% marketplace baseline.
 - **[INTERP] Engine Behavior:** We do **not** assume or assert that the underlying search engine is definitely a Boolean/exact-match engine. Rather, empirical evidence shows that **search relevancy appears insufficient for multi-attribute queries**. When users supply multiple specific descriptors (e.g., gender, color, fabric, category), the retrieval mechanism either over-constrains the candidate set to zero or returns products lacking the requested attributes.
@@ -118,7 +118,7 @@ We explored 10 candidate solution concepts spanning four architectural domains: 
 - **Confidence:** 3/5 (Requires empirical parameter tuning).
 - **Engineering Complexity / Effort:** 3/5 (Moderate: Search engine schema re-indexing and scoring function calibration).
 - **Data Requirements:** Search engine index configuration; offline relevancy evaluation benchmark dataset.
-- **Main Risk:** Re-weighting may inadvertently disrupt ranking quality for short 1?3 token head queries.
+- **Main Risk:** Re-weighting may inadvertently disrupt ranking quality for short 1-3 token head queries.
 - **Supporting Evidence:** [FACT] 62.97% CTR on 4+ tokens vs. 70.77% on short queries indicates current ranking quality is subpar.
 - **Missing Evidence:** Human-graded NDCG@10 relevance judgments on existing search result rankings.
 
@@ -493,7 +493,7 @@ Every algorithmic and product intervention introduces operational and behavioral
 | **1. Search Relevancy Degradation** | Serving products that only match a subset of attributes feels irrelevant to users. | Quick-Back Rate (PDP view $<5	ext{s}$), Drop in search-to-cart conversion. | Restrict relaxation strictly to queries yielding $<3$ hits; prioritize dropping non-essential modifiers (e.g., fabric/style) before core product categories. |
 | **2. False-Positive Results** | Users click items expecting specific attributes that do not exist on the product. | High return rate; negative product reviews; low add-to-cart rate. | Prominently display the context banner explicitly highlighting which terms were dropped (`"Showing results with [term] excluded"`). |
 | **3. Latency Regression** | Executing a second fallback query on the server breaches the latency budget. | Search p95 latency $>250	ext{ ms}$. | Implement strict circuit breaker: if primary search execution exceeds $120	ext{ ms}$, abort fallback and return cached category recommendations. |
-| **4. Cannibalization of Head Queries** | Algorithmic loosening accidentally degrades high-converting 1?3 token searches. | Drop in 1?3 token Search-to-PDP CTR (Baseline: 70.77%). | Hard eligibility filter: relaxation logic only activates on queries with $\ge 4$ whitespace-delimited tokens. |
+| **4. Cannibalization of Head Queries** | Algorithmic loosening accidentally degrades high-converting 1-3 token searches. | Drop in 1-3 token Search-to-PDP CTR (Baseline: 70.77%). | Hard eligibility filter: relaxation logic only activates on queries with $\ge 4$ whitespace-delimited tokens. |
 | **5. User Trust Erosion** | Shoppers lose confidence that search understands precise fashion nuances. | Qualitative feedback; repeat search drop-off. | Add feedback micro-affordance on relaxed banner (*"Was this helpful? [Yes / No]"*). |
 | **6. Engineering Dependency** | Fallback logic couples frontend rendering with search backend query parsers. | Deployment sync delays; API contract mismatches. | Encapsulate relaxation logic entirely within the search gateway response schema. |
 | **7. Catalog Quality Dependency** | Low-quality product descriptions or missing tags undermine token matching. | Uneven relaxation performance across subcategories. | Stratify experiment analysis across top categories (Apparel, Footwear, Accessories) to detect category-level data hygiene deficits. |
@@ -577,7 +577,7 @@ It directly targets the catastrophic zero-result failure mode (898 events) with 
 
 ### I. GUARDRAIL METRICS
 1. Search p95 latency ($< 250	ext{ ms}$).
-2. Short-query (1?3 token) CTR (Baseline: 70.77%; zero statistically significant regression).
+2. Short-query (1-3 token) CTR (Baseline: 70.77%; zero statistically significant regression).
 3. Search session bounce rate ($< 40.0\%$).
 4. Quick-back bounce rate (PDP view duration $< 5	ext{s}$ must not increase by $> 1.0	ext{ pp}$).
 5. Overall marketplace revenue per session (Non-negative delta).

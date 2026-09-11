@@ -14,7 +14,7 @@ This exploratory analysis validates, deepens, and segments the observations surf
 1. **The Conversion Funnel Reality:** The blended end-to-end conversion rate is **9.19%** (2,880 orders / 31,328 sessions). The single largest drop-off occurs at **PDP $\to$ Cart**, where **67.90%** of viewing sessions abandon without adding an item.
 2. **Search Discovery Divide:** While search-engaged sessions convert at **11.92%** compared to **4.75%** for browse-only sessions (**2.51x conversion lift**, $p < 0.0001$), search performance deteriorates severely with query specificity. Queries with 4+ tokens suffer an alarming **10.81% Zero-Result Rate (ZRR)** and an **18.83 percentage point drop in Click-Through Rate (CTR)** compared to branded queries.
 3. **The Sizing Consideration Cliff:** Out-of-stock sizes correlate with a catastrophic **-17.10 percentage point collapse** in Add-to-Cart Rate (ATCR) from **19.84%** down to **2.74%** (**86.19% relative drop**, Odds Ratio = **8.87**, $p < 0.0001$). This stockout penalty is especially concentrated in Women's Dresses (9.80% stockout rate) and Women's Ethnic Wear (8.48% stockout rate).
-4. **The $50 Shipping Fee Threshold Cliff:** Basket conversion exhibits a severe dip in the **$38?$49.99 GMV zone (29.37%)**, followed by a **+15.28 percentage point surge** to **44.65%** in the **$50?$74.99 free shipping tier** (+52.0% relative increase, $p < 0.0001$). Stratification confirms this effect is not confounded by user mix or platform mix.
+4. **The $50 Shipping Fee Threshold Cliff:** Basket conversion exhibits a severe dip in the **$38-$49.99 GMV zone (29.37%)**, followed by a **+15.28 percentage point surge** to **44.65%** in the **$50?$74.99 free shipping tier** (+52.0% relative increase, $p < 0.0001$). Stratification confirms this effect is not confounded by user mix or platform mix.
 5. **Mobile Web Checkout Friction:** Mobile Web matches desktop and apps in top-of-funnel discovery (70.27% reach PDP) and consideration (30.91% reach Cart), but experiences a crippling drop-off at **Cart $\to$ Order (29.63% vs 46.26% on iOS)**, representing a **-16.63 percentage point deficit**.
 6. **Simpson's Paradox in Period 2:** Period 2 experienced a **+33.0% traffic surge**, but top-line conversion softened by **-0.54 pp** (9.50% to 8.96%). Stratified decomposition reveals this was driven predominantly by a **+12.87 percentage point mix-shift toward lower-converting New Users** (whose conversion held steady at 8.14% vs 8.22%), rather than underlying product degradation.
 
@@ -128,7 +128,7 @@ The initial SQL audit identified an apparent conversion threshold around $50. We
 | :--- | :---: | :---: | :---: | :---: |
 | **1. Sub-$25** | 272 | 104 | 38.24% | Paid ($5.99) |
 | **2. $25?$37.99** | 840 | 314 | 37.38% | Paid ($5.99) |
-| **3. $38?$49.99 (Fee Cliff Zone)** | 1,229 | 361 | **29.37%** | Paid ($5.99) |
+| **3. $38-$49.99 (Fee Cliff Zone)** | 1,229 | 361 | **29.37%** | Paid ($5.99) |
 | **4. $50?$74.99 (Free Shipping)** | 2,242 | 1,001 | **44.65%** | **Free ($0.00)** |
 | **5. $75?$99.99** | 1,181 | 479 | 40.56% | Free ($0.00) |
 | **6. $100+** | 1,408 | 621 | 44.11% | Free ($0.00) |
@@ -138,17 +138,17 @@ The initial SQL audit identified an apparent conversion threshold around $50. We
 ### Stratification Analysis: Testing for Confounding
 
 #### A. Controlling for Platform
-- **Android:** $38?$49.99 converts at **33.84%** $\to$ jumps to **44.04%** at $50?$74.99 (**+10.20 pp**).
-- **Desktop:** $38?$49.99 converts at **25.00%** $\to$ jumps to **50.18%** at $50?$74.99 (**+25.18 pp**).
-- **Mobile Web:** $38?$49.99 converts at **18.15%** $\to$ jumps to **33.83%** at $50?$74.99 (**+15.68 pp**).
-- **iOS:** $38?$49.99 converts at **34.85%** $\to$ jumps to **52.13%** at $50?$74.99 (**+17.28 pp**).
+- **Android:** $38-$49.99 converts at **33.84%** $\to$ jumps to **44.04%** at $50?$74.99 (**+10.20 pp**).
+- **Desktop:** $38-$49.99 converts at **25.00%** $\to$ jumps to **50.18%** at $50?$74.99 (**+25.18 pp**).
+- **Mobile Web:** $38-$49.99 converts at **18.15%** $\to$ jumps to **33.83%** at $50?$74.99 (**+15.68 pp**).
+- **iOS:** $38-$49.99 converts at **34.85%** $\to$ jumps to **52.13%** at $50?$74.99 (**+17.28 pp**).
 
 #### B. Controlling for User Type
-- **New Users:** $38?$49.99 converts at **26.20%** $\to$ jumps to **40.36%** at $50?$74.99 (**+14.16 pp**).
-- **Returning Users:** $38?$49.99 converts at **33.16%** $\to$ jumps to **48.97%** at $50?$74.99 (**+15.81 pp**).
+- **New Users:** $38-$49.99 converts at **26.20%** $\to$ jumps to **40.36%** at $50?$74.99 (**+14.16 pp**).
+- **Returning Users:** $38-$49.99 converts at **33.16%** $\to$ jumps to **48.97%** at $50?$74.99 (**+15.81 pp**).
 
-#### C. Behavioral Evaluation: Why does Sub-$38 convert higher than $38?$49.99?
-Baskets under $38 convert at **37.59%** in aggregate, whereas $38?$49.99 carts drop to **29.37%**. When a shopper has a $45 cart, a $5.99 shipping fee represents a **13.3% surcharge** when they are only **$5.00 away from unlocking free shipping**. This creates acute friction and hesitation. In the absence of a cart progress bar or item-upsell mechanism, users abandon rather than paying the fee.
+#### C. Behavioral Evaluation: Why does Sub-$38 convert higher than $38-$49.99?
+Baskets under $38 convert at **37.59%** in aggregate, whereas $38-$49.99 carts drop to **29.37%**. When a shopper has a $45 cart, a $5.99 shipping fee represents a **13.3% surcharge** when they are only **$5.00 away from unlocking free shipping**. This creates acute friction and hesitation. In the absence of a cart progress bar or item-upsell mechanism, users abandon rather than paying the fee.
 
 ---
 
@@ -249,7 +249,7 @@ Sizing sensitivity and conversion rates vary dramatically across the product cat
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Long-Tail Search Collapse** | ZRR jumps from 1.0% to 10.81%; CTR falls by 18.8 pp | Queries with 4+ tokens across all platforms | Extreme ($Z = 30.12$, $p < 0.0001$) | Algorithmic exact-match failure on multi-attribute queries (color/size/type) | High | Query tokenizer behavior, zero-result keyword fallbacks |
 | **PDP Size Stockout Cliff** | ATCR drops from 19.84% to 2.74% (Odds Ratio = 8.87) | Apparel (Dresses, Ethnic Wear, Jeans) | Extreme ($Z = 22.46$, $p < 0.0001$) | User sizing intent blocked; absence of in-stock size recommendations | High | Whether users bounce or search for alternate sizes/styles |
-| **$50 Shipping Surcharge Dip** | $38?$49.99 GMV converts at 29.37% vs 44.65% for $50+ | All platforms, new and returning users | Extreme ($Z = 8.87$, $p < 0.0001$) | Sticker shock from $5.99 fee when user is within $5 of threshold; lack of cart upsell | High | Checkout step abandonment logs (payment vs shipping step) |
+| **$50 Shipping Surcharge Dip** | $38-$49.99 GMV converts at 29.37% vs 44.65% for $50+ | All platforms, new and returning users | Extreme ($Z = 8.87$, $p < 0.0001$) | Sticker shock from $5.99 fee when user is within $5 of threshold; lack of cart upsell | High | Checkout step abandonment logs (payment vs shipping step) |
 | **Mobile Web Checkout Drop-off** | Cart $\to$ Order is 29.63% vs 46.26% on iOS | Mobile Web sessions | Extreme ($Z = 8.52$, $p < 0.0001$) | Cumbersome checkout forms, friction in guest checkout, lack of 1-tap pay | Medium-High | Specific checkout micro-steps (Address, Auth, Payment) |
 | **Period 2 Conversion Softening** | Blended CR softened by -0.54 pp despite traffic +33% | New User acquisition mix | High ($p = 0.857$ showing within-segment stability) | Simpson's Paradox: Influx of new users (43.5% $\to$ 56.4%) diluted blended CR | High | Paid acquisition channel quality & audience targeting |
 
@@ -293,5 +293,5 @@ The tree below summarizes the validated factors driving funnel leakage.
 Before proceeding to **Product Problem Definition & Prioritization**, the following key product and operational questions must be considered:
 1. **Search Discovery:** How should the product handle multi-attribute queries that return zero results? Should query relaxation, attribute tokenization, or fallback recommendations be deployed?
 2. **PDP Sizing:** When a user's size is out of stock, what alternatives should the product offer to recover the 86.2% consideration loss (e.g., in-stock colorways, similar silhouettes, restock alerts)?
-3. **Checkout Shipping:** How can we eliminate the $38?$49.99 cliff? Can cart progress bars, low-cost basket add-ons, or free shipping threshold experiments bridge users across the $50 line?
+3. **Checkout Shipping:** How can we eliminate the $38-$49.99 cliff? Can cart progress bars, low-cost basket add-ons, or free shipping threshold experiments bridge users across the $50 line?
 4. **Mobile Web Checkout:** What specific micro-optimizations (guest checkout, simplified single-page checkout, Apple Pay / Google Pay) will close the 16.6 pp gap with native apps?

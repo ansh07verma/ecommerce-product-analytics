@@ -20,9 +20,9 @@ In a fashion e-commerce marketplace with 31,328 user sessions, searchers convert
 
 ## 3. What I Found: Four Funnel Leaks
 Across the customer journey, four distinct failure points emerged:
-1. **Search Discovery Collapse:** While 1?3 token head queries had a low **1.78% Zero-Result Rate (ZRR)** and **70.78% Click-Through Rate (CTR)**, specific queries ($\ge 4$ tokens, e.g., *"men black slim cotton shirt"*) suffered an alarming **8.23% ZRR** (898 events) and CTR fell to **62.95%** ($p < 0.0001$).
+1. **Search Discovery Collapse:** While 1-3 token head queries had a low **1.78% Zero-Result Rate (ZRR)** and **70.78% Click-Through Rate (CTR)**, specific queries ($\ge 4$ tokens, e.g., *"men black slim cotton shirt"*) suffered an alarming **8.23% ZRR** (898 events) and CTR fell to **62.95%** ($p < 0.0001$).
 2. **Mobile Web Checkout Friction:** Cart-to-Order conversion was only **29.63% on Mobile Web**, compared to **42.94% on combined native apps** (a **13.31 pp deficit**, $p < 0.0001$).
-3. **Shipping Fee Cliff:** Carts in the $38?$49.99 tier converted at **29.37%** vs. **44.65%** for carts reaching the $50 free-shipping threshold (a **15.28 pp drop**, $p < 0.0001$).
+3. **Shipping Fee Cliff:** Carts in the $38-$49.99 tier converted at **29.37%** vs. **44.65%** for carts reaching the $50 free-shipping threshold (a **15.28 pp drop**, $p < 0.0001$).
 4. **Out-of-Stock Size Rejection:** PDP Add-to-Cart rate collapsed from **19.84%** for in-stock sizes to **2.74%** when a shopper encountered a stockout ($p < 0.0001$).
 
 ---

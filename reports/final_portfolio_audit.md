@@ -63,7 +63,7 @@
 - **Recruiter Readability:** `README.md` rewritten to be comprehensible in ~60 seconds. (**PASS**)
 - **1-Page Case Study:** `docs/portfolio_case_study.md` provides a concise 3-minute executive narrative. (**PASS**)
 - **Interview Defense:** `docs/interview_talking_points.md` arms the candidate with 28 crisp answers across Product, Analytics, Experimentation, and Technical Architecture. (**PASS**)
-- **Verbal Walkthrough:** `docs/project_walkthrough.md` provides a 3?5 minute conversational script. (**PASS**)
+- **Verbal Walkthrough:** `docs/project_walkthrough.md` provides a 3-5 minute conversational script. (**PASS**)
 - **Artifact Integrity:** All 22 required figures, CSVs, specs, and notebooks verified and intact. No extraneous scope additions proposed. (**PASS**)
 
 ---
