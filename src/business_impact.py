@@ -1,5 +1,5 @@
 """
-Business Impact & GMV Opportunity Model (Stage 7)
+Business Impact & GMV Opportunity Model (Stage 7 / 7.1)
 
 Transparent, scenario-based business model that propagates search recovery
 improvements through the downstream e-commerce funnel to estimate incremental GMV.
@@ -9,11 +9,11 @@ Funnel Propagation:
   Incremental Carts -> Incremental Orders -> Incremental GMV -> Annualized GMV
 
 Data Honesty Tags:
-  [OBSERVED]          - Extracted directly from DuckDB historical data
-  [LOCAL BENCHMARK]   - Measured on local search engine / query relaxation
-  [SIMULATED]         - Generated counterfactual treatment outcome from Stage 6
-  [MODELED]           - Projected business impact / run-rate
-  [PRODUCT ASSUMPTION]- PM/business scenario assumption or decision threshold
+  [OBSERVED]                               - Extracted directly from DuckDB historical data
+  [LOCAL BENCHMARK]                        - Measured on local search engine / query relaxation
+  [SIMULATED]                              - Generated counterfactual treatment outcome from Stage 6
+  [MODELED]                                - Projected business impact / run-rate
+  [PRODUCT ASSUMPTION — ILLUSTRATIVE PLANNING INPUT] - PM/business scenario assumption or decision threshold
 """
 
 import argparse
@@ -79,7 +79,14 @@ class ScenarioResult:
 class BusinessImpactModel:
     """Deterministic, scenario-based e-commerce business impact model."""
 
-    def __init__(self, db_path: Optional[str] = None):
+    def __init__(
+        self,
+        db_path: Optional[str] = None,
+        eng_person_months: float = 1.5,
+        monthly_eng_cost: float = 15000.0,
+        annual_infra_cost: float = 2400.0,
+        annual_maintenance_cost: float = 3600.0,
+    ):
         if db_path is None:
             self.db_path = str(REPO_ROOT / "data" / "ecommerce_analytics.duckdb")
         else:
@@ -90,11 +97,11 @@ class BusinessImpactModel:
         # Benchmark recovery rate [LOCAL BENCHMARK]
         self.benchmark_recovery_rate = 0.9181  # 807 / 879 from Stage 3
 
-        # Default engineering economic assumptions [PRODUCT ASSUMPTION]
-        self.default_eng_person_months = 1.5
-        self.default_monthly_eng_cost = 15000.0  # $15k / month
-        self.default_annual_infra_cost = 2400.0  # $200 / month
-        self.default_annual_maintenance_cost = 3600.0
+        # Configurable engineering economic assumptions [PRODUCT ASSUMPTION — ILLUSTRATIVE PLANNING INPUT]
+        self.default_eng_person_months = float(eng_person_months)
+        self.default_monthly_eng_cost = float(monthly_eng_cost)
+        self.default_annual_infra_cost = float(annual_infra_cost)
+        self.default_annual_maintenance_cost = float(annual_maintenance_cost)
 
     def load_baseline_funnel(self) -> BaselineFunnel:
         """Loads the exact observed funnel for eligible searches from DuckDB."""
@@ -332,10 +339,11 @@ class BusinessImpactModel:
     ) -> pd.DataFrame:
         """
         Solves for the required CTR lift and required recovery rate
-        to achieve specified annual GMV targets.
+        to achieve specified annual GMV targets ($10k, $25k, $50k, $100k).
+        Explicitly reports impossible requirements without silent clamping.
         """
         if target_annual_gmvs is None:
-            target_annual_gmvs = [1000.0, 2500.0, 5000.0, 10000.0]
+            target_annual_gmvs = [10000.0, 25000.0, 50000.0, 100000.0]
 
         annual_factor = 365.0 / self.baseline.observation_window_days
         unit_gmv = (
@@ -347,17 +355,33 @@ class BusinessImpactModel:
 
         rows = []
         for target in target_annual_gmvs:
+            # Case 1: Required CTR lift at benchmark recovery (91.81%)
             recovered = self.baseline.eligible_searches * self.benchmark_recovery_rate
             req_lift = target / (recovered * unit_gmv) if (recovered * unit_gmv) > 0 else 0.0
+            req_treatment_ctr = self.baseline.search_to_pdp_ctr + req_lift
+
+            # Case 2: Required recovery rate at target CTR lift (+3.5 pp)
             target_lift = 0.035
             req_rec = target / (self.baseline.eligible_searches * target_lift * unit_gmv) if (self.baseline.eligible_searches * target_lift * unit_gmv) > 0 else 0.0
 
+            # Feasibility check without silent clamping
+            if req_treatment_ctr > 1.0 or req_rec > 1.0:
+                feasibility = "Not achievable under current model assumptions"
+                req_lift_str = f"+{req_lift * 100.0:.2f} pp (Exceeds 100% CTR)" if req_treatment_ctr > 1.0 else f"+{req_lift * 100.0:.2f} pp"
+                req_ctr_str = f"{req_treatment_ctr * 100.0:.2f}% (Impossible >100%)" if req_treatment_ctr > 1.0 else f"{req_treatment_ctr * 100.0:.2f}%"
+                req_rec_str = f"{req_rec * 100.0:.1f}% (Exceeds 100% Recovery)" if req_rec > 1.0 else f"{req_rec * 100.0:.1f}%"
+            else:
+                feasibility = "Achievable under current model assumptions"
+                req_lift_str = f"+{req_lift * 100.0:.2f} pp"
+                req_ctr_str = f"{req_treatment_ctr * 100.0:.2f}%"
+                req_rec_str = f"{req_rec * 100.0:.1f}%"
+
             rows.append({
                 "target_annual_gmv": f"${target:,.0f}",
-                "required_ctr_lift_pp": round(req_lift * 100.0, 2),
-                "required_treatment_ctr": round((self.baseline.search_to_pdp_ctr + req_lift) * 100.0, 2),
-                "required_recovery_rate_at_35pp": round(req_rec * 100.0, 1),
-                "achievable_at_current_traffic": "YES" if req_lift <= 0.15 and req_rec <= 1.0 else "CHALLENGING",
+                "required_ctr_lift_pp": req_lift_str,
+                "required_treatment_ctr": req_ctr_str,
+                "required_recovery_rate_at_35pp": req_rec_str,
+                "feasibility_assessment": feasibility,
             })
         return pd.DataFrame(rows)
 
@@ -371,11 +395,11 @@ class BusinessImpactModel:
 
         variables = [
             ("CTR Lift (+3.5 pp)", "ctr_lift", 0.035),
-            ("Query Recovery Rate (91.81%)", "recovery", 0.9181),
             ("Eligible Search Volume (941)", "traffic", self.baseline.eligible_searches),
             ("Average Order Value ($142.58)", "aov", self.baseline.average_order_value),
-            ("Cart -> Order Rate (28.57%)", "cart_to_order", self.baseline.cart_to_order_rate),
             ("PDP -> Cart Rate (24.14%)", "pdp_to_cart", self.baseline.pdp_to_cart_rate),
+            ("Cart -> Order Rate (28.57%)", "cart_to_order", self.baseline.cart_to_order_rate),
+            ("Query Recovery Rate (91.81%)", "recovery", 0.9181),
             ("Cannibalization Rate (0% to 20%)", "cannibalization", 0.0),
         ]
 
@@ -430,7 +454,7 @@ def print_cli_summary(model: BusinessImpactModel) -> None:
     scen_target = model.calculate_scenario("Target (+3.5 pp)", ctr_lift_pp=0.035)
 
     print("=" * 70)
-    print("       BUSINESS IMPACT & GMV OPPORTUNITY MODEL (STAGE 7)")
+    print("       BUSINESS IMPACT & GMV OPPORTUNITY MODEL (STAGE 7 / 7.1)")
     print("=" * 70)
     print("1. OBSERVED HISTORICAL BASELINE (60-Day Window) [OBSERVED]:")
     print(f"   Total Search Events             : {b.total_searches:,}")
@@ -454,12 +478,16 @@ def print_cli_summary(model: BusinessImpactModel) -> None:
     print(f"   Gross Incremental GMV (60-Day)  : +${scen_target.gross_incremental_gmv:,.2f}")
     print(f"   Annualized Gross GMV Run-Rate   : +${scen_target.annualized_gross_gmv:,.2f}")
     print("-" * 70)
-    print("4. ROI & ENGINEERING ECONOMICS [MODELED]:")
-    print(f"   Engineering Effort Assumption   : {model.default_eng_person_months:.1f} person-months")
-    print(f"   Est. Total Implementation Cost  : ${model.default_eng_person_months * model.default_monthly_eng_cost + model.default_annual_infra_cost + model.default_annual_maintenance_cost:,.2f}")
-    print(f"   Net Annual Benefit (Target)     : +${scen_target.roi_net_benefit:,.2f}")
-    print(f"   Estimated ROI                   : {scen_target.roi_percentage:.1f}%")
-    print(f"   Estimated Payback Period        : {scen_target.payback_months:.1f} months")
+    print("4. ROI & ENGINEERING ECONOMICS [PRODUCT ASSUMPTION — ILLUSTRATIVE PLANNING INPUT]:")
+    print(f"   Engineering Effort Input        : {model.default_eng_person_months:.1f} person-months")
+    print(f"   Monthly Engineering Rate Input  : ${model.default_monthly_eng_cost:,.2f} / month")
+    print(f"   Annual Infrastructure & Maint.  : ${model.default_annual_infra_cost + model.default_annual_maintenance_cost:,.2f} / year")
+    tot_cost = model.default_eng_person_months * model.default_monthly_eng_cost + model.default_annual_infra_cost + model.default_annual_maintenance_cost
+    print(f"   Total Illustrative Year 1 Cost  : ${tot_cost:,.2f}")
+    print(f"   Net Annual Benefit (Target)     : +${scen_target.roi_net_benefit:,.2f} [MODELED]")
+    print(f"   Illustrative Payback Period     : {scen_target.payback_months:.1f} months [MODELED]")
+    print("   Notice: ROI is illustrative and should be recalculated using the target company's")
+    print("   fully-loaded engineering and infrastructure cost rates.")
     print("=" * 70)
     print("DATA HONESTY NOTICE:")
     print("Baseline metrics are historically observed. Incremental GMV figures are")
@@ -469,7 +497,7 @@ def print_cli_summary(model: BusinessImpactModel) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Business Impact & GMV Opportunity Model (Stage 7)"
+        description="Business Impact & GMV Opportunity Model (Stage 7 / 7.1)"
     )
     parser.add_argument(
         "--all",
@@ -489,7 +517,31 @@ def main() -> None:
     parser.add_argument(
         "--break-even",
         action="store_true",
-        help="Display break-even analysis table",
+        help="Display break-even analysis table ($10k, $25k, $50k, $100k)",
+    )
+    parser.add_argument(
+        "--engineering-cost",
+        type=float,
+        default=15000.0,
+        help="Monthly loaded engineering cost [PRODUCT ASSUMPTION — ILLUSTRATIVE PLANNING INPUT] (default: 15000.0)",
+    )
+    parser.add_argument(
+        "--engineering-person-months",
+        type=float,
+        default=1.5,
+        help="Implementation effort in person-months (default: 1.5)",
+    )
+    parser.add_argument(
+        "--annual-infra-cost",
+        type=float,
+        default=2400.0,
+        help="Annual cloud hosting / infra cost (default: 2400.0)",
+    )
+    parser.add_argument(
+        "--annual-maintenance-cost",
+        type=float,
+        default=3600.0,
+        help="Annual maintenance cost (default: 3600.0)",
     )
     parser.add_argument(
         "--json",
@@ -498,7 +550,12 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    model = BusinessImpactModel()
+    model = BusinessImpactModel(
+        eng_person_months=args.engineering_person_months,
+        monthly_eng_cost=args.engineering_cost,
+        annual_infra_cost=args.annual_infra_cost,
+        annual_maintenance_cost=args.annual_maintenance_cost,
+    )
 
     if args.json:
         target_res = model.calculate_scenario("Target", ctr_lift_pp=0.035)
@@ -526,11 +583,11 @@ def main() -> None:
 
     if args.break_even:
         df_be = model.calculate_break_even()
-        print("\n" + "=" * 80)
+        print("\n" + "=" * 90)
         print("BREAK-EVEN ANALYSIS: REQUIRED METRICS BY ANNUAL GMV TARGET [MODELED]")
-        print("=" * 80)
+        print("=" * 90)
         print(df_be.to_string(index=False))
-        print("=" * 80)
+        print("=" * 90)
         return
 
     print_cli_summary(model)
@@ -539,7 +596,7 @@ def main() -> None:
         print(model.run_ctr_scenarios().to_string(index=False))
         print("\nANNUALIZED GMV SENSITIVITY MATRIX:")
         print(model.run_recovery_ctr_matrix().to_string())
-        print("\nBREAK-EVEN ANALYSIS:")
+        print("\nBREAK-EVEN ANALYSIS ($10k, $25k, $50k, $100k Targets):")
         print(model.calculate_break_even().to_string(index=False))
         print("\nSENSITIVITY RANKING (GMV ELASTICITY):")
         print(model.run_sensitivity_ranking().to_string(index=False))

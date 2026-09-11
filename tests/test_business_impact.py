@@ -41,22 +41,16 @@ def test_baseline_funnel_extraction(model):
 def test_scenario_calculation_propagation(model):
     """Verify that funnel math propagates deterministically."""
     res = model.calculate_scenario("Target", ctr_lift_pp=0.035, recovery_rate=0.9181)
-    # 941 * 0.9181 = 863.9321
     expected_recovered = 941 * 0.9181
     assert round(res.recovered_searches, 1) == round(expected_recovered, 1)
-    # inc_pdp = 863.9321 * 0.035 = 30.2376
     expected_inc_pdp = expected_recovered * 0.035
     assert round(res.incremental_pdp_views, 2) == round(expected_inc_pdp, 2)
-    # inc_carts = 30.2376 * (7/29) = 7.2987
     expected_inc_carts = expected_inc_pdp * (7 / 29)
     assert round(res.incremental_carts, 2) == round(expected_inc_carts, 2)
-    # inc_orders = 7.2987 * (2/7) = 2.0853
     expected_inc_orders = expected_inc_carts * (2 / 7)
     assert round(res.incremental_orders, 2) == round(expected_inc_orders, 2)
-    # gross_gmv = 2.0853 * (285.15 / 2) = 297.32
     expected_gross_gmv = expected_inc_orders * (285.15 / 2)
     assert round(res.gross_incremental_gmv, 2) == round(expected_gross_gmv, 2)
-    # annualized_gross = 297.32 * (365 / 60) = 1808.69
     expected_annual = expected_gross_gmv * (365.0 / 60.0)
     assert round(res.annualized_gross_gmv, 2) == round(expected_annual, 2)
 
@@ -87,12 +81,10 @@ def test_recovery_matrix_dimensions(model):
     """Test recovery x CTR sensitivity matrix structure."""
     df_mat = model.run_recovery_ctr_matrix()
     assert df_mat.shape == (4, 4)
-    # Values must increase across columns (higher CTR lift)
     for _, row in df_mat.iterrows():
         vals = row.tolist()
         for j in range(len(vals) - 1):
             assert vals[j] < vals[j + 1]
-    # Values must increase down rows (higher recovery rate)
     for col in df_mat.columns:
         vals = df_mat[col].tolist()
         for k in range(len(vals) - 1):
@@ -100,14 +92,13 @@ def test_recovery_matrix_dimensions(model):
 
 
 def test_break_even_solver(model):
-    """Test break-even required lift and recovery solvers."""
-    df_be = model.calculate_break_even([1000.0, 1808.69])
-    assert len(df_be) == 2
-    # At target GMV = $1,808.69, required lift at 91.81% recovery should be ~3.5 pp
-    # Check $1,000 target
-    r1 = df_be.iloc[0]
-    assert 1.5 <= r1["required_ctr_lift_pp"] <= 2.5
-    assert 40.0 <= r1["required_recovery_rate_at_35pp"] <= 60.0
+    """Test break-even solver across four requested targets ($10k, $25k, $50k, $100k)."""
+    df_be = model.calculate_break_even()
+    assert len(df_be) == 4
+    targets = df_be["target_annual_gmv"].tolist()
+    assert targets == ["$10,000", "$25,000", "$50,000", "$100,000"]
+    for _, row in df_be.iterrows():
+        assert row["feasibility_assessment"] == "Not achievable under current model assumptions"
 
 
 def test_sensitivity_ranking_completeness(model):
@@ -121,12 +112,10 @@ def test_sensitivity_ranking_completeness(model):
 
 def test_probability_bounds_and_clamping(model):
     """Test that extreme or negative parameters are safely clamped."""
-    # Recovery > 1.0 clamped to 1.0
     r_over = model.calculate_scenario("Over", ctr_lift_pp=0.035, recovery_rate=1.5)
     r_100 = model.calculate_scenario("Max", ctr_lift_pp=0.035, recovery_rate=1.0)
     assert r_over.annualized_gross_gmv == r_100.annualized_gross_gmv
 
-    # Negative CTR lift clamped to 0
     r_neg = model.calculate_scenario("Neg", ctr_lift_pp=-0.05)
     assert r_neg.incremental_pdp_views == 0.0
     assert r_neg.annualized_gross_gmv == 0.0
@@ -135,8 +124,29 @@ def test_probability_bounds_and_clamping(model):
 def test_roi_and_payback_logic(model):
     """Test economic calculation logic."""
     res = model.calculate_scenario("Target", ctr_lift_pp=0.035, eng_cost_override=1000.0)
-    # Cost = $1000, Annual Net = $1808.69 -> Net benefit = $808.69, ROI = 80.9%
     assert round(res.roi_net_benefit, 2) == 808.69
     assert round(res.roi_percentage, 1) == 80.9
-    # Monthly revenue = 1808.69 / 12 = 150.72 -> Payback = 1000 / 150.72 = 6.6 months
     assert round(res.payback_months, 1) == 6.6
+
+
+def test_monotonic_relationships(model):
+    """Test mathematical monotonicity across all dimensions."""
+    # 1. Higher recovery -> Higher GMV
+    g_rec1 = model.calculate_scenario("R1", ctr_lift_pp=0.035, recovery_rate=0.50).annualized_gross_gmv
+    g_rec2 = model.calculate_scenario("R2", ctr_lift_pp=0.035, recovery_rate=0.90).annualized_gross_gmv
+    assert g_rec1 < g_rec2
+
+    # 2. Higher CTR lift -> Higher GMV
+    g_ctr1 = model.calculate_scenario("C1", ctr_lift_pp=0.010).annualized_gross_gmv
+    g_ctr2 = model.calculate_scenario("C2", ctr_lift_pp=0.035).annualized_gross_gmv
+    assert g_ctr1 < g_ctr2
+
+    # 3. Higher cannibalization -> Lower Net GMV
+    g_cann1 = model.calculate_scenario("K1", ctr_lift_pp=0.035, cannibalization_rate=0.10).annualized_net_gmv
+    g_cann2 = model.calculate_scenario("K2", ctr_lift_pp=0.035, cannibalization_rate=0.30).annualized_net_gmv
+    assert g_cann1 > g_cann2
+
+    # 4. Higher cost -> Lower ROI
+    roi1 = model.calculate_scenario("Cost1", ctr_lift_pp=0.035, eng_cost_override=5000.0).roi_percentage
+    roi2 = model.calculate_scenario("Cost2", ctr_lift_pp=0.035, eng_cost_override=20000.0).roi_percentage
+    assert roi1 > roi2

@@ -2,8 +2,8 @@
 
 **Project**: E-Commerce Product Analytics — Search & Conversion Funnel  
 **Intervention**: V1 Automated Query Relaxation / Soft-Match Fallback Engine  
-**Stage**: Stage 7 — Business Impact Model & GMV Opportunity Analysis  
-**Document Status**: COMPLETED  
+**Stage**: Stage 7 / 7.1 — Business Impact Model QA & Credibility Cleanup  
+**Document Status**: COMPLETED & VERIFIED  
 **Observation Window**: 60 Calendar Days (Oct 1, 2026 – Nov 25, 2026)  
 **Annualization Factor**: $\times (365 / 60) = 6.0833$  
 
@@ -14,15 +14,15 @@
 Following the experiment design and statistical sizing established in Stage 6, Stage 7 presents an end-to-end, deterministic business impact model for Automated Query Relaxation. By propagating search recovery improvements through the empirical e-commerce conversion funnel, this analysis estimates the incremental order volume, gross merchandise value (GMV), cannibalization discount, and return on engineering investment (ROI).
 
 ```
-+-----------------------------------------------------------------------------------------------+
-|                                    DATA HONESTY FRAMEWORK                                     |
-+-----------------------------------------------------------------------------------------------+
-| [OBSERVED]          | Historical baseline performance extracted directly from DuckDB.         |
-| [LOCAL BENCHMARK]   | Algorithmic recovery rate (91.81%) on local catalog search engine.     |
-| [SIMULATED]         | Counterfactual treatment outcome from Stage 6 offline experiment.      |
-| [MODELED]           | Projected downstream business outcomes (Orders, GMV run-rate).        |
-| [PRODUCT ASSUMPTION]| Engineering cost, cannibalization rates, and decision thresholds.      |
-+-----------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+|                                    DATA HONESTY FRAMEWORK                                         |
++---------------------------------------------------------------------------------------------------+
+| [OBSERVED]          | Historical baseline performance extracted directly from DuckDB.             |
+| [LOCAL BENCHMARK]   | Algorithmic recovery rate (91.81%) on local catalog search engine.         |
+| [SIMULATED]         | Counterfactual treatment outcome from Stage 6 offline experiment.          |
+| [MODELED]           | Projected downstream business outcomes (Orders, GMV run-rate).            |
+| [PRODUCT ASSUMPTION — ILLUSTRATIVE PLANNING INPUT] | Configurable planning assumptions & costs.  |
++---------------------------------------------------------------------------------------------------+
 ```
 
 ### Key Business Conclusions:
@@ -31,10 +31,11 @@ Following the experiment design and statistical sizing established in Stage 6, S
    - **+7.3 Incremental Cart Additions** per 60 days `[MODELED]`.
    - **+2.1 Incremental Orders** per 60 days `[MODELED]`.
    - **+$297.32 Incremental 60-Day GMV** $	o$ **+$1,808.69 Annualized GMV Run-Rate** `[MODELED]`.
-2. **Current Traffic Scale vs Strategic Scalability**:
-   - On the current catalog volume (1,600 SKUs, 941 eligible searches / 60 days), the direct annualized GMV opportunity is **+$1,809 / year** `[MODELED]`.
-   - When evaluated as an isolated point-feature against standard enterprise engineering salaries ($28.5K total cost for 1.5 person-months), the local ROI is negative (-93.7%).
-   - **Strategic Product Rationale**: Query Relaxation is not built as an isolated micro-feature, but as the foundational zero-result safety net of the marketplace search infrastructure (Platform Layer V1). At 10x marketplace traffic (~157 searches/day), annualized incremental GMV scales to **+$18,087/year**; at 100x traffic (national retail scale), it yields **+$180,869/year** with zero marginal engineering cost.
+2. **Current Scale vs Illustrative 100x Traffic Scenario**:
+   - On current baseline traffic (1,600 SKUs, 941 eligible searches / 60 days), the direct annualized GMV opportunity is **+$1,809 / year** `[MODELED]` (or **+$1,357 / year** at 25% cannibalization).
+   - In an **illustrative 100x traffic sensitivity scenario** (~1,570 searches/day), the same algorithmic capability delivers **+$180,869 / year** in incremental GMV with zero marginal engineering development cost.
+3. **Executive Recommendation**:
+   - Validate the intervention through a low-cost, live A/B canary experiment (Stage 6 protocol) to confirm live customer willingness-to-buy before making major dedicated infrastructure commitments.
 
 ---
 
@@ -92,7 +93,7 @@ All conversion baselines are extracted directly from the DuckDB relational schem
 
 ---
 
-## 3. Mathematical Model & Propagation Equations
+## 3. Mathematical Attribution Framework
 
 The model is deterministic and follows standard e-commerce funnel attribution:
 
@@ -114,8 +115,6 @@ $$	ext{Annualized Incremental GMV} = 	ext{GMV}_{	ext{gross/net}} 	imes \left( r
 
 ## 4. CTR Scenario Modeling (91.81% Benchmark Recovery)
 
-We evaluate four CTR lift horizons using the Stage 3 local benchmark recovery rate (91.81%):
-
 | Metric | Conservative (+1.0 pp) | Moderate (+1.5 pp) | Target MDE (+3.5 pp) | Optimistic (+5.0 pp) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Search $	o$ PDP CTR** | 4.08% | 4.58% | **6.58%** | 8.08% |
@@ -132,8 +131,6 @@ We evaluate four CTR lift horizons using the Stage 3 local benchmark recovery ra
 
 ## 5. Recovery Rate $	imes$ CTR Lift Sensitivity Matrix
 
-To understand how dependent business results are on search engine performance, we cross recovery rate assumptions (50%, 70%, 90%, 91.81%) against CTR lift targets.
-
 ### Annualized Net GMV ($) Matrix (0% Cannibalization) `[MODELED]`
 
 | Recovery Rate / CTR Lift | +1.0 pp (Conservative) | +1.5 pp (Moderate) | +3.5 pp (Target MDE) | +5.0 pp (Optimistic) |
@@ -141,68 +138,60 @@ To understand how dependent business results are on search engine performance, w
 | **50.0%** (Poor Fallback) | $281.43 | $422.15 | $985.02 | $1,407.17 |
 | **70.0%** (Acceptable) | $394.01 | $591.01 | $1,379.03 | $1,970.04 |
 | **90.0%** (Strong) | $506.58 | $759.87 | $1,773.03 | $2,532.91 |
-| **91.81%** (Local Benchmark) | **$516.77** | **$775.15** | **$1,808.69** | **$2,583.85** |
-
-> **PM Takeaway**: Search recovery rate acts as a linear throttle on revenue. If algorithmic relaxation achieves only 50% recovery in production due to catalog sparsity, the annual revenue opportunity drops by nearly half ($1,809 $	o$ $985).
+| **91.81% (Local Benchmark)** | **$516.77** | **$775.15** | **$1,808.69** | **$2,583.85** |
 
 ---
 
 ## 6. Cannibalization Sensitivity Analysis
 
-A rigorous PM must not assume that 100% of relaxed search orders are brand-new net revenue. Some customers would have eventually discovered a suitable product via category navigation, homepage carousels, or reformulated queries.
-
-### Net GMV Erosion across Cannibalization Rates (Target Scenario D)
-
-| Cannibalization Rate `[ASSUMPTION]` | 60-Day Net GMV | Annualized Net GMV `[MODELED]` | Annual GMV Eroded | Net Incremental Orders / Year |
+| Cannibalization Rate `[PRODUCT ASSUMPTION]` | 60-Day Net GMV | Annualized Net GMV `[MODELED]` | Annual GMV Eroded | Net Incremental Orders / Year |
 | :---: | :---: | :---: | :---: | :---: |
 | **0%** (Pure Incrementality) | $297.32 | **$1,808.69** | $0.00 | +12.7 orders |
 | **10%** (Low Cannibalization) | $267.59 | **$1,627.82** | $180.87 | +11.4 orders |
 | **25%** (Realistic Base Case) | $222.99 | **$1,356.52** | $452.17 | +9.5 orders |
 | **40%** (Severe Substitution) | $178.39 | **$1,085.21** | $723.48 | +7.6 orders |
 
-*Recommendation*: In production A/B testing, user-level randomization will measure total user GMV across variants, automatically netting out cannibalization. For business planning, we recommend adopting a **25% cannibalization haircut** ($1,357 net GMV).
-
 ---
 
 ## 7. Engineering Economics & ROI Modeling
 
-To ensure executive transparency, engineering costs are modeled explicitly rather than assumed to be free:
+> **Note**: ROI is illustrative and should be recalculated using the target company's fully-loaded engineering and infrastructure costs.
 
-### Cost Structure `[PRODUCT ASSUMPTION]`
-- **Engineering Effort**: 1.5 person-months (senior search engineer).
-- **Loaded Engineering Cost**: $15,000 / month $	o$ **$22,500 one-time implementation**.
+### Illustrative Cost Inputs `[PRODUCT ASSUMPTION — ILLUSTRATIVE PLANNING INPUT]`
+- **Engineering Effort Input**: 1.5 person-months (Senior Search Engineer).
+- **Loaded Engineering Cost Rate**: $15,000 / month $	o$ **$22,500 one-time implementation**.
 - **Cloud Infrastructure (Inverted Index / Memory)**: $200 / month $	o$ **$2,400 / year**.
 - **Maintenance & Monitoring**: **$3,600 / year**.
-- **Total Year-1 Cost**: **$28,500.00**.
+- **Total Illustrative Year-1 Cost**: **$28,500.00**.
 
-### Economic Payback Assessment
+### Economic Assessment across Traffic Scenarios
 
 | Scenario | Year 1 Net GMV `[MODELED]` | Total Year 1 Cost `[ASSUMPTION]` | Net Benefit / Loss | Payback Period |
 | :--- | :---: | :---: | :---: | :---: |
 | **Current Scale (1x Traffic)** | $1,808.69 | $28,500.00 | -$26,691.31 | 189.1 months |
-| **Mid-Scale (10x Traffic)** | $18,086.90 | $28,500.00 | -$10,413.10 | 18.9 months |
-| **National Scale (100x Traffic)**| $180,869.00 | $28,500.00 | **+$152,369.00** | **1.9 months** |
-
-> **Core Strategic Finding**: Building automated query relaxation for an unscaled boutique catalog of 941 queries generates negligible standalone dollar return. However, query relaxation is a **zero-marginal-cost algorithmic capability**. Its business justification lies in platform readiness: as customer acquisition scales traffic 10x–100x, the feature delivers six-figure incremental GMV with zero additional development cost.
+| **Illustrative 10x Traffic Scenario** | $18,086.90 | $28,500.00 | -$10,413.10 | 18.9 months |
+| **Illustrative 100x Traffic Scenario**| $180,869.00 | $28,500.00 | **+$152,369.00** | **1.9 months** |
 
 ---
 
-## 8. Break-Even Analysis
+## 8. Break-Even Analysis ($10k, $25k, $50k, $100k Targets)
 
-We solved for the required CTR lift and query recovery rate needed to hit standard corporate annual GMV milestones under current traffic volume:
+Evaluating the four canonical corporate annual GMV hurdles under current baseline traffic:
 
-| Target Annual GMV | Required CTR Lift | Required Treatment CTR | Required Recovery (at +3.5 pp lift) | Feasibility at Current Scale |
+| Target Annual GMV | Required CTR Lift (at 91.81% Recovery) | Required Treatment CTR | Required Recovery (at +3.5 pp lift) | Feasibility Assessment |
 | :---: | :---: | :---: | :---: | :--- |
-| **$1,000** | **+1.94 pp** | 5.02% | 50.8% | **ACHIEVABLE** |
-| **$2,500** | **+4.84 pp** | 7.92% | 126.9% (Exceeds 100%) | **CHALLENGING** (Requires traffic growth) |
-| **$5,000** | **+9.68 pp** | 12.76% | 253.8% | **UNREALISTIC** on current traffic |
-| **$10,000** | **+19.35 pp** | 22.43% | 507.6% | **UNREALISTIC** on current traffic |
+| **$10,000** | **+19.35 pp** | 22.43% | 507.6% (Exceeds 100%) | **Not achievable under current model assumptions** |
+| **$25,000** | **+48.38 pp** | 51.46% | 1,269.0% (Exceeds 100%) | **Not achievable under current model assumptions** |
+| **$50,000** | **+96.75 pp** | 99.84% | 2,538.0% (Exceeds 100%) | **Not achievable under current model assumptions** |
+| **$100,000** | **+193.51 pp** (Exceeds 100% CTR) | 196.59% (Impossible >100%) | 5,076.0% (Exceeds 100%) | **Not achievable under current model assumptions** |
+
+> **Key PM Insight**: Generating five-figure or six-figure GMV gains strictly from this narrow long-tail cohort (941 searches / 60 days) is mathematically impossible at current traffic volume. Achieving such milestones requires overall marketplace traffic expansion or expanding query relaxation to broader head/torso query categories.
 
 ---
 
 ## 9. Sensitivity Ranking & Tornado Analysis
 
-To identify which operational levers exert the greatest elasticity on business outcomes, each variable was perturbed by $\pm 20\%$ from its baseline/target:
+Perturbing each parameter by $\pm 20\%$ reveals the following elasticity ranking:
 
 ```text
 SENSITIVITY RANKING (ANNUALIZED GMV SWING FOR +/- 20% SHOCKS):
@@ -215,33 +204,26 @@ Rank 6: Recovery Rate (91.81%)        ──► $523.09 swing (Elasticity = 0.72
 Rank 7: Cannibalization (0% to 20%)   ──► $361.74 swing (Elasticity = 0.50)
 ```
 
-Visualized in `reports/figures/29_cannibalization_tornado.png`.
-
 ---
 
-## 10. Presentation Visualizations Generated
-
-All figures are saved in `reports/figures/`:
-1. `26_gmv_by_ctr_scenario.png` — Incremental Annualized Gross vs Net GMV by CTR Scenario.
-2. `27_recovery_ctr_heatmap.png` — 2D Heatmap of Annualized Net GMV across Recovery Rate and CTR Lift.
-3. `28_funnel_impact_comparison.png` — Downstream Funnel Volume Progression (Baseline vs Target Treatment).
-4. `29_cannibalization_tornado.png` — Sensitivity Tornado Chart of GMV Elasticity.
-
----
-
-## 11. Final Product Recommendation
+## 10. Executive Recommendation: Connecting Stage 7 to Stage 6
 
 ```text
 +-------------------------------------------------------------------------------------------------+
-| PM EXECUTIVE RECOMMENDATION: SHIP TO EXPERIMENT [PRODUCT ASSUMPTION]                            |
+| EXECUTIVE RECOMMENDATION: VALIDATE VIA EXPERIMENT BEFORE DEDICATED INFRASTRUCTURE INVESTMENT   |
 +-------------------------------------------------------------------------------------------------+
-| 1. PROCEED TO CANARY ROLLOUT:                                                                   |
-|    Launch 50/50 A/B experiment (exp_query_relaxation_v1) as specified in Stage 6.               |
-| 2. VERIFY PRIMARY HYPOTHESIS:                                                                   |
-|    Target Search -> PDP CTR lift of >= +1.5 pp (minimum ship threshold) to confirm discovery.   |
-| 3. MONITOR CONVERSION INTEGRITY:                                                                |
-|    Verify that PDP -> Cart conversion does not drop below 20% (preventing clickbait drift).     |
-| 4. RE-EVALUATE GMV RUN-RATE AT QUARTERLY PLANNING:                                              |
-|    If traffic scales >= 5x, Query Relaxation will achieve self-funding status within 12 months. |
+| 1. CURRENT SCALE IS MODEST:                                                                     |
+|    Direct modeled GMV opportunity is relatively small (~$1.8K/year). Capital discipline         |
+|    dictates that we do NOT build expensive dedicated infrastructure (Elasticsearch clusters,    |
+|    vector databases) based solely on this standalone long-tail return.                         |
+|                                                                                                 |
+| 2. CAPABILITY IS SCALABLE:                                                                      |
+|    Query Relaxation is an algorithmic platform capability with zero marginal cost per query.    |
+|    In an illustrative 100x traffic scenario, annual incremental GMV reaches +$180.9K.           |
+|                                                                                                 |
+| 3. LOW-COST VALIDATION PATHWAY:                                                                 |
+|    Proceed with the Stage 6 A/B experiment protocol (exp_query_relaxation_v1) as a lightweight   |
+|    canary test. Validate whether the +1.5 pp ship threshold is achieved in live traffic.        |
+|    If live lift fails or cannibalization is severe, deprioritize before incurring major costs.  |
 +-------------------------------------------------------------------------------------------------+
 ```

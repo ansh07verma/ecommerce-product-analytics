@@ -343,43 +343,43 @@ python src/plot_ab_experiment.py
 
 ## Business Impact: From Search Improvement to GMV
 
-To quantify the commercial opportunity of Automated Query Relaxation, we built a deterministic, scenario-based business impact model (`src/business_impact.py`, `docs/BUSINESS_IMPACT_MODEL.md`) that propagates search discovery gains through the empirical downstream conversion funnel.
+To quantify the commercial opportunity of Automated Query Relaxation, we built a deterministic business model (`src/business_impact.py`, `docs/BUSINESS_IMPACT_MODEL.md`) propagating search recovery through the downstream e-commerce funnel.
 
+```text
+Discovery Failure (941 eligible searches / 60d)
+       │
+       ▼ [91.81% Algorithmic Recovery Rate]
+Recovered Opportunities (864 queries)
+       │
+       ▼ [+3.5 pp Search -> PDP CTR Lift]
+Incremental Discovery (+30.2 PDP views / 60d)
+       │
+       ▼ [24.14% Cart Rate × 28.57% Order Rate]
+Incremental Orders (+2.1 orders / 60d)
+       │
+       ▼ [× $142.58 Empirical Average Order Value]
+Gross Incremental GMV (+$297.32 / 60d -> +$1,808.69 Annual Run-Rate)
+       │
+       ▼ [At 25% Cannibalization Discount]
+Net Annualized GMV (+$1,356.52 / year)
 ```
-Search Recovery (91.81% Benchmark)
-      │
-      ▼
-CTR Lift (+3.5 pp Target MDE)
-      │
-      ▼
-More PDP Discovery (+30.2 views / 60 days)
-      │
-      ▼
-More Cart Additions (+7.3 carts / 60 days)
-      │
-      ▼
-More Completed Orders (+2.1 orders / 60 days)
-      │
-      ▼
-Incremental GMV (+$297.32 / 60 days -> +$1,808.69 Annualized GMV)
-```
 
-### Annualized GMV Sensitivity Matrix (Recovery Rate × CTR Lift)
+### Scenario Sensitivity Matrix (Annualized Gross GMV in $)
 
-| Recovery Rate / CTR Lift | +1.0 pp (Conservative) | +1.5 pp (Moderate) | +3.5 pp (Target MDE) `[MODELED]` | +5.0 pp (Optimistic) |
+| Algorithmic Recovery / CTR Lift | +1.0 pp (Conservative) | +1.5 pp (Moderate) | +3.5 pp (Target MDE) `[MODELED]` | +5.0 pp (Optimistic) |
 | :--- | :---: | :---: | :---: | :---: |
-| **50.0%** (Poor Fallback) | $281.43 | $422.15 | $985.02 | $1,407.17 |
-| **70.0%** (Acceptable) | $394.01 | $591.01 | $1,379.03 | $1,970.04 |
-| **90.0%** (Strong) | $506.58 | $759.87 | $1,773.03 | $2,532.91 |
-| **91.81% (Local Benchmark)** | **$516.77** | **$775.15** | **$1,808.69** | **$2,583.85** |
+| **50.0%** (Poor Fallback) | $281 | $422 | $985 | $1,407 |
+| **70.0%** (Acceptable) | $394 | $591 | $1,379 | $1,970 |
+| **90.0%** (Strong) | $507 | $760 | $1,773 | $2,533 |
+| **91.81% (Local Benchmark)** | **$517** | **$775** | **$1,809** | **$2,584** |
 
-*All cell values represent Annualized Gross Incremental GMV ($) `[MODELED]`. Under our base case 25% cannibalization assumption, net annualized GMV at target is **$1,356.52**.*
+*Key PM Takeaway*: At current unscaled traffic (~15.7 eligible searches/day), direct annual return is modest ($1.8K/year). However, as a zero-marginal-cost algorithmic capability, an **illustrative 100x traffic scenario** delivers **+$180.9K/year** in incremental GMV. Product recommendation: validate through a low-cost live A/B canary experiment before committing dedicated infrastructure.
 
 ```bash
 # Run business impact model across all scenarios, matrix, and break-even
 python src/business_impact.py --all
 
-# Run break-even analysis for corporate GMV milestones
+# Run break-even analysis for corporate GMV milestones ($10k, $25k, $50k, $100k)
 python src/business_impact.py --break-even
 
 # Generate presentation-ready business impact visualizations

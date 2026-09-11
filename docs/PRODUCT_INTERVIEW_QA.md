@@ -279,12 +279,15 @@ Our sensitivity tornado analysis revealed that **CTR Lift**, **Eligible Search T
 
 ---
 
-### Q41: How would you convince an engineering leader to prioritize Query Relaxation if current GMV is only $1,809?
+### Q41: Your model only predicts about $1.8K annual incremental GMV at current scale. Why would you build this?
 **Answer**:
-By framing it as **foundational platform architecture** rather than an isolated boutique feature:
-1. **Platform Readiness**: Query relaxation is a zero-marginal-cost algorithmic safety net. As the marketplace grows from 941 eligible searches to 10x (~9,400 searches) or 100x (~94,000 searches), annual incremental GMV scales linearly from **$\$1.8K \to \$18K \to \$180K+** with zero additional engineering effort.
-2. **Zero-Result Elimination**: High-intent zero-result searches are brand-damaging customer experiences with an 80%+ session abandonment rate.
-3. **Engineering Synergies**: The inverted index, token scoring, and candidate ranking built in V1 directly serve upcoming roadmap features: autocomplete (V1.1), synonym graphs (V1.2), and semantic search (V2.0).
+A strong product manager exercises capital discipline rather than defending a vanity metric:
+1. **Capital Discipline on Direct Return**: At current traffic (~15.7 eligible searches/day), I would **not** justify building expensive, custom search infrastructure solely on a projected $1.8K direct annual GMV return.
+2. **Lightweight Algorithmic Investment**: Query Relaxation is an inexpensive rule-based algorithmic intervention that achieved a 91.81% recovery rate on our local catalog [LOCAL BENCHMARK], requiring zero external API or vector database costs.
+3. **Controlled Experiment First**: Instead of committing full engineering cycles to production infrastructure, I would run the controlled 50/50 A/B experiment designed in Stage 6 as a lightweight canary test.
+4. **Funnel Validation Before Scale**: If the experiment validates the +1.5 pp CTR ship threshold and proves healthy downstream cart conversion, we confirm customer willingness-to-buy on relaxed results.
+5. **Evaluating Opportunity Cost**: Because Query Relaxation has zero marginal cost per query, its economic value scales linearly as customer acquisition expands: in an illustrative 100x traffic scenario, it delivers **+$180.9K/year** with zero extra development cost.
+6. **Deprioritization Trigger**: If the canary experiment reveals that the lift is below +1.5 pp or cannibalization is severe, I would immediately deprioritize it and allocate engineering capacity to higher-leverage checkout or inventory projects.
 
 ---
 
