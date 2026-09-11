@@ -10,7 +10,11 @@ from __future__ import annotations
 import itertools
 import os
 import re
+import sys
 import time
+
+# Ensure repository root is on sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from dataclasses import asdict, dataclass, field
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -143,6 +147,7 @@ class RelaxedSearchResponse:
     in_stock_only: bool
     explanation: str
     results: List[SearchResultItem]
+    candidate_evaluations: List[Dict[str, Any]] = field(default_factory=list)
 
     @property
     def selected_removed_token(self) -> Optional[str]:
@@ -178,6 +183,7 @@ class RelaxedSearchResponse:
             "execution_time_ms": self.execution_time_ms,
             "relaxation_overhead_ms": self.relaxation_overhead_ms,
             "in_stock_only": self.in_stock_only,
+            "candidate_evaluations": self.candidate_evaluations,
             "explanation": self.explanation,
             "results": [asdict(r) for r in self.results],
         }
@@ -423,6 +429,7 @@ class LocalSearchEngine:
         category consistency and in-stock guardrails.
         """
         start_time = time.perf_counter()
+        candidate_evaluations: List[Dict[str, Any]] = []
 
         # Step 1: Execute strict search baseline
         strict_resp = self.search(query, limit=limit, in_stock_only=in_stock_only)
@@ -461,6 +468,7 @@ class LocalSearchEngine:
                 in_stock_only=in_stock_only,
                 explanation=explanation,
                 results=strict_resp.results,
+                candidate_evaluations=candidate_evaluations,
             )
 
         # Case B: Specific query (>= 4 tokens) with adequate results -> Normal
@@ -489,6 +497,7 @@ class LocalSearchEngine:
                 in_stock_only=in_stock_only,
                 explanation=explanation,
                 results=strict_resp.results,
+                candidate_evaluations=[],
             )
 
         # Case C: Relaxation Triggered! (>= 4 tokens AND < 3 results)
@@ -540,6 +549,7 @@ class LocalSearchEngine:
         best_resp: Optional[SearchResponse] = None
         best_removed: List[str] = []
         evaluated_queries: List[str] = []
+        candidate_evaluations: List[Dict[str, Any]] = []
 
         # Detect original master category intention (e.g. Women, Men, Footwear, Accessories)
         orig_master_cats: Set[str] = set()
@@ -557,6 +567,15 @@ class LocalSearchEngine:
             r_count = cand_resp.result_count
 
             if r_count == 0:
+                candidate_evaluations.append({
+                    "fallback_query": cand_str,
+                    "tokens_removed": removed_tokens,
+                    "result_count": 0,
+                    "category_consistency": True,
+                    "candidate_score": 0.0,
+                    "is_safe": False,
+                    "rejection_reason": "Zero in-stock results",
+                })
                 continue
 
             # Deterministic Candidate Scoring Formula
@@ -592,6 +611,17 @@ class LocalSearchEngine:
             # 4. Average Relevance Quality
             avg_rel = sum(item.relevance_score for item in cand_resp.results) / max(1, r_count)
             score += avg_rel * 0.15
+
+            overlap_bool = bool(overlap) if orig_master_cats else True
+            candidate_evaluations.append({
+                "fallback_query": cand_str,
+                "tokens_removed": removed_tokens,
+                "result_count": r_count,
+                "category_consistency": overlap_bool,
+                "candidate_score": round(score, 3),
+                "is_safe": bool(r_count > 0 and overlap_bool),
+                "rejection_reason": None if (r_count > 0 and overlap_bool) else ("Zero in-stock results" if r_count == 0 else "Category drift detected"),
+            })
 
             if score > best_score:
                 best_score = score
@@ -634,6 +664,7 @@ class LocalSearchEngine:
                 in_stock_only=in_stock_only,
                 explanation=explanation,
                 results=best_resp.results,
+                candidate_evaluations=candidate_evaluations,
             )
         else:
             status = "NO_SAFE_RELAXATION"
@@ -761,9 +792,17 @@ def print_cli_search(response: SearchResponse | RelaxedSearchResponse) -> None:
 if __name__ == "__main__":
     import sys
 
-    default_query = "women floral midi dress red"
-    query_input = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else default_query
+    raw_args = sys.argv[1:]
+    is_debug = "--debug" in raw_args
+    filtered_args = [a for a in raw_args if a != "--debug"]
+    query_input = " ".join(filtered_args) if filtered_args else "women floral midi dress red"
 
-    engine = LocalSearchEngine()
-    resp = engine.search_with_relaxation(query_input)
-    print_cli_search(resp)
+    if is_debug:
+        from src.search_debugger import SearchDebugger, print_cli_debug
+        debugger = SearchDebugger()
+        res = debugger.debug(query_input)
+        print_cli_debug(res, mode="all")
+    else:
+        engine = LocalSearchEngine()
+        resp = engine.search_with_relaxation(query_input)
+        print_cli_search(resp)

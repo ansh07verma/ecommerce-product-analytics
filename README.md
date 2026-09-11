@@ -472,6 +472,65 @@ For deep dives into specific product deliverables:
 - **Repository:** [https://github.com/ansh07verma/ecommerce-product-analytics](https://github.com/ansh07verma/ecommerce-product-analytics)
 
 
+
+## Search Debugger
+
+The repository includes an **Explainable Search Debugger** that provides complete visibility into why a search succeeded, failed, or was relaxed by the recovery engine.
+
+### Why It Exists
+In e-commerce search, automated query modification is often viewed as a "black box." The debugger answers the critical product question:
+> *"Why did this search fail, and what did the recovery system do about it?"*
+
+It exposes token catalog document frequencies (DF), semantic roles (core category vs brand vs modifier), candidate fallback scores, and guardrail decisions to both non-technical Product Managers and Search Engineers.
+
+### How to Run
+
+1. **Interactive Web Dashboard**:
+   ```bash
+   python src/search_debugger_ui.py --port 8080
+   ```
+   Open `http://localhost:8080/` to test queries with one-click demo chips and toggle between **Product Manager View** and **Technical Details View**.
+
+2. **CLI Debugger**:
+   ```bash
+   # Run via search engine CLI
+   python src/search_engine.py --debug "women floral midi dress red"
+
+   # Or run via dedicated debugger CLI
+   python src/search_debugger.py --pm "women floral midi dress red"    # PM narrative
+   python src/search_debugger.py --tech "women floral midi dress red"  # Technical diagnostics
+   python src/search_debugger.py --demo                               # 5 reproducible scenarios
+   ```
+
+### Real Example Output
+
+```
+================================================================================
+EXPLAINABLE SEARCH DEBUGGER
+================================================================================
+QUERY:            'women floral midi dress red'
+OVERALL STATUS:   [RELAXED_RECOVERED]
+TOTAL LATENCY:    8.27 ms
+
+PRODUCT MANAGER VIEW
+Problem:   Query was over-specified with 5 terms, returning 0 products under strict matching.
+Decision:  Relaxed non-core selective modifier(s) 'midi', 'red' while preserving core category intent 'women floral dress'.
+Outcome:   Zero-result search recovered into 16 relevant in-stock products (+16 items).
+
+TOKEN CATALOG FREQUENCY & ROLE ANALYSIS
+Token            Norm Stem      DF       Role                     Core?    Mod?
+women            women          662      CORE_CATEGORY            YES      NO
+floral           floral         113      MODIFIER                 NO       YES
+midi             midi           0        MISSING_CATALOG_TERM     NO       YES
+dress            dress          165      CORE_CATEGORY            YES      NO
+red              red            47       MODIFIER                 NO       YES
+
+STRICT SEARCH BASELINE: 0 hits | Latency: 1.10 ms (Trigger: Eligible for relaxation)
+SELECTED FALLBACK:      'women floral dress' (Removed: ['midi', 'red']) -> 16 recovered products
+GUARDRAIL CHECKS:       [PASS] Core Category Preserved | [PASS] In-Stock | [PASS] Category Consistency
+================================================================================
+```
+
 ## Search Recovery MVP
 
 The repository contains a fully functional, deterministic **Automated Query Relaxation / Soft-Match Fallback Engine** built on top of the local keyword search engine in `src/search_engine.py`.

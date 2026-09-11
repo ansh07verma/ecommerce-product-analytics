@@ -15,7 +15,7 @@ This benchmark measures the empirical baseline performance of the newly implemen
 The measured benchmark confirms the core product hypothesis:
 - **Short queries (1-3 tokens)** achieve high match density (average 14.21 matches) with low zero-result rates (11.43%).
 - **Specific queries (4+ tokens)** experience acute retrieval failure under strict boolean matching: **98.21% Zero-Result Rate** and **98.21% Low-Result (< 3 hits) Rate**, with average matches dropping to 0.32.
-- **Retrieval Latency** is sub-millisecond to low single-digit milliseconds (mean: **0.9 ms**, p95: **1.13 ms**), well within the proposed production budget (p95 <= 250 ms).
+- **Retrieval Latency** is sub-millisecond to low single-digit milliseconds (mean: **0.9 ms**, p95: **1.09 ms**), well within the proposed production budget (p95 <= 250 ms).
 
 ---
 
@@ -31,8 +31,8 @@ The measured benchmark confirms the core product hypothesis:
 | **Specific Queries (4+)** | 4+ Token Low-Result (<3) Rate | **98.21%** | Candidate pool for Stage 3 Query Relaxation |
 | **Short Queries (1-3)** | 1-3 Token Zero-Result Rate | **11.43%** | High precision on head & branded queries |
 | **System Latency** | Mean Latency | **0.9 ms** | In-memory tokenized inverted index |
-| **System Latency** | p95 Latency | **1.13 ms** | Proposed SLA: p95 <= 250 ms (PASS) |
-| **System Latency** | p99 Latency | **1.86 ms** | Peak execution time |
+| **System Latency** | p95 Latency | **1.09 ms** | Proposed SLA: p95 <= 250 ms (PASS) |
+| **System Latency** | p99 Latency | **2.48 ms** | Peak execution time |
 
 ---
 

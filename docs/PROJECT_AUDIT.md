@@ -114,9 +114,10 @@ The following components are **extensively specified in documentation and diagra
 4. **A/B Experimentation Engine (EXP-01):**
    - *Status:* Experiment Design & Power Sizing only.
    - *Evidence:* Designed with persistent user hashing (`hash(user_id) % 100`) and sample size calculations in `notebooks/08_*.ipynb` and `docs/final_prd.md`. No live randomization service, exposure logging, or telemetry pipeline is running.
-5. **Interactive User Interface / Dashboard:**
-   - *Status:* Wireframe & Mockup only.
-   - *Evidence:* Transparency banners and SERP layouts are mocked in markdown ASCII boxes. There is no web application, Streamlit dashboard, or interactive frontend for testing queries.
+5. **Interactive Search Debugger Console & UI:**
+   - *Status:* **IMPLEMENTED — MVP**
+   - *Evidence & Details:* An interactive web dashboard and REST API are implemented in `src/search_debugger_ui.py` (serving a responsive dark-mode single-page application at `http://localhost:8080/`) alongside the CLI debugger in `src/search_debugger.py` and `src/search_engine.py --debug`. Features dual PM vs Technical toggle, real-time KPI bar, candidate scoring tables, and guardrail checklists. Tested in `tests/test_search_debugger.py` (39 tests total in `tests/`).
+   - *Scope Notice:* Local developer/PM tool using Python's built-in HTTP server; not production cloud infrastructure or an A/B testing analytics dashboard.
 6. **Relevance Scoring & Offline Calibration:**
    - *Status:* Specification only.
    - *Evidence:* Proposed BM25 relevance threshold (> 0.40) is clearly labeled as requiring offline production calibration; no calibration script or evaluation set exists.
@@ -217,8 +218,8 @@ The repository contains an exhaustive analysis of search behavior:
 | **Search Retrieval Engine** | **Implemented** | `src/search_engine.py` (strict keyword search, ranking, stock filtering, 11 tests) | Baseline established; ready for Stage 3 Query Relaxation |
 | **Search Gateway / REST API** | **Proposed Only** | Architecture flow in `docs/final_product_spec.md` (Sec 2) | Implement lightweight FastAPI endpoint simulating search service |
 | **A/B Experiment Execution** | **Proposed Only** | Spec in `docs/final_prd.md`, `reports/final_experiment_spec.csv` | Build simulation script verifying bucket assignment & metrics |
-| **Interactive Frontend / Demo** | **Not Implemented** | Only ASCII diagrams & static PNGs exist | Build an interactive Streamlit PM Portfolio Demo app |
-| **Unit Test Suite (`pytest`)** | **Implemented** | `tests/test_search_engine.py`, `tests/test_query_relaxation.py` (26 passing tests) | Complete across strict search & relaxation guardrails |
+| **Interactive Search Debugger UI** | **IMPLEMENTED — MVP** | `src/search_debugger_ui.py` (Local HTTP server + single-page app, REST API) | Fully functional local PM & technical discovery console |
+| **Unit Test Suite (`pytest`)** | **Implemented** | `tests/test_search_engine.py`, `tests/test_query_relaxation.py`, `tests/test_search_debugger.py` (39 passing tests) | Complete across strict search, relaxation guardrails & debugger |
 
 ---
 
