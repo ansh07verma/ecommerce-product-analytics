@@ -1,5 +1,0 @@
-Problem,Affected_Events,Affected_Sessions,Affected_Users,Baseline_Rate_Pct,Contrast_Rate_Pct,Gap_PP,Z_stat,p_value,Scenario_Orders_Est,Scenario_GMV_Est,Effort_Score,Primary_Metric
-A - Search Discovery,10914,8958,7318,8.23,1.78,6.45,28.08,<0.0001,91,6884.15,5,ZRR on 4+ token queries
-B - PDP Stockout,2807,2640,2495,19.84,2.74,17.1,22.46,<0.0001,112,8472.8,3,ATCR on OOS PDP views
-C - Shipping Cliff,1229,1229,1202,29.37,44.65,15.27,8.81,<0.0001,56,3347.12,2,CTO in $38-$49.99 cart tier
-D - Mobile Web Checkout,1647,1647,6343,29.63,46.26,16.63,10.45,<0.0001,110,8094.9,4,CTO on Mobile Web
