@@ -212,11 +212,11 @@ The repository contains an exhaustive analysis of search behavior:
 | **PRD & Product Specification** | **Implemented** | `docs/final_prd.md`, `docs/final_product_spec.md` | Complete; 29 sections fully documented |
 | **Automated PRD Validation** | **Implemented** | `src/final_prd_validation.py` (25 assertion checks) | Complete; 25/25 checks passing |
 | **Query Relaxation Engine** | **Proposed Only** | Pseudocode in `docs/final_product_spec.md` (Sec 4) | Build executable Python prototype (`src/query_relaxation.py`) |
-| **Search Retrieval Engine** | **Proposed Only** | Architecture diagram in `docs/final_product_spec.md` | Implement in-memory / DuckDB full-text search prototype |
+| **Search Retrieval Engine** | **Implemented** | `src/search_engine.py` (strict keyword search, ranking, stock filtering, 11 tests) | Baseline established; ready for Stage 3 Query Relaxation |
 | **Search Gateway / REST API** | **Proposed Only** | Architecture flow in `docs/final_product_spec.md` (Sec 2) | Implement lightweight FastAPI endpoint simulating search service |
 | **A/B Experiment Execution** | **Proposed Only** | Spec in `docs/final_prd.md`, `reports/final_experiment_spec.csv` | Build simulation script verifying bucket assignment & metrics |
 | **Interactive Frontend / Demo** | **Not Implemented** | Only ASCII diagrams & static PNGs exist | Build an interactive Streamlit PM Portfolio Demo app |
-| **Unit Test Suite (`pytest`)** | **Not Implemented** | No `tests/` directory or `pytest.ini` | Create formal `tests/` directory covering data & algorithms |
+| **Unit Test Suite (`pytest`)** | **Implemented** | `tests/test_search_engine.py` (11 passing tests across retrieval, ranking, and stock) | Expand tests for Query Relaxation in Stage 3 |
 
 ---
 

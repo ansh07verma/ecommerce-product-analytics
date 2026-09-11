@@ -112,6 +112,27 @@ While Mobile Web checkout friction has a large percentage-point deficit, **Searc
 
 ---
 
+## Working Search MVP (Implemented)
+
+To establish a measurable baseline before testing query relaxation, I implemented a working, deterministic local search engine (**`src/search_engine.py`**) that indexes the 1,600 product catalog from DuckDB.
+
+### Search Engine Architecture & Ranking
+- **Query Normalization:** Case folding, punctuation removal, stopword filtering, and deterministic fashion stemming (`normalize_query_text()`).
+- **Strict Boolean Matching:** Requires all query tokens to be present across title, brand, category, sub-category, and size attributes.
+- **Deterministic Scoring:** Exact title phrase boost (+50.0), field token weights (+10 title, +8 brand, +6 subcategory, +4 category, +3 size), rating/review tie-breakers, and `product_id` ASC sort.
+- **Stock Filtering:** Filters out products with `inventory_units <= 0` and size-level stockouts when specific sizes are requested.
+- **Testing:** 11 unit tests in `tests/test_search_engine.py` covering case-insensitivity, multi-token queries, exact phrase boosts, category matching, and stockout suppression.
+
+### Empirical Baseline Search Benchmark
+Benchmarking `LocalSearchEngine` across 1,000 distinct queries from `search_events` (representing 30,012 customer sessions) empirically validates the core discovery hypothesis:
+- **Head Queries (1-3 tokens):** Achieve **14.21 average matches** with an **11.43% Zero-Result Rate**.
+- **Specific Queries (4+ tokens):** Suffer an acute **98.21% Zero-Result Rate** (average matches collapse to **0.32 items**) under strict boolean matching due to attribute over-specification.
+- **Latency:** **0.89 ms mean**, **1.08 ms p95** (well within the proposed 250ms SLA).
+
+Detailed implementation and benchmark metrics are documented in **[`docs/working_search_mvp.md`](docs/working_search_mvp.md)** and **[`reports/baseline_search_benchmark.md`](reports/baseline_search_benchmark.md)**.
+
+---
+
 ## MVP -- Automated Query Relaxation
 
 The proposed MVP is an **Automated Query Relaxation / Soft-Match Fallback** service that intercepts low-result multi-attribute searches without altering head-query retrieval.
@@ -279,6 +300,8 @@ ecommerce-product-analytics/
 |   \-- ecommerce_analytics.duckdb             <- Embedded analytical DuckDB database
 |
 |-- src/
+|   |-- search_engine.py                       <- Working local deterministic keyword search MVP
+|   |-- benchmark_search.py                    <- Baseline search engine empirical benchmark
 |   |-- data_generation.py                     <- Reproducible synthetic data generator (Seed 42)
 |   |-- data_validation.py                     <- 59 automated data-quality checks
 |   |-- run_sql_suite.py                       <- SQL analytical suite execution runner
@@ -286,6 +309,9 @@ ecommerce-product-analytics/
 |   |-- problem_prioritization.py              <- RICE prioritization calculation engine
 |   |-- solution_prioritization.py             <- Solution exploration & trade-off scoring
 |   \-- final_prd_validation.py                <- 25-check automated portfolio audit suite
+|
+|-- tests/
+|   \-- test_search_engine.py                  <- 11 unit tests covering search, ranking, stock
 |
 |-- sql/
 |   |-- 01_data_quality_audit.sql              <- Schema integrity, zero-orphan checks
@@ -312,6 +338,8 @@ ecommerce-product-analytics/
 |   \-- 09_final_prd_validation.ipynb          <- Automated programmatic audit of metrics and PRD
 |
 |-- docs/
+|   |-- working_search_mvp.md                  <- Architecture & benchmark of implemented search MVP
+|   |-- PROJECT_AUDIT.md                       <- Comprehensive codebase & capability audit
 |   |-- final_prd.md                           <- 29-section executive Product Requirements Document
 |   |-- final_product_spec.md                  <- Engineering specification, API schemas, pseudocode
 |   |-- portfolio_case_study.md                <- Concise 1-page PM portfolio case study
@@ -321,6 +349,7 @@ ecommerce-product-analytics/
 |   \-- solution_strategy.md                   <- Solution exploration, architectural options, trade-offs
 |
 \-- reports/
+    |-- baseline_search_benchmark.md           <- Empirical benchmark metrics for strict search MVP
     |-- sql_analysis_results.md                <- Markdown output from executing the 10 SQL scripts
     |-- exploratory_analysis_report.md         <- Statistical validation and behavioral analysis report
     |-- final_requirements.csv                 <- 21 functional, non-functional, and data requirements
@@ -369,7 +398,23 @@ Validate all 25 portfolio assertions, DuckDB metrics, and schema consistency:
 python src/final_prd_validation.py
 ```
 
-### 6. Explore Jupyter Notebooks
+### 6. Run the Working Local Search Engine
+Execute strict search against the 1,600 product catalog:
+```bash
+python src/search_engine.py "women floral midi dress red"
+```
+
+### 7. Run Search Engine Benchmark & Unit Tests
+Evaluate latency and zero-result rates across historical queries:
+```bash
+# Run benchmark across 1,000 queries
+python src/benchmark_search.py
+
+# Run unit tests
+pytest tests/test_search_engine.py
+```
+
+### 8. Explore Jupyter Notebooks
 Launch the exploratory analysis and experimentation notebooks:
 ```bash
 jupyter notebook notebooks/
@@ -380,6 +425,8 @@ jupyter notebook notebooks/
 ## Product Documentation
 
 For deep dives into specific product deliverables:
+- **[Working Search MVP](docs/working_search_mvp.md):** Architecture, query normalization, ranking algorithm, and benchmark of the local strict search engine.
+- **[Project & Architecture Audit](docs/PROJECT_AUDIT.md):** Comprehensive technical capability matrix comparing implemented vs. proposed features.
 - **[Product Requirements Document (PRD)](docs/final_prd.md):** 29-section executive PRD with user personas, user stories, functional requirements, and launch gates.
 - **[Technical Product Specification](docs/final_product_spec.md):** Architecture diagrams, tokenization logic, fallback algorithms, API schemas, and latency budgets.
 - **[Portfolio Case Study](docs/portfolio_case_study.md):** 3-minute executive summary for senior hiring managers and recruiters.
