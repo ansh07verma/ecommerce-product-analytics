@@ -340,6 +340,52 @@ python src/ab_experiment.py --power-analysis
 python src/plot_ab_experiment.py
 ```
 
+
+## Business Impact: From Search Improvement to GMV
+
+To quantify the commercial opportunity of Automated Query Relaxation, we built a deterministic, scenario-based business impact model (`src/business_impact.py`, `docs/BUSINESS_IMPACT_MODEL.md`) that propagates search discovery gains through the empirical downstream conversion funnel.
+
+```
+Search Recovery (91.81% Benchmark)
+      │
+      ▼
+CTR Lift (+3.5 pp Target MDE)
+      │
+      ▼
+More PDP Discovery (+30.2 views / 60 days)
+      │
+      ▼
+More Cart Additions (+7.3 carts / 60 days)
+      │
+      ▼
+More Completed Orders (+2.1 orders / 60 days)
+      │
+      ▼
+Incremental GMV (+$297.32 / 60 days -> +$1,808.69 Annualized GMV)
+```
+
+### Annualized GMV Sensitivity Matrix (Recovery Rate × CTR Lift)
+
+| Recovery Rate / CTR Lift | +1.0 pp (Conservative) | +1.5 pp (Moderate) | +3.5 pp (Target MDE) `[MODELED]` | +5.0 pp (Optimistic) |
+| :--- | :---: | :---: | :---: | :---: |
+| **50.0%** (Poor Fallback) | $281.43 | $422.15 | $985.02 | $1,407.17 |
+| **70.0%** (Acceptable) | $394.01 | $591.01 | $1,379.03 | $1,970.04 |
+| **90.0%** (Strong) | $506.58 | $759.87 | $1,773.03 | $2,532.91 |
+| **91.81% (Local Benchmark)** | **$516.77** | **$775.15** | **$1,808.69** | **$2,583.85** |
+
+*All cell values represent Annualized Gross Incremental GMV ($) `[MODELED]`. Under our base case 25% cannibalization assumption, net annualized GMV at target is **$1,356.52**.*
+
+```bash
+# Run business impact model across all scenarios, matrix, and break-even
+python src/business_impact.py --all
+
+# Run break-even analysis for corporate GMV milestones
+python src/business_impact.py --break-even
+
+# Generate presentation-ready business impact visualizations
+python src/plot_business_impact.py
+```
+
 ## Repository Structure
 
 ```

@@ -199,3 +199,117 @@ Data honesty is paramount in product management:
   3. *Zero-Result Rate Regression*: Ensure Treatment ZRR never exceeds Control ZRR.
 - **Peeking Hazard**:
   Standard fixed-horizon hypothesis testing requires waiting until the pre-determined sample size (1,178 searches) is reached before computing $p$-values. Repeatedly peeking at daily $p$-values and stopping when $p < 0.05$ dramatically inflates Type I error (false positives) from 5% up to 20–30%. If continuous business monitoring is required, we would adopt sequential testing methodologies (e.g., always-valid $p$-values via mSPRT).
+
+---
+
+## 6. Business Impact & GMV Opportunity Modeling (Stage 7)
+
+### Q33: How did you estimate the revenue opportunity of Query Relaxation?
+**Answer**:
+We built a deterministic funnel propagation model grounded in observed empirical data from DuckDB:
+1. **Eligible Search Volume**: Identified 941 eligible multi-attribute searches over a 60-day observation window (15.7/day) [OBSERVED].
+2. **Algorithmic Recovery**: Applied the 91.81% recovery rate measured in our Stage 3 local benchmark, yielding 863.9 recovered search opportunities [LOCAL BENCHMARK].
+3. **Downstream Conversion Propagation**: Multiplied recovered searches by an assumed target CTR lift (+3.5 pp) to get +30.2 incremental PDP views, converted via observed conditional probabilities ($P(\text{Cart}|\text{PDP}) = 24.14\%$, $P(\text{Order}|\text{Cart}) = 28.57\%$) to yield +2.1 incremental orders [MODELED].
+4. **GMV & Annualization**: Multiplied incremental orders by the empirical Average Order Value of $142.58 [OBSERVED] and annualized using the actual observation factor ($365 / 60 = 6.0833$), yielding **+$1,808.69 in gross annualized GMV** [MODELED].
+
+---
+
+### Q34: Why did you use Search -> PDP CTR instead of GMV as your primary experiment metric?
+**Answer**:
+While GMV is our ultimate business objective, using it as the primary experiment metric would be statistically fatal:
+1. **Proximal vs Distal Measurement**: CTR measures the direct effect of search engine relevance. GMV is influenced by checkout friction, pricing, payment failures, and inventory stockouts.
+2. **Extreme Statistical Sparsity**: In our 60-day baseline of 941 eligible searches, there are only 2 completed orders ($0.21\%$ conversion). Powering an A/B test to detect a statistically significant lift in order conversion or GMV on this cohort would require hundreds of thousands of searches and multiple years of runtime.
+3. **Guardrail Framework**: We optimize for Search $	o$ PDP CTR as the primary metric while monitoring Add-to-Cart rate, Order conversion, and GMV per search as secondary and guardrail metrics.
+
+---
+
+### Q35: How did you connect search CTR to downstream customer orders?
+**Answer**:
+We used sequential Bayesian conditioning based on the empirical transition rates of users who searched and clicked:
+$$\Delta \text{Orders} = (S_{\text{elig}} \times R_{\text{recovery}} \times \Delta \text{CTR}) \times P(\text{Cart} \mid \text{PDP}) \times P(\text{Order} \mid \text{Cart})$$
+From DuckDB, 29 eligible search clickers produced 7 unique cart addition events ($24.14\%$) and 2 completed orders ($28.57\%$) [OBSERVED]. By propagating incremental clicks through these historical transition probabilities, we avoid arbitrary conversion guesses.
+
+---
+
+### Q36: What assumptions drive your GMV model, and how do you distinguish them from observed facts?
+**Answer**:
+We enforce strict data provenance:
+- **Observed Facts**: 941 eligible searches, 3.08% baseline CTR, 24.14% cart rate, 28.57% order rate, $142.58 AOV, and 60-day window [OBSERVED].
+- **Local Benchmark**: 91.81% query recovery rate on the 1,600-item catalog [LOCAL BENCHMARK].
+- **Model Assumptions**: Target CTR lift (+3.5 pp), 25% cannibalization discount, and $28.5K engineering implementation cost [PRODUCT ASSUMPTION].
+- **Modeled Outputs**: +2.1 orders/60d and +$1,809 annualized GMV [MODELED]. We never claim modeled outputs as realized revenue.
+
+---
+
+### Q37: What is cannibalization, and how did you model it?
+**Answer**:
+Cannibalization is the displacement of existing discovery journeys. Some customers who purchased through a relaxed search would have bought anyway by reformulating their query, browsing category taxonomy, or clicking homepage recommendations.
+We introduced a configurable cannibalization discount factor:
+$$\text{Net GMV} = \text{Gross GMV} \times (1 - C_{\text{cannibalization}})$$
+We evaluated sensitivity across 0%, 10%, 25%, and 40%. At our base case assumption of 25% cannibalization, annual net incremental GMV is discounted from $1,808.69 to **$1,356.52** [MODELED].
+
+---
+
+### Q38: How would you measure cannibalization in a live production A/B experiment?
+**Answer**:
+User-level randomization automatically measures and nets out cannibalization.
+1. **User-Level Randomization**: Because users are assigned to Control or Treatment for the duration of the test, we measure total user-level spend across all discovery channels (Search, Category Browse, Recommendations, Direct PDP).
+2. **Total GMV Difference**:
+   $$\text{Net Incremental GMV} = \sum \text{GMV}_{\text{Treatment Users}} - \sum \text{GMV}_{\text{Control Users}} \times \left(\frac{N_{\text{Treatment}}}{N_{\text{Control}}}\right)$$
+3. **Cross-Channel Inspection**: We compare non-search browse revenue between variants. If search GMV increases by $10K but category browse GMV decreases by $2K in Treatment, we directly measure a 20% cannibalization rate.
+
+---
+
+### Q39: What happens if Search -> PDP CTR increases, but GMV does not change?
+**Answer**:
+This indicates **empty discovery** or **relevance dilution**:
+1. **Root Cause**: The relaxed search engine is returning visually intriguing or broad products that users click out of curiosity, but which fail to satisfy purchase intent (e.g., displaying women's dresses when the user sought a specific cocktail dress).
+2. **Detection**: Quick-back rate ($<5$s dwell time) spikes, and PDP $	o$ Cart conversion collapses.
+3. **PM Action**: Trigger the **ITERATE** rule. We would tighten candidate filtering by raising the minimum match threshold (from 0.40 to 0.60) or enforcing mandatory attribute locking (e.g., requiring brand or fabric match in addition to category nouns).
+
+---
+
+### Q40: What is the most sensitive assumption in your business model?
+**Answer**:
+Our sensitivity tornado analysis revealed that **CTR Lift**, **Eligible Search Traffic**, and **Average Order Value** have the highest elasticity (1.00):
+- A $\pm 20\%$ shock to CTR lift or search volume swings annualized GMV by **$\pm \$723.48**.
+- By contrast, recovery rate elasticity is 0.72 (swing of $\$523.09$) because recovery is already near its ceiling (91.81%).
+- Cannibalization has an elasticity of 0.50.
+*Strategic Implication*: The business case is primarily traffic-constrained, not algorithm-constrained.
+
+---
+
+### Q41: How would you convince an engineering leader to prioritize Query Relaxation if current GMV is only $1,809?
+**Answer**:
+By framing it as **foundational platform architecture** rather than an isolated boutique feature:
+1. **Platform Readiness**: Query relaxation is a zero-marginal-cost algorithmic safety net. As the marketplace grows from 941 eligible searches to 10x (~9,400 searches) or 100x (~94,000 searches), annual incremental GMV scales linearly from **$\$1.8K \to \$18K \to \$180K+** with zero additional engineering effort.
+2. **Zero-Result Elimination**: High-intent zero-result searches are brand-damaging customer experiences with an 80%+ session abandonment rate.
+3. **Engineering Synergies**: The inverted index, token scoring, and candidate ranking built in V1 directly serve upcoming roadmap features: autocomplete (V1.1), synonym graphs (V1.2), and semantic search (V2.0).
+
+---
+
+### Q42: How did you calculate engineering ROI, and is the project worth its cost?
+**Answer**:
+We used transparent, configurable cost inputs:
+- **Cost**: 1.5 person-months @ $\$15K/month + $\$6K annual infra/maintenance = **$\$28,500 Year 1 cost** [PRODUCT ASSUMPTION].
+- **Standalone 1x Scale**: Standalone Year-1 ROI is negative (-93.7%) on unscaled traffic.
+- **Decision Verdict**: We ship Query Relaxation because it is a core discovery capability. At 100x traffic scale (national fashion e-commerce), the payback period drops to **1.9 months** with an annual net benefit of **+$152K**. Building it early avoids costly search architecture re-writes later.
+
+---
+
+### Q43: How does seasonality affect your business impact model?
+**Answer**:
+Our model assumes linear annualization ($365 / 60 = 6.0833$) based on October–November data.
+1. **Q4 Holiday Distortion**: October–November includes early Black Friday/Cyber Monday traffic, which typically exhibits elevated purchase intent and higher AOV compared to Q1/Q2 summer troughs.
+2. **Apparel Seasonality**: Winter fashion (coats, cashmere, boots) carries significantly higher retail prices ($150–$300) than summer apparel (shorts, tees, swimwear at $30–$60), potentially inflating our baseline AOV ($142.58).
+3. **Model Mitigation**: In production forecasting, we would apply category-level de-seasonalization indices (e.g., multiplying by 0.85 in Q1 and 1.25 in Q4).
+
+---
+
+### Q44: Why is annualized GMV only a model and not a realized result?
+**Answer**:
+Conflating a financial model with an audited result destroys product credibility:
+1. **Unobserved Treatment**: In the historical dataset, relaxed search results were never shown to real customers; the +3.5 pp lift is a modeled hypothesis.
+2. **Static Inventory Assumption**: The model assumes that recovered items will always be in-stock at historical prices.
+3. **Behavioral Dynamics**: Customer response to relaxed results may vary across categories.
+The model exists to size the opportunity and establish an investment hypothesis. Only a live production A/B experiment can measure realized revenue.
