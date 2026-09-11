@@ -111,15 +111,13 @@ Return strict results        Identify candidate modifiers:
                              - Identify droppable modifiers ("black", "slim", "fit", "xl")
                                    │
                                    ▼
-                             Try dropping 1 modifier
-                             (e.g., test "slim fit dress xl")
+                             Iterative Modifier Drops:
+                             1. Try dropping 1 modifier (e.g. test "slim fit dress xl")
+                             2. If results < 3, try dropping combinations of 2 modifiers
+                             3. If tokens >= 5 and results < 3, try dropping 3 modifiers
                                    │
                                    ▼
-                             If results >= 3, return relaxed results!
-                             If not, try dropping 2 modifiers.
-                                   │
-                                   ▼
-                     Ensure at least 2 tokens remain.
+                     Ensure at least 2 tokens remain & category preserved.
 ```
 
 ### Core Guardrails
@@ -157,8 +155,9 @@ Query: "breathable black jeans M"
 
 Query: "pure cotton white jeans 10"
   Strict Results : 0 matches
-  Relaxed Query  : No safe relaxation found (size '10' is not in catalog; category protected)
-  Relaxed Results: 0 matches (Guardrail preserved)
+  Relaxed Query  : "cotton jean" (dropped ['pure', 'white', '10'])
+  Relaxed Results: 23 in-stock jeans recovered!
+  Example Match  : Vero Moda Cotton Jeans ($54.30)
 
 Query: "shoes"
   Strict Results : 121 matches

@@ -45,12 +45,13 @@ The analysis is based on an apparel marketplace dataset stored in DuckDB (`data/
 
 ## Solution: Simple Query Relaxation
 
-When a query has **$\ge 4$ tokens** and strict search returns **$< 3$ results**:
-1. Identify the core category noun (e.g., *"dress"*, *"jeans"*, *"jacket"*) and protect it from deletion.
+When a query has **$\ge 4$ tokens** and strict search returns **$< 3$ results**, the system applies an **iterative rule-based query relaxation** fallback:
+1. Protect core category nouns (e.g., *"dress"*, *"jeans"*, *"jacket"*, *"shoes"*) from deletion.
 2. Identify non-category modifiers (e.g., colors, fabrics, occasions) as candidate drops.
-3. Remove one modifier at a time and re-run search against active inventory (`inventory_units > 0`).
-4. If needed, try removing two modifiers, ensuring at least **two tokens remain**.
-5. Return the first relaxed query that yields useful in-stock results.
+3. **Step 1 (Single drop)**: Try removing one modifier at a time and re-run search against active inventory (`inventory_units > 0`).
+4. **Step 2 (Multi-modifier drop)**: If 1-token removal still yields $< 3$ results, test combinations of 2 (or 3) modifiers.
+5. **Guardrails**: Always ensure at least **two tokens remain** and the category noun is preserved.
+6. Return the first relaxed query that yields useful in-stock results ($\ge 3$ items).
 
 ```text
 Input: "slim fit black dresses XL" (Strict: 0 results)

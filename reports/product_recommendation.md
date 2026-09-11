@@ -39,14 +39,14 @@ Rather than forcing users to learn our internal catalog vocabulary, the search s
 
 1. **Trigger Condition**: Executes only when a query has $\ge 4$ tokens AND strict search returns $< 3$ in-stock results.
 2. **Category Protection**: Core merchandise nouns (*"dress"*, *"jeans"*, *"jacket"*, *"shoes"*) are permanently protected and cannot be dropped.
-3. **Safe Modifier Relaxation**: Non-category modifiers (colors, fabrics, occasions) are relaxed one at a time, ensuring at least 2 tokens remain.
+3. **Iterative Modifier Relaxation**: Non-category modifiers (colors, fabrics, occasions) are relaxed iteratively (testing 1-token drops first, then combinations of 2–3 modifiers if needed), while ensuring at least 2 tokens remain and category nouns are preserved.
 4. **Transparent Presentation**: The UI clearly explains the fallback: *"Showing results for 'slim fit dress xl' (relaxed: black)"*.
 
 ---
 
 ## 4. Proposed A/B Experiment Design
 
-We propose validating this feature through a controlled production experiment:
+We propose validating this feature through a controlled live A/B experiment:
 
 - **Target Audience**: Users submitting queries with $\ge 4$ tokens where strict search returns $< 3$ results.
 - **Variant A (Control)**: Current strict keyword search (shows existing results or standard zero-result page).
