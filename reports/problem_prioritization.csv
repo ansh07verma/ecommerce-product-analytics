@@ -1,0 +1,5 @@
+Problem,Reach,Impact,Confidence,Effort,Priority_Score,Evidence_Score,Rank_Priority,Rank_Evidence
+A - Search Discovery,4,4,5,5,16.0,80,1,1
+D - Mobile Web Checkout,3,4,5,4,15.0,60,2,2
+C - Shipping Cliff,2,3,5,2,15.0,30,3,4
+B - PDP Stockout,2,4,5,3,13.3,40,4,3

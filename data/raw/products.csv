@@ -1,0 +1,1601 @@
+product_id,title,brand,master_category,sub_category,retail_price,discount_pct,effective_price,available_sizes,stockout_sizes,inventory_units,avg_rating,review_count
+p-87ce0409f00f,Zara Solid Dresses,Zara,Women,Dresses,114.95,10.0,103.45,"XS,S,M,L,XL",S,22,4.9,30
+p-435ddacaaa03,Allen Solly Solid Shirts,Allen Solly,Men,Topwear - Shirts,38.89,10.0,35.0,"S,M,L,XL,XXL",,32,3.97,19
+p-0c4d4f3d3fcf,Forever 21 Vintage Wash Dresses,Forever 21,Women,Dresses,66.92,0.0,66.92,"XS,S,M,L,XL",S,24,4.26,23
+p-5b85f7aed7ea,Forever 21 Classic Tops & Tees,Forever 21,Women,Tops & Tees,93.14,0.0,93.14,"XS,S,M,L,XL",M,146,4.29,45
+p-e9068ecfb826,Tommy Hilfiger Classic T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,32.1,40.0,19.26,"S,M,L,XL,XXL",M,32,4.48,54
+p-c74034bdf85e,Mango Cotton Ethnic Wear,Mango,Women,Ethnic Wear,45.72,20.0,36.58,"XS,S,M,L,XL","S,M",36,3.74,66
+p-18831a764f6b,Zara Linen Ethnic Wear,Zara,Women,Ethnic Wear,52.96,10.0,47.66,"XS,S,M,L,XL",,65,4.21,12
+p-b45ca2c8e47f,Marks & Spencer Slim Fit Jeans,Marks & Spencer,Men,Bottomwear - Jeans,49.52,15.0,42.09,"S,M,L,XL,XXL",,77,3.82,11
+p-2c43249ff69c,Tommy Hilfiger Regular Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,54.15,25.0,40.61,"S,M,L,XL,XXL",,24,4.35,61
+p-91a2dfe06420,Clarks Floral Print Sandals,Clarks,Footwear,Sandals,62.75,0.0,62.75,"6,7,8,9,10,11",,70,4.27,21
+p-a09781a1c7da,Allen Solly Floral Print Shirts,Allen Solly,Men,Topwear - Shirts,48.82,0.0,48.82,"S,M,L,XL,XXL",,73,4.44,31
+p-83f86f04f0a6,Marks & Spencer Floral Print Shirts,Marks & Spencer,Men,Topwear - Shirts,70.61,40.0,42.37,"S,M,L,XL,XXL",,52,3.93,29
+p-64eb1e340d62,H&M Men Casual Trousers,H&M Men,Men,Bottomwear - Trousers,86.25,10.0,77.62,"S,M,L,XL,XXL",,53,4.07,26
+p-ef4fd58a911d,Adidas Linen Sandals,Adidas,Footwear,Sandals,76.2,0.0,76.2,"6,7,8,9,10,11",,54,4.33,95
+p-fd5e47a00908,Red Tape Textured Sandals,Red Tape,Footwear,Sandals,73.18,50.0,36.59,"6,7,8,9,10,11",,80,4.04,109
+p-a64ec584e2ab,Roadster Solid T-Shirts,Roadster,Men,Topwear - T-Shirts,66.34,0.0,66.34,"S,M,L,XL,XXL",,27,3.85,37
+p-667e7729e993,Vero Moda Cotton Ethnic Wear,Vero Moda,Women,Ethnic Wear,84.91,0.0,84.91,"XS,S,M,L,XL",,33,3.98,39
+p-accad81e1851,Biba Linen Tops & Tees,Biba,Women,Tops & Tees,39.3,0.0,39.3,"XS,S,M,L,XL",,32,4.53,10
+p-6d052d0dd246,Fastrack Slim Fit Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,54.59,40.0,32.75,One Size,,75,4.58,54
+p-abdb144d2fdc,Vero Moda Cotton Jeans,Vero Moda,Women,Bottomwear - Jeans,67.88,20.0,54.3,"XS,S,M,L,XL","S,M",19,3.88,61
+p-5ccd18ae15c9,Biba Casual Ethnic Wear,Biba,Women,Ethnic Wear,80.23,20.0,64.18,"XS,S,M,L,XL",S,67,4.0,34
+p-9b85fd2b893a,Biba Classic Jeans,Biba,Women,Bottomwear - Jeans,101.01,0.0,101.01,"XS,S,M,L,XL",,54,4.46,22
+p-4b8dbd755c9c,H&M Men Floral Print Trousers,H&M Men,Men,Bottomwear - Trousers,92.06,20.0,73.65,"S,M,L,XL,XXL",,61,4.01,8
+p-8b63f71db8fa,Titan Casual Watches,Titan,Accessories,Watches,105.42,0.0,105.42,One Size,,26,4.23,36
+p-84e4f247c0d1,Marks & Spencer Slim Fit Shirts,Marks & Spencer,Men,Topwear - Shirts,34.86,30.0,24.4,"S,M,L,XL,XXL",,86,3.94,57
+p-504262c29c27,Red Tape Oversized Formal Shoes,Red Tape,Footwear,Formal Shoes,124.1,10.0,111.69,"6,7,8,9,10,11",,27,4.23,3
+p-1be80bc83ece,Roadster Regular Fit Trousers,Roadster,Men,Bottomwear - Trousers,67.33,0.0,67.33,"S,M,L,XL,XXL",,69,4.8,50
+p-c477e86ebfdd,Roadster Cotton Trousers,Roadster,Men,Bottomwear - Trousers,70.54,0.0,70.54,"S,M,L,XL,XXL",,57,4.42,88
+p-5dbc634cdca1,Biba Solid Dresses,Biba,Women,Dresses,75.65,0.0,75.65,"XS,S,M,L,XL","M,S",84,3.84,165
+p-841e04f8cfa3,Vero Moda Oversized Jeans,Vero Moda,Women,Bottomwear - Jeans,105.32,15.0,89.52,"XS,S,M,L,XL",,28,4.63,92
+p-12233123767c,Roadster Athletic Jeans,Roadster,Men,Bottomwear - Jeans,57.95,25.0,43.46,"S,M,L,XL,XXL",L,81,4.11,156
+p-5ae742ef7d7b,Fastrack Linen Watches,Fastrack,Accessories,Watches,102.14,0.0,102.14,One Size,,66,3.99,11
+p-cb074730edd8,Forever 21 Athletic Tops & Tees,Forever 21,Women,Tops & Tees,112.18,25.0,84.14,"XS,S,M,L,XL",,69,4.37,22
+p-9bf698265bc6,Roadster Linen Shirts,Roadster,Men,Topwear - Shirts,48.03,0.0,48.03,"S,M,L,XL,XXL",,23,4.3,39
+p-82e5a22421f6,H&M Men Athletic Shirts,H&M Men,Men,Topwear - Shirts,53.98,0.0,53.98,"S,M,L,XL,XXL",,29,3.74,6
+p-6a7396308f22,H&M Classic Dresses,H&M,Women,Dresses,37.3,50.0,18.65,"XS,S,M,L,XL",,58,4.21,4
+p-4919c4092ff5,Biba Casual Dresses,Biba,Women,Dresses,73.91,0.0,73.91,"XS,S,M,L,XL",,27,3.98,9
+p-65201cc33c49,H&M Textured Tops & Tees,H&M,Women,Tops & Tees,91.68,0.0,91.68,"XS,S,M,L,XL",,78,4.99,48
+p-09ed122f5ba6,Mango Formal Tops & Tees,Mango,Women,Tops & Tees,120.96,15.0,102.82,"XS,S,M,L,XL",,109,3.69,64
+p-4085b41d32ca,Zara Men Formal Trousers,Zara Men,Men,Bottomwear - Trousers,41.73,0.0,41.73,"S,M,L,XL,XXL",,13,4.02,114
+p-5bd75779ffa7,Biba Cotton Tops & Tees,Biba,Women,Tops & Tees,55.25,0.0,55.25,"XS,S,M,L,XL",,48,4.21,35
+p-c84f91ab2f53,Vero Moda Formal Jeans,Vero Moda,Women,Bottomwear - Jeans,67.15,20.0,53.72,"XS,S,M,L,XL",,60,4.59,3
+p-d1c671538589,Zara Men Regular Fit T-Shirts,Zara Men,Men,Topwear - T-Shirts,29.85,0.0,29.85,"S,M,L,XL,XXL",,30,4.07,7
+p-f956f87dd638,Forever 21 Floral Print Tops & Tees,Forever 21,Women,Tops & Tees,69.46,0.0,69.46,"XS,S,M,L,XL",S,110,4.72,48
+p-4a6dc20ebf42,Levi's Linen Shirts,Levi's,Men,Topwear - Shirts,51.84,15.0,44.06,"S,M,L,XL,XXL",L,19,4.83,46
+p-6b014e59d796,Fastrack Formal Sunglasses,Fastrack,Accessories,Sunglasses,116.69,50.0,58.34,One Size,,56,4.41,9
+p-2dbdda970087,Red Tape Classic Formal Shoes,Red Tape,Footwear,Formal Shoes,119.89,10.0,107.9,"6,7,8,9,10,11",,107,3.98,20
+p-fdd9ffa5dbe3,Reebok Athletic Formal Shoes,Reebok,Footwear,Formal Shoes,54.95,30.0,38.46,"6,7,8,9,10,11",,50,3.78,127
+p-bd63dc35718e,Levi's Textured Shirts,Levi's,Men,Topwear - Shirts,53.89,40.0,32.33,"S,M,L,XL,XXL",,87,4.8,62
+p-b44217173b98,Tommy Hilfiger Casual Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,45.63,20.0,36.5,"S,M,L,XL,XXL",,102,4.07,65
+p-06d0ff181fa8,Red Tape Textured Sneakers,Red Tape,Footwear,Sneakers,65.95,40.0,39.57,"6,7,8,9,10,11",,78,3.61,7
+p-3cefa39bc7cc,Levi's Vintage Wash Shirts,Levi's,Men,Topwear - Shirts,95.02,30.0,66.51,"S,M,L,XL,XXL",,27,4.82,29
+p-586267b99b1c,Zara Men Floral Print Shirts,Zara Men,Men,Topwear - Shirts,49.68,25.0,37.26,"S,M,L,XL,XXL",,77,4.03,123
+p-728e9da1858a,Fastrack Vintage Wash Sunglasses,Fastrack,Accessories,Sunglasses,133.7,0.0,133.7,One Size,,51,4.78,158
+p-bd2bf62a463b,Mango Casual Tops & Tees,Mango,Women,Tops & Tees,98.53,40.0,59.12,"XS,S,M,L,XL",M,55,4.0,80
+p-634cc331ccda,Zara Textured Dresses,Zara,Women,Dresses,41.37,0.0,41.37,"XS,S,M,L,XL",,50,3.64,78
+p-5d529b84685c,Fossil Athletic Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,128.32,40.0,76.99,One Size,,19,3.33,57
+p-dfdbf0724a4a,Zara Men Vintage Wash T-Shirts,Zara Men,Men,Topwear - T-Shirts,49.76,10.0,44.78,"S,M,L,XL,XXL",,36,3.91,8
+p-d2fcc92c6722,Marks & Spencer Vintage Wash T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,66.44,10.0,59.8,"S,M,L,XL,XXL",,43,3.96,6
+p-197441774e00,Vero Moda Slim Fit Tops & Tees,Vero Moda,Women,Tops & Tees,67.19,30.0,47.03,"XS,S,M,L,XL",,50,4.15,39
+p-8b25b835eb00,Tommy Hilfiger Cotton Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,71.81,15.0,61.04,One Size,,26,4.68,114
+p-a7a5ab90083a,Lavie Solid Sunglasses,Lavie,Accessories,Sunglasses,33.44,25.0,25.08,One Size,,18,4.42,31
+p-3c093e1e2d52,H&M Floral Print Ethnic Wear,H&M,Women,Ethnic Wear,76.72,0.0,76.72,"XS,S,M,L,XL",,53,4.81,78
+p-dd29b201ad93,Forever 21 Solid Dresses,Forever 21,Women,Dresses,49.38,30.0,34.57,"XS,S,M,L,XL",,42,4.38,116
+p-1a3e875e727e,Levi's Slim Fit Jeans,Levi's,Men,Bottomwear - Jeans,84.17,10.0,75.75,"S,M,L,XL,XXL",,43,4.05,199
+p-b89ac196d549,Levi's Formal T-Shirts,Levi's,Men,Topwear - T-Shirts,63.14,15.0,53.67,"S,M,L,XL,XXL",M,51,4.58,4
+p-b4d00fcbbd62,Allen Solly Floral Print Shirts,Allen Solly,Men,Topwear - Shirts,24.46,0.0,24.46,"S,M,L,XL,XXL",,53,4.82,112
+p-58a1e2cebc25,Forever 21 Classic Tops & Tees,Forever 21,Women,Tops & Tees,87.73,50.0,43.87,"XS,S,M,L,XL",M,37,3.59,141
+p-df2e0a1b0f85,Mango Floral Print Jeans,Mango,Women,Bottomwear - Jeans,54.47,25.0,40.85,"XS,S,M,L,XL",,44,4.0,83
+p-f98e7488c417,Zara Men Cotton Jeans,Zara Men,Men,Bottomwear - Jeans,78.48,40.0,47.09,"S,M,L,XL,XXL",,39,4.49,4
+p-9706d0e45f8b,Reebok Linen Sandals,Reebok,Footwear,Sandals,101.64,20.0,81.31,"6,7,8,9,10,11",,50,4.43,45
+p-53506609b939,Zara Casual Dresses,Zara,Women,Dresses,74.73,0.0,74.73,"XS,S,M,L,XL",,54,4.75,111
+p-e5d7335642b6,Levi's Formal Shirts,Levi's,Men,Topwear - Shirts,59.23,10.0,53.31,"S,M,L,XL,XXL",,16,4.13,179
+p-87ee241cd5e1,H&M Linen Jeans,H&M,Women,Bottomwear - Jeans,60.93,25.0,45.7,"XS,S,M,L,XL",,58,3.43,42
+p-76cd1ecc23b3,Mango Cotton Tops & Tees,Mango,Women,Tops & Tees,85.34,0.0,85.34,"XS,S,M,L,XL","S,M",29,4.74,35
+p-5ba34eb81377,Fastrack Cotton Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,77.7,0.0,77.7,One Size,,33,4.52,4
+p-4f51d75079bc,Zara Solid Dresses,Zara,Women,Dresses,73.37,0.0,73.37,"XS,S,M,L,XL",,21,3.74,32
+p-9e9dd3a2d06a,Mango Classic Jeans,Mango,Women,Bottomwear - Jeans,71.88,0.0,71.88,"XS,S,M,L,XL",,49,4.16,118
+p-d6b6fcc1e8fa,Zara Men Textured Jeans,Zara Men,Men,Bottomwear - Jeans,73.96,15.0,62.87,"S,M,L,XL,XXL",,69,3.8,35
+p-7413840e8b15,Forever 21 Casual Jeans,Forever 21,Women,Bottomwear - Jeans,44.23,20.0,35.38,"XS,S,M,L,XL",,27,4.07,12
+p-0ba94bd5f15b,Zara Textured Dresses,Zara,Women,Dresses,98.95,0.0,98.95,"XS,S,M,L,XL",,17,4.22,31
+p-6daf00431a54,Zara Slim Fit Jeans,Zara,Women,Bottomwear - Jeans,81.47,25.0,61.1,"XS,S,M,L,XL",,135,4.51,28
+p-d8a3a827a4e5,Allen Solly Cotton T-Shirts,Allen Solly,Men,Topwear - T-Shirts,47.44,0.0,47.44,"S,M,L,XL,XXL","L,M",72,4.82,196
+p-b26db3a5724f,Zara Solid Dresses,Zara,Women,Dresses,55.07,0.0,55.07,"XS,S,M,L,XL",,34,3.93,12
+p-195b9cb9d02b,Marks & Spencer Linen Shirts,Marks & Spencer,Men,Topwear - Shirts,41.01,50.0,20.5,"S,M,L,XL,XXL",,49,4.47,3
+p-cff14c01c356,Tommy Hilfiger Oversized Watches,Tommy Hilfiger,Accessories,Watches,69.54,15.0,59.11,One Size,,47,4.41,17
+p-90bd6cc44bb6,Puma Linen Sneakers,Puma,Footwear,Sneakers,73.21,0.0,73.21,"6,7,8,9,10,11",,52,3.19,8
+p-866026ab9dd8,Mango Floral Print Dresses,Mango,Women,Dresses,58.48,20.0,46.78,"XS,S,M,L,XL",,40,4.32,23
+p-c68d4e68cafc,Mango Athletic Dresses,Mango,Women,Dresses,74.31,15.0,63.16,"XS,S,M,L,XL",,75,3.95,54
+p-3980b2142419,Clarks Solid Running Shoes,Clarks,Footwear,Running Shoes,99.77,20.0,79.82,"6,7,8,9,10,11",8,40,4.21,64
+p-fef3c928dae9,Vero Moda Slim Fit Tops & Tees,Vero Moda,Women,Tops & Tees,111.61,40.0,66.97,"XS,S,M,L,XL","M,S",58,4.7,9
+p-af28da2070e6,Adidas Athletic Sandals,Adidas,Footwear,Sandals,74.29,0.0,74.29,"6,7,8,9,10,11",,55,4.0,36
+p-c4b9a57ee21c,Urban Chic Slim Fit Ethnic Wear,Urban Chic,Women,Ethnic Wear,103.35,25.0,77.51,"XS,S,M,L,XL",,106,4.01,47
+p-9557ff65aac4,H&M Casual Tops & Tees,H&M,Women,Tops & Tees,67.33,10.0,60.6,"XS,S,M,L,XL",,39,4.44,109
+p-d8460f51709a,H&M Slim Fit Tops & Tees,H&M,Women,Tops & Tees,45.22,50.0,22.61,"XS,S,M,L,XL",,71,4.53,97
+p-839e407ec203,Mango Cotton Ethnic Wear,Mango,Women,Ethnic Wear,89.07,10.0,80.16,"XS,S,M,L,XL",,34,3.85,64
+p-0b1b60d9b816,H&M Men Textured Jeans,H&M Men,Men,Bottomwear - Jeans,61.76,50.0,30.88,"S,M,L,XL,XXL",,35,4.24,24
+p-8eebde052057,Zara Regular Fit Jeans,Zara,Women,Bottomwear - Jeans,78.16,25.0,58.62,"XS,S,M,L,XL",,35,3.96,60
+p-4a4f8d21b565,H&M Classic Jeans,H&M,Women,Bottomwear - Jeans,85.03,20.0,68.02,"XS,S,M,L,XL",,81,4.28,21
+p-26cfdfc823dd,Levi's Regular Fit Jeans,Levi's,Men,Bottomwear - Jeans,54.16,0.0,54.16,"S,M,L,XL,XXL",,66,4.22,7
+p-d29ce7dd0bd7,Allen Solly Athletic Jeans,Allen Solly,Men,Bottomwear - Jeans,71.51,25.0,53.63,"S,M,L,XL,XXL",,106,4.36,58
+p-a7dd8a52cbbf,Tommy Hilfiger Classic Shirts,Tommy Hilfiger,Men,Topwear - Shirts,62.12,15.0,52.8,"S,M,L,XL,XXL",,37,3.99,12
+p-a2c268429d22,Red Tape Vintage Wash Sneakers,Red Tape,Footwear,Sneakers,82.6,0.0,82.6,"6,7,8,9,10,11",9,59,3.67,64
+p-adaf9a2a1c56,Levi's Textured Trousers,Levi's,Men,Bottomwear - Trousers,76.12,20.0,60.9,"S,M,L,XL,XXL",,69,3.34,22
+p-a96f6b41622b,Allen Solly Regular Fit Jeans,Allen Solly,Men,Bottomwear - Jeans,72.32,20.0,57.86,"S,M,L,XL,XXL",,57,3.61,4
+p-4689d86fa23b,Roadster Cotton Jeans,Roadster,Men,Bottomwear - Jeans,75.54,0.0,75.54,"S,M,L,XL,XXL",,30,3.92,169
+p-0390992dfbcc,Vero Moda Solid Jeans,Vero Moda,Women,Bottomwear - Jeans,74.9,50.0,37.45,"XS,S,M,L,XL",S,45,4.21,6
+p-9f91b978f184,Biba Vintage Wash Ethnic Wear,Biba,Women,Ethnic Wear,53.11,40.0,31.87,"XS,S,M,L,XL",,146,3.76,70
+p-bb173610930f,Forever 21 Classic Tops & Tees,Forever 21,Women,Tops & Tees,72.71,15.0,61.8,"XS,S,M,L,XL",,98,4.14,21
+p-f5ca33bba307,H&M Men Cotton Shirts,H&M Men,Men,Topwear - Shirts,73.46,0.0,73.46,"S,M,L,XL,XXL",,46,4.48,176
+p-c4b9918aac71,Reebok Casual Sandals,Reebok,Footwear,Sandals,125.46,10.0,112.91,"6,7,8,9,10,11",,30,3.9,3
+p-e3db6ef151fb,Roadster Casual T-Shirts,Roadster,Men,Topwear - T-Shirts,77.1,0.0,77.1,"S,M,L,XL,XXL",,21,4.4,15
+p-328a5b454b7c,Biba Regular Fit Tops & Tees,Biba,Women,Tops & Tees,100.69,30.0,70.48,"XS,S,M,L,XL","S,M",38,3.78,7
+p-bdbf7cfab11e,H&M Athletic Jeans,H&M,Women,Bottomwear - Jeans,88.58,30.0,62.01,"XS,S,M,L,XL",S,53,4.45,111
+p-ada32c12b1fe,Vero Moda Classic Tops & Tees,Vero Moda,Women,Tops & Tees,61.35,50.0,30.68,"XS,S,M,L,XL",,17,4.36,26
+p-895a3c4ce119,Vero Moda Vintage Wash Dresses,Vero Moda,Women,Dresses,67.17,0.0,67.17,"XS,S,M,L,XL",,73,4.14,27
+p-670b70b22ff8,Allen Solly Solid T-Shirts,Allen Solly,Men,Topwear - T-Shirts,46.65,10.0,41.98,"S,M,L,XL,XXL",,20,3.99,27
+p-409ea248f923,Zara Men Oversized Trousers,Zara Men,Men,Bottomwear - Trousers,86.81,10.0,78.13,"S,M,L,XL,XXL",,49,3.81,39
+p-556daaf09e6c,Urban Chic Athletic Dresses,Urban Chic,Women,Dresses,97.73,0.0,97.73,"XS,S,M,L,XL",,99,4.7,11
+p-9761886c8bae,Fastrack Oversized Sunglasses,Fastrack,Accessories,Sunglasses,64.72,15.0,55.01,One Size,,25,4.2,6
+p-6905625d4487,Nike Formal Running Shoes,Nike,Footwear,Running Shoes,88.95,50.0,44.48,"6,7,8,9,10,11",9,39,3.82,52
+p-a3001257a4b2,Tommy Hilfiger Textured Watches,Tommy Hilfiger,Accessories,Watches,88.94,0.0,88.94,One Size,,150,4.36,5
+p-a608abcb97c9,Urban Chic Casual Jeans,Urban Chic,Women,Bottomwear - Jeans,77.65,0.0,77.65,"XS,S,M,L,XL",,18,4.14,55
+p-7a0cfd5ecfbc,Urban Chic Formal Ethnic Wear,Urban Chic,Women,Ethnic Wear,55.7,30.0,38.99,"XS,S,M,L,XL",,105,4.04,77
+p-d7da5feef72d,Lavie Casual Watches,Lavie,Accessories,Watches,94.75,10.0,85.28,One Size,,30,4.52,62
+p-8bf97a030995,Puma Athletic Running Shoes,Puma,Footwear,Running Shoes,104.68,15.0,88.98,"6,7,8,9,10,11",,48,4.24,56
+p-408ce248759d,Marks & Spencer Athletic Jeans,Marks & Spencer,Men,Bottomwear - Jeans,67.74,0.0,67.74,"S,M,L,XL,XXL",,65,3.47,8
+p-b62a6a3681d3,Mango Casual Tops & Tees,Mango,Women,Tops & Tees,51.8,0.0,51.8,"XS,S,M,L,XL","S,M",38,4.38,5
+p-ebc3cae84c7e,Mango Formal Jeans,Mango,Women,Bottomwear - Jeans,72.58,15.0,61.69,"XS,S,M,L,XL",S,67,4.0,6
+p-5286e31c302e,Biba Oversized Ethnic Wear,Biba,Women,Ethnic Wear,61.58,25.0,46.19,"XS,S,M,L,XL",,37,4.21,51
+p-a3a36d3830e9,Vero Moda Vintage Wash Dresses,Vero Moda,Women,Dresses,72.43,25.0,54.32,"XS,S,M,L,XL",,89,4.4,75
+p-d8a811d4db82,Tommy Hilfiger Slim Fit Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,60.39,30.0,42.27,One Size,,46,5.0,17
+p-353e792b1bc4,Urban Chic Vintage Wash Tops & Tees,Urban Chic,Women,Tops & Tees,42.56,0.0,42.56,"XS,S,M,L,XL",,31,3.5,89
+p-c331eb365747,Urban Chic Athletic Dresses,Urban Chic,Women,Dresses,77.1,0.0,77.1,"XS,S,M,L,XL",,38,3.82,143
+p-abb3cfb34b7a,Nike Linen Running Shoes,Nike,Footwear,Running Shoes,78.2,20.0,62.56,"6,7,8,9,10,11",,38,4.13,45
+p-3b2d29548063,Marks & Spencer Vintage Wash Trousers,Marks & Spencer,Men,Bottomwear - Trousers,103.09,0.0,103.09,"S,M,L,XL,XXL",,63,4.56,35
+p-c5da92eb6729,Tommy Hilfiger Floral Print T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,41.22,0.0,41.22,"S,M,L,XL,XXL",,99,3.93,5
+p-26b79f79e7d2,Fossil Vintage Wash Sunglasses,Fossil,Accessories,Sunglasses,106.34,40.0,63.8,One Size,,81,4.19,33
+p-acd54f5e8fa1,Lavie Textured Belts & Wallets,Lavie,Accessories,Belts & Wallets,108.38,10.0,97.54,One Size,,16,4.98,42
+p-0e8ea9210eb0,Allen Solly Oversized Trousers,Allen Solly,Men,Bottomwear - Trousers,84.25,0.0,84.25,"S,M,L,XL,XXL",,72,4.25,50
+p-056bfe795f83,Forever 21 Formal Tops & Tees,Forever 21,Women,Tops & Tees,42.03,20.0,33.62,"XS,S,M,L,XL","S,M",53,4.07,37
+p-57b3fb360f53,Fastrack Casual Sunglasses,Fastrack,Accessories,Sunglasses,40.36,30.0,28.25,One Size,,47,2.93,43
+p-18647a5bdd8d,Nike Cotton Formal Shoes,Nike,Footwear,Formal Shoes,83.51,20.0,66.81,"6,7,8,9,10,11",,27,4.21,94
+p-cfbeb3fe2196,Tommy Hilfiger Linen T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,39.92,0.0,39.92,"S,M,L,XL,XXL",,104,4.26,12
+p-8aa22c14c4a4,Puma Athletic Running Shoes,Puma,Footwear,Running Shoes,141.37,20.0,113.1,"6,7,8,9,10,11",,31,4.02,64
+p-e5896211a5f0,H&M Men Regular Fit Trousers,H&M Men,Men,Bottomwear - Trousers,78.62,30.0,55.03,"S,M,L,XL,XXL",,27,4.38,8
+p-0359e6b03f8b,Mango Floral Print Dresses,Mango,Women,Dresses,28.47,40.0,17.08,"XS,S,M,L,XL",,14,4.13,85
+p-da7ae64b372c,Urban Chic Slim Fit Dresses,Urban Chic,Women,Dresses,50.77,40.0,30.46,"XS,S,M,L,XL",,37,3.99,19
+p-badbb3761af6,Urban Chic Slim Fit Tops & Tees,Urban Chic,Women,Tops & Tees,39.62,10.0,35.66,"XS,S,M,L,XL",,49,4.86,43
+p-f07b208ae611,H&M Casual Tops & Tees,H&M,Women,Tops & Tees,39.39,50.0,19.7,"XS,S,M,L,XL",,29,4.41,29
+p-61d6c813f442,Tommy Hilfiger Solid T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,106.06,10.0,95.45,"S,M,L,XL,XXL",,77,4.6,18
+p-46e3219d489a,Adidas Classic Sandals,Adidas,Footwear,Sandals,114.86,0.0,114.86,"6,7,8,9,10,11",,47,3.5,20
+p-4af3a6de8390,Urban Chic Oversized Dresses,Urban Chic,Women,Dresses,89.46,0.0,89.46,"XS,S,M,L,XL",,32,4.33,31
+p-cde2369972d2,Forever 21 Slim Fit Dresses,Forever 21,Women,Dresses,49.1,0.0,49.1,"XS,S,M,L,XL",,103,4.09,37
+p-96ca3cfd420b,Tommy Hilfiger Solid Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,76.85,0.0,76.85,"S,M,L,XL,XXL",,22,4.72,15
+p-192469735051,Zara Solid Tops & Tees,Zara,Women,Tops & Tees,54.25,0.0,54.25,"XS,S,M,L,XL",,94,4.46,28
+p-a37a511b08fe,Titan Athletic Bags & Backpacks,Titan,Accessories,Bags & Backpacks,44.64,15.0,37.94,One Size,,15,5.0,18
+p-4431e8d62547,Mango Formal Dresses,Mango,Women,Dresses,101.22,50.0,50.61,"XS,S,M,L,XL","S,M",34,4.06,197
+p-bc9a17fc84aa,Marks & Spencer Vintage Wash Shirts,Marks & Spencer,Men,Topwear - Shirts,57.93,25.0,43.45,"S,M,L,XL,XXL",,35,4.17,99
+p-7fb7f84c7f18,Tommy Hilfiger Linen Shirts,Tommy Hilfiger,Men,Topwear - Shirts,79.19,0.0,79.19,"S,M,L,XL,XXL",,28,4.47,4
+p-5813e3e586f1,Biba Oversized Ethnic Wear,Biba,Women,Ethnic Wear,115.12,0.0,115.12,"XS,S,M,L,XL",,60,4.75,45
+p-5e573a183823,Roadster Athletic Jeans,Roadster,Men,Bottomwear - Jeans,91.28,40.0,54.77,"S,M,L,XL,XXL",,89,4.03,51
+p-cdf70afd2b94,Vero Moda Vintage Wash Ethnic Wear,Vero Moda,Women,Ethnic Wear,77.69,50.0,38.84,"XS,S,M,L,XL",,138,4.76,6
+p-d55b8eefb6eb,H&M Men Floral Print Jeans,H&M Men,Men,Bottomwear - Jeans,45.47,0.0,45.47,"S,M,L,XL,XXL",,50,3.79,73
+p-953edb8bf0d2,Mango Casual Dresses,Mango,Women,Dresses,71.02,15.0,60.37,"XS,S,M,L,XL","M,S",33,4.33,33
+p-7ae320e92375,Tommy Hilfiger Linen Shirts,Tommy Hilfiger,Men,Topwear - Shirts,53.18,0.0,53.18,"S,M,L,XL,XXL",,13,4.32,11
+p-2d07005e8d07,Ray-Ban Athletic Watches,Ray-Ban,Accessories,Watches,64.54,30.0,45.18,One Size,,35,3.6,61
+p-5165812dac9a,Mango Cotton Jeans,Mango,Women,Bottomwear - Jeans,102.86,40.0,61.72,"XS,S,M,L,XL",,116,3.7,31
+p-23c037b1c401,Clarks Slim Fit Sandals,Clarks,Footwear,Sandals,76.67,40.0,46.0,"6,7,8,9,10,11",,17,4.26,33
+p-2280a8342ce9,Levi's Floral Print T-Shirts,Levi's,Men,Topwear - T-Shirts,83.56,25.0,62.67,"S,M,L,XL,XXL",,38,3.91,50
+p-d126ff14ab1c,Roadster Athletic Trousers,Roadster,Men,Bottomwear - Trousers,52.98,30.0,37.09,"S,M,L,XL,XXL","L,M",52,3.99,160
+p-68cdaaf45e28,Zara Cotton Dresses,Zara,Women,Dresses,54.99,0.0,54.99,"XS,S,M,L,XL",M,54,3.42,82
+p-ec19e1f4646b,Vero Moda Formal Jeans,Vero Moda,Women,Bottomwear - Jeans,55.86,10.0,50.27,"XS,S,M,L,XL",,51,3.7,44
+p-a2635dca46b2,Biba Formal Ethnic Wear,Biba,Women,Ethnic Wear,73.31,50.0,36.66,"XS,S,M,L,XL","M,S",18,4.06,17
+p-1e78e975a74f,Zara Men Regular Fit Jeans,Zara Men,Men,Bottomwear - Jeans,59.64,30.0,41.75,"S,M,L,XL,XXL",,40,3.93,7
+p-44bdd1dfe5ec,Levi's Solid Jeans,Levi's,Men,Bottomwear - Jeans,62.6,25.0,46.95,"S,M,L,XL,XXL",,33,4.2,94
+p-9ea54d44996e,H&M Floral Print Tops & Tees,H&M,Women,Tops & Tees,72.13,25.0,54.1,"XS,S,M,L,XL",,57,3.89,12
+p-ac5a3a657cfa,Biba Classic Jeans,Biba,Women,Bottomwear - Jeans,48.83,0.0,48.83,"XS,S,M,L,XL",,58,4.43,176
+p-4c4b1bbc16b7,Zara Floral Print Jeans,Zara,Women,Bottomwear - Jeans,30.99,0.0,30.99,"XS,S,M,L,XL",,21,4.28,8
+p-e53b84b85174,Adidas Cotton Sandals,Adidas,Footwear,Sandals,132.99,20.0,106.39,"6,7,8,9,10,11",9,58,4.72,8
+p-b3531a2fea1f,Zara Formal Dresses,Zara,Women,Dresses,132.81,0.0,132.81,"XS,S,M,L,XL",,22,4.5,71
+p-b4451462eda7,Biba Athletic Tops & Tees,Biba,Women,Tops & Tees,88.81,30.0,62.17,"XS,S,M,L,XL",,39,4.11,107
+p-eb4c999b27e4,Clarks Cotton Sneakers,Clarks,Footwear,Sneakers,81.74,30.0,57.22,"6,7,8,9,10,11",,66,4.09,20
+p-0562bf94be61,Mango Oversized Ethnic Wear,Mango,Women,Ethnic Wear,64.81,25.0,48.61,"XS,S,M,L,XL",,45,4.52,29
+p-1ad4add74519,Marks & Spencer Casual Jeans,Marks & Spencer,Men,Bottomwear - Jeans,62.74,0.0,62.74,"S,M,L,XL,XXL",L,129,4.15,38
+p-3c884a804d27,Fossil Classic Sunglasses,Fossil,Accessories,Sunglasses,101.4,30.0,70.98,One Size,,99,3.66,42
+p-0f55382f198a,H&M Oversized Dresses,H&M,Women,Dresses,78.44,40.0,47.06,"XS,S,M,L,XL",,16,4.21,80
+p-c80f16914dd9,Zara Floral Print Jeans,Zara,Women,Bottomwear - Jeans,105.97,0.0,105.97,"XS,S,M,L,XL","S,M",108,3.73,12
+p-f969d4418049,Vero Moda Cotton Ethnic Wear,Vero Moda,Women,Ethnic Wear,51.95,0.0,51.95,"XS,S,M,L,XL",,95,4.87,122
+p-f04a689fac6a,Mango Classic Ethnic Wear,Mango,Women,Ethnic Wear,76.53,0.0,76.53,"XS,S,M,L,XL",,52,4.26,80
+p-04f34dd4b281,Urban Chic Floral Print Dresses,Urban Chic,Women,Dresses,45.83,50.0,22.91,"XS,S,M,L,XL",,43,3.94,40
+p-ed39ec7addf2,Allen Solly Regular Fit Jeans,Allen Solly,Men,Bottomwear - Jeans,95.84,20.0,76.67,"S,M,L,XL,XXL",M,53,4.32,8
+p-fb40cb39b90b,Levi's Vintage Wash T-Shirts,Levi's,Men,Topwear - T-Shirts,65.75,25.0,49.31,"S,M,L,XL,XXL",,11,4.32,26
+p-10717a3c63f8,Puma Slim Fit Running Shoes,Puma,Footwear,Running Shoes,130.05,0.0,130.05,"6,7,8,9,10,11",,20,3.9,80
+p-ef22561c80d4,Biba Casual Jeans,Biba,Women,Bottomwear - Jeans,82.92,0.0,82.92,"XS,S,M,L,XL",M,71,4.93,11
+p-71f46c2dfd08,Vero Moda Regular Fit Tops & Tees,Vero Moda,Women,Tops & Tees,101.54,0.0,101.54,"XS,S,M,L,XL",,21,4.17,45
+p-f9c378302ece,Mango Oversized Tops & Tees,Mango,Women,Tops & Tees,54.7,10.0,49.23,"XS,S,M,L,XL",M,41,4.0,43
+p-062a5aa754a2,Vero Moda Regular Fit Jeans,Vero Moda,Women,Bottomwear - Jeans,67.57,10.0,60.81,"XS,S,M,L,XL",,30,4.26,41
+p-3ff508b516dc,Allen Solly Vintage Wash Jeans,Allen Solly,Men,Bottomwear - Jeans,33.57,0.0,33.57,"S,M,L,XL,XXL",,33,3.95,14
+p-15e0a3beb610,Vero Moda Regular Fit Ethnic Wear,Vero Moda,Women,Ethnic Wear,39.89,15.0,33.91,"XS,S,M,L,XL",,24,4.22,17
+p-18c684c0d8aa,Biba Linen Ethnic Wear,Biba,Women,Ethnic Wear,83.92,0.0,83.92,"XS,S,M,L,XL",,31,3.63,245
+p-59ce5bd8a232,Zara Floral Print Dresses,Zara,Women,Dresses,61.22,15.0,52.04,"XS,S,M,L,XL",,20,4.34,13
+p-da7cd716a2ce,Urban Chic Textured Dresses,Urban Chic,Women,Dresses,43.11,25.0,32.33,"XS,S,M,L,XL",,26,3.33,8
+p-e7de8f101542,Fastrack Casual Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,25.85,25.0,19.39,One Size,,33,4.18,46
+p-2b1acf230dda,H&M Men Oversized Trousers,H&M Men,Men,Bottomwear - Trousers,73.61,0.0,73.61,"S,M,L,XL,XXL",,83,4.4,4
+p-4f0489133aae,Allen Solly Casual Trousers,Allen Solly,Men,Bottomwear - Trousers,46.35,0.0,46.35,"S,M,L,XL,XXL",,73,4.18,19
+p-f92d27f00d3f,Mango Vintage Wash Ethnic Wear,Mango,Women,Ethnic Wear,67.84,20.0,54.27,"XS,S,M,L,XL",,64,4.28,40
+p-89668617378c,Urban Chic Oversized Dresses,Urban Chic,Women,Dresses,71.2,15.0,60.52,"XS,S,M,L,XL",,90,4.47,94
+p-41c47ddd791e,Puma Textured Running Shoes,Puma,Footwear,Running Shoes,116.6,0.0,116.6,"6,7,8,9,10,11",,38,3.73,56
+p-a25d879a5db6,Tommy Hilfiger Regular Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,98.51,10.0,88.66,"S,M,L,XL,XXL",,36,3.46,44
+p-ec1c62770498,Levi's Athletic Jeans,Levi's,Men,Bottomwear - Jeans,86.54,50.0,43.27,"S,M,L,XL,XXL",,39,4.33,8
+p-8a2d5897afe3,Biba Formal Dresses,Biba,Women,Dresses,71.52,0.0,71.52,"XS,S,M,L,XL",,74,4.01,43
+p-2228fdcdce03,Fastrack Formal Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,105.24,0.0,105.24,One Size,,52,3.57,24
+p-28b16f530916,Forever 21 Athletic Jeans,Forever 21,Women,Bottomwear - Jeans,51.74,0.0,51.74,"XS,S,M,L,XL",,84,4.38,18
+p-654a433aaea6,Urban Chic Slim Fit Ethnic Wear,Urban Chic,Women,Ethnic Wear,50.05,0.0,50.05,"XS,S,M,L,XL",M,88,3.88,55
+p-c900d70e4047,Biba Casual Ethnic Wear,Biba,Women,Ethnic Wear,80.29,0.0,80.29,"XS,S,M,L,XL",S,32,3.94,50
+p-58f09225ea43,Clarks Slim Fit Sandals,Clarks,Footwear,Sandals,110.27,50.0,55.13,"6,7,8,9,10,11",,33,3.97,27
+p-02862d6b4dd9,Adidas Regular Fit Sneakers,Adidas,Footwear,Sneakers,111.12,40.0,66.67,"6,7,8,9,10,11",,22,4.07,73
+p-2f751aaef68d,Biba Oversized Dresses,Biba,Women,Dresses,83.98,0.0,83.98,"XS,S,M,L,XL",,24,4.48,47
+p-a03362caf13d,Roadster Solid Jeans,Roadster,Men,Bottomwear - Jeans,32.05,0.0,32.05,"S,M,L,XL,XXL",,34,4.44,34
+p-45ee231a5c77,Tommy Hilfiger Floral Print Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,39.35,0.0,39.35,"S,M,L,XL,XXL",,20,4.41,77
+p-09774973238e,Vero Moda Floral Print Tops & Tees,Vero Moda,Women,Tops & Tees,101.15,15.0,85.98,"XS,S,M,L,XL",,21,4.55,28
+p-4e5f4f3c881e,Marks & Spencer Regular Fit T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,80.66,0.0,80.66,"S,M,L,XL,XXL",,23,4.91,51
+p-d8936a7abfdc,Puma Athletic Running Shoes,Puma,Footwear,Running Shoes,102.91,25.0,77.18,"6,7,8,9,10,11",,31,4.14,5
+p-ba4c2d70898b,H&M Men Solid Shirts,H&M Men,Men,Topwear - Shirts,72.95,20.0,58.36,"S,M,L,XL,XXL",,51,3.87,18
+p-0aa09e624676,Marks & Spencer Oversized Trousers,Marks & Spencer,Men,Bottomwear - Trousers,75.09,25.0,56.32,"S,M,L,XL,XXL",,85,4.59,82
+p-6bcb48db7dcc,H&M Men Linen Trousers,H&M Men,Men,Bottomwear - Trousers,54.19,0.0,54.19,"S,M,L,XL,XXL",,11,4.21,14
+p-0dbf9451d1d1,Tommy Hilfiger Linen Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,83.05,0.0,83.05,One Size,,51,4.08,147
+p-47627ee691eb,Biba Floral Print Tops & Tees,Biba,Women,Tops & Tees,105.85,0.0,105.85,"XS,S,M,L,XL",,42,3.8,32
+p-c01b41fcaef3,Tommy Hilfiger Slim Fit Watches,Tommy Hilfiger,Accessories,Watches,71.64,15.0,60.89,One Size,,43,4.34,14
+p-ba1bbbe72547,Biba Casual Jeans,Biba,Women,Bottomwear - Jeans,66.93,10.0,60.24,"XS,S,M,L,XL",,40,4.26,53
+p-f1cd7b85298c,Vero Moda Textured Ethnic Wear,Vero Moda,Women,Ethnic Wear,29.66,40.0,17.8,"XS,S,M,L,XL",,41,4.09,66
+p-b607025f8386,Vero Moda Slim Fit Tops & Tees,Vero Moda,Women,Tops & Tees,99.1,20.0,79.28,"XS,S,M,L,XL","S,M",52,4.1,65
+p-2161c03e76bd,Roadster Casual Shirts,Roadster,Men,Topwear - Shirts,60.09,15.0,51.08,"S,M,L,XL,XXL",L,36,4.43,13
+p-8fd09dad4446,Zara Casual Tops & Tees,Zara,Women,Tops & Tees,98.95,20.0,79.16,"XS,S,M,L,XL",,60,4.38,8
+p-cfab23eacf23,H&M Men Classic Jeans,H&M Men,Men,Bottomwear - Jeans,34.92,10.0,31.43,"S,M,L,XL,XXL",,91,4.1,3
+p-29579ce98c2b,Marks & Spencer Linen Shirts,Marks & Spencer,Men,Topwear - Shirts,71.53,50.0,35.77,"S,M,L,XL,XXL",,21,3.95,39
+p-c1ee52eed4fe,Mango Textured Ethnic Wear,Mango,Women,Ethnic Wear,79.03,0.0,79.03,"XS,S,M,L,XL",,61,4.25,3
+p-1d86dd171e80,Clarks Slim Fit Running Shoes,Clarks,Footwear,Running Shoes,57.26,15.0,48.67,"6,7,8,9,10,11",,92,4.42,66
+p-4326e2fa04c2,Red Tape Textured Formal Shoes,Red Tape,Footwear,Formal Shoes,91.07,15.0,77.41,"6,7,8,9,10,11",,79,4.75,100
+p-682569b69b48,Biba Regular Fit Tops & Tees,Biba,Women,Tops & Tees,64.54,25.0,48.41,"XS,S,M,L,XL",,35,4.0,26
+p-80d9b21abdbb,Red Tape Solid Sneakers,Red Tape,Footwear,Sneakers,93.71,10.0,84.34,"6,7,8,9,10,11",,22,4.8,44
+p-961fa73c3061,H&M Solid Ethnic Wear,H&M,Women,Ethnic Wear,95.11,0.0,95.11,"XS,S,M,L,XL",,111,3.86,5
+p-686f51fa68b3,Levi's Linen Shirts,Levi's,Men,Topwear - Shirts,75.89,20.0,60.71,"S,M,L,XL,XXL",,44,3.34,8
+p-8c3247d330bc,Mango Linen Jeans,Mango,Women,Bottomwear - Jeans,54.98,0.0,54.98,"XS,S,M,L,XL",,54,4.37,62
+p-7b52c1ecbb45,Roadster Vintage Wash T-Shirts,Roadster,Men,Topwear - T-Shirts,41.02,25.0,30.77,"S,M,L,XL,XXL",,64,4.07,85
+p-a3c33d7bb162,H&M Oversized Tops & Tees,H&M,Women,Tops & Tees,75.9,10.0,68.31,"XS,S,M,L,XL","S,M",25,4.4,42
+p-513360c59966,H&M Casual Tops & Tees,H&M,Women,Tops & Tees,111.04,50.0,55.52,"XS,S,M,L,XL",,101,4.51,86
+p-6b565202eff5,H&M Men Textured Trousers,H&M Men,Men,Bottomwear - Trousers,77.33,10.0,69.6,"S,M,L,XL,XXL","L,M",40,3.98,108
+p-bce8323fbf61,Tommy Hilfiger Linen Bags & Backpacks,Tommy Hilfiger,Accessories,Bags & Backpacks,93.71,0.0,93.71,One Size,,48,3.99,25
+p-46e5bb235246,Lavie Vintage Wash Belts & Wallets,Lavie,Accessories,Belts & Wallets,68.25,0.0,68.25,One Size,,37,3.82,72
+p-5e354c0d5432,Tommy Hilfiger Cotton Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,61.7,10.0,55.53,One Size,,25,4.14,4
+p-53b683fed0ce,Tommy Hilfiger Casual T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,87.5,0.0,87.5,"S,M,L,XL,XXL","L,M",29,3.53,106
+p-beeb8a0eb2b2,Levi's Textured Jeans,Levi's,Men,Bottomwear - Jeans,67.35,50.0,33.67,"S,M,L,XL,XXL",,24,4.56,72
+p-1e0d298892b0,Forever 21 Textured Dresses,Forever 21,Women,Dresses,70.78,30.0,49.55,"XS,S,M,L,XL",,36,4.25,31
+p-ab1bb4db7915,Titan Solid Bags & Backpacks,Titan,Accessories,Bags & Backpacks,78.22,0.0,78.22,One Size,,20,4.0,16
+p-4d581a25c41a,Puma Athletic Running Shoes,Puma,Footwear,Running Shoes,97.26,10.0,87.53,"6,7,8,9,10,11",,33,4.5,73
+p-1aabf9b76068,H&M Textured Jeans,H&M,Women,Bottomwear - Jeans,78.8,0.0,78.8,"XS,S,M,L,XL",,11,3.77,52
+p-1a1074fadb6e,Allen Solly Athletic Jeans,Allen Solly,Men,Bottomwear - Jeans,35.26,50.0,17.63,"S,M,L,XL,XXL",,39,3.9,35
+p-fb1ccfd5df5d,Red Tape Regular Fit Formal Shoes,Red Tape,Footwear,Formal Shoes,90.35,0.0,90.35,"6,7,8,9,10,11",,46,3.92,11
+p-4a69548d1dea,H&M Men Athletic Shirts,H&M Men,Men,Topwear - Shirts,73.72,25.0,55.29,"S,M,L,XL,XXL",,28,3.81,16
+p-5bf2b05de330,Lavie Oversized Belts & Wallets,Lavie,Accessories,Belts & Wallets,74.52,30.0,52.16,One Size,,57,4.13,110
+p-89eeb4197e75,Mango Linen Dresses,Mango,Women,Dresses,70.99,0.0,70.99,"XS,S,M,L,XL",,29,4.0,70
+p-4fbf6f9cdadb,Fastrack Oversized Watches,Fastrack,Accessories,Watches,49.6,25.0,37.2,One Size,,80,3.87,19
+p-2b59fa33730d,Forever 21 Formal Jeans,Forever 21,Women,Bottomwear - Jeans,52.05,40.0,31.23,"XS,S,M,L,XL",,72,4.49,20
+p-92fc7c434a81,Puma Casual Formal Shoes,Puma,Footwear,Formal Shoes,130.98,0.0,130.98,"6,7,8,9,10,11",,63,4.03,12
+p-00467fe6aa89,Red Tape Linen Sandals,Red Tape,Footwear,Sandals,104.31,0.0,104.31,"6,7,8,9,10,11",,35,3.89,99
+p-359791c796b9,Nike Oversized Running Shoes,Nike,Footwear,Running Shoes,93.38,50.0,46.69,"6,7,8,9,10,11",,50,4.28,20
+p-c482a4bd377f,Lavie Solid Watches,Lavie,Accessories,Watches,125.96,25.0,94.47,One Size,,31,4.57,60
+p-0da850cf3166,Clarks Linen Running Shoes,Clarks,Footwear,Running Shoes,63.38,10.0,57.04,"6,7,8,9,10,11","8,9",147,4.32,8
+p-209038476ec0,Reebok Linen Sneakers,Reebok,Footwear,Sneakers,149.65,30.0,104.75,"6,7,8,9,10,11",,39,4.6,21
+p-c3b1ef17c41a,Roadster Vintage Wash Jeans,Roadster,Men,Bottomwear - Jeans,70.53,40.0,42.32,"S,M,L,XL,XXL",,44,4.45,63
+p-c212f3886f35,Levi's Textured Jeans,Levi's,Men,Bottomwear - Jeans,64.29,25.0,48.22,"S,M,L,XL,XXL",,41,4.11,177
+p-84dbfef707f7,Forever 21 Formal Dresses,Forever 21,Women,Dresses,46.13,15.0,39.21,"XS,S,M,L,XL",,83,4.31,218
+p-b651bf785c76,Allen Solly Regular Fit T-Shirts,Allen Solly,Men,Topwear - T-Shirts,33.34,0.0,33.34,"S,M,L,XL,XXL",,25,3.94,6
+p-538c0ac0c657,Red Tape Cotton Running Shoes,Red Tape,Footwear,Running Shoes,87.15,30.0,61.01,"6,7,8,9,10,11",,22,4.37,16
+p-699c26292602,Fastrack Slim Fit Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,83.34,20.0,66.67,One Size,,78,3.69,24
+p-57fd048d27b3,H&M Men Casual Shirts,H&M Men,Men,Topwear - Shirts,53.64,50.0,26.82,"S,M,L,XL,XXL",M,32,4.07,90
+p-164d873d107d,Tommy Hilfiger Linen Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,88.03,30.0,61.62,"S,M,L,XL,XXL",,56,4.16,39
+p-ae660ae5771e,Forever 21 Solid Ethnic Wear,Forever 21,Women,Ethnic Wear,73.25,25.0,54.94,"XS,S,M,L,XL",,48,4.28,7
+p-7fcf75f149b1,Allen Solly Regular Fit Trousers,Allen Solly,Men,Bottomwear - Trousers,24.16,10.0,21.74,"S,M,L,XL,XXL",,109,4.38,5
+p-3ffd65bc9d95,Puma Slim Fit Running Shoes,Puma,Footwear,Running Shoes,126.82,0.0,126.82,"6,7,8,9,10,11",,95,4.58,18
+p-97efa68081c6,Vero Moda Casual Tops & Tees,Vero Moda,Women,Tops & Tees,57.14,30.0,40.0,"XS,S,M,L,XL",,47,3.83,7
+p-dfe6f0a7d5c8,Fossil Textured Belts & Wallets,Fossil,Accessories,Belts & Wallets,83.21,30.0,58.25,One Size,,51,3.97,111
+p-d94dca8e0e6a,Forever 21 Textured Jeans,Forever 21,Women,Bottomwear - Jeans,47.18,0.0,47.18,"XS,S,M,L,XL",,51,4.65,48
+p-24eb929e6b54,Mango Floral Print Ethnic Wear,Mango,Women,Ethnic Wear,46.64,0.0,46.64,"XS,S,M,L,XL",,38,4.08,188
+p-3561bc1d500d,Levi's Textured Trousers,Levi's,Men,Bottomwear - Trousers,53.36,40.0,32.02,"S,M,L,XL,XXL",M,15,3.94,9
+p-061f2358ec0e,Zara Men Oversized Jeans,Zara Men,Men,Bottomwear - Jeans,97.59,0.0,97.59,"S,M,L,XL,XXL",,44,4.31,17
+p-63df77a65ce5,Levi's Athletic T-Shirts,Levi's,Men,Topwear - T-Shirts,58.86,0.0,58.86,"S,M,L,XL,XXL",,21,4.04,76
+p-6b39d2f3e1f7,Urban Chic Floral Print Tops & Tees,Urban Chic,Women,Tops & Tees,71.94,0.0,71.94,"XS,S,M,L,XL",,29,3.88,46
+p-ee3037e27c29,Marks & Spencer Classic T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,50.47,10.0,45.42,"S,M,L,XL,XXL",M,40,4.05,29
+p-a8be86e6a602,Fastrack Regular Fit Belts & Wallets,Fastrack,Accessories,Belts & Wallets,46.15,20.0,36.92,One Size,,47,4.24,45
+p-ead53aa70431,Zara Men Slim Fit Shirts,Zara Men,Men,Topwear - Shirts,79.13,40.0,47.48,"S,M,L,XL,XXL",,58,4.43,4
+p-e0dc60d0dd7f,Clarks Linen Formal Shoes,Clarks,Footwear,Formal Shoes,78.05,10.0,70.25,"6,7,8,9,10,11","8,9",59,3.84,27
+p-42805c44e2ab,Clarks Regular Fit Running Shoes,Clarks,Footwear,Running Shoes,62.38,0.0,62.38,"6,7,8,9,10,11",,37,4.21,54
+p-1469b9ea7277,Vero Moda Athletic Ethnic Wear,Vero Moda,Women,Ethnic Wear,77.42,0.0,77.42,"XS,S,M,L,XL",,56,4.22,96
+p-6560a8d6f88a,Vero Moda Formal Dresses,Vero Moda,Women,Dresses,45.58,40.0,27.35,"XS,S,M,L,XL",M,66,4.26,29
+p-be98bc60ee3b,Allen Solly Slim Fit Trousers,Allen Solly,Men,Bottomwear - Trousers,53.0,40.0,31.8,"S,M,L,XL,XXL","L,M",111,4.59,50
+p-87f337a5759c,Reebok Solid Sneakers,Reebok,Footwear,Sneakers,107.48,20.0,85.98,"6,7,8,9,10,11",,27,4.54,43
+p-328a7ed908d9,Levi's Linen Shirts,Levi's,Men,Topwear - Shirts,52.29,25.0,39.22,"S,M,L,XL,XXL",,48,3.51,42
+p-99de8910c53e,H&M Cotton Dresses,H&M,Women,Dresses,77.95,10.0,70.16,"XS,S,M,L,XL",,30,3.71,49
+p-749e01e728ad,Tommy Hilfiger Classic Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,74.11,50.0,37.05,"S,M,L,XL,XXL",,46,4.61,21
+p-a8513594658b,Roadster Classic Trousers,Roadster,Men,Bottomwear - Trousers,53.49,0.0,53.49,"S,M,L,XL,XXL",,89,3.58,14
+p-2e0f985ed7f5,Lavie Textured Bags & Backpacks,Lavie,Accessories,Bags & Backpacks,67.04,10.0,60.34,One Size,,84,3.76,7
+p-2782896fc4d4,Tommy Hilfiger Casual T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,89.94,20.0,71.95,"S,M,L,XL,XXL",,47,4.06,18
+p-108c3d23435e,Ray-Ban Casual Sunglasses,Ray-Ban,Accessories,Sunglasses,41.12,30.0,28.78,One Size,,98,4.19,38
+p-6467fc201b51,Tommy Hilfiger Solid Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,63.88,0.0,63.88,"S,M,L,XL,XXL","L,M",44,4.14,37
+p-784683fcbf2c,Zara Men Textured Jeans,Zara Men,Men,Bottomwear - Jeans,45.46,50.0,22.73,"S,M,L,XL,XXL",,55,3.87,5
+p-c20f0d50bc6d,Levi's Regular Fit Shirts,Levi's,Men,Topwear - Shirts,46.73,50.0,23.36,"S,M,L,XL,XXL",L,31,4.25,370
+p-30f15b6b73b3,Roadster Slim Fit T-Shirts,Roadster,Men,Topwear - T-Shirts,78.52,0.0,78.52,"S,M,L,XL,XXL",,22,3.83,20
+p-218375e3f6d9,Red Tape Regular Fit Sandals,Red Tape,Footwear,Sandals,90.5,25.0,67.88,"6,7,8,9,10,11",,77,5.0,14
+p-c83cd58474ae,Lavie Slim Fit Sunglasses,Lavie,Accessories,Sunglasses,110.29,10.0,99.26,One Size,,18,3.91,54
+p-50aa38f4e3cf,Forever 21 Cotton Jeans,Forever 21,Women,Bottomwear - Jeans,34.6,50.0,17.3,"XS,S,M,L,XL",,46,4.15,92
+p-76ad45f309b9,H&M Textured Tops & Tees,H&M,Women,Tops & Tees,63.61,0.0,63.61,"XS,S,M,L,XL",,55,3.94,35
+p-c87dd249a9e4,Mango Formal Dresses,Mango,Women,Dresses,76.27,40.0,45.76,"XS,S,M,L,XL","S,M",88,4.89,43
+p-9905d291bc19,Clarks Textured Sneakers,Clarks,Footwear,Sneakers,91.47,30.0,64.03,"6,7,8,9,10,11",,22,4.36,47
+p-6f9c939d4ff5,Fossil Oversized Belts & Wallets,Fossil,Accessories,Belts & Wallets,25.6,10.0,23.04,One Size,,7,4.18,48
+p-34ac1ff752e2,Biba Athletic Jeans,Biba,Women,Bottomwear - Jeans,96.66,0.0,96.66,"XS,S,M,L,XL",,77,4.66,212
+p-0f90c26f0fe9,H&M Men Slim Fit Jeans,H&M Men,Men,Bottomwear - Jeans,104.62,0.0,104.62,"S,M,L,XL,XXL",,48,4.11,48
+p-86296d534b49,Roadster Textured T-Shirts,Roadster,Men,Topwear - T-Shirts,22.16,30.0,15.51,"S,M,L,XL,XXL",,36,4.27,7
+p-1e3a15d332cc,Biba Textured Tops & Tees,Biba,Women,Tops & Tees,40.92,15.0,34.78,"XS,S,M,L,XL",,77,4.31,47
+p-872f9b7928b1,Biba Formal Dresses,Biba,Women,Dresses,85.34,0.0,85.34,"XS,S,M,L,XL","M,S",14,4.29,8
+p-f79e79baf494,Puma Cotton Formal Shoes,Puma,Footwear,Formal Shoes,77.1,15.0,65.53,"6,7,8,9,10,11",,67,3.59,14
+p-d7c7b870d147,Levi's Oversized Shirts,Levi's,Men,Topwear - Shirts,77.4,40.0,46.44,"S,M,L,XL,XXL",M,29,4.17,86
+p-133cb97eb8d8,Vero Moda Textured Jeans,Vero Moda,Women,Bottomwear - Jeans,53.8,0.0,53.8,"XS,S,M,L,XL",,37,4.67,12
+p-546db60cb274,Vero Moda Cotton Ethnic Wear,Vero Moda,Women,Ethnic Wear,102.05,25.0,76.54,"XS,S,M,L,XL",M,34,4.22,15
+p-472d80bd9fd5,Zara Cotton Ethnic Wear,Zara,Women,Ethnic Wear,96.95,40.0,58.17,"XS,S,M,L,XL",,34,3.91,10
+p-c32c9234f5d2,Clarks Textured Running Shoes,Clarks,Footwear,Running Shoes,120.24,10.0,108.22,"6,7,8,9,10,11",,96,3.93,17
+p-a311310a02d1,Vero Moda Classic Tops & Tees,Vero Moda,Women,Tops & Tees,39.0,30.0,27.3,"XS,S,M,L,XL",M,45,4.21,93
+p-2e1138dff55d,Urban Chic Oversized Tops & Tees,Urban Chic,Women,Tops & Tees,107.48,50.0,53.74,"XS,S,M,L,XL",,24,4.29,7
+p-ca7cbae440c1,Mango Regular Fit Jeans,Mango,Women,Bottomwear - Jeans,70.74,20.0,56.59,"XS,S,M,L,XL","S,M",42,3.86,16
+p-2d325fa8b68a,Clarks Solid Running Shoes,Clarks,Footwear,Running Shoes,72.89,0.0,72.89,"6,7,8,9,10,11",,55,4.29,17
+p-39ec2a41fc32,Zara Vintage Wash Jeans,Zara,Women,Bottomwear - Jeans,80.38,30.0,56.27,"XS,S,M,L,XL",,48,4.15,28
+p-cff7bace7531,Vero Moda Slim Fit Dresses,Vero Moda,Women,Dresses,53.03,0.0,53.03,"XS,S,M,L,XL",,61,4.58,88
+p-adb0d6a94a5a,Marks & Spencer Linen Shirts,Marks & Spencer,Men,Topwear - Shirts,66.95,25.0,50.21,"S,M,L,XL,XXL",,37,4.38,4
+p-a5b65e0497ac,Biba Textured Ethnic Wear,Biba,Women,Ethnic Wear,111.24,0.0,111.24,"XS,S,M,L,XL",,66,4.03,41
+p-779514bead33,Tommy Hilfiger Slim Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,29.46,10.0,26.51,"S,M,L,XL,XXL",,115,3.54,84
+p-1db2e3f66d18,Marks & Spencer Classic T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,52.04,0.0,52.04,"S,M,L,XL,XXL",,47,4.07,33
+p-388ce6cff396,Zara Vintage Wash Jeans,Zara,Women,Bottomwear - Jeans,73.14,25.0,54.86,"XS,S,M,L,XL",,25,4.64,30
+p-1c3e6ba32b23,Tommy Hilfiger Classic T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,43.91,0.0,43.91,"S,M,L,XL,XXL",,32,3.88,24
+p-5df4ecf0cd12,Vero Moda Cotton Dresses,Vero Moda,Women,Dresses,50.95,25.0,38.21,"XS,S,M,L,XL",,48,4.19,22
+p-af6ac96edddc,Mango Athletic Tops & Tees,Mango,Women,Tops & Tees,24.5,0.0,24.5,"XS,S,M,L,XL",S,96,4.38,30
+p-4904d614c34b,Mango Solid Jeans,Mango,Women,Bottomwear - Jeans,59.37,0.0,59.37,"XS,S,M,L,XL",,63,4.11,64
+p-a136dad25c26,H&M Regular Fit Tops & Tees,H&M,Women,Tops & Tees,38.33,30.0,26.83,"XS,S,M,L,XL",S,16,4.89,49
+p-6771dca3a4a9,Urban Chic Athletic Tops & Tees,Urban Chic,Women,Tops & Tees,92.34,0.0,92.34,"XS,S,M,L,XL",,56,4.44,87
+p-9789e192ff3b,Marks & Spencer Textured T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,47.05,50.0,23.52,"S,M,L,XL,XXL",,51,4.54,135
+p-5ed70262384e,Allen Solly Classic Trousers,Allen Solly,Men,Bottomwear - Trousers,71.43,20.0,57.14,"S,M,L,XL,XXL",,59,3.77,145
+p-1b0b653dd8a4,Urban Chic Textured Jeans,Urban Chic,Women,Bottomwear - Jeans,55.39,10.0,49.85,"XS,S,M,L,XL",,41,4.38,67
+p-c2bb73d5a727,Zara Casual Ethnic Wear,Zara,Women,Ethnic Wear,50.83,20.0,40.66,"XS,S,M,L,XL",,49,3.65,5
+p-35302d8317b1,Puma Classic Sandals,Puma,Footwear,Sandals,147.01,50.0,73.5,"6,7,8,9,10,11",9,38,3.88,48
+p-0a2da441c72f,Vero Moda Slim Fit Ethnic Wear,Vero Moda,Women,Ethnic Wear,65.42,40.0,39.25,"XS,S,M,L,XL","S,M",53,4.0,43
+p-8e50d7ba5214,Tommy Hilfiger Classic Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,64.8,50.0,32.4,"S,M,L,XL,XXL",,17,4.63,25
+p-3d7011eb159b,Tommy Hilfiger Athletic Bags & Backpacks,Tommy Hilfiger,Accessories,Bags & Backpacks,122.08,15.0,103.77,One Size,,25,3.81,49
+p-4f05571e5219,Mango Classic Tops & Tees,Mango,Women,Tops & Tees,49.39,15.0,41.98,"XS,S,M,L,XL",,68,4.55,72
+p-bd6863d05d16,Zara Casual Tops & Tees,Zara,Women,Tops & Tees,74.54,30.0,52.18,"XS,S,M,L,XL","S,M",54,4.46,61
+p-69e1cf85f8e3,Zara Men Solid Shirts,Zara Men,Men,Topwear - Shirts,54.41,0.0,54.41,"S,M,L,XL,XXL",,34,3.87,18
+p-d90e594896a1,Forever 21 Formal Ethnic Wear,Forever 21,Women,Ethnic Wear,109.38,30.0,76.57,"XS,S,M,L,XL",,53,3.68,66
+p-14ff73c38b7c,Ray-Ban Cotton Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,118.13,15.0,100.41,One Size,,17,3.51,87
+p-6a1a14b64e20,Tommy Hilfiger Athletic Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,105.42,50.0,52.71,One Size,,98,4.01,138
+p-07d21966a89c,Biba Classic Jeans,Biba,Women,Bottomwear - Jeans,67.2,20.0,53.76,"XS,S,M,L,XL","S,M",64,4.09,28
+p-c1092302dd78,Titan Textured Bags & Backpacks,Titan,Accessories,Bags & Backpacks,101.23,15.0,86.05,One Size,,49,4.02,13
+p-567b30ed15bb,Mango Cotton Ethnic Wear,Mango,Women,Ethnic Wear,51.29,0.0,51.29,"XS,S,M,L,XL",,50,4.58,69
+p-5ad2007efeea,Mango Regular Fit Tops & Tees,Mango,Women,Tops & Tees,48.44,50.0,24.22,"XS,S,M,L,XL",,24,4.28,25
+p-d2918834cb6d,Mango Cotton Tops & Tees,Mango,Women,Tops & Tees,73.21,25.0,54.91,"XS,S,M,L,XL",,40,3.89,19
+p-e63f88a31c90,Zara Men Classic Trousers,Zara Men,Men,Bottomwear - Trousers,20.12,25.0,15.09,"S,M,L,XL,XXL",,24,4.43,27
+p-20280bcdb1bb,Puma Formal Sneakers,Puma,Footwear,Sneakers,100.83,30.0,70.58,"6,7,8,9,10,11","8,9",87,3.99,23
+p-835bf94d8a76,Titan Linen Sunglasses,Titan,Accessories,Sunglasses,96.59,40.0,57.95,One Size,,57,4.76,6
+p-a960a9e3b24e,Mango Cotton Dresses,Mango,Women,Dresses,86.3,0.0,86.3,"XS,S,M,L,XL",M,74,4.35,4
+p-26b848cb6a4d,Zara Men Floral Print Trousers,Zara Men,Men,Bottomwear - Trousers,63.57,0.0,63.57,"S,M,L,XL,XXL",,47,4.02,35
+p-c534a809d8f6,Zara Cotton Tops & Tees,Zara,Women,Tops & Tees,63.27,40.0,37.96,"XS,S,M,L,XL",,51,4.04,117
+p-47d57b9ced2c,Forever 21 Athletic Dresses,Forever 21,Women,Dresses,87.98,30.0,61.59,"XS,S,M,L,XL",,107,4.37,10
+p-1adf07a88a4d,Allen Solly Linen Shirts,Allen Solly,Men,Topwear - Shirts,74.32,10.0,66.89,"S,M,L,XL,XXL",,23,3.31,11
+p-8bb883c1d526,Clarks Vintage Wash Formal Shoes,Clarks,Footwear,Formal Shoes,111.19,20.0,88.95,"6,7,8,9,10,11",8,43,4.24,46
+p-e42dd6fdc97d,Nike Vintage Wash Running Shoes,Nike,Footwear,Running Shoes,65.37,10.0,58.83,"6,7,8,9,10,11",,37,4.33,5
+p-4fbd9539bd6b,Vero Moda Classic Tops & Tees,Vero Moda,Women,Tops & Tees,87.07,30.0,60.95,"XS,S,M,L,XL","S,M",46,4.3,77
+p-760d6dd0006d,Urban Chic Athletic Jeans,Urban Chic,Women,Bottomwear - Jeans,79.69,0.0,79.69,"XS,S,M,L,XL",,38,3.88,19
+p-86ecada0d300,Ray-Ban Textured Watches,Ray-Ban,Accessories,Watches,101.84,50.0,50.92,One Size,,45,4.02,38
+p-455f1e5cd6b5,Tommy Hilfiger Athletic Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,48.61,0.0,48.61,"S,M,L,XL,XXL",,48,4.58,26
+p-78591900b440,Roadster Formal Trousers,Roadster,Men,Bottomwear - Trousers,75.8,0.0,75.8,"S,M,L,XL,XXL",,27,3.76,5
+p-e9d3b077e4aa,Urban Chic Floral Print Tops & Tees,Urban Chic,Women,Tops & Tees,113.71,15.0,96.65,"XS,S,M,L,XL",,83,4.24,72
+p-40a61cf551bb,Urban Chic Cotton Tops & Tees,Urban Chic,Women,Tops & Tees,126.13,0.0,126.13,"XS,S,M,L,XL","M,S",36,4.29,7
+p-e52004ad8f9d,Mango Regular Fit Dresses,Mango,Women,Dresses,121.9,15.0,103.62,"XS,S,M,L,XL",,43,3.5,25
+p-2af279c6b985,Tommy Hilfiger Formal Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,43.04,25.0,32.28,"S,M,L,XL,XXL","M,L",26,4.81,9
+p-960cf7793081,Mango Slim Fit Ethnic Wear,Mango,Women,Ethnic Wear,50.17,50.0,25.09,"XS,S,M,L,XL","M,S",58,4.01,7
+p-d96b9dc0cf18,Zara Linen Ethnic Wear,Zara,Women,Ethnic Wear,80.93,15.0,68.79,"XS,S,M,L,XL","S,M",110,4.57,45
+p-ed4ac3c90d78,Zara Men Slim Fit T-Shirts,Zara Men,Men,Topwear - T-Shirts,46.78,10.0,42.1,"S,M,L,XL,XXL",,75,4.1,45
+p-e36f4f73cad9,Allen Solly Oversized Trousers,Allen Solly,Men,Bottomwear - Trousers,91.84,0.0,91.84,"S,M,L,XL,XXL",,25,3.64,5
+p-125e63056034,Vero Moda Classic Ethnic Wear,Vero Moda,Women,Ethnic Wear,64.2,30.0,44.94,"XS,S,M,L,XL",S,91,4.11,85
+p-5c7daba21237,Zara Men Oversized Jeans,Zara Men,Men,Bottomwear - Jeans,67.91,30.0,47.54,"S,M,L,XL,XXL",,58,3.86,102
+p-17fdcc2c4900,Levi's Athletic Trousers,Levi's,Men,Bottomwear - Trousers,77.7,30.0,54.39,"S,M,L,XL,XXL","M,L",81,4.24,52
+p-71652fbd6d8a,Vero Moda Textured Tops & Tees,Vero Moda,Women,Tops & Tees,52.67,10.0,47.4,"XS,S,M,L,XL",,18,3.88,17
+p-48733b229d52,Levi's Regular Fit Trousers,Levi's,Men,Bottomwear - Trousers,31.82,20.0,25.46,"S,M,L,XL,XXL",,30,4.71,23
+p-0d7a22b5dfa3,Roadster Formal Trousers,Roadster,Men,Bottomwear - Trousers,85.05,25.0,63.79,"S,M,L,XL,XXL",M,99,3.66,46
+p-7a9259059eb9,Vero Moda Slim Fit Jeans,Vero Moda,Women,Bottomwear - Jeans,88.76,20.0,71.01,"XS,S,M,L,XL",,50,3.67,75
+p-b73323f92956,Roadster Vintage Wash T-Shirts,Roadster,Men,Topwear - T-Shirts,83.0,30.0,58.1,"S,M,L,XL,XXL",L,37,4.07,47
+p-d2f8271d7733,Roadster Formal Shirts,Roadster,Men,Topwear - Shirts,70.08,25.0,52.56,"S,M,L,XL,XXL",,92,4.28,27
+p-1fdff0a8af45,Vero Moda Casual Dresses,Vero Moda,Women,Dresses,93.13,10.0,83.82,"XS,S,M,L,XL","M,S",34,3.91,33
+p-c97e4965132f,Ray-Ban Athletic Bags & Backpacks,Ray-Ban,Accessories,Bags & Backpacks,39.88,40.0,23.93,One Size,,45,4.41,8
+p-a80c401c9c7d,Mango Floral Print Dresses,Mango,Women,Dresses,93.27,40.0,55.96,"XS,S,M,L,XL",,41,4.35,8
+p-f69af695985d,Marks & Spencer Classic Shirts,Marks & Spencer,Men,Topwear - Shirts,48.76,0.0,48.76,"S,M,L,XL,XXL",,73,3.4,22
+p-31cc2c2616e2,Adidas Slim Fit Sandals,Adidas,Footwear,Sandals,116.53,0.0,116.53,"6,7,8,9,10,11",,59,4.11,22
+p-5c3e50876e96,Urban Chic Textured Jeans,Urban Chic,Women,Bottomwear - Jeans,113.08,30.0,79.16,"XS,S,M,L,XL","M,S",53,4.26,74
+p-be87f16ce5da,Nike Solid Formal Shoes,Nike,Footwear,Formal Shoes,83.34,15.0,70.84,"6,7,8,9,10,11",,12,3.76,53
+p-266a89b94259,Levi's Cotton Trousers,Levi's,Men,Bottomwear - Trousers,69.31,0.0,69.31,"S,M,L,XL,XXL",,54,4.49,35
+p-200ac9021b08,Levi's Linen T-Shirts,Levi's,Men,Topwear - T-Shirts,33.98,0.0,33.98,"S,M,L,XL,XXL",,71,4.05,22
+p-03a2c2979d49,Marks & Spencer Formal Trousers,Marks & Spencer,Men,Bottomwear - Trousers,44.06,25.0,33.05,"S,M,L,XL,XXL",,56,3.97,17
+p-84a46c0557b7,Marks & Spencer Textured Shirts,Marks & Spencer,Men,Topwear - Shirts,73.18,20.0,58.54,"S,M,L,XL,XXL",,30,3.59,38
+p-9371cb03d7a6,Urban Chic Athletic Jeans,Urban Chic,Women,Bottomwear - Jeans,85.7,0.0,85.7,"XS,S,M,L,XL","M,S",14,4.51,47
+p-7240f286a853,Vero Moda Vintage Wash Jeans,Vero Moda,Women,Bottomwear - Jeans,45.07,25.0,33.8,"XS,S,M,L,XL",,39,4.27,35
+p-40701d415e13,H&M Men Oversized Trousers,H&M Men,Men,Bottomwear - Trousers,74.33,15.0,63.18,"S,M,L,XL,XXL",,43,4.05,73
+p-ca6ed4035275,H&M Men Athletic Trousers,H&M Men,Men,Bottomwear - Trousers,56.67,10.0,51.0,"S,M,L,XL,XXL",,43,4.37,62
+p-cc6c6ebb4a2a,Biba Vintage Wash Dresses,Biba,Women,Dresses,90.08,15.0,76.57,"XS,S,M,L,XL",M,54,3.42,73
+p-24e9b1fbb200,Zara Regular Fit Jeans,Zara,Women,Bottomwear - Jeans,51.08,30.0,35.76,"XS,S,M,L,XL","M,S",40,4.14,49
+p-58d1940f8ad1,Zara Men Solid Trousers,Zara Men,Men,Bottomwear - Trousers,47.29,0.0,47.29,"S,M,L,XL,XXL",,40,3.68,64
+p-b8a7b39d0aa6,Nike Solid Running Shoes,Nike,Footwear,Running Shoes,96.16,40.0,57.7,"6,7,8,9,10,11",,42,4.05,267
+p-8367e39faa14,Forever 21 Vintage Wash Jeans,Forever 21,Women,Bottomwear - Jeans,60.48,0.0,60.48,"XS,S,M,L,XL",,87,3.93,23
+p-7acfcbbb64c6,Zara Textured Dresses,Zara,Women,Dresses,87.44,20.0,69.95,"XS,S,M,L,XL",,40,4.54,86
+p-6a0a5ab6b0fc,Forever 21 Athletic Jeans,Forever 21,Women,Bottomwear - Jeans,80.21,0.0,80.21,"XS,S,M,L,XL",,35,4.19,27
+p-22d322fc42b0,Zara Oversized Tops & Tees,Zara,Women,Tops & Tees,72.49,0.0,72.49,"XS,S,M,L,XL",,32,4.38,24
+p-0b242bd11b31,Zara Oversized Ethnic Wear,Zara,Women,Ethnic Wear,62.0,15.0,52.7,"XS,S,M,L,XL","M,S",26,4.34,50
+p-510a42330d38,Clarks Oversized Sneakers,Clarks,Footwear,Sneakers,98.53,15.0,83.75,"6,7,8,9,10,11",,91,4.72,24
+p-bd2f2d0f3c75,Mango Casual Jeans,Mango,Women,Bottomwear - Jeans,51.23,15.0,43.55,"XS,S,M,L,XL",,30,4.16,12
+p-132b34f999ca,Roadster Linen T-Shirts,Roadster,Men,Topwear - T-Shirts,69.46,15.0,59.04,"S,M,L,XL,XXL",,71,4.12,38
+p-1fa923dd8f7f,H&M Regular Fit Jeans,H&M,Women,Bottomwear - Jeans,80.56,10.0,72.5,"XS,S,M,L,XL",M,59,3.86,56
+p-16115f0ed9ab,Roadster Regular Fit Trousers,Roadster,Men,Bottomwear - Trousers,63.21,0.0,63.21,"S,M,L,XL,XXL",,31,4.34,67
+p-4cc2225888e1,Allen Solly Casual Jeans,Allen Solly,Men,Bottomwear - Jeans,34.43,25.0,25.82,"S,M,L,XL,XXL",,62,4.08,16
+p-0db9fb087595,Biba Casual Jeans,Biba,Women,Bottomwear - Jeans,104.83,40.0,62.9,"XS,S,M,L,XL",S,18,4.39,101
+p-ada2001c46fe,Zara Men Solid Trousers,Zara Men,Men,Bottomwear - Trousers,86.85,40.0,52.11,"S,M,L,XL,XXL",,38,4.41,58
+p-fee372221c89,Lavie Linen Bags & Backpacks,Lavie,Accessories,Bags & Backpacks,98.89,30.0,69.22,One Size,,61,4.28,274
+p-330f0d230f44,Allen Solly Regular Fit Jeans,Allen Solly,Men,Bottomwear - Jeans,29.1,10.0,26.19,"S,M,L,XL,XXL",,53,4.08,6
+p-31bc8d9d431e,H&M Men Oversized Jeans,H&M Men,Men,Bottomwear - Jeans,24.93,0.0,24.93,"S,M,L,XL,XXL",,44,3.79,9
+p-22d95d57a4a4,Urban Chic Linen Tops & Tees,Urban Chic,Women,Tops & Tees,26.96,30.0,18.87,"XS,S,M,L,XL",,78,4.72,213
+p-54e89c908d1f,Adidas Athletic Sneakers,Adidas,Footwear,Sneakers,89.27,20.0,71.42,"6,7,8,9,10,11","8,9",105,4.52,24
+p-3b3399d61104,Vero Moda Athletic Jeans,Vero Moda,Women,Bottomwear - Jeans,79.21,10.0,71.29,"XS,S,M,L,XL",,50,4.37,43
+p-343c19e76099,Roadster Regular Fit T-Shirts,Roadster,Men,Topwear - T-Shirts,55.69,20.0,44.55,"S,M,L,XL,XXL","L,M",70,3.97,49
+p-86e3367a612f,Titan Regular Fit Sunglasses,Titan,Accessories,Sunglasses,35.25,10.0,31.73,One Size,,48,3.73,57
+p-cef95ad640de,Mango Textured Tops & Tees,Mango,Women,Tops & Tees,82.94,40.0,49.76,"XS,S,M,L,XL","M,S",54,4.09,30
+p-6cbc89af68af,Urban Chic Oversized Tops & Tees,Urban Chic,Women,Tops & Tees,107.93,15.0,91.74,"XS,S,M,L,XL",,21,4.23,17
+p-381c4e1cc233,Fossil Formal Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,76.25,25.0,57.19,One Size,,22,4.02,14
+p-804b0c4e1f09,Ray-Ban Oversized Watches,Ray-Ban,Accessories,Watches,78.84,0.0,78.84,One Size,,49,4.16,171
+p-8fc1fc5fe9ec,Mango Solid Tops & Tees,Mango,Women,Tops & Tees,63.62,50.0,31.81,"XS,S,M,L,XL","S,M",146,3.94,55
+p-d80e9b673d75,Biba Formal Tops & Tees,Biba,Women,Tops & Tees,79.25,30.0,55.47,"XS,S,M,L,XL","S,M",31,3.97,169
+p-7fb39ceb4120,Adidas Textured Formal Shoes,Adidas,Footwear,Formal Shoes,123.63,50.0,61.81,"6,7,8,9,10,11",,40,4.01,11
+p-aba442a3dbab,Urban Chic Classic Jeans,Urban Chic,Women,Bottomwear - Jeans,37.96,50.0,18.98,"XS,S,M,L,XL",S,88,4.13,17
+p-0b74e71e8957,Red Tape Athletic Sneakers,Red Tape,Footwear,Sneakers,82.26,0.0,82.26,"6,7,8,9,10,11",,57,4.02,22
+p-0da76474eec5,Urban Chic Classic Tops & Tees,Urban Chic,Women,Tops & Tees,38.98,0.0,38.98,"XS,S,M,L,XL",,32,4.01,92
+p-d8080af38c48,Tommy Hilfiger Textured Shirts,Tommy Hilfiger,Men,Topwear - Shirts,33.9,20.0,27.12,"S,M,L,XL,XXL",,26,3.78,32
+p-8f3a7acb8878,Reebok Floral Print Sandals,Reebok,Footwear,Sandals,80.94,0.0,80.94,"6,7,8,9,10,11",,54,4.19,29
+p-bdc44625f05c,Ray-Ban Casual Sunglasses,Ray-Ban,Accessories,Sunglasses,63.24,10.0,56.92,One Size,,42,4.76,41
+p-04ebaa337977,Biba Slim Fit Dresses,Biba,Women,Dresses,92.35,50.0,46.17,"XS,S,M,L,XL","M,S",37,4.21,68
+p-b2fc3ba6a5e1,Ray-Ban Classic Watches,Ray-Ban,Accessories,Watches,24.64,10.0,22.18,One Size,,24,2.99,84
+p-066c7ca47b4a,Mango Solid Tops & Tees,Mango,Women,Tops & Tees,101.18,20.0,80.94,"XS,S,M,L,XL",,18,4.3,108
+p-d776ea014330,Reebok Oversized Sandals,Reebok,Footwear,Sandals,119.58,10.0,107.62,"6,7,8,9,10,11",,8,4.93,14
+p-695593c4720b,Mango Floral Print Dresses,Mango,Women,Dresses,63.43,15.0,53.92,"XS,S,M,L,XL",,41,4.07,89
+p-f75a1a8df595,Vero Moda Floral Print Jeans,Vero Moda,Women,Bottomwear - Jeans,65.42,30.0,45.79,"XS,S,M,L,XL",M,50,3.43,72
+p-4db1ba36cd6a,Marks & Spencer Classic Trousers,Marks & Spencer,Men,Bottomwear - Trousers,91.82,30.0,64.27,"S,M,L,XL,XXL",,72,3.5,204
+p-3a792a4cb9b8,Marks & Spencer Linen T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,45.78,25.0,34.34,"S,M,L,XL,XXL",,69,4.25,47
+p-6a8af370f84b,Adidas Athletic Sandals,Adidas,Footwear,Sandals,70.44,20.0,56.35,"6,7,8,9,10,11","9,8",54,3.8,136
+p-f1112dc1652b,Fossil Regular Fit Sunglasses,Fossil,Accessories,Sunglasses,78.33,50.0,39.16,One Size,,28,3.37,67
+p-fa9435a40128,Roadster Casual Trousers,Roadster,Men,Bottomwear - Trousers,57.33,10.0,51.6,"S,M,L,XL,XXL",,12,4.09,58
+p-54e981973e62,Forever 21 Linen Tops & Tees,Forever 21,Women,Tops & Tees,83.46,50.0,41.73,"XS,S,M,L,XL","M,S",61,4.4,31
+p-dc4a5b5b664e,Clarks Slim Fit Sandals,Clarks,Footwear,Sandals,67.91,15.0,57.72,"6,7,8,9,10,11",,23,4.57,10
+p-958be5554b51,Zara Men Cotton Trousers,Zara Men,Men,Bottomwear - Trousers,55.41,0.0,55.41,"S,M,L,XL,XXL",,39,3.95,45
+p-f1b283c15a56,H&M Men Slim Fit Trousers,H&M Men,Men,Bottomwear - Trousers,41.02,0.0,41.02,"S,M,L,XL,XXL",,53,4.65,9
+p-42ade3abd0a4,Puma Formal Formal Shoes,Puma,Footwear,Formal Shoes,76.75,10.0,69.08,"6,7,8,9,10,11",,31,4.08,20
+p-e089a9875ce3,Forever 21 Casual Ethnic Wear,Forever 21,Women,Ethnic Wear,66.87,0.0,66.87,"XS,S,M,L,XL",,62,3.56,21
+p-29dd2fccdad4,Marks & Spencer Classic Jeans,Marks & Spencer,Men,Bottomwear - Jeans,29.26,20.0,23.41,"S,M,L,XL,XXL",,30,3.74,87
+p-1035b5c976a9,Fastrack Regular Fit Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,106.49,15.0,90.52,One Size,,80,3.95,54
+p-13e48a6c2658,Mango Athletic Ethnic Wear,Mango,Women,Ethnic Wear,61.99,20.0,49.59,"XS,S,M,L,XL",,13,3.94,29
+p-2be43ae7b0c1,Marks & Spencer Oversized Jeans,Marks & Spencer,Men,Bottomwear - Jeans,50.39,50.0,25.2,"S,M,L,XL,XXL","M,L",39,4.12,12
+p-9b0815db6310,Zara Men Solid Shirts,Zara Men,Men,Topwear - Shirts,45.07,20.0,36.06,"S,M,L,XL,XXL",,64,4.13,34
+p-b9d2e5917fe0,Roadster Casual Trousers,Roadster,Men,Bottomwear - Trousers,56.5,15.0,48.02,"S,M,L,XL,XXL",L,58,3.87,18
+p-aee736d3ee12,Zara Men Vintage Wash Jeans,Zara Men,Men,Bottomwear - Jeans,92.22,50.0,46.11,"S,M,L,XL,XXL",,32,3.82,26
+p-6ff6ff37d233,Clarks Linen Sandals,Clarks,Footwear,Sandals,129.39,50.0,64.69,"6,7,8,9,10,11",,104,4.1,61
+p-5665c5c20bfd,Lavie Classic Sunglasses,Lavie,Accessories,Sunglasses,77.85,40.0,46.71,One Size,,25,3.79,54
+p-d8cc90536f57,Tommy Hilfiger Slim Fit Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,43.38,10.0,39.04,One Size,,44,4.19,107
+p-9f8f76359753,H&M Men Textured Jeans,H&M Men,Men,Bottomwear - Jeans,72.0,15.0,61.2,"S,M,L,XL,XXL","L,M",25,4.17,57
+p-ce76d8da664d,Mango Textured Ethnic Wear,Mango,Women,Ethnic Wear,75.12,50.0,37.56,"XS,S,M,L,XL",,77,4.07,6
+p-d6e0ba2b3cf1,Biba Slim Fit Tops & Tees,Biba,Women,Tops & Tees,42.61,10.0,38.35,"XS,S,M,L,XL",,49,4.68,4
+p-b9000bf44c07,Forever 21 Textured Tops & Tees,Forever 21,Women,Tops & Tees,73.23,0.0,73.23,"XS,S,M,L,XL",,61,3.54,128
+p-08ccad08d3e3,Adidas Textured Running Shoes,Adidas,Footwear,Running Shoes,147.86,0.0,147.86,"6,7,8,9,10,11",,61,3.48,5
+p-88ea4660c534,Zara Men Slim Fit Shirts,Zara Men,Men,Topwear - Shirts,69.18,25.0,51.89,"S,M,L,XL,XXL",,27,3.77,55
+p-7c83cc79eb83,Adidas Vintage Wash Running Shoes,Adidas,Footwear,Running Shoes,112.19,0.0,112.19,"6,7,8,9,10,11",,50,3.98,5
+p-4ed4e987ef74,Forever 21 Athletic Ethnic Wear,Forever 21,Women,Ethnic Wear,48.82,40.0,29.29,"XS,S,M,L,XL",,56,3.7,9
+p-a7bea33cb688,Urban Chic Solid Ethnic Wear,Urban Chic,Women,Ethnic Wear,90.92,50.0,45.46,"XS,S,M,L,XL",,51,4.22,37
+p-53abd79c8023,Roadster Floral Print T-Shirts,Roadster,Men,Topwear - T-Shirts,56.74,15.0,48.23,"S,M,L,XL,XXL",,57,3.61,121
+p-6be092c61912,Clarks Vintage Wash Running Shoes,Clarks,Footwear,Running Shoes,75.87,0.0,75.87,"6,7,8,9,10,11",,78,4.51,14
+p-56d24bba0a73,Vero Moda Formal Tops & Tees,Vero Moda,Women,Tops & Tees,112.91,0.0,112.91,"XS,S,M,L,XL",,87,4.47,150
+p-08a5f2b72dbf,Biba Athletic Jeans,Biba,Women,Bottomwear - Jeans,89.84,25.0,67.38,"XS,S,M,L,XL",,41,4.09,12
+p-2887da6ccf4f,Roadster Casual Jeans,Roadster,Men,Bottomwear - Jeans,79.43,0.0,79.43,"S,M,L,XL,XXL",,30,3.62,34
+p-12e34b9d24e5,Mango Formal Tops & Tees,Mango,Women,Tops & Tees,116.51,0.0,116.51,"XS,S,M,L,XL",,53,4.63,26
+p-8cb5295a338b,Puma Solid Sandals,Puma,Footwear,Sandals,95.16,10.0,85.64,"6,7,8,9,10,11",,91,4.48,51
+p-bf7ec9659550,H&M Men Casual Trousers,H&M Men,Men,Bottomwear - Trousers,92.47,0.0,92.47,"S,M,L,XL,XXL",,41,4.15,28
+p-4709eff42cc5,H&M Men Regular Fit Jeans,H&M Men,Men,Bottomwear - Jeans,60.52,0.0,60.52,"S,M,L,XL,XXL",,97,4.27,39
+p-f62fd4ffab90,Reebok Linen Running Shoes,Reebok,Footwear,Running Shoes,109.25,20.0,87.4,"6,7,8,9,10,11",,39,3.85,53
+p-5c83a811708b,Puma Slim Fit Formal Shoes,Puma,Footwear,Formal Shoes,138.15,25.0,103.61,"6,7,8,9,10,11",,85,4.67,274
+p-4cf131b5a7f9,H&M Men Casual Shirts,H&M Men,Men,Topwear - Shirts,55.93,20.0,44.74,"S,M,L,XL,XXL",,39,4.31,14
+p-84a0960d0c21,Zara Men Floral Print Trousers,Zara Men,Men,Bottomwear - Trousers,60.47,25.0,45.35,"S,M,L,XL,XXL",,22,3.54,74
+p-5acec90d8a28,Forever 21 Solid Jeans,Forever 21,Women,Bottomwear - Jeans,84.74,0.0,84.74,"XS,S,M,L,XL",,115,3.95,15
+p-e3d8c2bcb479,Clarks Solid Sneakers,Clarks,Footwear,Sneakers,138.46,0.0,138.46,"6,7,8,9,10,11",,39,3.81,4
+p-40b685e950bf,Fossil Textured Watches,Fossil,Accessories,Watches,50.43,20.0,40.34,One Size,,25,4.18,3
+p-a3ead920dd06,Red Tape Floral Print Formal Shoes,Red Tape,Footwear,Formal Shoes,81.11,0.0,81.11,"6,7,8,9,10,11","9,8",35,4.27,38
+p-d04315cf4d71,Allen Solly Athletic Shirts,Allen Solly,Men,Topwear - Shirts,70.35,0.0,70.35,"S,M,L,XL,XXL",L,43,4.45,5
+p-9fe0c53a3536,Vero Moda Textured Ethnic Wear,Vero Moda,Women,Ethnic Wear,98.02,30.0,68.61,"XS,S,M,L,XL","M,S",12,4.02,7
+p-4e1b3dd6a395,Marks & Spencer Regular Fit Shirts,Marks & Spencer,Men,Topwear - Shirts,30.43,10.0,27.39,"S,M,L,XL,XXL",,39,4.39,5
+p-1136159ee784,Forever 21 Solid Tops & Tees,Forever 21,Women,Tops & Tees,67.53,0.0,67.53,"XS,S,M,L,XL",,28,3.72,41
+p-896ee782e212,Adidas Vintage Wash Sneakers,Adidas,Footwear,Sneakers,113.62,0.0,113.62,"6,7,8,9,10,11",,47,3.87,26
+p-8d1825ed4855,Zara Vintage Wash Tops & Tees,Zara,Women,Tops & Tees,38.17,0.0,38.17,"XS,S,M,L,XL",,20,3.82,49
+p-6fc7b487cc2a,Allen Solly Cotton T-Shirts,Allen Solly,Men,Topwear - T-Shirts,85.18,30.0,59.63,"S,M,L,XL,XXL",,61,3.64,53
+p-7c905332bd05,Puma Classic Sneakers,Puma,Footwear,Sneakers,105.85,40.0,63.51,"6,7,8,9,10,11",,33,4.31,6
+p-3f391892cfcb,H&M Men Casual Jeans,H&M Men,Men,Bottomwear - Jeans,102.56,0.0,102.56,"S,M,L,XL,XXL",,120,3.79,11
+p-0bfe49fc1d30,H&M Formal Ethnic Wear,H&M,Women,Ethnic Wear,90.9,20.0,72.72,"XS,S,M,L,XL",,45,4.95,26
+p-5431631a088f,Urban Chic Regular Fit Tops & Tees,Urban Chic,Women,Tops & Tees,61.02,25.0,45.77,"XS,S,M,L,XL",,31,4.13,17
+p-10a475d7adf6,Allen Solly Cotton Trousers,Allen Solly,Men,Bottomwear - Trousers,35.44,20.0,28.35,"S,M,L,XL,XXL",,36,4.38,16
+p-078fa0e8fc4f,Red Tape Linen Sneakers,Red Tape,Footwear,Sneakers,65.92,0.0,65.92,"6,7,8,9,10,11",,29,4.47,20
+p-469de43e6121,H&M Classic Tops & Tees,H&M,Women,Tops & Tees,77.46,25.0,58.09,"XS,S,M,L,XL",,57,4.39,20
+p-4916594c7d27,Urban Chic Vintage Wash Ethnic Wear,Urban Chic,Women,Ethnic Wear,81.73,0.0,81.73,"XS,S,M,L,XL",,43,4.02,57
+p-abb6d84650da,Tommy Hilfiger Textured Shirts,Tommy Hilfiger,Men,Topwear - Shirts,105.91,0.0,105.91,"S,M,L,XL,XXL",L,38,3.8,4
+p-d49c442eb9eb,H&M Slim Fit Jeans,H&M,Women,Bottomwear - Jeans,95.29,50.0,47.65,"XS,S,M,L,XL",M,39,4.66,11
+p-7498c55d9a1d,H&M Men Cotton Jeans,H&M Men,Men,Bottomwear - Jeans,67.36,30.0,47.15,"S,M,L,XL,XXL",,11,3.74,4
+p-87f693ff9abb,Mango Textured Dresses,Mango,Women,Dresses,74.19,40.0,44.51,"XS,S,M,L,XL",S,53,4.46,236
+p-9efe98b4bda5,Vero Moda Cotton Dresses,Vero Moda,Women,Dresses,59.68,40.0,35.81,"XS,S,M,L,XL","S,M",64,4.44,6
+p-768a49579fb7,Titan Floral Print Belts & Wallets,Titan,Accessories,Belts & Wallets,58.75,0.0,58.75,One Size,,28,4.18,107
+p-983083e00ce2,Adidas Casual Formal Shoes,Adidas,Footwear,Formal Shoes,68.28,0.0,68.28,"6,7,8,9,10,11","9,8",39,4.12,34
+p-5df8782b738b,Marks & Spencer Floral Print T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,86.08,25.0,64.56,"S,M,L,XL,XXL",,67,3.83,16
+p-b9a3998cf0ca,Roadster Casual Shirts,Roadster,Men,Topwear - Shirts,60.13,50.0,30.07,"S,M,L,XL,XXL",,88,4.19,78
+p-1dbb64836b4a,Zara Classic Jeans,Zara,Women,Bottomwear - Jeans,82.82,50.0,41.41,"XS,S,M,L,XL",S,72,4.05,7
+p-1e28fb9cbf4b,H&M Men Formal T-Shirts,H&M Men,Men,Topwear - T-Shirts,101.72,10.0,91.55,"S,M,L,XL,XXL",,31,3.46,32
+p-bb69ccf4de47,Allen Solly Classic T-Shirts,Allen Solly,Men,Topwear - T-Shirts,57.43,30.0,40.2,"S,M,L,XL,XXL",,36,4.62,52
+p-046391d01f64,Marks & Spencer Slim Fit Trousers,Marks & Spencer,Men,Bottomwear - Trousers,61.92,0.0,61.92,"S,M,L,XL,XXL",,29,4.19,53
+p-c2b998a27ec0,Reebok Classic Running Shoes,Reebok,Footwear,Running Shoes,81.17,10.0,73.05,"6,7,8,9,10,11","9,8",40,4.05,151
+p-70315f2c0057,H&M Men Slim Fit Trousers,H&M Men,Men,Bottomwear - Trousers,56.89,25.0,42.67,"S,M,L,XL,XXL",,39,4.51,169
+p-d05a5f84d01e,Zara Vintage Wash Dresses,Zara,Women,Dresses,39.54,0.0,39.54,"XS,S,M,L,XL",,57,4.16,17
+p-2d023543a920,Forever 21 Slim Fit Dresses,Forever 21,Women,Dresses,77.77,25.0,58.33,"XS,S,M,L,XL",,66,4.27,61
+p-c0315573902d,Vero Moda Slim Fit Dresses,Vero Moda,Women,Dresses,80.88,10.0,72.79,"XS,S,M,L,XL",,85,3.91,130
+p-bd1395bd0c4a,Urban Chic Oversized Tops & Tees,Urban Chic,Women,Tops & Tees,88.27,30.0,61.79,"XS,S,M,L,XL",,80,3.79,53
+p-9cf391e4f8d9,Mango Vintage Wash Ethnic Wear,Mango,Women,Ethnic Wear,90.41,20.0,72.33,"XS,S,M,L,XL",,83,4.65,20
+p-89f133d79724,Vero Moda Regular Fit Ethnic Wear,Vero Moda,Women,Ethnic Wear,61.92,30.0,43.34,"XS,S,M,L,XL",,51,3.71,51
+p-926567b45963,Lavie Linen Watches,Lavie,Accessories,Watches,66.89,0.0,66.89,One Size,,45,3.52,51
+p-a69ebe2a389e,H&M Formal Dresses,H&M,Women,Dresses,81.43,0.0,81.43,"XS,S,M,L,XL",,20,4.21,142
+p-87903d304174,Allen Solly Floral Print T-Shirts,Allen Solly,Men,Topwear - T-Shirts,56.83,10.0,51.15,"S,M,L,XL,XXL",,58,4.01,10
+p-1a676faf3352,Mango Casual Dresses,Mango,Women,Dresses,35.25,15.0,29.96,"XS,S,M,L,XL",,65,4.91,95
+p-8fe8d99ae27c,Forever 21 Vintage Wash Ethnic Wear,Forever 21,Women,Ethnic Wear,61.91,40.0,37.15,"XS,S,M,L,XL",,81,4.46,10
+p-8050101493c3,Tommy Hilfiger Linen T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,84.39,20.0,67.51,"S,M,L,XL,XXL",M,102,3.89,129
+p-c533933afd4c,Red Tape Vintage Wash Sneakers,Red Tape,Footwear,Sneakers,99.11,40.0,59.47,"6,7,8,9,10,11",,49,3.66,12
+p-66d3930ba28f,H&M Floral Print Dresses,H&M,Women,Dresses,60.6,40.0,36.36,"XS,S,M,L,XL",M,24,4.3,42
+p-cebf8bd3a1da,Fastrack Solid Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,83.47,10.0,75.12,One Size,,17,4.55,3
+p-bfa62ae83d59,Tommy Hilfiger Casual Shirts,Tommy Hilfiger,Men,Topwear - Shirts,61.6,0.0,61.6,"S,M,L,XL,XXL",,38,4.17,9
+p-0ce9649e20dd,Marks & Spencer Athletic T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,55.92,40.0,33.55,"S,M,L,XL,XXL","M,L",31,4.12,81
+p-fd84f6a26e19,H&M Cotton Jeans,H&M,Women,Bottomwear - Jeans,62.35,40.0,37.41,"XS,S,M,L,XL",,10,3.62,15
+p-402523ed70c8,Reebok Cotton Formal Shoes,Reebok,Footwear,Formal Shoes,71.47,20.0,57.18,"6,7,8,9,10,11",,78,4.83,5
+p-cb2c7a9ffa58,Biba Textured Tops & Tees,Biba,Women,Tops & Tees,91.09,15.0,77.43,"XS,S,M,L,XL",,11,4.41,3
+p-e5be92dcd42e,Levi's Linen Trousers,Levi's,Men,Bottomwear - Trousers,72.66,0.0,72.66,"S,M,L,XL,XXL",,16,4.65,140
+p-7bc4d08cf7ec,Clarks Linen Running Shoes,Clarks,Footwear,Running Shoes,78.93,0.0,78.93,"6,7,8,9,10,11",,39,4.15,39
+p-eafded7815bd,H&M Cotton Ethnic Wear,H&M,Women,Ethnic Wear,128.35,0.0,128.35,"XS,S,M,L,XL",,33,4.04,70
+p-76e09edcc4a9,Adidas Floral Print Running Shoes,Adidas,Footwear,Running Shoes,130.47,25.0,97.85,"6,7,8,9,10,11",,34,4.44,11
+p-e8bb932b349e,Marks & Spencer Casual T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,37.41,10.0,33.67,"S,M,L,XL,XXL",,78,4.47,121
+p-38b71c282813,Tommy Hilfiger Formal Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,47.55,20.0,38.04,"S,M,L,XL,XXL",,80,4.64,33
+p-1202dfcc07cf,H&M Cotton Ethnic Wear,H&M,Women,Ethnic Wear,32.52,0.0,32.52,"XS,S,M,L,XL",M,47,4.33,20
+p-bf48dbcd8369,Zara Formal Jeans,Zara,Women,Bottomwear - Jeans,55.05,0.0,55.05,"XS,S,M,L,XL",,58,3.96,38
+p-b7155eb223a9,Zara Cotton Tops & Tees,Zara,Women,Tops & Tees,109.84,0.0,109.84,"XS,S,M,L,XL",,26,3.69,223
+p-82a722699ce1,Marks & Spencer Regular Fit Shirts,Marks & Spencer,Men,Topwear - Shirts,83.92,30.0,58.74,"S,M,L,XL,XXL",L,88,4.41,3
+p-c03a681d1e88,Marks & Spencer Linen T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,77.98,0.0,77.98,"S,M,L,XL,XXL",,28,4.64,6
+p-5c3cc08d1b45,Zara Men Floral Print Shirts,Zara Men,Men,Topwear - Shirts,94.78,50.0,47.39,"S,M,L,XL,XXL",,85,3.37,35
+p-a5a2486fd335,Lavie Athletic Bags & Backpacks,Lavie,Accessories,Bags & Backpacks,43.19,25.0,32.39,One Size,,58,4.72,9
+p-c51f3af8d87c,H&M Solid Ethnic Wear,H&M,Women,Ethnic Wear,62.42,0.0,62.42,"XS,S,M,L,XL",,72,4.52,128
+p-e0e09bfb3a13,Tommy Hilfiger Floral Print T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,45.29,20.0,36.23,"S,M,L,XL,XXL",,121,4.71,64
+p-d7a95dcae9d7,Tommy Hilfiger Casual Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,50.92,50.0,25.46,"S,M,L,XL,XXL",,70,3.77,74
+p-9943eb6fd99b,Mango Cotton Jeans,Mango,Women,Bottomwear - Jeans,78.6,20.0,62.88,"XS,S,M,L,XL",,61,4.06,56
+p-318c127bf50e,Tommy Hilfiger Regular Fit Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,49.22,20.0,39.38,"S,M,L,XL,XXL",,74,3.83,42
+p-d973be4b8648,Ray-Ban Floral Print Sunglasses,Ray-Ban,Accessories,Sunglasses,47.01,25.0,35.26,One Size,,26,4.04,49
+p-0df148d5c5bf,H&M Men Vintage Wash Jeans,H&M Men,Men,Bottomwear - Jeans,57.71,0.0,57.71,"S,M,L,XL,XXL",M,16,4.44,77
+p-5639a744c9b9,Mango Formal Dresses,Mango,Women,Dresses,58.93,0.0,58.93,"XS,S,M,L,XL",,26,3.98,73
+p-516802f10540,Mango Oversized Ethnic Wear,Mango,Women,Ethnic Wear,67.17,10.0,60.45,"XS,S,M,L,XL",M,112,3.72,7
+p-5d690f7a8ca4,Tommy Hilfiger Formal T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,58.94,0.0,58.94,"S,M,L,XL,XXL",,29,3.6,3
+p-449f9a8dac4b,Mango Athletic Jeans,Mango,Women,Bottomwear - Jeans,83.02,30.0,58.11,"XS,S,M,L,XL",,42,4.5,51
+p-56f25c14d41c,Vero Moda Oversized Ethnic Wear,Vero Moda,Women,Ethnic Wear,111.4,40.0,66.84,"XS,S,M,L,XL",,36,4.04,20
+p-1cc9a3380939,Zara Men Oversized Jeans,Zara Men,Men,Bottomwear - Jeans,38.5,0.0,38.5,"S,M,L,XL,XXL",,36,3.67,112
+p-5c1370534b6a,Zara Men Formal Trousers,Zara Men,Men,Bottomwear - Trousers,58.63,25.0,43.97,"S,M,L,XL,XXL",,60,4.22,71
+p-30c803a19466,Clarks Slim Fit Sneakers,Clarks,Footwear,Sneakers,107.41,50.0,53.7,"6,7,8,9,10,11",,55,3.86,41
+p-fd3302e7d41c,Marks & Spencer Textured Shirts,Marks & Spencer,Men,Topwear - Shirts,58.22,0.0,58.22,"S,M,L,XL,XXL",L,111,3.82,14
+p-e3bf8ed97d4c,Urban Chic Textured Tops & Tees,Urban Chic,Women,Tops & Tees,57.23,0.0,57.23,"XS,S,M,L,XL",,47,4.18,65
+p-58087de3de45,Nike Floral Print Formal Shoes,Nike,Footwear,Formal Shoes,122.85,0.0,122.85,"6,7,8,9,10,11",,42,4.31,5
+p-386a1aa3048c,Zara Classic Jeans,Zara,Women,Bottomwear - Jeans,44.42,0.0,44.42,"XS,S,M,L,XL",,74,3.94,19
+p-701e946fc9ae,Red Tape Casual Running Shoes,Red Tape,Footwear,Running Shoes,124.21,30.0,86.95,"6,7,8,9,10,11","8,9",35,4.46,52
+p-96e765f440ff,Roadster Cotton Jeans,Roadster,Men,Bottomwear - Jeans,45.28,0.0,45.28,"S,M,L,XL,XXL","M,L",44,4.1,54
+p-fa4080a0a71a,Roadster Oversized Shirts,Roadster,Men,Topwear - Shirts,92.53,40.0,55.52,"S,M,L,XL,XXL","L,M",75,4.46,16
+p-d0b1e7d49c91,Nike Linen Running Shoes,Nike,Footwear,Running Shoes,71.8,0.0,71.8,"6,7,8,9,10,11",,40,4.78,24
+p-3284a3522064,Roadster Floral Print Trousers,Roadster,Men,Bottomwear - Trousers,80.25,15.0,68.21,"S,M,L,XL,XXL",,92,3.5,32
+p-0d50a8dc2077,Puma Textured Formal Shoes,Puma,Footwear,Formal Shoes,147.03,50.0,73.52,"6,7,8,9,10,11",,82,4.52,98
+p-e9bb9e118091,Biba Textured Dresses,Biba,Women,Dresses,44.78,15.0,38.06,"XS,S,M,L,XL",,33,4.08,92
+p-75dd47342387,Tommy Hilfiger Vintage Wash Shirts,Tommy Hilfiger,Men,Topwear - Shirts,69.39,10.0,62.45,"S,M,L,XL,XXL",,74,3.89,9
+p-e0249788f7be,Levi's Textured Trousers,Levi's,Men,Bottomwear - Trousers,60.35,40.0,36.21,"S,M,L,XL,XXL",M,49,3.56,11
+p-92bdd1ca2994,Urban Chic Vintage Wash Ethnic Wear,Urban Chic,Women,Ethnic Wear,34.38,0.0,34.38,"XS,S,M,L,XL",,30,4.1,31
+p-d21a5093c235,Forever 21 Regular Fit Jeans,Forever 21,Women,Bottomwear - Jeans,102.33,25.0,76.75,"XS,S,M,L,XL",,89,4.02,80
+p-8bf8e65bbf83,H&M Floral Print Dresses,H&M,Women,Dresses,66.15,15.0,56.23,"XS,S,M,L,XL",,82,4.43,87
+p-67b259f5b5d7,H&M Men Slim Fit Trousers,H&M Men,Men,Bottomwear - Trousers,20.24,0.0,20.24,"S,M,L,XL,XXL",,28,5.0,8
+p-de31c088137a,Forever 21 Classic Jeans,Forever 21,Women,Bottomwear - Jeans,71.97,0.0,71.97,"XS,S,M,L,XL",,60,4.4,97
+p-e6efd8eb6c71,Urban Chic Linen Tops & Tees,Urban Chic,Women,Tops & Tees,54.69,25.0,41.02,"XS,S,M,L,XL",S,11,4.21,46
+p-6095d37b40b4,Zara Cotton Ethnic Wear,Zara,Women,Ethnic Wear,44.58,0.0,44.58,"XS,S,M,L,XL",M,42,3.99,21
+p-028a2ef42fb8,Vero Moda Athletic Jeans,Vero Moda,Women,Bottomwear - Jeans,83.55,20.0,66.84,"XS,S,M,L,XL",,64,4.54,37
+p-afe4cf7491e6,Roadster Solid Shirts,Roadster,Men,Topwear - Shirts,77.78,0.0,77.78,"S,M,L,XL,XXL",,16,4.32,100
+p-481aed97ecb3,Zara Vintage Wash Dresses,Zara,Women,Dresses,101.56,0.0,101.56,"XS,S,M,L,XL",M,79,4.19,141
+p-600053fa19c7,Marks & Spencer Linen Trousers,Marks & Spencer,Men,Bottomwear - Trousers,25.47,50.0,12.73,"S,M,L,XL,XXL","L,M",28,3.88,12
+p-021b2ba00e38,Mango Formal Tops & Tees,Mango,Women,Tops & Tees,58.65,15.0,49.85,"XS,S,M,L,XL",,55,4.13,63
+p-a30b57442693,H&M Textured Ethnic Wear,H&M,Women,Ethnic Wear,98.87,0.0,98.87,"XS,S,M,L,XL",,79,3.73,114
+p-addda7515b68,Zara Athletic Ethnic Wear,Zara,Women,Ethnic Wear,58.16,0.0,58.16,"XS,S,M,L,XL",,103,4.09,29
+p-7edf1cca010b,Biba Regular Fit Tops & Tees,Biba,Women,Tops & Tees,53.28,0.0,53.28,"XS,S,M,L,XL",M,45,4.59,76
+p-269c80bc7f13,Lavie Vintage Wash Watches,Lavie,Accessories,Watches,78.01,15.0,66.31,One Size,,19,3.59,10
+p-523c21d56f33,Mango Regular Fit Jeans,Mango,Women,Bottomwear - Jeans,49.79,0.0,49.79,"XS,S,M,L,XL","M,S",91,4.16,49
+p-4a5e11d02bd3,Levi's Oversized Jeans,Levi's,Men,Bottomwear - Jeans,60.5,0.0,60.5,"S,M,L,XL,XXL","L,M",21,3.52,17
+p-655a61df5719,Fossil Regular Fit Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,118.74,0.0,118.74,One Size,,60,4.1,67
+p-85a11ade5f74,Roadster Regular Fit Jeans,Roadster,Men,Bottomwear - Jeans,99.93,15.0,84.94,"S,M,L,XL,XXL",,97,4.11,48
+p-3bb995d89397,Urban Chic Vintage Wash Jeans,Urban Chic,Women,Bottomwear - Jeans,73.15,15.0,62.18,"XS,S,M,L,XL","M,S",81,4.32,21
+p-d512afec01b8,Roadster Formal T-Shirts,Roadster,Men,Topwear - T-Shirts,65.6,0.0,65.6,"S,M,L,XL,XXL","M,L",52,3.77,24
+p-e9525bec9ccc,H&M Men Cotton Jeans,H&M Men,Men,Bottomwear - Jeans,42.51,0.0,42.51,"S,M,L,XL,XXL",,74,3.67,56
+p-b7c65e346e53,H&M Vintage Wash Dresses,H&M,Women,Dresses,97.11,0.0,97.11,"XS,S,M,L,XL","M,S",90,4.1,8
+p-e7986098445a,Puma Floral Print Sandals,Puma,Footwear,Sandals,83.23,15.0,70.75,"6,7,8,9,10,11",,48,3.89,61
+p-7ac1a2a6d449,Forever 21 Classic Ethnic Wear,Forever 21,Women,Ethnic Wear,42.04,0.0,42.04,"XS,S,M,L,XL",S,19,4.23,14
+p-37a25fddc192,Nike Vintage Wash Sandals,Nike,Footwear,Sandals,86.47,0.0,86.47,"6,7,8,9,10,11",,33,4.52,41
+p-fb40526cd3c7,Urban Chic Linen Ethnic Wear,Urban Chic,Women,Ethnic Wear,86.75,0.0,86.75,"XS,S,M,L,XL",,15,3.99,97
+p-017d814d6db2,Urban Chic Textured Ethnic Wear,Urban Chic,Women,Ethnic Wear,59.28,10.0,53.35,"XS,S,M,L,XL",,87,3.92,139
+p-1038de11dec9,Mango Linen Tops & Tees,Mango,Women,Tops & Tees,77.69,30.0,54.38,"XS,S,M,L,XL",,44,3.45,95
+p-f2ebf6882bcf,Tommy Hilfiger Linen T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,57.34,15.0,48.74,"S,M,L,XL,XXL","L,M",43,4.34,22
+p-d3cdead1b72e,Titan Athletic Sunglasses,Titan,Accessories,Sunglasses,75.17,30.0,52.62,One Size,,79,3.82,83
+p-8749fea2f4d0,Ray-Ban Vintage Wash Watches,Ray-Ban,Accessories,Watches,94.89,15.0,80.66,One Size,,67,4.37,25
+p-16056459ebf0,Marks & Spencer Athletic Jeans,Marks & Spencer,Men,Bottomwear - Jeans,53.12,15.0,45.15,"S,M,L,XL,XXL",,24,4.99,32
+p-fc2d7392bb91,Forever 21 Floral Print Dresses,Forever 21,Women,Dresses,53.78,0.0,53.78,"XS,S,M,L,XL",,35,5.0,24
+p-33e9d9c5387c,Allen Solly Athletic T-Shirts,Allen Solly,Men,Topwear - T-Shirts,59.65,15.0,50.7,"S,M,L,XL,XXL",,27,3.24,36
+p-cbc293ff022a,Biba Floral Print Ethnic Wear,Biba,Women,Ethnic Wear,56.1,15.0,47.69,"XS,S,M,L,XL",,8,4.3,4
+p-f87f3f31df5a,Urban Chic Solid Jeans,Urban Chic,Women,Bottomwear - Jeans,61.22,25.0,45.91,"XS,S,M,L,XL","M,S",22,4.21,44
+p-06f0ecdca59e,H&M Cotton Jeans,H&M,Women,Bottomwear - Jeans,91.66,50.0,45.83,"XS,S,M,L,XL",,84,3.68,105
+p-79b135518568,Marks & Spencer Vintage Wash Trousers,Marks & Spencer,Men,Bottomwear - Trousers,49.64,40.0,29.78,"S,M,L,XL,XXL","L,M",24,3.95,42
+p-d1899bd1e40d,Marks & Spencer Linen Shirts,Marks & Spencer,Men,Topwear - Shirts,81.65,0.0,81.65,"S,M,L,XL,XXL",,89,3.77,82
+p-d9e588200707,Zara Athletic Dresses,Zara,Women,Dresses,93.51,0.0,93.51,"XS,S,M,L,XL","S,M",35,3.9,65
+p-5fe776be577b,Puma Athletic Running Shoes,Puma,Footwear,Running Shoes,108.5,30.0,75.95,"6,7,8,9,10,11",,61,4.12,122
+p-02927b25cb41,Zara Cotton Dresses,Zara,Women,Dresses,56.55,0.0,56.55,"XS,S,M,L,XL",M,31,4.28,37
+p-0c1a7725eb46,Vero Moda Casual Jeans,Vero Moda,Women,Bottomwear - Jeans,77.92,0.0,77.92,"XS,S,M,L,XL",,92,3.63,61
+p-f2e9fb14e0bf,Ray-Ban Slim Fit Watches,Ray-Ban,Accessories,Watches,91.85,25.0,68.89,One Size,,41,3.43,15
+p-75502b831959,Zara Cotton Ethnic Wear,Zara,Women,Ethnic Wear,57.91,0.0,57.91,"XS,S,M,L,XL",,68,4.36,70
+p-877e5322e204,Zara Solid Dresses,Zara,Women,Dresses,71.56,40.0,42.94,"XS,S,M,L,XL","M,S",56,3.55,124
+p-5d4d3b7d2b44,Titan Casual Watches,Titan,Accessories,Watches,70.34,0.0,70.34,One Size,,37,4.73,32
+p-81c9b9f1418b,Tommy Hilfiger Regular Fit Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,97.79,10.0,88.01,"S,M,L,XL,XXL",,54,3.61,71
+p-245d38ba1e94,Puma Regular Fit Running Shoes,Puma,Footwear,Running Shoes,90.2,40.0,54.12,"6,7,8,9,10,11",8,8,4.7,5
+p-0940c8a5ab1f,Biba Regular Fit Jeans,Biba,Women,Bottomwear - Jeans,45.44,0.0,45.44,"XS,S,M,L,XL",,45,4.12,86
+p-8ac9a101b6bd,Allen Solly Floral Print T-Shirts,Allen Solly,Men,Topwear - T-Shirts,54.07,0.0,54.07,"S,M,L,XL,XXL",,32,4.74,21
+p-9e175fd68572,H&M Men Formal T-Shirts,H&M Men,Men,Topwear - T-Shirts,36.05,0.0,36.05,"S,M,L,XL,XXL",,109,4.71,18
+p-2373d9a8c773,H&M Athletic Ethnic Wear,H&M,Women,Ethnic Wear,68.36,20.0,54.69,"XS,S,M,L,XL",,68,3.82,11
+p-735437eaa8f4,H&M Textured Tops & Tees,H&M,Women,Tops & Tees,49.55,0.0,49.55,"XS,S,M,L,XL",,40,4.18,7
+p-734ab7205f74,Nike Solid Running Shoes,Nike,Footwear,Running Shoes,131.0,15.0,111.35,"6,7,8,9,10,11",,18,3.89,54
+p-b3c4aecb0e78,Tommy Hilfiger Classic Watches,Tommy Hilfiger,Accessories,Watches,75.68,0.0,75.68,One Size,,49,3.97,98
+p-b3fcf9c9574d,Vero Moda Slim Fit Ethnic Wear,Vero Moda,Women,Ethnic Wear,106.33,10.0,95.7,"XS,S,M,L,XL",,91,4.12,52
+p-ee2e68509020,Mango Athletic Tops & Tees,Mango,Women,Tops & Tees,59.07,25.0,44.3,"XS,S,M,L,XL",,82,3.61,46
+p-4ec922dd60ba,Roadster Regular Fit Shirts,Roadster,Men,Topwear - Shirts,49.56,10.0,44.6,"S,M,L,XL,XXL",,41,4.01,139
+p-a8f3089d3592,H&M Men Linen T-Shirts,H&M Men,Men,Topwear - T-Shirts,101.24,50.0,50.62,"S,M,L,XL,XXL",L,57,4.13,79
+p-bc43eb597003,Clarks Textured Running Shoes,Clarks,Footwear,Running Shoes,64.21,15.0,54.58,"6,7,8,9,10,11",,33,3.83,172
+p-ba7d952cc597,Roadster Vintage Wash Trousers,Roadster,Men,Bottomwear - Trousers,55.22,15.0,46.94,"S,M,L,XL,XXL",,52,4.11,21
+p-1b3beec680d1,Mango Casual Jeans,Mango,Women,Bottomwear - Jeans,91.24,40.0,54.74,"XS,S,M,L,XL",,50,3.88,25
+p-8d66035c760e,Roadster Classic Jeans,Roadster,Men,Bottomwear - Jeans,42.93,50.0,21.46,"S,M,L,XL,XXL",L,24,4.57,28
+p-f523ce2caf30,Adidas Cotton Sneakers,Adidas,Footwear,Sneakers,72.73,50.0,36.37,"6,7,8,9,10,11","8,9",34,4.38,33
+p-aa33493883d9,Roadster Oversized Trousers,Roadster,Men,Bottomwear - Trousers,45.22,0.0,45.22,"S,M,L,XL,XXL",,17,3.88,23
+p-460085e512b8,H&M Casual Ethnic Wear,H&M,Women,Ethnic Wear,45.35,50.0,22.68,"XS,S,M,L,XL",,25,4.54,6
+p-7251fe230804,Roadster Oversized T-Shirts,Roadster,Men,Topwear - T-Shirts,62.64,0.0,62.64,"S,M,L,XL,XXL",,31,4.25,34
+p-e7e52e0f2d55,Adidas Linen Formal Shoes,Adidas,Footwear,Formal Shoes,81.36,20.0,65.09,"6,7,8,9,10,11",,36,4.37,74
+p-bb3692601707,Puma Slim Fit Sneakers,Puma,Footwear,Sneakers,90.2,25.0,67.65,"6,7,8,9,10,11",,100,4.43,92
+p-d84bd4e8729f,Tommy Hilfiger Formal Watches,Tommy Hilfiger,Accessories,Watches,65.25,0.0,65.25,One Size,,77,4.37,14
+p-fe0b26353908,Tommy Hilfiger Textured Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,31.78,30.0,22.25,"S,M,L,XL,XXL",,55,4.59,50
+p-6c57e32ac2ab,Vero Moda Oversized Ethnic Wear,Vero Moda,Women,Ethnic Wear,50.46,25.0,37.84,"XS,S,M,L,XL",S,45,3.61,11
+p-58b28012d13f,Levi's Cotton Jeans,Levi's,Men,Bottomwear - Jeans,91.97,0.0,91.97,"S,M,L,XL,XXL",,41,3.68,102
+p-4229f736eea6,H&M Athletic Jeans,H&M,Women,Bottomwear - Jeans,86.33,50.0,43.16,"XS,S,M,L,XL",,43,4.6,6
+p-5e077142c6d6,Roadster Formal Trousers,Roadster,Men,Bottomwear - Trousers,25.71,0.0,25.71,"S,M,L,XL,XXL",L,63,4.13,18
+p-ee318ec74db4,Forever 21 Athletic Jeans,Forever 21,Women,Bottomwear - Jeans,44.72,15.0,38.01,"XS,S,M,L,XL","S,M",65,3.55,25
+p-e051faaf68f3,Red Tape Textured Sneakers,Red Tape,Footwear,Sneakers,129.15,0.0,129.15,"6,7,8,9,10,11",,150,3.1,17
+p-1e9b889c6e2d,Fossil Casual Belts & Wallets,Fossil,Accessories,Belts & Wallets,43.97,15.0,37.37,One Size,,60,4.34,42
+p-d90ddaefab66,Puma Regular Fit Sandals,Puma,Footwear,Sandals,86.17,10.0,77.55,"6,7,8,9,10,11",,69,3.55,20
+p-9869710329a7,Marks & Spencer Athletic Shirts,Marks & Spencer,Men,Topwear - Shirts,48.43,50.0,24.21,"S,M,L,XL,XXL","L,M",46,3.87,74
+p-14722e1c9d2f,Urban Chic Floral Print Tops & Tees,Urban Chic,Women,Tops & Tees,112.44,15.0,95.57,"XS,S,M,L,XL",,21,4.17,3
+p-a043de17e3f2,Roadster Linen Shirts,Roadster,Men,Topwear - Shirts,55.45,10.0,49.91,"S,M,L,XL,XXL",,60,4.31,7
+p-5010769d396f,H&M Men Solid T-Shirts,H&M Men,Men,Topwear - T-Shirts,37.87,0.0,37.87,"S,M,L,XL,XXL",,37,4.12,7
+p-0ea7c7498216,Marks & Spencer Formal Jeans,Marks & Spencer,Men,Bottomwear - Jeans,34.63,15.0,29.44,"S,M,L,XL,XXL",,41,3.94,24
+p-430d42731bdb,Zara Men Athletic Shirts,Zara Men,Men,Topwear - Shirts,54.56,30.0,38.19,"S,M,L,XL,XXL",,58,3.94,58
+p-dbdc66fe3fe2,H&M Men Textured Shirts,H&M Men,Men,Topwear - Shirts,73.27,0.0,73.27,"S,M,L,XL,XXL",M,78,3.98,35
+p-3657f8e0122a,Red Tape Linen Formal Shoes,Red Tape,Footwear,Formal Shoes,63.4,20.0,50.72,"6,7,8,9,10,11",,34,4.52,42
+p-f4c36e5dbfac,Vero Moda Oversized Ethnic Wear,Vero Moda,Women,Ethnic Wear,63.42,0.0,63.42,"XS,S,M,L,XL",,50,4.5,15
+p-fcd4f1043d97,Lavie Vintage Wash Belts & Wallets,Lavie,Accessories,Belts & Wallets,119.8,0.0,119.8,One Size,,38,3.49,36
+p-ad00078432e4,Vero Moda Regular Fit Ethnic Wear,Vero Moda,Women,Ethnic Wear,57.51,15.0,48.88,"XS,S,M,L,XL",,32,4.05,64
+p-857fd4a7e1b6,Tommy Hilfiger Formal Shirts,Tommy Hilfiger,Men,Topwear - Shirts,93.31,15.0,79.31,"S,M,L,XL,XXL",,51,4.13,29
+p-97cc2a682767,Vero Moda Casual Jeans,Vero Moda,Women,Bottomwear - Jeans,123.34,0.0,123.34,"XS,S,M,L,XL",,54,4.42,7
+p-c6897f3d4ebf,Urban Chic Athletic Dresses,Urban Chic,Women,Dresses,39.19,15.0,33.31,"XS,S,M,L,XL",,95,4.71,78
+p-be534b498d8b,Biba Casual Dresses,Biba,Women,Dresses,59.78,40.0,35.87,"XS,S,M,L,XL",,26,4.57,38
+p-d37713fb762d,Marks & Spencer Regular Fit Jeans,Marks & Spencer,Men,Bottomwear - Jeans,47.75,0.0,47.75,"S,M,L,XL,XXL",,18,4.73,14
+p-579a9b3b3824,H&M Vintage Wash Ethnic Wear,H&M,Women,Ethnic Wear,64.51,50.0,32.26,"XS,S,M,L,XL",,29,3.51,59
+p-af3fe8a46d18,Mango Linen Ethnic Wear,Mango,Women,Ethnic Wear,57.14,10.0,51.43,"XS,S,M,L,XL",,33,4.01,55
+p-acdc39677b42,Roadster Classic Jeans,Roadster,Men,Bottomwear - Jeans,31.64,10.0,28.48,"S,M,L,XL,XXL","L,M",75,3.93,93
+p-c3ce6086cea0,Zara Textured Dresses,Zara,Women,Dresses,47.14,40.0,28.28,"XS,S,M,L,XL",,33,4.55,30
+p-5dae71bab7b2,Zara Regular Fit Ethnic Wear,Zara,Women,Ethnic Wear,66.88,20.0,53.5,"XS,S,M,L,XL",,142,4.45,101
+p-68d1a9e39caf,Vero Moda Casual Tops & Tees,Vero Moda,Women,Tops & Tees,80.19,25.0,60.14,"XS,S,M,L,XL","S,M",15,3.52,122
+p-ae6aa2f6a8b7,Zara Men Cotton Jeans,Zara Men,Men,Bottomwear - Jeans,66.64,0.0,66.64,"S,M,L,XL,XXL","L,M",34,3.52,30
+p-e1df15623828,Allen Solly Textured Jeans,Allen Solly,Men,Bottomwear - Jeans,48.48,15.0,41.21,"S,M,L,XL,XXL","L,M",58,4.01,49
+p-5d9db5aa29c1,Red Tape Regular Fit Running Shoes,Red Tape,Footwear,Running Shoes,98.43,15.0,83.67,"6,7,8,9,10,11",,52,4.4,7
+p-9b4aeed38db7,Adidas Casual Sneakers,Adidas,Footwear,Sneakers,92.98,0.0,92.98,"6,7,8,9,10,11",9,33,4.05,42
+p-2c17ba737ded,Zara Solid Dresses,Zara,Women,Dresses,72.7,25.0,54.53,"XS,S,M,L,XL",,40,4.46,82
+p-6eb2bfa906eb,Urban Chic Vintage Wash Dresses,Urban Chic,Women,Dresses,40.63,0.0,40.63,"XS,S,M,L,XL",,54,3.94,16
+p-37e056de791e,Zara Floral Print Ethnic Wear,Zara,Women,Ethnic Wear,113.43,20.0,90.74,"XS,S,M,L,XL",,35,5.0,124
+p-aa8fd77dd49c,Nike Linen Sneakers,Nike,Footwear,Sneakers,71.94,15.0,61.15,"6,7,8,9,10,11",,51,4.26,4
+p-782f0659a084,H&M Vintage Wash Jeans,H&M,Women,Bottomwear - Jeans,87.66,50.0,43.83,"XS,S,M,L,XL",,41,4.41,35
+p-033cd649d948,Biba Textured Tops & Tees,Biba,Women,Tops & Tees,56.29,50.0,28.14,"XS,S,M,L,XL",S,54,4.11,81
+p-62c6a27674f9,Mango Solid Ethnic Wear,Mango,Women,Ethnic Wear,68.58,0.0,68.58,"XS,S,M,L,XL",M,36,4.42,49
+p-a5a8b3e8b728,Marks & Spencer Floral Print Trousers,Marks & Spencer,Men,Bottomwear - Trousers,59.33,0.0,59.33,"S,M,L,XL,XXL",M,43,4.03,22
+p-451d35ee28e3,Forever 21 Solid Dresses,Forever 21,Women,Dresses,82.51,25.0,61.88,"XS,S,M,L,XL",,11,4.6,7
+p-99be12362d56,H&M Men Athletic Trousers,H&M Men,Men,Bottomwear - Trousers,38.66,10.0,34.79,"S,M,L,XL,XXL","M,L",22,3.87,52
+p-8ee9b720f717,Red Tape Slim Fit Sandals,Red Tape,Footwear,Sandals,77.26,15.0,65.67,"6,7,8,9,10,11",,43,3.89,53
+p-b4d6f4d20ad6,Zara Men Formal Jeans,Zara Men,Men,Bottomwear - Jeans,45.87,10.0,41.28,"S,M,L,XL,XXL",,13,3.47,38
+p-ae11fc87247e,Allen Solly Vintage Wash T-Shirts,Allen Solly,Men,Topwear - T-Shirts,73.72,25.0,55.29,"S,M,L,XL,XXL",,29,4.01,135
+p-28d63bfb0cb0,Urban Chic Athletic Dresses,Urban Chic,Women,Dresses,45.99,25.0,34.49,"XS,S,M,L,XL",,21,3.96,22
+p-3cac462524b6,Vero Moda Regular Fit Ethnic Wear,Vero Moda,Women,Ethnic Wear,57.56,0.0,57.56,"XS,S,M,L,XL",S,74,4.57,63
+p-b973221e5e3d,Mango Oversized Jeans,Mango,Women,Bottomwear - Jeans,52.81,0.0,52.81,"XS,S,M,L,XL",,109,4.28,91
+p-6479e9476ef4,Ray-Ban Formal Sunglasses,Ray-Ban,Accessories,Sunglasses,79.8,0.0,79.8,One Size,,28,4.26,46
+p-c158b642b912,Reebok Athletic Formal Shoes,Reebok,Footwear,Formal Shoes,108.41,40.0,65.05,"6,7,8,9,10,11",8,85,3.99,49
+p-bc15778b8d7b,Zara Men Slim Fit Jeans,Zara Men,Men,Bottomwear - Jeans,94.92,0.0,94.92,"S,M,L,XL,XXL",,66,4.33,11
+p-88b5fb620fef,Roadster Cotton Trousers,Roadster,Men,Bottomwear - Trousers,57.7,30.0,40.39,"S,M,L,XL,XXL",,28,3.91,66
+p-56f801e9db27,Tommy Hilfiger Solid Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,86.18,15.0,73.25,"S,M,L,XL,XXL",,31,3.87,29
+p-8e84ffde784e,Mango Regular Fit Tops & Tees,Mango,Women,Tops & Tees,123.61,0.0,123.61,"XS,S,M,L,XL",,77,4.45,16
+p-4faacc36fbae,Fastrack Formal Watches,Fastrack,Accessories,Watches,54.51,30.0,38.16,One Size,,58,3.71,38
+p-70ed762ad9d0,Vero Moda Classic Jeans,Vero Moda,Women,Bottomwear - Jeans,51.61,25.0,38.71,"XS,S,M,L,XL",,32,3.82,9
+p-e1e74cef3ff9,H&M Men Solid Shirts,H&M Men,Men,Topwear - Shirts,54.13,50.0,27.07,"S,M,L,XL,XXL",,54,3.84,7
+p-c2e0b7405e5f,Levi's Floral Print T-Shirts,Levi's,Men,Topwear - T-Shirts,89.69,40.0,53.81,"S,M,L,XL,XXL","M,L",37,3.84,14
+p-4d392a315427,H&M Men Textured Shirts,H&M Men,Men,Topwear - Shirts,25.35,0.0,25.35,"S,M,L,XL,XXL",,38,3.72,9
+p-91054fb9cc27,Zara Slim Fit Tops & Tees,Zara,Women,Tops & Tees,61.69,0.0,61.69,"XS,S,M,L,XL",,44,4.07,14
+p-9cfb390e3093,Zara Men Casual Shirts,Zara Men,Men,Topwear - Shirts,85.28,0.0,85.28,"S,M,L,XL,XXL",,58,4.01,29
+p-4384709e432d,H&M Linen Jeans,H&M,Women,Bottomwear - Jeans,53.68,0.0,53.68,"XS,S,M,L,XL","S,M",26,4.21,129
+p-eede996438b6,Tommy Hilfiger Cotton Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,52.5,25.0,39.38,One Size,,41,4.07,48
+p-ddd2f5bb213c,Mango Solid Dresses,Mango,Women,Dresses,56.43,10.0,50.79,"XS,S,M,L,XL",,22,4.52,7
+p-bc2625482332,Reebok Casual Sneakers,Reebok,Footwear,Sneakers,135.93,40.0,81.56,"6,7,8,9,10,11",,26,4.23,111
+p-594e49fc9426,Tommy Hilfiger Classic Shirts,Tommy Hilfiger,Men,Topwear - Shirts,78.77,40.0,47.26,"S,M,L,XL,XXL",L,41,3.89,15
+p-4da78da982ea,Roadster Textured Shirts,Roadster,Men,Topwear - Shirts,74.73,10.0,67.26,"S,M,L,XL,XXL",,33,3.85,17
+p-36ef66bfcddf,Red Tape Formal Formal Shoes,Red Tape,Footwear,Formal Shoes,85.32,0.0,85.32,"6,7,8,9,10,11",8,22,4.79,195
+p-ddd916ebcbbc,Reebok Linen Sneakers,Reebok,Footwear,Sneakers,79.61,0.0,79.61,"6,7,8,9,10,11",,65,4.2,86
+p-adf9d571e891,H&M Slim Fit Tops & Tees,H&M,Women,Tops & Tees,86.24,20.0,68.99,"XS,S,M,L,XL",,85,3.9,9
+p-d46a9fafd8b0,H&M Linen Ethnic Wear,H&M,Women,Ethnic Wear,59.18,0.0,59.18,"XS,S,M,L,XL","M,S",73,4.28,25
+p-165c912688bd,Nike Formal Sandals,Nike,Footwear,Sandals,119.11,20.0,95.29,"6,7,8,9,10,11",,22,4.79,7
+p-18ab3b9c2366,Zara Men Floral Print Shirts,Zara Men,Men,Topwear - Shirts,83.84,0.0,83.84,"S,M,L,XL,XXL",,64,3.86,34
+p-ce44c70f1845,Tommy Hilfiger Regular Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,95.24,30.0,66.67,"S,M,L,XL,XXL",,21,4.6,55
+p-3862b24fcaf1,Ray-Ban Linen Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,80.11,20.0,64.09,One Size,,39,4.15,59
+p-805db5e2669e,Forever 21 Casual Dresses,Forever 21,Women,Dresses,88.26,0.0,88.26,"XS,S,M,L,XL",M,54,4.59,15
+p-b8d161937168,Biba Classic Jeans,Biba,Women,Bottomwear - Jeans,97.75,15.0,83.09,"XS,S,M,L,XL",,31,4.17,5
+p-8fd825d4ccc3,Titan Casual Belts & Wallets,Titan,Accessories,Belts & Wallets,86.1,25.0,64.57,One Size,,32,4.76,42
+p-125e782a141b,Biba Formal Tops & Tees,Biba,Women,Tops & Tees,51.78,10.0,46.6,"XS,S,M,L,XL",,36,4.1,33
+p-659473edc014,Fastrack Slim Fit Watches,Fastrack,Accessories,Watches,80.52,50.0,40.26,One Size,,84,4.12,12
+p-5d3edd1052cb,Levi's Floral Print Trousers,Levi's,Men,Bottomwear - Trousers,30.46,10.0,27.41,"S,M,L,XL,XXL",,66,3.93,35
+p-3ec0b4087ec8,H&M Men Slim Fit Shirts,H&M Men,Men,Topwear - Shirts,100.87,25.0,75.65,"S,M,L,XL,XXL",,101,3.96,19
+p-0f47d4d8b929,Lavie Solid Sunglasses,Lavie,Accessories,Sunglasses,121.39,0.0,121.39,One Size,,102,3.84,35
+p-0ec780797f59,Levi's Floral Print Jeans,Levi's,Men,Bottomwear - Jeans,53.36,0.0,53.36,"S,M,L,XL,XXL",,40,4.29,4
+p-ff0444aaaa6b,Tommy Hilfiger Casual T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,89.87,0.0,89.87,"S,M,L,XL,XXL",,75,3.78,17
+p-3e3d78193945,Lavie Cotton Watches,Lavie,Accessories,Watches,102.81,10.0,92.53,One Size,,77,4.33,5
+p-28d371b26832,Zara Floral Print Dresses,Zara,Women,Dresses,59.74,0.0,59.74,"XS,S,M,L,XL",,84,4.01,135
+p-ef64fa80d662,Biba Linen Ethnic Wear,Biba,Women,Ethnic Wear,91.85,10.0,82.66,"XS,S,M,L,XL",,83,3.77,13
+p-898d59d1d78d,Clarks Regular Fit Sneakers,Clarks,Footwear,Sneakers,75.39,20.0,60.31,"6,7,8,9,10,11",,85,4.18,5
+p-808c451d43cb,Levi's Classic Trousers,Levi's,Men,Bottomwear - Trousers,59.98,15.0,50.98,"S,M,L,XL,XXL",,44,4.16,34
+p-ff94757c45da,Allen Solly Oversized Trousers,Allen Solly,Men,Bottomwear - Trousers,69.81,0.0,69.81,"S,M,L,XL,XXL",,54,3.56,140
+p-11da1292c305,Ray-Ban Athletic Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,87.17,40.0,52.3,One Size,,76,3.9,20
+p-ede00ef80bbe,Red Tape Solid Running Shoes,Red Tape,Footwear,Running Shoes,95.52,50.0,47.76,"6,7,8,9,10,11","9,8",63,3.87,47
+p-58ea83f7cb9e,Zara Men Oversized Shirts,Zara Men,Men,Topwear - Shirts,77.41,30.0,54.19,"S,M,L,XL,XXL",,45,4.38,93
+p-5f11e232aa88,H&M Regular Fit Dresses,H&M,Women,Dresses,83.05,30.0,58.13,"XS,S,M,L,XL","M,S",27,4.07,96
+p-8d2ab9d7c471,Roadster Linen Shirts,Roadster,Men,Topwear - Shirts,71.08,0.0,71.08,"S,M,L,XL,XXL",,35,4.56,14
+p-e07b165df650,Vero Moda Cotton Tops & Tees,Vero Moda,Women,Tops & Tees,54.96,25.0,41.22,"XS,S,M,L,XL",,32,3.69,5
+p-d86d3cc2d6ec,Levi's Oversized Shirts,Levi's,Men,Topwear - Shirts,55.52,0.0,55.52,"S,M,L,XL,XXL",,14,4.24,6
+p-86717d5e9051,Marks & Spencer Solid Jeans,Marks & Spencer,Men,Bottomwear - Jeans,56.68,0.0,56.68,"S,M,L,XL,XXL",,78,5.0,74
+p-4aa41c242996,Zara Men Linen Shirts,Zara Men,Men,Topwear - Shirts,77.56,0.0,77.56,"S,M,L,XL,XXL",L,69,4.9,125
+p-8f45393df75d,Forever 21 Slim Fit Ethnic Wear,Forever 21,Women,Ethnic Wear,109.1,30.0,76.37,"XS,S,M,L,XL",,86,4.28,69
+p-339c2495e1d5,Marks & Spencer Oversized Jeans,Marks & Spencer,Men,Bottomwear - Jeans,75.38,0.0,75.38,"S,M,L,XL,XXL","L,M",46,4.38,97
+p-c38221716f7e,Tommy Hilfiger Regular Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,33.83,0.0,33.83,"S,M,L,XL,XXL",,24,3.73,12
+p-3da33d3f90dd,Zara Slim Fit Tops & Tees,Zara,Women,Tops & Tees,57.67,10.0,51.9,"XS,S,M,L,XL",S,26,4.13,70
+p-be98bdb2c708,Marks & Spencer Vintage Wash T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,61.42,0.0,61.42,"S,M,L,XL,XXL",,37,4.26,22
+p-12774b5c2e90,Forever 21 Classic Dresses,Forever 21,Women,Dresses,60.36,40.0,36.22,"XS,S,M,L,XL",S,39,3.6,8
+p-e960be36c0f4,Zara Men Textured Shirts,Zara Men,Men,Topwear - Shirts,62.52,20.0,50.02,"S,M,L,XL,XXL",,47,3.55,57
+p-9cf1a10f570d,Zara Athletic Tops & Tees,Zara,Women,Tops & Tees,125.58,0.0,125.58,"XS,S,M,L,XL",,53,4.36,35
+p-5d6fe0443525,Tommy Hilfiger Slim Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,39.49,0.0,39.49,"S,M,L,XL,XXL","L,M",62,4.24,6
+p-3f74d079b7d4,Tommy Hilfiger Textured Shirts,Tommy Hilfiger,Men,Topwear - Shirts,35.68,15.0,30.33,"S,M,L,XL,XXL",,98,4.19,31
+p-47e4f7e870fb,Fastrack Oversized Belts & Wallets,Fastrack,Accessories,Belts & Wallets,89.69,0.0,89.69,One Size,,81,4.33,11
+p-344e8d7aa634,Mango Casual Jeans,Mango,Women,Bottomwear - Jeans,71.47,10.0,64.32,"XS,S,M,L,XL",,25,3.91,84
+p-19516ce35ff7,Roadster Classic Shirts,Roadster,Men,Topwear - Shirts,48.33,0.0,48.33,"S,M,L,XL,XXL",,56,4.12,26
+p-01a702499b62,Tommy Hilfiger Vintage Wash Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,33.13,0.0,33.13,One Size,,16,3.96,84
+p-a599ac460f97,Zara Regular Fit Ethnic Wear,Zara,Women,Ethnic Wear,72.88,25.0,54.66,"XS,S,M,L,XL",M,48,4.58,34
+p-ddb05584a10e,Biba Athletic Tops & Tees,Biba,Women,Tops & Tees,44.53,15.0,37.85,"XS,S,M,L,XL",,26,3.91,9
+p-87fca91976cb,Tommy Hilfiger Athletic Shirts,Tommy Hilfiger,Men,Topwear - Shirts,69.54,15.0,59.11,"S,M,L,XL,XXL",,46,4.49,68
+p-4798a77c002e,Titan Athletic Sunglasses,Titan,Accessories,Sunglasses,69.05,0.0,69.05,One Size,,63,4.52,56
+p-ed118a7aa1b1,H&M Men Classic Trousers,H&M Men,Men,Bottomwear - Trousers,90.77,0.0,90.77,"S,M,L,XL,XXL",,48,3.54,3
+p-c7fcb5d9d88e,Puma Oversized Running Shoes,Puma,Footwear,Running Shoes,84.33,20.0,67.46,"6,7,8,9,10,11",8,28,4.05,8
+p-982b6e892ea0,Fossil Athletic Belts & Wallets,Fossil,Accessories,Belts & Wallets,93.76,20.0,75.01,One Size,,40,4.15,24
+p-1dd9234e5d10,Titan Linen Sunglasses,Titan,Accessories,Sunglasses,45.58,0.0,45.58,One Size,,14,3.68,13
+p-23034c55c202,Zara Men Regular Fit T-Shirts,Zara Men,Men,Topwear - T-Shirts,71.73,20.0,57.38,"S,M,L,XL,XXL",,23,4.28,60
+p-d8f4231643ac,H&M Men Formal T-Shirts,H&M Men,Men,Topwear - T-Shirts,56.14,0.0,56.14,"S,M,L,XL,XXL",,78,3.38,52
+p-26c2ae1821d6,Adidas Classic Sneakers,Adidas,Footwear,Sneakers,75.28,0.0,75.28,"6,7,8,9,10,11",,40,4.22,86
+p-890121ca97e8,Mango Oversized Ethnic Wear,Mango,Women,Ethnic Wear,122.69,0.0,122.69,"XS,S,M,L,XL","M,S",74,3.66,121
+p-c920f258e7da,Roadster Classic Jeans,Roadster,Men,Bottomwear - Jeans,60.63,20.0,48.5,"S,M,L,XL,XXL",L,60,4.61,88
+p-9974eb3bb71d,H&M Casual Jeans,H&M,Women,Bottomwear - Jeans,95.0,10.0,85.5,"XS,S,M,L,XL",S,26,4.38,94
+p-1a99ac9daee7,Zara Formal Tops & Tees,Zara,Women,Tops & Tees,118.49,25.0,88.87,"XS,S,M,L,XL",,23,4.51,57
+p-e51b31a9c2f7,Forever 21 Floral Print Jeans,Forever 21,Women,Bottomwear - Jeans,31.04,20.0,24.83,"XS,S,M,L,XL",,95,4.12,29
+p-7df82a11550b,Biba Oversized Jeans,Biba,Women,Bottomwear - Jeans,63.16,25.0,47.37,"XS,S,M,L,XL",,105,4.11,21
+p-472b66e95c70,Levi's Slim Fit Jeans,Levi's,Men,Bottomwear - Jeans,61.32,0.0,61.32,"S,M,L,XL,XXL",M,51,3.95,23
+p-389061621690,Levi's Linen Jeans,Levi's,Men,Bottomwear - Jeans,54.29,10.0,48.86,"S,M,L,XL,XXL",,42,4.35,5
+p-c880e79eb602,Roadster Regular Fit Trousers,Roadster,Men,Bottomwear - Trousers,70.89,20.0,56.71,"S,M,L,XL,XXL",,27,4.09,27
+p-f4e713a110d6,Adidas Oversized Sandals,Adidas,Footwear,Sandals,130.1,20.0,104.08,"6,7,8,9,10,11",,87,4.6,27
+p-f9eb92cfed38,Marks & Spencer Textured Trousers,Marks & Spencer,Men,Bottomwear - Trousers,46.91,30.0,32.84,"S,M,L,XL,XXL",,56,3.96,29
+p-9e7de7195ad5,Fastrack Solid Belts & Wallets,Fastrack,Accessories,Belts & Wallets,112.01,0.0,112.01,One Size,,57,4.01,38
+p-6afba8c567e4,H&M Textured Jeans,H&M,Women,Bottomwear - Jeans,56.42,50.0,28.21,"XS,S,M,L,XL",,45,3.71,52
+p-efaa137def46,Tommy Hilfiger Cotton T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,91.32,50.0,45.66,"S,M,L,XL,XXL",,107,4.22,135
+p-81dbefc87ca1,Zara Men Oversized Jeans,Zara Men,Men,Bottomwear - Jeans,36.01,0.0,36.01,"S,M,L,XL,XXL",,76,4.63,62
+p-ec5e50e39ef1,Urban Chic Athletic Ethnic Wear,Urban Chic,Women,Ethnic Wear,126.84,0.0,126.84,"XS,S,M,L,XL",,38,4.57,61
+p-884e758908f8,H&M Classic Dresses,H&M,Women,Dresses,47.45,15.0,40.33,"XS,S,M,L,XL",,12,4.14,90
+p-eecc407d3d46,Biba Classic Tops & Tees,Biba,Women,Tops & Tees,104.03,0.0,104.03,"XS,S,M,L,XL","S,M",37,4.41,35
+p-7df467a58029,Fastrack Linen Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,31.75,0.0,31.75,One Size,,37,4.52,27
+p-2ffbba960a7a,H&M Textured Jeans,H&M,Women,Bottomwear - Jeans,108.73,40.0,65.24,"XS,S,M,L,XL",,44,4.25,16
+p-f5dc3be5b6a6,Urban Chic Solid Dresses,Urban Chic,Women,Dresses,48.9,30.0,34.23,"XS,S,M,L,XL",,61,3.61,130
+p-e66bc83d3920,Reebok Slim Fit Sandals,Reebok,Footwear,Sandals,94.06,50.0,47.03,"6,7,8,9,10,11",8,23,4.68,96
+p-6cc70e46c772,Mango Athletic Jeans,Mango,Women,Bottomwear - Jeans,86.67,0.0,86.67,"XS,S,M,L,XL",S,23,4.35,342
+p-b0bfc4aaca13,Vero Moda Solid Ethnic Wear,Vero Moda,Women,Ethnic Wear,66.87,0.0,66.87,"XS,S,M,L,XL",,33,4.19,4
+p-de5460e8db31,Vero Moda Casual Tops & Tees,Vero Moda,Women,Tops & Tees,77.92,0.0,77.92,"XS,S,M,L,XL",,26,4.42,183
+p-6197f22aca17,Forever 21 Vintage Wash Jeans,Forever 21,Women,Bottomwear - Jeans,104.13,50.0,52.06,"XS,S,M,L,XL","S,M",29,4.17,68
+p-85a2b8b3b9a0,Zara Athletic Ethnic Wear,Zara,Women,Ethnic Wear,97.1,20.0,77.68,"XS,S,M,L,XL",,119,4.38,46
+p-fb5df7482392,Zara Linen Jeans,Zara,Women,Bottomwear - Jeans,89.8,20.0,71.84,"XS,S,M,L,XL",,134,4.03,12
+p-8cfe65ec97f7,Zara Linen Dresses,Zara,Women,Dresses,114.9,20.0,91.92,"XS,S,M,L,XL","S,M",33,3.88,58
+p-e803259e44af,H&M Men Classic Shirts,H&M Men,Men,Topwear - Shirts,52.49,25.0,39.37,"S,M,L,XL,XXL",,39,4.13,71
+p-43de93aba79a,Allen Solly Slim Fit Trousers,Allen Solly,Men,Bottomwear - Trousers,33.64,20.0,26.91,"S,M,L,XL,XXL",,47,4.06,39
+p-d44a4e10ca43,Roadster Vintage Wash T-Shirts,Roadster,Men,Topwear - T-Shirts,50.64,30.0,35.45,"S,M,L,XL,XXL",L,55,4.31,14
+p-ea0d17067ac5,Adidas Vintage Wash Formal Shoes,Adidas,Footwear,Formal Shoes,110.53,50.0,55.27,"6,7,8,9,10,11",,66,4.64,147
+p-adce4fd2f289,Biba Cotton Jeans,Biba,Women,Bottomwear - Jeans,107.57,25.0,80.68,"XS,S,M,L,XL",,35,4.52,39
+p-74aadb4fff89,Fossil Vintage Wash Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,113.17,0.0,113.17,One Size,,42,4.08,101
+p-b0645cf1962a,H&M Slim Fit Ethnic Wear,H&M,Women,Ethnic Wear,78.37,0.0,78.37,"XS,S,M,L,XL",,44,3.54,39
+p-e65964908012,Zara Cotton Ethnic Wear,Zara,Women,Ethnic Wear,47.81,10.0,43.03,"XS,S,M,L,XL",,40,3.45,16
+p-093f884982a5,Zara Men Regular Fit Trousers,Zara Men,Men,Bottomwear - Trousers,47.52,15.0,40.39,"S,M,L,XL,XXL",L,29,3.76,41
+p-633c9a580d2b,Tommy Hilfiger Regular Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,50.98,10.0,45.88,"S,M,L,XL,XXL",,21,4.59,38
+p-eaf908448f12,Vero Moda Casual Ethnic Wear,Vero Moda,Women,Ethnic Wear,49.95,15.0,42.46,"XS,S,M,L,XL",,57,4.23,23
+p-c3aa6d3efc65,Zara Textured Jeans,Zara,Women,Bottomwear - Jeans,103.93,50.0,51.97,"XS,S,M,L,XL",,45,4.53,21
+p-2c780bfed55c,Mango Vintage Wash Tops & Tees,Mango,Women,Tops & Tees,58.37,0.0,58.37,"XS,S,M,L,XL",,24,3.98,46
+p-ff03368ad525,Zara Cotton Ethnic Wear,Zara,Women,Ethnic Wear,64.47,30.0,45.13,"XS,S,M,L,XL",,42,4.47,133
+p-2d160337d51b,Zara Men Cotton Jeans,Zara Men,Men,Bottomwear - Jeans,59.05,15.0,50.19,"S,M,L,XL,XXL",,47,3.77,19
+p-b2706ad84585,Red Tape Textured Formal Shoes,Red Tape,Footwear,Formal Shoes,114.0,0.0,114.0,"6,7,8,9,10,11","9,8",27,4.37,34
+p-74db822db021,Urban Chic Vintage Wash Dresses,Urban Chic,Women,Dresses,44.85,15.0,38.12,"XS,S,M,L,XL",,64,4.41,18
+p-e56e7fc07695,Roadster Textured Trousers,Roadster,Men,Bottomwear - Trousers,50.49,20.0,40.39,"S,M,L,XL,XXL",,24,4.06,36
+p-4f4af09568c4,Forever 21 Floral Print Ethnic Wear,Forever 21,Women,Ethnic Wear,61.48,50.0,30.74,"XS,S,M,L,XL",,32,3.62,14
+p-6ae741a4dceb,Vero Moda Solid Dresses,Vero Moda,Women,Dresses,85.32,0.0,85.32,"XS,S,M,L,XL",S,15,4.14,12
+p-f6f485d31c53,Adidas Oversized Running Shoes,Adidas,Footwear,Running Shoes,88.55,0.0,88.55,"6,7,8,9,10,11",,13,3.67,42
+p-9541a10dcdd8,H&M Slim Fit Tops & Tees,H&M,Women,Tops & Tees,48.28,0.0,48.28,"XS,S,M,L,XL",,56,4.74,77
+p-d45ed8f9f29c,H&M Textured Ethnic Wear,H&M,Women,Ethnic Wear,94.2,0.0,94.2,"XS,S,M,L,XL","M,S",85,3.99,49
+p-e5c548638f7d,Reebok Formal Sneakers,Reebok,Footwear,Sneakers,58.31,50.0,29.16,"6,7,8,9,10,11","9,8",54,4.49,39
+p-5556ccc8e5a4,Urban Chic Solid Dresses,Urban Chic,Women,Dresses,81.98,0.0,81.98,"XS,S,M,L,XL",,35,4.42,3
+p-0de07ba903b1,Zara Vintage Wash Ethnic Wear,Zara,Women,Ethnic Wear,62.27,25.0,46.7,"XS,S,M,L,XL",S,60,4.35,18
+p-d2a785a57ed6,Marks & Spencer Cotton Shirts,Marks & Spencer,Men,Topwear - Shirts,57.08,10.0,51.37,"S,M,L,XL,XXL",,79,3.97,41
+p-31e917442efb,Vero Moda Cotton Jeans,Vero Moda,Women,Bottomwear - Jeans,63.82,0.0,63.82,"XS,S,M,L,XL",,86,4.09,38
+p-38982377b505,Forever 21 Classic Ethnic Wear,Forever 21,Women,Ethnic Wear,106.91,0.0,106.91,"XS,S,M,L,XL",,66,3.81,90
+p-5a5a370942c3,Mango Vintage Wash Tops & Tees,Mango,Women,Tops & Tees,42.3,20.0,33.84,"XS,S,M,L,XL","S,M",138,3.86,101
+p-6cac4bc2017e,Biba Floral Print Jeans,Biba,Women,Bottomwear - Jeans,34.73,15.0,29.52,"XS,S,M,L,XL","M,S",30,4.06,77
+p-da49480dda37,Mango Athletic Dresses,Mango,Women,Dresses,54.11,30.0,37.88,"XS,S,M,L,XL","M,S",63,4.18,15
+p-7e33ffb1f424,Fastrack Cotton Watches,Fastrack,Accessories,Watches,46.7,0.0,46.7,One Size,,77,4.22,237
+p-55abfbffd739,Urban Chic Linen Ethnic Wear,Urban Chic,Women,Ethnic Wear,40.48,30.0,28.34,"XS,S,M,L,XL","S,M",32,4.27,42
+p-fe7a6f1fcac1,Zara Men Vintage Wash Trousers,Zara Men,Men,Bottomwear - Trousers,95.83,0.0,95.83,"S,M,L,XL,XXL",,29,4.13,44
+p-b132ba6f0ebd,Marks & Spencer Slim Fit Jeans,Marks & Spencer,Men,Bottomwear - Jeans,97.81,15.0,83.14,"S,M,L,XL,XXL",,37,4.42,94
+p-4f49943c70ac,Zara Cotton Tops & Tees,Zara,Women,Tops & Tees,49.56,25.0,37.17,"XS,S,M,L,XL",,67,3.56,27
+p-f946e1d81e39,H&M Athletic Ethnic Wear,H&M,Women,Ethnic Wear,77.79,0.0,77.79,"XS,S,M,L,XL",,88,3.98,92
+p-15c60adf322b,H&M Floral Print Dresses,H&M,Women,Dresses,65.64,0.0,65.64,"XS,S,M,L,XL",,23,4.45,287
+p-ea91bab49c9a,Marks & Spencer Slim Fit T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,39.27,0.0,39.27,"S,M,L,XL,XXL",,109,4.56,37
+p-284596cdedc9,Nike Linen Running Shoes,Nike,Footwear,Running Shoes,119.61,30.0,83.73,"6,7,8,9,10,11",,21,4.24,5
+p-bcd0992c254b,Mango Casual Jeans,Mango,Women,Bottomwear - Jeans,95.37,10.0,85.83,"XS,S,M,L,XL",,56,4.41,36
+p-88948849304a,Lavie Slim Fit Bags & Backpacks,Lavie,Accessories,Bags & Backpacks,121.73,0.0,121.73,One Size,,33,4.34,53
+p-9b50c67fc225,Mango Casual Tops & Tees,Mango,Women,Tops & Tees,111.37,0.0,111.37,"XS,S,M,L,XL",,69,4.16,10
+p-42b6df636be3,Urban Chic Casual Tops & Tees,Urban Chic,Women,Tops & Tees,79.26,0.0,79.26,"XS,S,M,L,XL",,36,3.7,44
+p-474a73bfaeb6,H&M Men Oversized Jeans,H&M Men,Men,Bottomwear - Jeans,44.32,30.0,31.02,"S,M,L,XL,XXL",,70,4.71,34
+p-e1a5676dc6ed,Biba Solid Jeans,Biba,Women,Bottomwear - Jeans,126.96,20.0,101.57,"XS,S,M,L,XL",M,14,4.26,11
+p-39e777735708,H&M Classic Dresses,H&M,Women,Dresses,116.48,10.0,104.83,"XS,S,M,L,XL",,27,4.58,18
+p-2df786ae0c97,Urban Chic Floral Print Tops & Tees,Urban Chic,Women,Tops & Tees,50.86,15.0,43.23,"XS,S,M,L,XL",,70,3.88,20
+p-059cbbf643c9,Mango Textured Tops & Tees,Mango,Women,Tops & Tees,113.47,40.0,68.08,"XS,S,M,L,XL",,122,4.07,32
+p-168259f9ca0c,Red Tape Slim Fit Sneakers,Red Tape,Footwear,Sneakers,113.21,20.0,90.57,"6,7,8,9,10,11",,28,3.53,13
+p-2aa83cc3b378,Allen Solly Oversized T-Shirts,Allen Solly,Men,Topwear - T-Shirts,66.08,0.0,66.08,"S,M,L,XL,XXL",,56,4.28,27
+p-f7445a8007ba,Fastrack Cotton Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,49.33,0.0,49.33,One Size,,27,3.96,111
+p-cbeb4644a5d2,Biba Solid Jeans,Biba,Women,Bottomwear - Jeans,65.73,50.0,32.87,"XS,S,M,L,XL",,53,3.66,4
+p-ee0543f95663,Vero Moda Linen Ethnic Wear,Vero Moda,Women,Ethnic Wear,81.5,25.0,61.12,"XS,S,M,L,XL",,55,4.47,10
+p-206c70749a02,Tommy Hilfiger Cotton T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,55.24,0.0,55.24,"S,M,L,XL,XXL",,13,4.56,19
+p-78156a3fd46d,Forever 21 Regular Fit Ethnic Wear,Forever 21,Women,Ethnic Wear,73.58,0.0,73.58,"XS,S,M,L,XL","M,S",40,4.01,10
+p-2d9112c177e2,Vero Moda Regular Fit Dresses,Vero Moda,Women,Dresses,120.26,30.0,84.18,"XS,S,M,L,XL","M,S",9,3.7,80
+p-13d3e250b7b9,Biba Solid Jeans,Biba,Women,Bottomwear - Jeans,73.79,20.0,59.03,"XS,S,M,L,XL",,49,3.33,159
+p-538b6290af9a,Fastrack Oversized Belts & Wallets,Fastrack,Accessories,Belts & Wallets,104.49,20.0,83.59,One Size,,35,4.51,31
+p-f9bd93e8db90,Levi's Athletic T-Shirts,Levi's,Men,Topwear - T-Shirts,63.58,0.0,63.58,"S,M,L,XL,XXL",,82,3.36,65
+p-c55170669c89,Red Tape Linen Running Shoes,Red Tape,Footwear,Running Shoes,114.7,0.0,114.7,"6,7,8,9,10,11",,49,3.67,84
+p-3ae4d1603559,Red Tape Casual Sneakers,Red Tape,Footwear,Sneakers,80.92,10.0,72.83,"6,7,8,9,10,11",,33,4.56,75
+p-d9bf49cd8358,Tommy Hilfiger Vintage Wash Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,69.31,0.0,69.31,"S,M,L,XL,XXL",,40,4.46,58
+p-8959b14efe22,Clarks Solid Sneakers,Clarks,Footwear,Sneakers,76.71,20.0,61.37,"6,7,8,9,10,11",,58,4.37,24
+p-e4ebc2da0d8a,Mango Solid Tops & Tees,Mango,Women,Tops & Tees,23.05,0.0,23.05,"XS,S,M,L,XL",,30,3.88,17
+p-3c1893db767d,Allen Solly Linen Trousers,Allen Solly,Men,Bottomwear - Trousers,58.21,30.0,40.75,"S,M,L,XL,XXL",,39,4.27,19
+p-665832971df3,Red Tape Formal Formal Shoes,Red Tape,Footwear,Formal Shoes,108.16,20.0,86.53,"6,7,8,9,10,11",,24,4.03,18
+p-4a5e443ef588,Vero Moda Oversized Dresses,Vero Moda,Women,Dresses,76.94,25.0,57.7,"XS,S,M,L,XL",,61,3.61,3
+p-16a49cf4c880,Lavie Linen Watches,Lavie,Accessories,Watches,36.45,25.0,27.34,One Size,,76,4.14,122
+p-30b66a97b2ae,H&M Linen Dresses,H&M,Women,Dresses,70.52,0.0,70.52,"XS,S,M,L,XL","M,S",31,4.41,111
+p-65c24eb6ad62,Ray-Ban Classic Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,71.61,15.0,60.87,One Size,,28,4.88,25
+p-5be1ceedab47,Tommy Hilfiger Regular Fit Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,89.79,25.0,67.34,"S,M,L,XL,XXL",,115,3.77,34
+p-cd24b097e4eb,Tommy Hilfiger Floral Print Shirts,Tommy Hilfiger,Men,Topwear - Shirts,61.99,10.0,55.79,"S,M,L,XL,XXL",,40,4.16,26
+p-63ad9a5b8644,Forever 21 Cotton Ethnic Wear,Forever 21,Women,Ethnic Wear,59.05,0.0,59.05,"XS,S,M,L,XL",,63,5.0,4
+p-f9d0f8a34417,Fastrack Floral Print Watches,Fastrack,Accessories,Watches,68.93,30.0,48.25,One Size,,37,3.84,84
+p-ad215aa2fc1f,Tommy Hilfiger Classic Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,44.88,30.0,31.42,"S,M,L,XL,XXL",,32,3.81,52
+p-47833780fa92,H&M Linen Ethnic Wear,H&M,Women,Ethnic Wear,119.21,10.0,107.29,"XS,S,M,L,XL",,41,4.42,35
+p-22b0ddeac786,Fossil Casual Watches,Fossil,Accessories,Watches,96.33,0.0,96.33,One Size,,63,4.77,8
+p-8a62a61eba92,Biba Oversized Jeans,Biba,Women,Bottomwear - Jeans,103.64,15.0,88.09,"XS,S,M,L,XL",,20,4.12,112
+p-b886e57e01a9,Zara Casual Dresses,Zara,Women,Dresses,72.89,40.0,43.73,"XS,S,M,L,XL",S,61,4.29,52
+p-6535d0b8061b,Marks & Spencer Athletic Trousers,Marks & Spencer,Men,Bottomwear - Trousers,92.87,0.0,92.87,"S,M,L,XL,XXL",,29,4.45,60
+p-fac654905491,Clarks Vintage Wash Formal Shoes,Clarks,Footwear,Formal Shoes,75.53,10.0,67.98,"6,7,8,9,10,11",,76,3.69,17
+p-23767d2fbce3,Reebok Casual Running Shoes,Reebok,Footwear,Running Shoes,98.94,15.0,84.1,"6,7,8,9,10,11",,13,4.01,61
+p-b7c380a53de1,Forever 21 Floral Print Dresses,Forever 21,Women,Dresses,80.0,10.0,72.0,"XS,S,M,L,XL",,96,4.64,66
+p-3563a0dd7192,H&M Men Athletic Shirts,H&M Men,Men,Topwear - Shirts,87.33,50.0,43.66,"S,M,L,XL,XXL",,89,3.91,32
+p-7402450e78f9,Fossil Textured Watches,Fossil,Accessories,Watches,92.69,0.0,92.69,One Size,,17,4.15,71
+p-943262758877,Red Tape Solid Sneakers,Red Tape,Footwear,Sneakers,76.15,50.0,38.08,"6,7,8,9,10,11","9,8",38,4.06,113
+p-b51be3a1c974,Tommy Hilfiger Formal Shirts,Tommy Hilfiger,Men,Topwear - Shirts,73.78,50.0,36.89,"S,M,L,XL,XXL",,37,4.34,31
+p-16cc6e122e17,Levi's Slim Fit T-Shirts,Levi's,Men,Topwear - T-Shirts,72.09,20.0,57.67,"S,M,L,XL,XXL",,25,4.17,12
+p-cefb582e9ad6,Tommy Hilfiger Solid Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,53.34,15.0,45.34,"S,M,L,XL,XXL",,55,4.32,8
+p-3e9caf258b1b,Tommy Hilfiger Textured Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,23.88,20.0,19.1,"S,M,L,XL,XXL",,33,4.02,104
+p-819b79d86e75,Tommy Hilfiger Linen Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,102.97,0.0,102.97,One Size,,42,4.36,29
+p-5843cdab26b1,Zara Men Athletic T-Shirts,Zara Men,Men,Topwear - T-Shirts,60.33,0.0,60.33,"S,M,L,XL,XXL",,134,3.96,51
+p-a6597e09b731,H&M Solid Tops & Tees,H&M,Women,Tops & Tees,96.62,50.0,48.31,"XS,S,M,L,XL",,99,4.44,5
+p-9fc18e888ed7,Biba Slim Fit Tops & Tees,Biba,Women,Tops & Tees,73.43,0.0,73.43,"XS,S,M,L,XL",,31,3.49,122
+p-9269837891bc,Zara Linen Tops & Tees,Zara,Women,Tops & Tees,64.74,0.0,64.74,"XS,S,M,L,XL",,74,3.96,20
+p-05a2b020151f,Vero Moda Textured Dresses,Vero Moda,Women,Dresses,41.16,0.0,41.16,"XS,S,M,L,XL",S,13,3.48,9
+p-405d5b99ff80,Allen Solly Slim Fit Shirts,Allen Solly,Men,Topwear - Shirts,39.22,0.0,39.22,"S,M,L,XL,XXL",L,50,3.95,67
+p-8d9b9dfb9ead,Tommy Hilfiger Regular Fit Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,82.34,0.0,82.34,One Size,,86,4.19,121
+p-670ebbe5d4a6,Tommy Hilfiger Solid Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,74.12,0.0,74.12,One Size,,46,4.34,49
+p-c5c41af6dfe7,H&M Solid Tops & Tees,H&M,Women,Tops & Tees,105.84,20.0,84.67,"XS,S,M,L,XL",,89,3.68,28
+p-3adf185ccfa8,H&M Men Vintage Wash Shirts,H&M Men,Men,Topwear - Shirts,85.36,0.0,85.36,"S,M,L,XL,XXL",,73,3.91,156
+p-fe66ab501149,Forever 21 Classic Jeans,Forever 21,Women,Bottomwear - Jeans,59.39,0.0,59.39,"XS,S,M,L,XL",,47,4.04,136
+p-27785fcb8ce9,Marks & Spencer Regular Fit Trousers,Marks & Spencer,Men,Bottomwear - Trousers,59.69,10.0,53.72,"S,M,L,XL,XXL",,60,3.96,51
+p-494e1d869247,H&M Men Regular Fit Shirts,H&M Men,Men,Topwear - Shirts,35.29,25.0,26.47,"S,M,L,XL,XXL",,11,4.25,5
+p-13faef1e8ad6,Zara Men Classic Trousers,Zara Men,Men,Bottomwear - Trousers,66.75,25.0,50.06,"S,M,L,XL,XXL",,85,4.16,27
+p-02c6dae3bfd8,Marks & Spencer Formal Jeans,Marks & Spencer,Men,Bottomwear - Jeans,37.38,10.0,33.64,"S,M,L,XL,XXL",,52,4.2,4
+p-84f9ef44c2f8,Biba Vintage Wash Jeans,Biba,Women,Bottomwear - Jeans,74.04,0.0,74.04,"XS,S,M,L,XL",,55,4.39,38
+p-f4008b82dc1c,Clarks Casual Sneakers,Clarks,Footwear,Sneakers,91.71,0.0,91.71,"6,7,8,9,10,11",,154,4.07,107
+p-9b98efa9ede7,Mango Floral Print Ethnic Wear,Mango,Women,Ethnic Wear,80.3,0.0,80.3,"XS,S,M,L,XL",S,26,4.24,36
+p-02d7151df481,H&M Regular Fit Ethnic Wear,H&M,Women,Ethnic Wear,77.08,0.0,77.08,"XS,S,M,L,XL",,21,4.06,40
+p-05107b6a13bf,Biba Solid Dresses,Biba,Women,Dresses,60.73,0.0,60.73,"XS,S,M,L,XL","S,M",110,3.82,77
+p-a568227c58d0,Mango Casual Jeans,Mango,Women,Bottomwear - Jeans,57.81,0.0,57.81,"XS,S,M,L,XL",S,23,4.44,55
+p-c30a24a4d965,Mango Athletic Jeans,Mango,Women,Bottomwear - Jeans,65.3,0.0,65.3,"XS,S,M,L,XL",,63,3.76,11
+p-37bfb063098f,Biba Regular Fit Ethnic Wear,Biba,Women,Ethnic Wear,66.46,25.0,49.84,"XS,S,M,L,XL",S,13,4.21,92
+p-22c6b923538c,Allen Solly Textured T-Shirts,Allen Solly,Men,Topwear - T-Shirts,42.28,0.0,42.28,"S,M,L,XL,XXL","L,M",24,4.88,50
+p-56de52c800bf,H&M Men Linen Shirts,H&M Men,Men,Topwear - Shirts,60.9,25.0,45.67,"S,M,L,XL,XXL",,77,3.71,18
+p-20383bde64c0,Vero Moda Casual Ethnic Wear,Vero Moda,Women,Ethnic Wear,51.86,0.0,51.86,"XS,S,M,L,XL","M,S",30,3.91,9
+p-4d013f609f92,Zara Oversized Tops & Tees,Zara,Women,Tops & Tees,40.61,0.0,40.61,"XS,S,M,L,XL",,20,4.58,39
+p-f85345be9148,Marks & Spencer Oversized Shirts,Marks & Spencer,Men,Topwear - Shirts,66.54,0.0,66.54,"S,M,L,XL,XXL","L,M",10,4.64,44
+p-5c3584cebee6,Puma Classic Running Shoes,Puma,Footwear,Running Shoes,156.87,10.0,141.18,"6,7,8,9,10,11",9,43,4.22,87
+p-150df58e3452,Zara Vintage Wash Ethnic Wear,Zara,Women,Ethnic Wear,35.6,30.0,24.92,"XS,S,M,L,XL",,78,4.02,45
+p-4ac97dc9e7e9,H&M Men Textured Shirts,H&M Men,Men,Topwear - Shirts,78.61,0.0,78.61,"S,M,L,XL,XXL",,45,4.53,33
+p-420db3363786,Biba Linen Tops & Tees,Biba,Women,Tops & Tees,29.67,50.0,14.84,"XS,S,M,L,XL",,36,4.22,15
+p-0e2dde105bc4,Reebok Textured Sneakers,Reebok,Footwear,Sneakers,119.06,30.0,83.34,"6,7,8,9,10,11",,42,4.18,21
+p-956db03dd047,Mango Textured Ethnic Wear,Mango,Women,Ethnic Wear,101.34,0.0,101.34,"XS,S,M,L,XL",,62,3.77,83
+p-b1ecbc03f8f5,Zara Men Formal Trousers,Zara Men,Men,Bottomwear - Trousers,37.91,15.0,32.22,"S,M,L,XL,XXL",,23,4.44,40
+p-e87ed4fee08a,Levi's Textured Shirts,Levi's,Men,Topwear - Shirts,44.18,25.0,33.13,"S,M,L,XL,XXL",,51,3.84,18
+p-1f10c9a09301,Marks & Spencer Casual Trousers,Marks & Spencer,Men,Bottomwear - Trousers,76.05,0.0,76.05,"S,M,L,XL,XXL",,47,3.34,61
+p-a56f87aed26b,Urban Chic Casual Dresses,Urban Chic,Women,Dresses,78.79,25.0,59.09,"XS,S,M,L,XL",,39,4.55,24
+p-f48777346cc1,Puma Slim Fit Sandals,Puma,Footwear,Sandals,70.15,25.0,52.61,"6,7,8,9,10,11",,73,4.39,26
+p-eff2f0247eea,Vero Moda Floral Print Ethnic Wear,Vero Moda,Women,Ethnic Wear,51.74,0.0,51.74,"XS,S,M,L,XL","M,S",48,4.16,5
+p-7292cd755bbc,Reebok Linen Running Shoes,Reebok,Footwear,Running Shoes,77.78,50.0,38.89,"6,7,8,9,10,11","8,9",49,3.83,90
+p-0979a5b2807e,Vero Moda Slim Fit Ethnic Wear,Vero Moda,Women,Ethnic Wear,56.3,20.0,45.04,"XS,S,M,L,XL",,71,3.88,60
+p-7a9af4d8dfc5,Urban Chic Regular Fit Dresses,Urban Chic,Women,Dresses,105.61,30.0,73.93,"XS,S,M,L,XL",,53,4.11,38
+p-eecb755b0602,Roadster Formal Jeans,Roadster,Men,Bottomwear - Jeans,72.95,0.0,72.95,"S,M,L,XL,XXL",,36,4.73,114
+p-f9eab5b06d34,Mango Linen Ethnic Wear,Mango,Women,Ethnic Wear,83.25,10.0,74.92,"XS,S,M,L,XL",,62,4.12,24
+p-1a162cf9b8c9,Marks & Spencer Casual T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,79.2,25.0,59.4,"S,M,L,XL,XXL",,111,4.32,104
+p-56ed5f521997,Allen Solly Textured Trousers,Allen Solly,Men,Bottomwear - Trousers,102.73,0.0,102.73,"S,M,L,XL,XXL",,66,3.8,42
+p-fbd049086647,Fossil Regular Fit Sunglasses,Fossil,Accessories,Sunglasses,58.37,25.0,43.78,One Size,,59,4.22,44
+p-0a73233a12ba,Levi's Linen T-Shirts,Levi's,Men,Topwear - T-Shirts,85.41,40.0,51.25,"S,M,L,XL,XXL",,51,3.48,64
+p-62367f6046fc,Titan Formal Belts & Wallets,Titan,Accessories,Belts & Wallets,65.98,30.0,46.19,One Size,,33,3.85,54
+p-b3ce7b54cdfb,Biba Regular Fit Jeans,Biba,Women,Bottomwear - Jeans,47.91,10.0,43.12,"XS,S,M,L,XL",M,85,5.0,20
+p-8bcd2a3b4cb3,Lavie Solid Watches,Lavie,Accessories,Watches,83.05,0.0,83.05,One Size,,38,3.96,4
+p-3d285e2b54c8,Zara Cotton Ethnic Wear,Zara,Women,Ethnic Wear,61.16,25.0,45.87,"XS,S,M,L,XL",,48,4.4,8
+p-55f96bec8bc5,Zara Vintage Wash Tops & Tees,Zara,Women,Tops & Tees,84.34,40.0,50.6,"XS,S,M,L,XL",M,85,4.44,59
+p-c39c29888042,Urban Chic Vintage Wash Dresses,Urban Chic,Women,Dresses,69.68,20.0,55.74,"XS,S,M,L,XL",M,68,3.98,20
+p-b220ce285aca,Biba Classic Ethnic Wear,Biba,Women,Ethnic Wear,34.04,15.0,28.93,"XS,S,M,L,XL",,68,4.56,40
+p-1a65ff82a701,Reebok Slim Fit Formal Shoes,Reebok,Footwear,Formal Shoes,94.92,15.0,80.68,"6,7,8,9,10,11",,30,3.5,16
+p-576ae7540bd5,Titan Vintage Wash Bags & Backpacks,Titan,Accessories,Bags & Backpacks,46.83,20.0,37.46,One Size,,50,4.21,64
+p-77539439f866,Roadster Athletic Trousers,Roadster,Men,Bottomwear - Trousers,48.58,40.0,29.15,"S,M,L,XL,XXL",,38,3.8,30
+p-c85a1816cf4c,Red Tape Classic Formal Shoes,Red Tape,Footwear,Formal Shoes,129.69,0.0,129.69,"6,7,8,9,10,11",8,50,4.78,74
+p-beb74176f1de,Allen Solly Classic Trousers,Allen Solly,Men,Bottomwear - Trousers,22.46,20.0,17.97,"S,M,L,XL,XXL",,60,4.12,15
+p-14e5049e38d3,Forever 21 Vintage Wash Jeans,Forever 21,Women,Bottomwear - Jeans,40.27,50.0,20.14,"XS,S,M,L,XL",,37,4.28,5
+p-a6dabcb913c6,Mango Vintage Wash Tops & Tees,Mango,Women,Tops & Tees,50.6,0.0,50.6,"XS,S,M,L,XL",,25,4.74,30
+p-b42d64d55d62,Reebok Athletic Sandals,Reebok,Footwear,Sandals,72.65,30.0,50.86,"6,7,8,9,10,11","9,8",31,4.23,113
+p-4965eb79fe58,Zara Men Floral Print T-Shirts,Zara Men,Men,Topwear - T-Shirts,67.45,0.0,67.45,"S,M,L,XL,XXL",,29,4.33,19
+p-a85ae0c9982b,Biba Linen Jeans,Biba,Women,Bottomwear - Jeans,77.83,0.0,77.83,"XS,S,M,L,XL",,29,4.51,10
+p-41c355dbc0a9,Biba Textured Tops & Tees,Biba,Women,Tops & Tees,46.31,10.0,41.68,"XS,S,M,L,XL",,21,4.24,44
+p-7d62c02270db,Forever 21 Formal Tops & Tees,Forever 21,Women,Tops & Tees,30.19,0.0,30.19,"XS,S,M,L,XL",,47,4.16,72
+p-d2a3ee5d6281,Red Tape Regular Fit Sandals,Red Tape,Footwear,Sandals,103.81,0.0,103.81,"6,7,8,9,10,11",,54,4.0,118
+p-a1c0e35d7eb4,Roadster Classic Trousers,Roadster,Men,Bottomwear - Trousers,73.19,15.0,62.21,"S,M,L,XL,XXL",,67,3.16,4
+p-af1020af155a,Red Tape Solid Running Shoes,Red Tape,Footwear,Running Shoes,52.44,40.0,31.46,"6,7,8,9,10,11",,80,4.15,54
+p-febce788e79c,Urban Chic Vintage Wash Jeans,Urban Chic,Women,Bottomwear - Jeans,56.86,40.0,34.12,"XS,S,M,L,XL",,81,3.88,4
+p-55c9c1ff0442,Levi's Vintage Wash Shirts,Levi's,Men,Topwear - Shirts,101.41,0.0,101.41,"S,M,L,XL,XXL",M,27,4.26,89
+p-ad909172e3ca,Marks & Spencer Athletic Jeans,Marks & Spencer,Men,Bottomwear - Jeans,25.99,0.0,25.99,"S,M,L,XL,XXL","L,M",32,4.09,14
+p-0e5254b99ded,Biba Athletic Dresses,Biba,Women,Dresses,56.19,30.0,39.33,"XS,S,M,L,XL",M,26,4.31,38
+p-4199a4fbd96e,Zara Classic Ethnic Wear,Zara,Women,Ethnic Wear,74.86,50.0,37.43,"XS,S,M,L,XL",,48,3.44,26
+p-21bcf17982c1,Allen Solly Textured T-Shirts,Allen Solly,Men,Topwear - T-Shirts,78.25,0.0,78.25,"S,M,L,XL,XXL",,22,3.76,109
+p-ab7bc1230d06,Clarks Athletic Formal Shoes,Clarks,Footwear,Formal Shoes,91.12,20.0,72.9,"6,7,8,9,10,11",,62,4.13,80
+p-63c6fd02965d,Biba Textured Jeans,Biba,Women,Bottomwear - Jeans,98.0,20.0,78.4,"XS,S,M,L,XL","M,S",29,4.26,15
+p-5c8bb15b8d80,Clarks Slim Fit Sandals,Clarks,Footwear,Sandals,93.86,0.0,93.86,"6,7,8,9,10,11","8,9",27,4.75,99
+p-b32bd68960e3,Biba Solid Tops & Tees,Biba,Women,Tops & Tees,58.56,0.0,58.56,"XS,S,M,L,XL",,25,3.56,12
+p-fed28b28cb9d,Urban Chic Classic Jeans,Urban Chic,Women,Bottomwear - Jeans,123.73,0.0,123.73,"XS,S,M,L,XL",,20,4.4,20
+p-4a9af53a4c93,Urban Chic Solid Tops & Tees,Urban Chic,Women,Tops & Tees,102.59,0.0,102.59,"XS,S,M,L,XL",,68,3.96,27
+p-b5d68534f459,Vero Moda Oversized Jeans,Vero Moda,Women,Bottomwear - Jeans,42.8,20.0,34.24,"XS,S,M,L,XL",,20,3.97,25
+p-bfa0d5139b10,Zara Men Oversized Shirts,Zara Men,Men,Topwear - Shirts,53.04,0.0,53.04,"S,M,L,XL,XXL",,60,4.06,33
+p-6eadf48f7814,Reebok Slim Fit Sneakers,Reebok,Footwear,Sneakers,108.65,20.0,86.92,"6,7,8,9,10,11",,88,3.55,71
+p-916dad6ca62b,Adidas Oversized Sandals,Adidas,Footwear,Sandals,91.61,0.0,91.61,"6,7,8,9,10,11",,26,4.46,7
+p-138f2883c338,Nike Linen Sandals,Nike,Footwear,Sandals,105.53,20.0,84.42,"6,7,8,9,10,11",,32,3.89,8
+p-f50cbec3caa8,Zara Oversized Tops & Tees,Zara,Women,Tops & Tees,81.4,25.0,61.05,"XS,S,M,L,XL",,54,3.75,48
+p-e1ded5d2fe74,Marks & Spencer Textured Shirts,Marks & Spencer,Men,Topwear - Shirts,65.17,0.0,65.17,"S,M,L,XL,XXL",,23,3.83,173
+p-d09d54a996c1,Tommy Hilfiger Athletic Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,55.21,0.0,55.21,"S,M,L,XL,XXL",,81,4.18,49
+p-ba45da140e16,Levi's Athletic Jeans,Levi's,Men,Bottomwear - Jeans,39.05,30.0,27.33,"S,M,L,XL,XXL",,32,4.24,17
+p-4d60c52a0c64,Fastrack Formal Watches,Fastrack,Accessories,Watches,34.28,25.0,25.71,One Size,,48,4.43,42
+p-ebf391cfbec7,Marks & Spencer Formal Shirts,Marks & Spencer,Men,Topwear - Shirts,100.11,30.0,70.08,"S,M,L,XL,XXL","M,L",28,4.46,126
+p-649b6292f76b,Zara Men Textured T-Shirts,Zara Men,Men,Topwear - T-Shirts,34.05,0.0,34.05,"S,M,L,XL,XXL",,98,3.78,3
+p-f92bac9bd3b4,H&M Men Floral Print Jeans,H&M Men,Men,Bottomwear - Jeans,77.5,20.0,62.0,"S,M,L,XL,XXL",,15,4.04,71
+p-16680e4b5fc4,Clarks Athletic Running Shoes,Clarks,Footwear,Running Shoes,89.97,30.0,62.98,"6,7,8,9,10,11",,18,4.35,45
+p-cc7695324c2a,Zara Textured Dresses,Zara,Women,Dresses,117.19,20.0,93.75,"XS,S,M,L,XL",,51,4.49,7
+p-00a8d17239df,Lavie Classic Watches,Lavie,Accessories,Watches,75.14,0.0,75.14,One Size,,79,4.45,4
+p-e307b73a3f10,Nike Textured Formal Shoes,Nike,Footwear,Formal Shoes,89.64,20.0,71.71,"6,7,8,9,10,11",,23,3.59,76
+p-2d943db0d05b,Marks & Spencer Regular Fit Trousers,Marks & Spencer,Men,Bottomwear - Trousers,71.29,0.0,71.29,"S,M,L,XL,XXL",,28,4.48,30
+p-d3e3f7de1f44,Zara Formal Jeans,Zara,Women,Bottomwear - Jeans,53.38,0.0,53.38,"XS,S,M,L,XL",,15,3.6,74
+p-adbf5cb455f2,Clarks Athletic Sandals,Clarks,Footwear,Sandals,123.44,50.0,61.72,"6,7,8,9,10,11",,90,3.92,30
+p-0977157cca58,Fossil Cotton Sunglasses,Fossil,Accessories,Sunglasses,106.93,0.0,106.93,One Size,,46,3.93,31
+p-a33736f5ad20,Mango Formal Tops & Tees,Mango,Women,Tops & Tees,67.35,0.0,67.35,"XS,S,M,L,XL",S,69,4.24,69
+p-2ab57e658014,Biba Regular Fit Dresses,Biba,Women,Dresses,51.06,15.0,43.4,"XS,S,M,L,XL",M,63,3.68,136
+p-cbe4ed04e846,Zara Men Formal Shirts,Zara Men,Men,Topwear - Shirts,96.37,0.0,96.37,"S,M,L,XL,XXL",,65,3.94,41
+p-6a367bfb9811,Biba Regular Fit Ethnic Wear,Biba,Women,Ethnic Wear,65.91,10.0,59.32,"XS,S,M,L,XL",,13,4.3,61
+p-98ce1e0345a2,Zara Casual Tops & Tees,Zara,Women,Tops & Tees,111.28,50.0,55.64,"XS,S,M,L,XL",,15,4.06,54
+p-9a3b5bd9714c,Zara Regular Fit Dresses,Zara,Women,Dresses,114.93,15.0,97.69,"XS,S,M,L,XL","S,M",40,3.92,14
+p-95a1f7624783,Vero Moda Vintage Wash Jeans,Vero Moda,Women,Bottomwear - Jeans,46.9,0.0,46.9,"XS,S,M,L,XL",,20,4.67,8
+p-d5df60ed194a,Tommy Hilfiger Linen Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,77.72,30.0,54.4,"S,M,L,XL,XXL",M,33,4.3,12
+p-64511032d71c,Urban Chic Solid Dresses,Urban Chic,Women,Dresses,89.15,40.0,53.49,"XS,S,M,L,XL",,84,3.43,63
+p-e117ca90e040,H&M Men Formal Shirts,H&M Men,Men,Topwear - Shirts,79.39,25.0,59.54,"S,M,L,XL,XXL","M,L",40,3.84,50
+p-c4265027a024,Tommy Hilfiger Vintage Wash Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,18.86,0.0,18.86,"S,M,L,XL,XXL",,52,4.02,70
+p-58514e77edf8,Vero Moda Oversized Dresses,Vero Moda,Women,Dresses,119.59,0.0,119.59,"XS,S,M,L,XL",,58,4.1,152
+p-b772ae3969dd,Biba Vintage Wash Tops & Tees,Biba,Women,Tops & Tees,58.43,0.0,58.43,"XS,S,M,L,XL",,31,3.7,138
+p-eaddae3dcf63,Allen Solly Oversized Jeans,Allen Solly,Men,Bottomwear - Jeans,48.46,50.0,24.23,"S,M,L,XL,XXL","M,L",93,4.42,12
+p-0c14d5cb6bca,Nike Slim Fit Sneakers,Nike,Footwear,Sneakers,66.2,20.0,52.96,"6,7,8,9,10,11",,22,3.65,71
+p-3dcd4a2ea723,Titan Formal Sunglasses,Titan,Accessories,Sunglasses,42.28,10.0,38.05,One Size,,16,4.11,197
+p-a9dc07d19cb9,Mango Floral Print Dresses,Mango,Women,Dresses,81.63,0.0,81.63,"XS,S,M,L,XL",,47,4.38,184
+p-fc5760b292f6,Zara Men Vintage Wash Jeans,Zara Men,Men,Bottomwear - Jeans,38.24,0.0,38.24,"S,M,L,XL,XXL",,51,3.92,214
+p-9672d4cd4fa5,H&M Oversized Tops & Tees,H&M,Women,Tops & Tees,52.72,0.0,52.72,"XS,S,M,L,XL",,22,3.9,14
+p-547346e04cec,H&M Regular Fit Jeans,H&M,Women,Bottomwear - Jeans,90.54,25.0,67.91,"XS,S,M,L,XL",,54,4.38,24
+p-840dc3fd120f,Urban Chic Athletic Dresses,Urban Chic,Women,Dresses,56.29,0.0,56.29,"XS,S,M,L,XL",,41,3.85,11
+p-35abef1ccb9f,Red Tape Formal Running Shoes,Red Tape,Footwear,Running Shoes,53.21,10.0,47.89,"6,7,8,9,10,11",9,34,4.26,176
+p-0be47a814aaf,H&M Solid Dresses,H&M,Women,Dresses,110.89,40.0,66.53,"XS,S,M,L,XL",,30,4.05,39
+p-8072c699265e,Mango Oversized Jeans,Mango,Women,Bottomwear - Jeans,46.08,15.0,39.17,"XS,S,M,L,XL",,66,4.25,20
+p-64de9c7bc568,Levi's Cotton T-Shirts,Levi's,Men,Topwear - T-Shirts,55.1,0.0,55.1,"S,M,L,XL,XXL",,13,4.59,30
+p-ec6683f0dabf,Mango Casual Tops & Tees,Mango,Women,Tops & Tees,62.74,20.0,50.19,"XS,S,M,L,XL",,70,3.71,91
+p-4583e81668f0,Allen Solly Classic Jeans,Allen Solly,Men,Bottomwear - Jeans,99.87,25.0,74.9,"S,M,L,XL,XXL","L,M",106,2.94,107
+p-d07fbd86aca2,Levi's Linen T-Shirts,Levi's,Men,Topwear - T-Shirts,49.26,25.0,36.95,"S,M,L,XL,XXL",,37,4.69,21
+p-d4179c56eba7,Allen Solly Solid T-Shirts,Allen Solly,Men,Topwear - T-Shirts,32.59,10.0,29.33,"S,M,L,XL,XXL",,70,4.26,11
+p-5413d2e930af,Marks & Spencer Linen Jeans,Marks & Spencer,Men,Bottomwear - Jeans,26.76,15.0,22.75,"S,M,L,XL,XXL","L,M",24,4.08,3
+p-cd9aed80a2f4,H&M Men Athletic Trousers,H&M Men,Men,Bottomwear - Trousers,58.54,40.0,35.12,"S,M,L,XL,XXL",M,80,4.17,84
+p-fb76c25d865f,Puma Oversized Sneakers,Puma,Footwear,Sneakers,140.16,15.0,119.14,"6,7,8,9,10,11",,26,3.91,58
+p-72c7f10f2193,H&M Men Solid T-Shirts,H&M Men,Men,Topwear - T-Shirts,29.1,0.0,29.1,"S,M,L,XL,XXL",,68,3.83,34
+p-04c9e9b37786,Biba Regular Fit Dresses,Biba,Women,Dresses,57.33,0.0,57.33,"XS,S,M,L,XL",,15,3.6,93
+p-8e56b4eed939,Urban Chic Classic Dresses,Urban Chic,Women,Dresses,100.93,20.0,80.74,"XS,S,M,L,XL",,28,4.34,58
+p-4e88217454e3,Levi's Formal T-Shirts,Levi's,Men,Topwear - T-Shirts,67.91,10.0,61.12,"S,M,L,XL,XXL",,13,4.73,46
+p-e141be6b6bb6,Red Tape Athletic Running Shoes,Red Tape,Footwear,Running Shoes,88.61,50.0,44.3,"6,7,8,9,10,11","8,9",39,3.98,45
+p-65666c224046,Vero Moda Formal Tops & Tees,Vero Moda,Women,Tops & Tees,49.47,0.0,49.47,"XS,S,M,L,XL",,25,4.33,83
+p-876b3754e5f1,Mango Formal Ethnic Wear,Mango,Women,Ethnic Wear,90.99,50.0,45.49,"XS,S,M,L,XL",S,43,3.92,10
+p-ec93da93794b,Reebok Oversized Formal Shoes,Reebok,Footwear,Formal Shoes,68.75,0.0,68.75,"6,7,8,9,10,11",9,46,4.71,29
+p-cbe604326c02,Nike Floral Print Sandals,Nike,Footwear,Sandals,101.49,0.0,101.49,"6,7,8,9,10,11",,47,3.44,64
+p-0e75db11ed53,Zara Cotton Tops & Tees,Zara,Women,Tops & Tees,64.35,0.0,64.35,"XS,S,M,L,XL",,21,3.53,35
+p-2f390b866a03,Allen Solly Floral Print Shirts,Allen Solly,Men,Topwear - Shirts,67.3,40.0,40.38,"S,M,L,XL,XXL",,104,4.58,18
+p-7ce4aae10bca,Vero Moda Casual Jeans,Vero Moda,Women,Bottomwear - Jeans,116.11,50.0,58.05,"XS,S,M,L,XL",,75,3.5,17
+p-e67e1a1154a7,Nike Textured Sneakers,Nike,Footwear,Sneakers,84.65,0.0,84.65,"6,7,8,9,10,11",,75,4.01,83
+p-9b608970812b,Red Tape Cotton Sandals,Red Tape,Footwear,Sandals,88.12,0.0,88.12,"6,7,8,9,10,11",,74,3.41,266
+p-0f4c4521029c,Reebok Textured Formal Shoes,Reebok,Footwear,Formal Shoes,113.73,50.0,56.87,"6,7,8,9,10,11",,53,4.68,10
+p-5e6da6750a13,Forever 21 Cotton Dresses,Forever 21,Women,Dresses,56.2,0.0,56.2,"XS,S,M,L,XL",,55,4.01,8
+p-a47dc927d05f,Titan Vintage Wash Watches,Titan,Accessories,Watches,57.58,0.0,57.58,One Size,,29,3.92,92
+p-b79924498082,Ray-Ban Casual Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,53.07,25.0,39.8,One Size,,48,3.96,64
+p-e836a46f67a5,Roadster Slim Fit Trousers,Roadster,Men,Bottomwear - Trousers,60.27,0.0,60.27,"S,M,L,XL,XXL",,50,3.77,17
+p-3ac5e5681d91,Reebok Oversized Formal Shoes,Reebok,Footwear,Formal Shoes,102.88,10.0,92.59,"6,7,8,9,10,11",,28,4.28,24
+p-72c9c1080cdf,Fastrack Oversized Belts & Wallets,Fastrack,Accessories,Belts & Wallets,59.03,50.0,29.52,One Size,,26,4.91,140
+p-1c962a7f75aa,Zara Men Linen T-Shirts,Zara Men,Men,Topwear - T-Shirts,48.71,20.0,38.97,"S,M,L,XL,XXL",,58,3.9,29
+p-9eb4e749889d,Allen Solly Floral Print Shirts,Allen Solly,Men,Topwear - Shirts,83.82,15.0,71.25,"S,M,L,XL,XXL",,26,3.97,25
+p-c88e3fd42ff3,Biba Regular Fit Jeans,Biba,Women,Bottomwear - Jeans,44.56,25.0,33.42,"XS,S,M,L,XL",,56,4.06,35
+p-89d8ba853aaf,Tommy Hilfiger Floral Print Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,41.53,30.0,29.07,"S,M,L,XL,XXL",,49,3.71,20
+p-c031fdab3a99,Zara Floral Print Ethnic Wear,Zara,Women,Ethnic Wear,59.76,0.0,59.76,"XS,S,M,L,XL",S,50,4.32,3
+p-7bd59884598b,Forever 21 Oversized Dresses,Forever 21,Women,Dresses,108.81,0.0,108.81,"XS,S,M,L,XL","S,M",30,4.61,55
+p-741faed57d14,Allen Solly Solid Shirts,Allen Solly,Men,Topwear - Shirts,45.75,40.0,27.45,"S,M,L,XL,XXL",,72,3.79,33
+p-84e06d920009,Nike Floral Print Sandals,Nike,Footwear,Sandals,104.89,0.0,104.89,"6,7,8,9,10,11",,35,4.25,25
+p-3599756ffff0,Urban Chic Casual Ethnic Wear,Urban Chic,Women,Ethnic Wear,119.0,0.0,119.0,"XS,S,M,L,XL","S,M",111,4.68,10
+p-a37b0e22e7f3,Zara Men Solid Jeans,Zara Men,Men,Bottomwear - Jeans,47.52,40.0,28.51,"S,M,L,XL,XXL",,14,4.76,76
+p-3ead8c62aca2,Forever 21 Classic Ethnic Wear,Forever 21,Women,Ethnic Wear,64.92,25.0,48.69,"XS,S,M,L,XL","M,S",69,3.95,11
+p-b5ae9c9e0cfd,Fossil Floral Print Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,74.73,0.0,74.73,One Size,,40,4.44,27
+p-5f5352523a89,Fastrack Classic Sunglasses,Fastrack,Accessories,Sunglasses,84.48,50.0,42.24,One Size,,22,3.55,25
+p-6437328f185a,H&M Casual Dresses,H&M,Women,Dresses,58.37,0.0,58.37,"XS,S,M,L,XL",,36,4.22,11
+p-f80920541012,Marks & Spencer Formal Shirts,Marks & Spencer,Men,Topwear - Shirts,31.71,0.0,31.71,"S,M,L,XL,XXL",,34,4.06,31
+p-89ea312cd559,Zara Casual Dresses,Zara,Women,Dresses,102.88,30.0,72.02,"XS,S,M,L,XL",,54,3.86,63
+p-eda583bc30eb,Urban Chic Textured Dresses,Urban Chic,Women,Dresses,81.98,0.0,81.98,"XS,S,M,L,XL",,35,4.09,26
+p-dabfff819f69,H&M Men Slim Fit Trousers,H&M Men,Men,Bottomwear - Trousers,57.84,40.0,34.7,"S,M,L,XL,XXL",,32,3.37,55
+p-208824be0f96,Zara Men Athletic Trousers,Zara Men,Men,Bottomwear - Trousers,65.89,50.0,32.95,"S,M,L,XL,XXL",,22,4.75,107
+p-866b2965f01b,Mango Classic Ethnic Wear,Mango,Women,Ethnic Wear,122.59,30.0,85.81,"XS,S,M,L,XL",,14,4.15,87
+p-7e7e2b6abbf6,Tommy Hilfiger Oversized Shirts,Tommy Hilfiger,Men,Topwear - Shirts,63.74,0.0,63.74,"S,M,L,XL,XXL",,20,4.49,53
+p-e68be0178846,Marks & Spencer Regular Fit T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,28.31,15.0,24.06,"S,M,L,XL,XXL",,23,4.37,34
+p-cfb6beaf186e,Puma Floral Print Running Shoes,Puma,Footwear,Running Shoes,84.12,0.0,84.12,"6,7,8,9,10,11",8,46,4.89,33
+p-5300796d576b,Tommy Hilfiger Textured Shirts,Tommy Hilfiger,Men,Topwear - Shirts,90.16,15.0,76.64,"S,M,L,XL,XXL",,108,4.02,14
+p-ef1fcd893528,Vero Moda Linen Jeans,Vero Moda,Women,Bottomwear - Jeans,63.39,25.0,47.54,"XS,S,M,L,XL","M,S",20,4.33,32
+p-b16f3ad8ad7d,Titan Linen Sunglasses,Titan,Accessories,Sunglasses,21.94,50.0,10.97,One Size,,42,4.77,11
+p-49400352cbf6,Allen Solly Vintage Wash Jeans,Allen Solly,Men,Bottomwear - Jeans,78.0,40.0,46.8,"S,M,L,XL,XXL",,58,3.97,11
+p-0ef53163d4d3,Forever 21 Athletic Ethnic Wear,Forever 21,Women,Ethnic Wear,77.44,0.0,77.44,"XS,S,M,L,XL",,46,4.71,27
+p-4f25c30da2b0,Mango Formal Tops & Tees,Mango,Women,Tops & Tees,59.77,10.0,53.79,"XS,S,M,L,XL",,26,3.71,3
+p-75d8655c95a1,Mango Classic Jeans,Mango,Women,Bottomwear - Jeans,78.29,50.0,39.15,"XS,S,M,L,XL",,69,4.59,72
+p-dbb227be4872,Biba Oversized Ethnic Wear,Biba,Women,Ethnic Wear,89.68,50.0,44.84,"XS,S,M,L,XL",,18,4.36,34
+p-a25f16dde589,Biba Floral Print Dresses,Biba,Women,Dresses,98.08,20.0,78.46,"XS,S,M,L,XL",,21,4.83,99
+p-9129593cc0ad,Zara Floral Print Tops & Tees,Zara,Women,Tops & Tees,60.0,50.0,30.0,"XS,S,M,L,XL",,51,4.68,13
+p-bbae84071c94,Urban Chic Formal Jeans,Urban Chic,Women,Bottomwear - Jeans,66.49,0.0,66.49,"XS,S,M,L,XL",,79,4.3,17
+p-f49125a00aae,H&M Vintage Wash Dresses,H&M,Women,Dresses,67.89,0.0,67.89,"XS,S,M,L,XL",,45,3.87,17
+p-1bf042849c9f,Marks & Spencer Regular Fit Shirts,Marks & Spencer,Men,Topwear - Shirts,72.07,0.0,72.07,"S,M,L,XL,XXL",,33,4.11,123
+p-78b734d45b8a,Forever 21 Vintage Wash Ethnic Wear,Forever 21,Women,Ethnic Wear,89.65,0.0,89.65,"XS,S,M,L,XL","S,M",98,4.0,13
+p-8f13023a489e,Forever 21 Slim Fit Dresses,Forever 21,Women,Dresses,88.91,20.0,71.13,"XS,S,M,L,XL",,76,4.25,106
+p-77931ac35e65,Roadster Textured Trousers,Roadster,Men,Bottomwear - Trousers,77.45,30.0,54.21,"S,M,L,XL,XXL",,118,4.46,87
+p-d982a166e766,Urban Chic Oversized Dresses,Urban Chic,Women,Dresses,35.07,15.0,29.81,"XS,S,M,L,XL",,47,3.91,9
+p-a1ea8ac8b794,Nike Floral Print Running Shoes,Nike,Footwear,Running Shoes,81.25,20.0,65.0,"6,7,8,9,10,11",,80,4.12,21
+p-e4832c58b520,Fastrack Slim Fit Belts & Wallets,Fastrack,Accessories,Belts & Wallets,70.83,25.0,53.12,One Size,,43,3.79,34
+p-e1973ed20a00,Roadster Oversized T-Shirts,Roadster,Men,Topwear - T-Shirts,56.79,40.0,34.07,"S,M,L,XL,XXL",,38,4.05,68
+p-96308537609a,Zara Men Textured Jeans,Zara Men,Men,Bottomwear - Jeans,37.38,0.0,37.38,"S,M,L,XL,XXL",M,80,4.0,50
+p-d54ffe6701c5,Urban Chic Vintage Wash Jeans,Urban Chic,Women,Bottomwear - Jeans,76.9,0.0,76.9,"XS,S,M,L,XL",,73,3.93,225
+p-6ee97d78826e,Tommy Hilfiger Classic Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,32.87,40.0,19.72,"S,M,L,XL,XXL",M,39,4.39,86
+p-f10bb3a57be0,Forever 21 Cotton Dresses,Forever 21,Women,Dresses,38.85,15.0,33.02,"XS,S,M,L,XL",,11,5.0,116
+p-659a395522dc,H&M Men Cotton Jeans,H&M Men,Men,Bottomwear - Jeans,61.97,40.0,37.18,"S,M,L,XL,XXL",L,47,4.17,221
+p-879607558737,Forever 21 Slim Fit Ethnic Wear,Forever 21,Women,Ethnic Wear,38.81,10.0,34.93,"XS,S,M,L,XL","S,M",20,4.08,8
+p-c6d693e01734,H&M Men Regular Fit Jeans,H&M Men,Men,Bottomwear - Jeans,32.03,10.0,28.83,"S,M,L,XL,XXL",,114,4.37,71
+p-4f53fc6ba744,Clarks Athletic Sandals,Clarks,Footwear,Sandals,110.21,50.0,55.1,"6,7,8,9,10,11",,34,4.5,59
+p-8e567d1cd7a5,Tommy Hilfiger Classic Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,35.34,40.0,21.2,"S,M,L,XL,XXL",,90,4.05,24
+p-41aaf8ef9b1b,Marks & Spencer Linen T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,62.63,10.0,56.37,"S,M,L,XL,XXL",,30,3.42,3
+p-0dcb0e8bfe55,Allen Solly Casual Trousers,Allen Solly,Men,Bottomwear - Trousers,54.41,25.0,40.81,"S,M,L,XL,XXL",,63,4.05,9
+p-25301b52ab6c,Tommy Hilfiger Regular Fit Shirts,Tommy Hilfiger,Men,Topwear - Shirts,62.25,0.0,62.25,"S,M,L,XL,XXL",,44,4.4,71
+p-92c04713f1b1,Red Tape Athletic Running Shoes,Red Tape,Footwear,Running Shoes,100.61,15.0,85.52,"6,7,8,9,10,11",,39,3.68,4
+p-aa7905749a7d,Puma Vintage Wash Formal Shoes,Puma,Footwear,Formal Shoes,54.11,30.0,37.88,"6,7,8,9,10,11",,37,4.08,41
+p-f95c1808f42d,Biba Cotton Dresses,Biba,Women,Dresses,35.27,25.0,26.45,"XS,S,M,L,XL",M,84,4.54,22
+p-663334a58569,Levi's Formal Jeans,Levi's,Men,Bottomwear - Jeans,54.03,15.0,45.93,"S,M,L,XL,XXL",,52,4.71,7
+p-63dad958f079,Puma Linen Running Shoes,Puma,Footwear,Running Shoes,85.98,0.0,85.98,"6,7,8,9,10,11",,83,4.5,122
+p-a1e9998937e2,Zara Men Solid Jeans,Zara Men,Men,Bottomwear - Jeans,82.87,50.0,41.44,"S,M,L,XL,XXL",,38,3.55,25
+p-1cb5cde3ad3d,Tommy Hilfiger Solid T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,74.11,30.0,51.88,"S,M,L,XL,XXL",L,56,4.49,45
+p-be96c5f1a3c6,Adidas Floral Print Formal Shoes,Adidas,Footwear,Formal Shoes,78.55,10.0,70.69,"6,7,8,9,10,11",,55,4.2,12
+p-902a0d707f16,H&M Athletic Jeans,H&M,Women,Bottomwear - Jeans,74.37,20.0,59.5,"XS,S,M,L,XL",M,89,4.1,39
+p-a69300b85fa7,Marks & Spencer Formal Shirts,Marks & Spencer,Men,Topwear - Shirts,71.11,25.0,53.33,"S,M,L,XL,XXL",,28,4.42,30
+p-60f7acdd8fe0,Mango Classic Ethnic Wear,Mango,Women,Ethnic Wear,63.51,20.0,50.81,"XS,S,M,L,XL",,65,4.27,16
+p-36101b249a99,Tommy Hilfiger Oversized Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,50.24,25.0,37.68,"S,M,L,XL,XXL",,83,4.5,5
+p-5559e7b5ddc0,Tommy Hilfiger Floral Print Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,45.68,20.0,36.54,"S,M,L,XL,XXL",,13,3.7,41
+p-6e65bbd6ab87,Zara Formal Tops & Tees,Zara,Women,Tops & Tees,76.43,0.0,76.43,"XS,S,M,L,XL",,24,4.07,7
+p-21e629210114,Clarks Slim Fit Running Shoes,Clarks,Footwear,Running Shoes,57.86,20.0,46.29,"6,7,8,9,10,11",,41,4.18,7
+p-2785fa997306,Red Tape Athletic Running Shoes,Red Tape,Footwear,Running Shoes,93.54,40.0,56.12,"6,7,8,9,10,11",9,14,3.83,23
+p-bbaf4e3814a6,Red Tape Slim Fit Sandals,Red Tape,Footwear,Sandals,90.03,25.0,67.52,"6,7,8,9,10,11",9,103,4.38,190
+p-8ad88363ea13,H&M Men Linen Shirts,H&M Men,Men,Topwear - Shirts,54.46,25.0,40.84,"S,M,L,XL,XXL",,34,4.13,41
+p-39833f233d5a,Fastrack Formal Belts & Wallets,Fastrack,Accessories,Belts & Wallets,71.36,50.0,35.68,One Size,,59,4.09,18
+p-97882f0f3cc1,H&M Cotton Jeans,H&M,Women,Bottomwear - Jeans,113.67,50.0,56.84,"XS,S,M,L,XL",,47,3.28,16
+p-c162d7d85728,Mango Oversized Jeans,Mango,Women,Bottomwear - Jeans,33.86,0.0,33.86,"XS,S,M,L,XL",,53,4.32,35
+p-8b349eeb10e0,Vero Moda Solid Tops & Tees,Vero Moda,Women,Tops & Tees,89.01,50.0,44.51,"XS,S,M,L,XL",,75,4.45,64
+p-7694533ce399,Urban Chic Vintage Wash Jeans,Urban Chic,Women,Bottomwear - Jeans,88.38,15.0,75.12,"XS,S,M,L,XL",,22,4.85,33
+p-5d13265a54aa,Forever 21 Oversized Tops & Tees,Forever 21,Women,Tops & Tees,71.98,30.0,50.39,"XS,S,M,L,XL",,81,3.49,20
+p-fa047ef74a7a,Urban Chic Regular Fit Tops & Tees,Urban Chic,Women,Tops & Tees,46.99,0.0,46.99,"XS,S,M,L,XL",,53,4.02,59
+p-9ea0c6d804ea,Titan Vintage Wash Watches,Titan,Accessories,Watches,72.15,20.0,57.72,One Size,,47,4.0,26
+p-b584ef4da333,H&M Oversized Ethnic Wear,H&M,Women,Ethnic Wear,74.45,0.0,74.45,"XS,S,M,L,XL",,20,3.48,148
+p-d858aeea4585,Reebok Athletic Formal Shoes,Reebok,Footwear,Formal Shoes,109.81,15.0,93.34,"6,7,8,9,10,11","9,8",48,4.17,64
+p-a8946063d3c5,Urban Chic Casual Jeans,Urban Chic,Women,Bottomwear - Jeans,57.19,30.0,40.03,"XS,S,M,L,XL",M,42,4.65,23
+p-4876cf8dc405,Lavie Oversized Bags & Backpacks,Lavie,Accessories,Bags & Backpacks,72.59,15.0,61.7,One Size,,104,4.18,22
+p-2eb7e7ef5330,H&M Cotton Dresses,H&M,Women,Dresses,65.57,10.0,59.01,"XS,S,M,L,XL",,58,3.75,49
+p-d6fc17a95278,Tommy Hilfiger Solid Shirts,Tommy Hilfiger,Men,Topwear - Shirts,66.87,0.0,66.87,"S,M,L,XL,XXL",,23,3.88,8
+p-bebeb3001c0b,Ray-Ban Formal Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,59.26,0.0,59.26,One Size,,15,4.14,22
+p-0d76f2f69781,H&M Men Slim Fit Jeans,H&M Men,Men,Bottomwear - Jeans,46.5,25.0,34.88,"S,M,L,XL,XXL",,27,3.92,74
+p-32c5c09de0c4,Urban Chic Textured Jeans,Urban Chic,Women,Bottomwear - Jeans,27.16,20.0,21.73,"XS,S,M,L,XL",,36,4.01,30
+p-92f5ecf3aa4f,Titan Classic Watches,Titan,Accessories,Watches,51.51,0.0,51.51,One Size,,144,3.66,32
+p-7ff5b3291965,Marks & Spencer Cotton T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,79.54,25.0,59.66,"S,M,L,XL,XXL",,65,4.79,29
+p-f49f9a26aa05,Urban Chic Solid Ethnic Wear,Urban Chic,Women,Ethnic Wear,69.64,30.0,48.75,"XS,S,M,L,XL",,58,3.85,24
+p-3ba78bf8d9ef,Tommy Hilfiger Classic Shirts,Tommy Hilfiger,Men,Topwear - Shirts,60.93,50.0,30.46,"S,M,L,XL,XXL",M,84,4.75,30
+p-d2f80fab104e,Tommy Hilfiger Textured Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,76.29,15.0,64.85,"S,M,L,XL,XXL",,70,5.0,106
+p-538030e34bb1,Fossil Regular Fit Sunglasses,Fossil,Accessories,Sunglasses,63.68,50.0,31.84,One Size,,40,4.75,121
+p-bb777ab25205,Mango Floral Print Tops & Tees,Mango,Women,Tops & Tees,88.46,0.0,88.46,"XS,S,M,L,XL",,115,4.14,56
+p-f2317762da57,Biba Cotton Jeans,Biba,Women,Bottomwear - Jeans,85.85,15.0,72.97,"XS,S,M,L,XL",,20,4.07,37
+p-b68a946fa078,Puma Casual Running Shoes,Puma,Footwear,Running Shoes,86.75,20.0,69.4,"6,7,8,9,10,11",,75,3.89,15
+p-7673ed0b8a46,Allen Solly Classic Jeans,Allen Solly,Men,Bottomwear - Jeans,75.1,0.0,75.1,"S,M,L,XL,XXL",,57,3.08,48
+p-aeaed2098434,Reebok Oversized Running Shoes,Reebok,Footwear,Running Shoes,58.8,0.0,58.8,"6,7,8,9,10,11",,29,3.99,19
+p-7fb30797d81f,H&M Solid Dresses,H&M,Women,Dresses,82.62,10.0,74.36,"XS,S,M,L,XL","S,M",70,4.61,79
+p-44373cf67c83,Tommy Hilfiger Regular Fit Watches,Tommy Hilfiger,Accessories,Watches,100.62,25.0,75.47,One Size,,46,3.67,35
+p-3afe0cf96058,Zara Casual Dresses,Zara,Women,Dresses,73.63,20.0,58.9,"XS,S,M,L,XL",,34,4.13,38
+p-5a7ef909b8b0,Marks & Spencer Vintage Wash Shirts,Marks & Spencer,Men,Topwear - Shirts,26.98,30.0,18.89,"S,M,L,XL,XXL",,45,4.74,9
+p-1b7e38b1e63d,Levi's Cotton Shirts,Levi's,Men,Topwear - Shirts,71.91,0.0,71.91,"S,M,L,XL,XXL",,45,3.86,58
+p-843045ab3a97,Biba Vintage Wash Dresses,Biba,Women,Dresses,74.76,0.0,74.76,"XS,S,M,L,XL",,21,4.66,61
+p-88bf4e6ca775,Allen Solly Cotton T-Shirts,Allen Solly,Men,Topwear - T-Shirts,85.02,15.0,72.27,"S,M,L,XL,XXL",,21,4.03,108
+p-2ff3c5390025,Zara Men Formal T-Shirts,Zara Men,Men,Topwear - T-Shirts,51.95,50.0,25.98,"S,M,L,XL,XXL",,54,3.7,48
+p-452b38072947,Fossil Textured Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,57.72,25.0,43.29,One Size,,33,4.12,24
+p-0c59f552a5f3,Marks & Spencer Linen Jeans,Marks & Spencer,Men,Bottomwear - Jeans,63.73,30.0,44.61,"S,M,L,XL,XXL",,75,4.45,13
+p-1109fffe8a06,Marks & Spencer Formal Trousers,Marks & Spencer,Men,Bottomwear - Trousers,76.14,40.0,45.68,"S,M,L,XL,XXL",,37,4.22,82
+p-4ac4207f1aef,H&M Solid Ethnic Wear,H&M,Women,Ethnic Wear,51.91,0.0,51.91,"XS,S,M,L,XL",,115,4.64,73
+p-b49332e60a7f,Biba Solid Ethnic Wear,Biba,Women,Ethnic Wear,92.71,0.0,92.71,"XS,S,M,L,XL",,48,4.44,26
+p-da69d7b03c15,Clarks Textured Running Shoes,Clarks,Footwear,Running Shoes,80.61,0.0,80.61,"6,7,8,9,10,11",,24,3.49,37
+p-95d0f8b7ddef,Puma Casual Sandals,Puma,Footwear,Sandals,131.98,0.0,131.98,"6,7,8,9,10,11",,81,4.37,299
+p-f5906f443048,Tommy Hilfiger Cotton Shirts,Tommy Hilfiger,Men,Topwear - Shirts,71.57,0.0,71.57,"S,M,L,XL,XXL",,46,4.14,33
+p-2ad0afd20576,Zara Men Cotton Jeans,Zara Men,Men,Bottomwear - Jeans,68.85,0.0,68.85,"S,M,L,XL,XXL",L,39,3.85,26
+p-f50e7626a11d,Tommy Hilfiger Formal Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,59.83,0.0,59.83,"S,M,L,XL,XXL","L,M",33,4.31,66
+p-89dda7e1ee10,Marks & Spencer Vintage Wash Shirts,Marks & Spencer,Men,Topwear - Shirts,56.34,0.0,56.34,"S,M,L,XL,XXL",,26,4.22,35
+p-89a6d1cb864c,Fossil Formal Watches,Fossil,Accessories,Watches,73.69,10.0,66.32,One Size,,74,4.87,17
+p-fbd2033af83b,Fastrack Vintage Wash Belts & Wallets,Fastrack,Accessories,Belts & Wallets,60.62,15.0,51.53,One Size,,24,3.78,14
+p-73c491029628,Tommy Hilfiger Floral Print Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,70.75,0.0,70.75,"S,M,L,XL,XXL","L,M",39,4.02,32
+p-d62d9a7fcd65,Levi's Vintage Wash Jeans,Levi's,Men,Bottomwear - Jeans,97.38,10.0,87.64,"S,M,L,XL,XXL",,55,3.99,17
+p-46c8448b2fd1,Mango Textured Jeans,Mango,Women,Bottomwear - Jeans,62.46,0.0,62.46,"XS,S,M,L,XL",,73,4.33,211
+p-366499dbb99d,Tommy Hilfiger Floral Print Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,67.23,25.0,50.42,"S,M,L,XL,XXL",,88,4.13,120
+p-31d1b7ec41b6,Fastrack Cotton Watches,Fastrack,Accessories,Watches,71.03,0.0,71.03,One Size,,112,4.03,13
+p-1d5b71f5e779,Lavie Casual Bags & Backpacks,Lavie,Accessories,Bags & Backpacks,97.55,50.0,48.77,One Size,,40,3.91,53
+p-29c5ff163998,H&M Men Solid Trousers,H&M Men,Men,Bottomwear - Trousers,22.88,40.0,13.73,"S,M,L,XL,XXL",,45,3.35,22
+p-750f83e553ba,H&M Men Slim Fit T-Shirts,H&M Men,Men,Topwear - T-Shirts,66.31,20.0,53.05,"S,M,L,XL,XXL",M,130,3.91,138
+p-2c719e358bc2,Ray-Ban Cotton Bags & Backpacks,Ray-Ban,Accessories,Bags & Backpacks,73.43,50.0,36.72,One Size,,50,3.88,10
+p-72f4ba7dd057,Biba Casual Tops & Tees,Biba,Women,Tops & Tees,73.23,0.0,73.23,"XS,S,M,L,XL",,72,4.67,31
+p-e4c6955b4a79,Zara Oversized Tops & Tees,Zara,Women,Tops & Tees,73.04,15.0,62.08,"XS,S,M,L,XL",M,59,4.15,18
+p-e1995610cd90,Mango Athletic Ethnic Wear,Mango,Women,Ethnic Wear,68.9,40.0,41.34,"XS,S,M,L,XL",,75,4.01,29
+p-98df6b512276,Vero Moda Solid Jeans,Vero Moda,Women,Bottomwear - Jeans,92.11,0.0,92.11,"XS,S,M,L,XL",,21,4.28,22
+p-9a9b31e9234c,Zara Athletic Jeans,Zara,Women,Bottomwear - Jeans,61.25,0.0,61.25,"XS,S,M,L,XL",,61,4.14,134
+p-d514d1156c6b,Mango Athletic Dresses,Mango,Women,Dresses,80.62,10.0,72.56,"XS,S,M,L,XL",,20,4.45,72
+p-a28088e47da3,Adidas Floral Print Running Shoes,Adidas,Footwear,Running Shoes,121.96,25.0,91.47,"6,7,8,9,10,11",,11,4.37,46
+p-e915104f6054,Reebok Slim Fit Sandals,Reebok,Footwear,Sandals,92.77,40.0,55.66,"6,7,8,9,10,11",9,63,3.8,59
+p-f6b1ad82eda2,Zara Men Solid Trousers,Zara Men,Men,Bottomwear - Trousers,45.76,0.0,45.76,"S,M,L,XL,XXL",,42,4.34,3
+p-39b141f5a83f,Tommy Hilfiger Solid T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,54.04,0.0,54.04,"S,M,L,XL,XXL",,65,3.63,61
+p-4f6505c8e62a,Vero Moda Vintage Wash Tops & Tees,Vero Moda,Women,Tops & Tees,48.58,30.0,34.01,"XS,S,M,L,XL",,38,3.95,3
+p-cafefdf4c7ff,Puma Oversized Sandals,Puma,Footwear,Sandals,71.97,0.0,71.97,"6,7,8,9,10,11",,19,4.38,33
+p-60412beb838a,Allen Solly Formal Shirts,Allen Solly,Men,Topwear - Shirts,72.3,25.0,54.22,"S,M,L,XL,XXL",,60,4.31,88
+p-4df44cdc7595,Vero Moda Textured Jeans,Vero Moda,Women,Bottomwear - Jeans,58.6,0.0,58.6,"XS,S,M,L,XL",,43,3.57,31
+p-fde3dbcf8ef8,Fossil Textured Belts & Wallets,Fossil,Accessories,Belts & Wallets,62.69,20.0,50.15,One Size,,32,3.77,56
+p-e83847636e45,Levi's Floral Print T-Shirts,Levi's,Men,Topwear - T-Shirts,67.42,0.0,67.42,"S,M,L,XL,XXL",,36,4.02,32
+p-08933952b14c,Zara Oversized Jeans,Zara,Women,Bottomwear - Jeans,60.51,0.0,60.51,"XS,S,M,L,XL",,43,4.53,37
+p-14cbac75d7bf,Vero Moda Athletic Dresses,Vero Moda,Women,Dresses,52.41,0.0,52.41,"XS,S,M,L,XL",M,63,3.87,35
+p-d1a6d0e4d5d8,Mango Athletic Tops & Tees,Mango,Women,Tops & Tees,113.81,0.0,113.81,"XS,S,M,L,XL",M,29,4.24,16
+p-1d8a65fdccd4,Allen Solly Classic Shirts,Allen Solly,Men,Topwear - Shirts,28.95,0.0,28.95,"S,M,L,XL,XXL",,86,4.49,30
+p-841987c6ed6f,Zara Linen Dresses,Zara,Women,Dresses,64.34,0.0,64.34,"XS,S,M,L,XL",,64,4.36,6
+p-54e4e0c5173b,H&M Casual Dresses,H&M,Women,Dresses,60.94,10.0,54.85,"XS,S,M,L,XL","M,S",47,4.13,26
+p-69daf4452ca8,Allen Solly Vintage Wash Shirts,Allen Solly,Men,Topwear - Shirts,23.55,0.0,23.55,"S,M,L,XL,XXL",,59,3.7,68
+p-c6cadc0a0d2b,H&M Men Slim Fit T-Shirts,H&M Men,Men,Topwear - T-Shirts,86.77,20.0,69.42,"S,M,L,XL,XXL",,79,4.35,13
+p-2295660ccb5d,Forever 21 Cotton Ethnic Wear,Forever 21,Women,Ethnic Wear,94.61,0.0,94.61,"XS,S,M,L,XL",,62,4.15,22
+p-22bd6d13a2ad,H&M Classic Ethnic Wear,H&M,Women,Ethnic Wear,51.44,40.0,30.86,"XS,S,M,L,XL","M,S",43,4.13,3
+p-140c262ed1be,Urban Chic Classic Jeans,Urban Chic,Women,Bottomwear - Jeans,40.42,25.0,30.32,"XS,S,M,L,XL",,22,4.78,62
+p-86aed0447318,Levi's Formal T-Shirts,Levi's,Men,Topwear - T-Shirts,96.47,30.0,67.53,"S,M,L,XL,XXL","L,M",37,4.11,17
+p-b21af733327a,Nike Athletic Running Shoes,Nike,Footwear,Running Shoes,81.53,50.0,40.77,"6,7,8,9,10,11",,23,4.51,3
+p-3813b3e456f2,Allen Solly Oversized Trousers,Allen Solly,Men,Bottomwear - Trousers,81.69,25.0,61.27,"S,M,L,XL,XXL",,19,4.62,49
+p-dbc3e031de55,Titan Floral Print Belts & Wallets,Titan,Accessories,Belts & Wallets,100.68,15.0,85.58,One Size,,22,3.89,17
+p-ba44a061331b,Allen Solly Regular Fit Jeans,Allen Solly,Men,Bottomwear - Jeans,103.29,0.0,103.29,"S,M,L,XL,XXL",,64,4.06,48
+p-f27868387997,Adidas Formal Running Shoes,Adidas,Footwear,Running Shoes,148.8,0.0,148.8,"6,7,8,9,10,11",,53,3.79,27
+p-07391dbb01f3,Clarks Cotton Formal Shoes,Clarks,Footwear,Formal Shoes,90.72,20.0,72.58,"6,7,8,9,10,11",,33,3.83,109
+p-82f9abd306e4,Levi's Regular Fit Jeans,Levi's,Men,Bottomwear - Jeans,54.55,0.0,54.55,"S,M,L,XL,XXL",,40,4.59,4
+p-bd9edc9532a7,Levi's Oversized Shirts,Levi's,Men,Topwear - Shirts,33.52,40.0,20.11,"S,M,L,XL,XXL",M,87,4.8,94
+p-c0f0f9b62a2e,Tommy Hilfiger Floral Print Bags & Backpacks,Tommy Hilfiger,Accessories,Bags & Backpacks,58.86,0.0,58.86,One Size,,42,3.49,28
+p-104e6911401a,Levi's Classic Shirts,Levi's,Men,Topwear - Shirts,45.99,15.0,39.09,"S,M,L,XL,XXL",,37,4.43,144
+p-aab59aee3f2c,Biba Casual Ethnic Wear,Biba,Women,Ethnic Wear,77.59,25.0,58.19,"XS,S,M,L,XL",,29,4.61,92
+p-3b6040dc6f86,Zara Linen Jeans,Zara,Women,Bottomwear - Jeans,128.27,50.0,64.14,"XS,S,M,L,XL",S,70,4.69,51
+p-b00b6a7e0d5d,Biba Casual Tops & Tees,Biba,Women,Tops & Tees,105.79,0.0,105.79,"XS,S,M,L,XL",,50,4.05,61
+p-e25b3f134109,Reebok Athletic Sneakers,Reebok,Footwear,Sneakers,124.43,40.0,74.66,"6,7,8,9,10,11",,56,4.07,87
+p-8e60e7be8c04,Forever 21 Solid Jeans,Forever 21,Women,Bottomwear - Jeans,77.24,20.0,61.79,"XS,S,M,L,XL",,26,4.75,85
+p-e68b406c6948,Ray-Ban Athletic Sunglasses,Ray-Ban,Accessories,Sunglasses,104.31,20.0,83.45,One Size,,50,4.22,36
+p-af49e89bbcc1,Titan Cotton Bags & Backpacks,Titan,Accessories,Bags & Backpacks,96.51,10.0,86.86,One Size,,40,4.08,18
+p-88ba81a33174,Red Tape Regular Fit Sneakers,Red Tape,Footwear,Sneakers,74.55,15.0,63.37,"6,7,8,9,10,11",,43,3.87,5
+p-0a6513fc7071,H&M Formal Dresses,H&M,Women,Dresses,87.26,10.0,78.53,"XS,S,M,L,XL",M,49,4.33,14
+p-d22958931124,H&M Formal Tops & Tees,H&M,Women,Tops & Tees,63.3,0.0,63.3,"XS,S,M,L,XL",,46,3.64,13
+p-469768ad34da,Titan Solid Watches,Titan,Accessories,Watches,96.03,25.0,72.02,One Size,,51,4.49,82
+p-209965b16846,Allen Solly Regular Fit Trousers,Allen Solly,Men,Bottomwear - Trousers,26.4,0.0,26.4,"S,M,L,XL,XXL",,80,4.44,25
+p-e862c1b120d9,Red Tape Casual Sandals,Red Tape,Footwear,Sandals,46.01,0.0,46.01,"6,7,8,9,10,11",,47,4.37,7
+p-323b05a0bbdc,Zara Oversized Ethnic Wear,Zara,Women,Ethnic Wear,68.1,40.0,40.86,"XS,S,M,L,XL",,38,4.41,19
+p-7ee99fbdf5bc,Forever 21 Linen Ethnic Wear,Forever 21,Women,Ethnic Wear,31.72,10.0,28.55,"XS,S,M,L,XL",,39,4.11,345
+p-498633597065,Puma Linen Running Shoes,Puma,Footwear,Running Shoes,129.09,30.0,90.36,"6,7,8,9,10,11",,27,4.6,46
+p-7ac887b9661c,Marks & Spencer Linen Jeans,Marks & Spencer,Men,Bottomwear - Jeans,79.14,25.0,59.36,"S,M,L,XL,XXL",,33,3.8,21
+p-d7568994dc7a,Marks & Spencer Solid Trousers,Marks & Spencer,Men,Bottomwear - Trousers,58.59,20.0,46.87,"S,M,L,XL,XXL",,27,3.4,74
+p-8df247c14f9a,Forever 21 Formal Tops & Tees,Forever 21,Women,Tops & Tees,60.32,20.0,48.26,"XS,S,M,L,XL",,56,4.32,41
+p-742b8331f6b3,Mango Casual Jeans,Mango,Women,Bottomwear - Jeans,74.41,25.0,55.81,"XS,S,M,L,XL",,19,3.73,19
+p-21b4d0423658,Levi's Solid Trousers,Levi's,Men,Bottomwear - Trousers,61.65,50.0,30.82,"S,M,L,XL,XXL","M,L",54,3.69,32
+p-dedf3979e43c,Nike Cotton Sandals,Nike,Footwear,Sandals,138.95,25.0,104.21,"6,7,8,9,10,11",,39,3.9,140
+p-bf24e103a672,Urban Chic Linen Tops & Tees,Urban Chic,Women,Tops & Tees,53.85,20.0,43.08,"XS,S,M,L,XL","S,M",112,4.08,20
+p-76da024092e6,Vero Moda Linen Dresses,Vero Moda,Women,Dresses,96.54,0.0,96.54,"XS,S,M,L,XL","M,S",86,3.68,24
+p-7100d85bc108,H&M Men Athletic T-Shirts,H&M Men,Men,Topwear - T-Shirts,41.2,20.0,32.96,"S,M,L,XL,XXL",,34,4.29,23
+p-852877299f60,Roadster Floral Print Trousers,Roadster,Men,Bottomwear - Trousers,74.19,10.0,66.77,"S,M,L,XL,XXL",,40,4.16,3
+p-88ab7b6c06c0,Marks & Spencer Casual Jeans,Marks & Spencer,Men,Bottomwear - Jeans,45.08,0.0,45.08,"S,M,L,XL,XXL",L,12,3.91,112
+p-de9f4b9134b3,Red Tape Athletic Sneakers,Red Tape,Footwear,Sneakers,104.28,10.0,93.85,"6,7,8,9,10,11",,57,4.17,126
+p-fff670c8c0f2,Fossil Athletic Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,49.97,0.0,49.97,One Size,,52,4.17,227
+p-3e4e501a0c6e,H&M Men Vintage Wash Jeans,H&M Men,Men,Bottomwear - Jeans,48.25,20.0,38.6,"S,M,L,XL,XXL",,78,4.09,108
+p-e561402c4094,Urban Chic Athletic Dresses,Urban Chic,Women,Dresses,72.74,10.0,65.47,"XS,S,M,L,XL",M,88,4.76,8
+p-feb10e6ec6dc,Mango Formal Dresses,Mango,Women,Dresses,85.76,25.0,64.32,"XS,S,M,L,XL",M,52,4.16,104
+p-41b36a08ff9b,Fastrack Slim Fit Watches,Fastrack,Accessories,Watches,96.66,15.0,82.16,One Size,,100,4.17,48
+p-f51b383685a9,Vero Moda Athletic Ethnic Wear,Vero Moda,Women,Ethnic Wear,56.57,30.0,39.6,"XS,S,M,L,XL",,23,4.48,27
+p-3ab4f6a8dc27,Zara Men Vintage Wash Shirts,Zara Men,Men,Topwear - Shirts,64.54,0.0,64.54,"S,M,L,XL,XXL",,67,3.68,22
+p-00dcebb17c87,H&M Oversized Ethnic Wear,H&M,Women,Ethnic Wear,121.78,50.0,60.89,"XS,S,M,L,XL","S,M",77,3.82,11
+p-297d37c047d6,Fossil Vintage Wash Belts & Wallets,Fossil,Accessories,Belts & Wallets,78.94,30.0,55.26,One Size,,68,3.41,38
+p-9ebbe0b19e30,Urban Chic Solid Ethnic Wear,Urban Chic,Women,Ethnic Wear,80.3,10.0,72.27,"XS,S,M,L,XL",M,39,4.12,7
+p-5452be2973d1,Tommy Hilfiger Vintage Wash T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,35.7,25.0,26.78,"S,M,L,XL,XXL",,111,4.53,3
+p-744a56bb2a3a,Clarks Classic Formal Shoes,Clarks,Footwear,Formal Shoes,69.88,40.0,41.93,"6,7,8,9,10,11",,89,3.67,8
+p-8ec380555d70,H&M Regular Fit Tops & Tees,H&M,Women,Tops & Tees,45.84,10.0,41.26,"XS,S,M,L,XL",,38,4.45,39
+p-467e1dfa255a,H&M Men Textured Trousers,H&M Men,Men,Bottomwear - Trousers,56.42,30.0,39.49,"S,M,L,XL,XXL",,113,4.39,35
+p-a1ab09beb7f9,Nike Textured Sneakers,Nike,Footwear,Sneakers,86.11,50.0,43.05,"6,7,8,9,10,11","9,8",63,2.95,37
+p-1fd0fd8f102d,H&M Men Classic Jeans,H&M Men,Men,Bottomwear - Jeans,51.45,10.0,46.31,"S,M,L,XL,XXL",,14,4.89,31
+p-f264c78411ad,H&M Linen Jeans,H&M,Women,Bottomwear - Jeans,108.74,0.0,108.74,"XS,S,M,L,XL",,74,4.14,30
+p-7e1e670c9500,Forever 21 Oversized Ethnic Wear,Forever 21,Women,Ethnic Wear,47.4,15.0,40.29,"XS,S,M,L,XL",,11,4.2,55
+p-2deafd977bb7,H&M Textured Tops & Tees,H&M,Women,Tops & Tees,67.39,25.0,50.54,"XS,S,M,L,XL",,79,3.61,48
+p-e4dd61f5794a,Zara Solid Dresses,Zara,Women,Dresses,99.92,50.0,49.96,"XS,S,M,L,XL",M,19,4.85,7
+p-bf9915c4ef4b,Mango Solid Dresses,Mango,Women,Dresses,89.27,50.0,44.63,"XS,S,M,L,XL",,50,4.19,11
+p-84a255bad34e,Tommy Hilfiger Casual Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,49.33,0.0,49.33,"S,M,L,XL,XXL",M,17,3.96,4
+p-b43ff880f319,Forever 21 Formal Tops & Tees,Forever 21,Women,Tops & Tees,121.0,0.0,121.0,"XS,S,M,L,XL",,57,4.45,71
+p-598a451f2bc8,Forever 21 Solid Ethnic Wear,Forever 21,Women,Ethnic Wear,60.11,15.0,51.09,"XS,S,M,L,XL",,48,3.82,96
+p-7270e31789a2,Reebok Classic Sneakers,Reebok,Footwear,Sneakers,102.47,10.0,92.22,"6,7,8,9,10,11",,28,3.93,35
+p-d3243bad23f9,H&M Men Oversized Shirts,H&M Men,Men,Topwear - Shirts,82.53,15.0,70.15,"S,M,L,XL,XXL",L,28,4.07,27
+p-eee69b917058,Tommy Hilfiger Textured Shirts,Tommy Hilfiger,Men,Topwear - Shirts,51.39,0.0,51.39,"S,M,L,XL,XXL",,31,4.58,35
+p-77002300bcd8,Tommy Hilfiger Textured Shirts,Tommy Hilfiger,Men,Topwear - Shirts,73.23,0.0,73.23,"S,M,L,XL,XXL",,26,4.08,120
+p-2db6ca4f8bdd,Nike Slim Fit Sandals,Nike,Footwear,Sandals,133.62,20.0,106.9,"6,7,8,9,10,11",,58,4.53,6
+p-ec12488d157c,H&M Vintage Wash Ethnic Wear,H&M,Women,Ethnic Wear,83.91,10.0,75.52,"XS,S,M,L,XL",,45,4.54,45
+p-9069bd38ab8e,Puma Casual Sneakers,Puma,Footwear,Sneakers,109.8,25.0,82.35,"6,7,8,9,10,11",,33,4.54,23
+p-9cd64f4f5ba3,H&M Floral Print Dresses,H&M,Women,Dresses,65.59,0.0,65.59,"XS,S,M,L,XL",,56,4.09,7
+p-7d28e2ca0722,Forever 21 Solid Ethnic Wear,Forever 21,Women,Ethnic Wear,47.74,15.0,40.58,"XS,S,M,L,XL",M,26,3.5,80
+p-f191fdc007ba,Reebok Vintage Wash Sandals,Reebok,Footwear,Sandals,96.06,0.0,96.06,"6,7,8,9,10,11",,74,4.43,17
+p-94495595044f,Mango Textured Dresses,Mango,Women,Dresses,40.92,10.0,36.83,"XS,S,M,L,XL",,62,4.25,19
+p-2e053a9ef55c,Fastrack Formal Belts & Wallets,Fastrack,Accessories,Belts & Wallets,55.65,30.0,38.95,One Size,,40,4.11,39
+p-a7b0f421e7be,Marks & Spencer Slim Fit Jeans,Marks & Spencer,Men,Bottomwear - Jeans,76.31,10.0,68.68,"S,M,L,XL,XXL",,63,3.93,27
+p-9c2481cc2c49,Marks & Spencer Slim Fit Trousers,Marks & Spencer,Men,Bottomwear - Trousers,57.54,40.0,34.52,"S,M,L,XL,XXL",,29,3.68,4
+p-7a557ff146df,Zara Men Oversized Jeans,Zara Men,Men,Bottomwear - Jeans,88.82,50.0,44.41,"S,M,L,XL,XXL",,22,4.21,9
+p-68678149e38d,Biba Oversized Ethnic Wear,Biba,Women,Ethnic Wear,107.17,25.0,80.38,"XS,S,M,L,XL","S,M",24,4.15,37
+p-d34313b57988,Roadster Oversized T-Shirts,Roadster,Men,Topwear - T-Shirts,47.49,30.0,33.24,"S,M,L,XL,XXL",,39,3.87,48
+p-ec8f9ff55280,Clarks Linen Sandals,Clarks,Footwear,Sandals,128.27,30.0,89.79,"6,7,8,9,10,11",,39,4.56,23
+p-c181f5a77a24,H&M Textured Tops & Tees,H&M,Women,Tops & Tees,78.33,0.0,78.33,"XS,S,M,L,XL",S,35,3.02,272
+p-1210a51fc32a,Biba Solid Jeans,Biba,Women,Bottomwear - Jeans,50.68,15.0,43.08,"XS,S,M,L,XL",,52,3.87,22
+p-4477d07fffb5,Tommy Hilfiger Athletic T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,79.25,0.0,79.25,"S,M,L,XL,XXL",L,112,3.61,33
+p-1ace3b3216ec,Clarks Formal Sneakers,Clarks,Footwear,Sneakers,91.09,40.0,54.65,"6,7,8,9,10,11",,56,4.92,34
+p-efaea1667ec0,H&M Linen Dresses,H&M,Women,Dresses,50.14,0.0,50.14,"XS,S,M,L,XL",,46,3.98,43
+p-d3acf9d68782,Biba Slim Fit Tops & Tees,Biba,Women,Tops & Tees,48.64,30.0,34.05,"XS,S,M,L,XL",,29,4.26,81
+p-374cc355e453,Vero Moda Cotton Ethnic Wear,Vero Moda,Women,Ethnic Wear,41.47,20.0,33.18,"XS,S,M,L,XL",,41,4.09,64
+p-b961b1023281,Zara Men Athletic Jeans,Zara Men,Men,Bottomwear - Jeans,47.91,0.0,47.91,"S,M,L,XL,XXL",,15,4.02,18
+p-238a15518fda,Adidas Slim Fit Formal Shoes,Adidas,Footwear,Formal Shoes,157.61,10.0,141.85,"6,7,8,9,10,11",,76,3.66,34
+p-7d48ea4855b8,Forever 21 Classic Jeans,Forever 21,Women,Bottomwear - Jeans,61.85,15.0,52.57,"XS,S,M,L,XL",,26,3.82,16
+p-3860bc61074f,Zara Men Textured T-Shirts,Zara Men,Men,Topwear - T-Shirts,64.28,50.0,32.14,"S,M,L,XL,XXL",L,35,4.09,16
+p-f4c5e6444f6f,Forever 21 Classic Tops & Tees,Forever 21,Women,Tops & Tees,31.66,10.0,28.49,"XS,S,M,L,XL",,87,4.82,131
+p-e5c0554646e3,Zara Men Vintage Wash Jeans,Zara Men,Men,Bottomwear - Jeans,35.76,0.0,35.76,"S,M,L,XL,XXL",,50,4.52,54
+p-82f9cee71a01,Zara Men Floral Print T-Shirts,Zara Men,Men,Topwear - T-Shirts,56.04,40.0,33.62,"S,M,L,XL,XXL","M,L",55,3.37,16
+p-79e6e95d1bcd,H&M Solid Ethnic Wear,H&M,Women,Ethnic Wear,91.63,0.0,91.63,"XS,S,M,L,XL",,40,4.21,20
+p-629e8e59b8c1,Marks & Spencer Floral Print T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,23.24,0.0,23.24,"S,M,L,XL,XXL","L,M",61,3.76,36
+p-057cb88f98ac,H&M Vintage Wash Ethnic Wear,H&M,Women,Ethnic Wear,59.07,0.0,59.07,"XS,S,M,L,XL",,54,4.51,28
+p-d401d37afeef,Forever 21 Solid Dresses,Forever 21,Women,Dresses,71.96,25.0,53.97,"XS,S,M,L,XL",,31,3.99,56
+p-230f80de8bbf,Reebok Classic Sandals,Reebok,Footwear,Sandals,82.48,0.0,82.48,"6,7,8,9,10,11",,56,4.02,130
+p-89595b0edd0b,Forever 21 Regular Fit Dresses,Forever 21,Women,Dresses,126.99,0.0,126.99,"XS,S,M,L,XL",,58,4.23,29
+p-655842b88783,H&M Formal Dresses,H&M,Women,Dresses,102.13,0.0,102.13,"XS,S,M,L,XL",,49,4.04,19
+p-ad4fd831757a,Clarks Vintage Wash Sneakers,Clarks,Footwear,Sneakers,82.81,0.0,82.81,"6,7,8,9,10,11",,77,4.58,81
+p-aeaf613d1025,Zara Men Cotton Shirts,Zara Men,Men,Topwear - Shirts,40.84,0.0,40.84,"S,M,L,XL,XXL",,54,4.56,33
+p-699ebe9cd2ce,Marks & Spencer Cotton Jeans,Marks & Spencer,Men,Bottomwear - Jeans,52.18,20.0,41.74,"S,M,L,XL,XXL",,94,4.68,35
+p-93ac077123ac,H&M Men Classic Trousers,H&M Men,Men,Bottomwear - Trousers,82.31,0.0,82.31,"S,M,L,XL,XXL",,58,4.09,5
+p-5890f4110b1a,Vero Moda Textured Tops & Tees,Vero Moda,Women,Tops & Tees,100.05,25.0,75.04,"XS,S,M,L,XL",,39,3.88,30
+p-87949fab40de,Zara Men Athletic Shirts,Zara Men,Men,Topwear - Shirts,44.21,0.0,44.21,"S,M,L,XL,XXL",,21,4.47,18
+p-39fd7f2a7709,Tommy Hilfiger Vintage Wash T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,52.03,40.0,31.22,"S,M,L,XL,XXL",M,55,3.45,6
+p-590824562404,Clarks Solid Running Shoes,Clarks,Footwear,Running Shoes,117.93,0.0,117.93,"6,7,8,9,10,11",,53,3.71,16
+p-32cd89d5f78b,Nike Cotton Running Shoes,Nike,Footwear,Running Shoes,108.14,25.0,81.11,"6,7,8,9,10,11",,105,4.18,13
+p-47fc72087c16,Lavie Solid Watches,Lavie,Accessories,Watches,59.4,0.0,59.4,One Size,,30,4.32,4
+p-3d634eda5892,Levi's Regular Fit Shirts,Levi's,Men,Topwear - Shirts,67.51,50.0,33.76,"S,M,L,XL,XXL",,42,3.74,35
+p-1cd07d717c48,Fossil Formal Belts & Wallets,Fossil,Accessories,Belts & Wallets,104.99,0.0,104.99,One Size,,17,3.67,45
+p-9d8279fd3132,Lavie Athletic Sunglasses,Lavie,Accessories,Sunglasses,120.83,25.0,90.62,One Size,,26,4.14,41
+p-b489dfc0896b,Vero Moda Formal Tops & Tees,Vero Moda,Women,Tops & Tees,65.34,0.0,65.34,"XS,S,M,L,XL",,30,4.31,124
+p-241b1fa0c5cb,Mango Classic Tops & Tees,Mango,Women,Tops & Tees,91.18,0.0,91.18,"XS,S,M,L,XL",,69,3.56,36
+p-e2ddfc28b42e,Zara Men Oversized T-Shirts,Zara Men,Men,Topwear - T-Shirts,68.88,10.0,61.99,"S,M,L,XL,XXL",L,42,4.31,81
+p-1dfd396785bb,Puma Solid Sandals,Puma,Footwear,Sandals,97.83,25.0,73.37,"6,7,8,9,10,11",,49,3.54,62
+p-032704074e24,Puma Textured Running Shoes,Puma,Footwear,Running Shoes,109.42,15.0,93.01,"6,7,8,9,10,11",,53,3.78,3
+p-abffc77ec41d,Zara Men Slim Fit T-Shirts,Zara Men,Men,Topwear - T-Shirts,70.02,0.0,70.02,"S,M,L,XL,XXL",,51,3.93,12
+p-f9f787c33baa,Levi's Casual Jeans,Levi's,Men,Bottomwear - Jeans,74.87,50.0,37.44,"S,M,L,XL,XXL",,31,4.08,22
+p-d38a085f787e,Roadster Athletic Trousers,Roadster,Men,Bottomwear - Trousers,89.81,0.0,89.81,"S,M,L,XL,XXL","M,L",45,4.34,19
+p-a54a94c426b6,Tommy Hilfiger Vintage Wash Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,30.06,0.0,30.06,One Size,,35,4.23,6
+p-8ead55978165,Levi's Classic Trousers,Levi's,Men,Bottomwear - Trousers,72.83,0.0,72.83,"S,M,L,XL,XXL",,49,4.09,23
+p-daf5cd24f22b,Clarks Cotton Formal Shoes,Clarks,Footwear,Formal Shoes,82.26,25.0,61.7,"6,7,8,9,10,11",,42,3.54,129
+p-d312425a2284,Nike Oversized Formal Shoes,Nike,Footwear,Formal Shoes,144.3,0.0,144.3,"6,7,8,9,10,11","8,9",57,4.42,14
+p-ddb69fecdb75,Biba Classic Dresses,Biba,Women,Dresses,104.75,15.0,89.04,"XS,S,M,L,XL",,23,4.21,181
+p-b159f3c43083,Mango Regular Fit Jeans,Mango,Women,Bottomwear - Jeans,32.74,20.0,26.19,"XS,S,M,L,XL","S,M",104,3.73,70
+p-fea2fa77cfc0,Forever 21 Textured Jeans,Forever 21,Women,Bottomwear - Jeans,54.19,0.0,54.19,"XS,S,M,L,XL",,32,3.9,36
+p-597facd1754b,Vero Moda Solid Tops & Tees,Vero Moda,Women,Tops & Tees,76.44,50.0,38.22,"XS,S,M,L,XL",,65,3.55,60
+p-ddf414f69e8f,Levi's Athletic Shirts,Levi's,Men,Topwear - Shirts,71.4,0.0,71.4,"S,M,L,XL,XXL",,47,3.93,12
+p-a9bf267d0008,Tommy Hilfiger Regular Fit Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,124.97,10.0,112.47,One Size,,44,4.57,22
+p-7e975cc02998,Urban Chic Formal Ethnic Wear,Urban Chic,Women,Ethnic Wear,77.68,15.0,66.03,"XS,S,M,L,XL","S,M",106,4.46,76
+p-e53548042d4f,H&M Men Formal Jeans,H&M Men,Men,Bottomwear - Jeans,55.08,15.0,46.82,"S,M,L,XL,XXL",,22,4.23,60
+p-222755c29f62,Allen Solly Floral Print T-Shirts,Allen Solly,Men,Topwear - T-Shirts,43.92,0.0,43.92,"S,M,L,XL,XXL",,57,4.55,21
+p-76aa54c5428b,Clarks Solid Sneakers,Clarks,Footwear,Sneakers,68.58,0.0,68.58,"6,7,8,9,10,11",,31,3.54,67
+p-2b44e2a06890,Tommy Hilfiger Solid Shirts,Tommy Hilfiger,Men,Topwear - Shirts,50.75,50.0,25.38,"S,M,L,XL,XXL",,24,3.84,70
+p-52f3ef7b086c,Vero Moda Classic Jeans,Vero Moda,Women,Bottomwear - Jeans,81.13,50.0,40.56,"XS,S,M,L,XL",,19,3.79,60
+p-8d0df50f6118,Forever 21 Classic Jeans,Forever 21,Women,Bottomwear - Jeans,82.84,0.0,82.84,"XS,S,M,L,XL",,55,4.19,21
+p-dc8bccb1bc01,Zara Men Classic Jeans,Zara Men,Men,Bottomwear - Jeans,36.03,50.0,18.02,"S,M,L,XL,XXL",,124,3.68,34
+p-3e61dd56fa9f,Tommy Hilfiger Athletic Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,75.62,30.0,52.93,One Size,,29,4.11,75
+p-e7cc73592ec8,Forever 21 Floral Print Tops & Tees,Forever 21,Women,Tops & Tees,74.41,0.0,74.41,"XS,S,M,L,XL",,34,4.56,177
+p-d0ebbd8f2c23,Zara Regular Fit Tops & Tees,Zara,Women,Tops & Tees,70.7,50.0,35.35,"XS,S,M,L,XL",S,81,4.31,58
+p-2b880a84e504,Tommy Hilfiger Slim Fit Trousers,Tommy Hilfiger,Men,Bottomwear - Trousers,78.29,15.0,66.55,"S,M,L,XL,XXL",,15,4.27,28
+p-90f7cac54e1a,Nike Textured Formal Shoes,Nike,Footwear,Formal Shoes,73.9,0.0,73.9,"6,7,8,9,10,11",,29,4.12,61
+p-bcef39c6c763,Ray-Ban Athletic Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,130.26,10.0,117.23,One Size,,82,4.8,7
+p-1e5a4f01d985,Ray-Ban Cotton Bags & Backpacks,Ray-Ban,Accessories,Bags & Backpacks,61.91,0.0,61.91,One Size,,12,4.27,56
+p-e82569cefe7b,Marks & Spencer Slim Fit Jeans,Marks & Spencer,Men,Bottomwear - Jeans,47.48,40.0,28.49,"S,M,L,XL,XXL","L,M",143,4.34,86
+p-d85ea8547bbf,Urban Chic Oversized Dresses,Urban Chic,Women,Dresses,73.17,0.0,73.17,"XS,S,M,L,XL","M,S",26,4.36,37
+p-d52b360e8d66,Red Tape Oversized Sneakers,Red Tape,Footwear,Sneakers,92.68,0.0,92.68,"6,7,8,9,10,11",,77,4.36,10
+p-d9c1704aa7ef,Marks & Spencer Formal Trousers,Marks & Spencer,Men,Bottomwear - Trousers,54.65,30.0,38.25,"S,M,L,XL,XXL",,50,4.15,45
+p-54173e2d59cb,Marks & Spencer Vintage Wash Trousers,Marks & Spencer,Men,Bottomwear - Trousers,70.86,15.0,60.23,"S,M,L,XL,XXL",,25,3.25,8
+p-9e6ab3b839e1,Titan Cotton Bags & Backpacks,Titan,Accessories,Bags & Backpacks,96.4,0.0,96.4,One Size,,32,3.57,159
+p-d365397ced14,Roadster Formal Jeans,Roadster,Men,Bottomwear - Jeans,62.99,30.0,44.09,"S,M,L,XL,XXL","L,M",105,3.71,20
+p-4a39ff3d22c9,H&M Men Slim Fit T-Shirts,H&M Men,Men,Topwear - T-Shirts,68.4,0.0,68.4,"S,M,L,XL,XXL",,77,4.33,14
+p-62b0f40a6ebe,Allen Solly Formal Trousers,Allen Solly,Men,Bottomwear - Trousers,83.99,50.0,41.99,"S,M,L,XL,XXL",,31,4.56,51
+p-6c219b280162,H&M Classic Ethnic Wear,H&M,Women,Ethnic Wear,89.31,50.0,44.66,"XS,S,M,L,XL","M,S",37,4.06,41
+p-cc21eb6bc6c5,Vero Moda Regular Fit Jeans,Vero Moda,Women,Bottomwear - Jeans,51.95,15.0,44.16,"XS,S,M,L,XL",,39,4.03,57
+p-4fd5b6c8aa78,H&M Men Casual T-Shirts,H&M Men,Men,Topwear - T-Shirts,73.88,25.0,55.41,"S,M,L,XL,XXL",,65,3.81,4
+p-c6a9e33c15a3,Zara Men Formal Jeans,Zara Men,Men,Bottomwear - Jeans,83.49,10.0,75.14,"S,M,L,XL,XXL",,30,3.83,43
+p-fe4bf4dc6f15,Puma Athletic Sneakers,Puma,Footwear,Sneakers,113.13,30.0,79.19,"6,7,8,9,10,11",8,59,4.6,9
+p-32d0c21896ae,Forever 21 Slim Fit Ethnic Wear,Forever 21,Women,Ethnic Wear,60.1,0.0,60.1,"XS,S,M,L,XL",,70,4.26,22
+p-4e2e515c2ad6,H&M Linen Tops & Tees,H&M,Women,Tops & Tees,83.57,50.0,41.78,"XS,S,M,L,XL",,79,4.11,12
+p-ee0f7aa9316e,Puma Oversized Sandals,Puma,Footwear,Sandals,56.5,50.0,28.25,"6,7,8,9,10,11",,7,3.75,10
+p-c76e2eb74adb,Urban Chic Formal Dresses,Urban Chic,Women,Dresses,97.88,0.0,97.88,"XS,S,M,L,XL",,98,3.94,133
+p-974062241d7b,H&M Solid Tops & Tees,H&M,Women,Tops & Tees,56.26,50.0,28.13,"XS,S,M,L,XL","S,M",32,4.03,30
+p-e8d929d2dd03,Levi's Textured Jeans,Levi's,Men,Bottomwear - Jeans,57.49,30.0,40.24,"S,M,L,XL,XXL",,78,4.35,22
+p-4ab4f9810284,Mango Casual Dresses,Mango,Women,Dresses,112.35,0.0,112.35,"XS,S,M,L,XL",,73,4.44,91
+p-3484e06c8c9f,Clarks Athletic Sneakers,Clarks,Footwear,Sneakers,56.92,0.0,56.92,"6,7,8,9,10,11",,41,4.02,37
+p-37a2054ceae1,Levi's Classic Jeans,Levi's,Men,Bottomwear - Jeans,88.13,0.0,88.13,"S,M,L,XL,XXL",,43,4.1,26
+p-38a52e8b95b2,H&M Men Floral Print T-Shirts,H&M Men,Men,Topwear - T-Shirts,38.03,50.0,19.02,"S,M,L,XL,XXL","L,M",24,3.61,60
+p-4131172a7f05,Mango Oversized Dresses,Mango,Women,Dresses,107.15,25.0,80.36,"XS,S,M,L,XL",S,66,4.52,62
+p-48a4b7cd6342,H&M Formal Dresses,H&M,Women,Dresses,53.22,25.0,39.91,"XS,S,M,L,XL",,70,4.34,207
+p-1c0258525d95,H&M Men Oversized Jeans,H&M Men,Men,Bottomwear - Jeans,84.0,30.0,58.8,"S,M,L,XL,XXL",,105,3.73,105
+p-c21e09af334a,Forever 21 Floral Print Jeans,Forever 21,Women,Bottomwear - Jeans,69.04,50.0,34.52,"XS,S,M,L,XL","M,S",109,3.53,121
+p-13b7675fbb59,H&M Slim Fit Dresses,H&M,Women,Dresses,90.18,25.0,67.64,"XS,S,M,L,XL",,42,4.3,4
+p-471ff795cc42,Nike Vintage Wash Sneakers,Nike,Footwear,Sneakers,103.3,25.0,77.47,"6,7,8,9,10,11","9,8",80,4.09,18
+p-b20bb23aee24,Roadster Linen Trousers,Roadster,Men,Bottomwear - Trousers,68.32,25.0,51.24,"S,M,L,XL,XXL",,16,4.03,23
+p-a76e46f05208,Red Tape Athletic Formal Shoes,Red Tape,Footwear,Formal Shoes,67.74,0.0,67.74,"6,7,8,9,10,11",,24,4.27,3
+p-a2b6b2d4e975,Reebok Classic Sneakers,Reebok,Footwear,Sneakers,118.97,0.0,118.97,"6,7,8,9,10,11","8,9",35,4.71,46
+p-c79b3b066b3b,Allen Solly Textured Jeans,Allen Solly,Men,Bottomwear - Jeans,73.73,0.0,73.73,"S,M,L,XL,XXL",,70,4.21,34
+p-0f6b99d8b4ae,Vero Moda Floral Print Ethnic Wear,Vero Moda,Women,Ethnic Wear,76.49,0.0,76.49,"XS,S,M,L,XL",,49,3.94,46
+p-bc71a87c4f77,Marks & Spencer Classic T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,50.17,15.0,42.64,"S,M,L,XL,XXL",,80,4.77,211
+p-d899eb477c36,Tommy Hilfiger Oversized Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,67.57,0.0,67.57,"S,M,L,XL,XXL",,70,3.77,13
+p-0519cf3d6b3d,Urban Chic Linen Jeans,Urban Chic,Women,Bottomwear - Jeans,46.31,0.0,46.31,"XS,S,M,L,XL",,53,4.1,130
+p-a80b59546fb9,Levi's Casual Shirts,Levi's,Men,Topwear - Shirts,52.54,15.0,44.66,"S,M,L,XL,XXL","L,M",44,4.09,8
+p-7ea5385571c5,Ray-Ban Classic Belts & Wallets,Ray-Ban,Accessories,Belts & Wallets,135.54,0.0,135.54,One Size,,33,4.44,5
+p-b9b0a9cb6161,Forever 21 Regular Fit Tops & Tees,Forever 21,Women,Tops & Tees,111.42,0.0,111.42,"XS,S,M,L,XL",,26,4.09,56
+p-86911472b493,H&M Men Formal Shirts,H&M Men,Men,Topwear - Shirts,48.1,40.0,28.86,"S,M,L,XL,XXL",,35,3.57,45
+p-d82c452cf314,Roadster Casual Jeans,Roadster,Men,Bottomwear - Jeans,65.12,0.0,65.12,"S,M,L,XL,XXL",,78,3.82,96
+p-bc3329ef5762,Zara Men Classic Trousers,Zara Men,Men,Bottomwear - Trousers,54.27,0.0,54.27,"S,M,L,XL,XXL",,29,3.4,23
+p-43b6090e4f63,Reebok Vintage Wash Formal Shoes,Reebok,Footwear,Formal Shoes,96.73,10.0,87.06,"6,7,8,9,10,11",9,36,3.47,82
+p-fd6f0e93fa03,Forever 21 Athletic Ethnic Wear,Forever 21,Women,Ethnic Wear,34.53,50.0,17.27,"XS,S,M,L,XL",S,75,4.74,104
+p-5e4476a0a583,Biba Solid Dresses,Biba,Women,Dresses,52.7,40.0,31.62,"XS,S,M,L,XL",,34,4.42,52
+p-600ab558e2a0,Levi's Classic Trousers,Levi's,Men,Bottomwear - Trousers,83.16,20.0,66.53,"S,M,L,XL,XXL",,67,4.35,16
+p-8751b338486b,Roadster Regular Fit Jeans,Roadster,Men,Bottomwear - Jeans,96.4,0.0,96.4,"S,M,L,XL,XXL",,64,3.89,58
+p-4a6c951e46a7,Mango Vintage Wash Tops & Tees,Mango,Women,Tops & Tees,60.29,20.0,48.23,"XS,S,M,L,XL",M,13,3.85,83
+p-646999165be6,Tommy Hilfiger Textured Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,53.51,0.0,53.51,"S,M,L,XL,XXL",,24,3.68,18
+p-1faea5d273c5,Fastrack Oversized Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,129.04,20.0,103.23,One Size,,71,3.05,139
+p-70ea8249c551,Fastrack Textured Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,93.64,20.0,74.91,One Size,,67,4.59,91
+p-032a4ca5d53c,Tommy Hilfiger Formal T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,68.69,0.0,68.69,"S,M,L,XL,XXL",,62,3.8,68
+p-7f4a3a4942b1,Zara Men Floral Print Trousers,Zara Men,Men,Bottomwear - Trousers,79.36,0.0,79.36,"S,M,L,XL,XXL",,55,4.07,34
+p-c4eac54b0de6,Mango Classic Jeans,Mango,Women,Bottomwear - Jeans,48.96,20.0,39.17,"XS,S,M,L,XL",,61,3.74,24
+p-6d82f2143006,Reebok Solid Sandals,Reebok,Footwear,Sandals,84.42,50.0,42.21,"6,7,8,9,10,11",,36,4.26,61
+p-692704c5ecfd,Levi's Classic Jeans,Levi's,Men,Bottomwear - Jeans,96.11,20.0,76.89,"S,M,L,XL,XXL","M,L",79,4.2,43
+p-434a1c832a8a,Puma Formal Sneakers,Puma,Footwear,Sneakers,88.42,40.0,53.05,"6,7,8,9,10,11",,50,3.59,9
+p-2ac9dbf9d55b,Allen Solly Formal Shirts,Allen Solly,Men,Topwear - Shirts,62.21,0.0,62.21,"S,M,L,XL,XXL",,54,4.01,12
+p-1673ab84f4ab,Nike Cotton Sandals,Nike,Footwear,Sandals,108.82,40.0,65.29,"6,7,8,9,10,11",,30,4.36,55
+p-985447fd9822,Tommy Hilfiger Solid T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,57.04,0.0,57.04,"S,M,L,XL,XXL",,91,4.14,3
+p-6a76551e4824,Allen Solly Vintage Wash Jeans,Allen Solly,Men,Bottomwear - Jeans,66.64,15.0,56.64,"S,M,L,XL,XXL",,47,4.28,17
+p-aea4e5743db3,Forever 21 Floral Print Ethnic Wear,Forever 21,Women,Ethnic Wear,104.12,40.0,62.47,"XS,S,M,L,XL",,31,4.08,102
+p-4e60bf84efc8,Adidas Floral Print Running Shoes,Adidas,Footwear,Running Shoes,80.55,40.0,48.33,"6,7,8,9,10,11",,132,4.09,19
+p-a7056dae3b68,Tommy Hilfiger Oversized Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,61.98,30.0,43.39,One Size,,27,3.87,29
+p-d21a879e435b,Urban Chic Textured Jeans,Urban Chic,Women,Bottomwear - Jeans,41.16,10.0,37.04,"XS,S,M,L,XL",S,69,4.15,12
+p-00c8c546f357,H&M Solid Dresses,H&M,Women,Dresses,122.04,10.0,109.84,"XS,S,M,L,XL",,39,4.09,21
+p-fd6f2a3c2e45,Fastrack Regular Fit Sunglasses,Fastrack,Accessories,Sunglasses,39.1,0.0,39.1,One Size,,73,4.19,39
+p-8ee2a695745a,Biba Athletic Tops & Tees,Biba,Women,Tops & Tees,66.06,50.0,33.03,"XS,S,M,L,XL",,55,4.3,4
+p-f271f029aa0e,Urban Chic Solid Ethnic Wear,Urban Chic,Women,Ethnic Wear,124.3,0.0,124.3,"XS,S,M,L,XL",,23,4.36,94
+p-33e3be652eb2,Roadster Oversized Trousers,Roadster,Men,Bottomwear - Trousers,33.75,10.0,30.38,"S,M,L,XL,XXL",,38,4.22,16
+p-78e0b2ccb6f3,Forever 21 Casual Ethnic Wear,Forever 21,Women,Ethnic Wear,99.85,25.0,74.89,"XS,S,M,L,XL",,57,3.84,45
+p-15787066cf25,H&M Vintage Wash Tops & Tees,H&M,Women,Tops & Tees,60.08,50.0,30.04,"XS,S,M,L,XL",,60,4.06,38
+p-1e8aaed3ffff,Red Tape Floral Print Running Shoes,Red Tape,Footwear,Running Shoes,106.06,0.0,106.06,"6,7,8,9,10,11",,41,4.18,55
+p-44f95ab2e044,Tommy Hilfiger Formal Belts & Wallets,Tommy Hilfiger,Accessories,Belts & Wallets,95.72,0.0,95.72,One Size,,48,4.15,8
+p-3157e9d01d18,Zara Slim Fit Jeans,Zara,Women,Bottomwear - Jeans,85.28,50.0,42.64,"XS,S,M,L,XL",,59,4.58,99
+p-7bf78f1c8b4a,Levi's Classic Jeans,Levi's,Men,Bottomwear - Jeans,50.21,0.0,50.21,"S,M,L,XL,XXL",,48,4.52,24
+p-458dcdbf035b,H&M Solid Dresses,H&M,Women,Dresses,79.89,0.0,79.89,"XS,S,M,L,XL",,52,4.42,55
+p-6b6f396bcaec,Tommy Hilfiger Formal Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,43.7,0.0,43.7,"S,M,L,XL,XXL",M,57,4.0,85
+p-3f74e7595220,Biba Solid Ethnic Wear,Biba,Women,Ethnic Wear,84.71,40.0,50.83,"XS,S,M,L,XL",,52,4.05,88
+p-ec8b4c569c0b,Lavie Textured Bags & Backpacks,Lavie,Accessories,Bags & Backpacks,70.63,25.0,52.97,One Size,,25,3.82,6
+p-22bc2007008f,Forever 21 Slim Fit Jeans,Forever 21,Women,Bottomwear - Jeans,59.29,10.0,53.36,"XS,S,M,L,XL",,42,4.36,11
+p-5a946fe521ca,Vero Moda Casual Dresses,Vero Moda,Women,Dresses,95.86,20.0,76.69,"XS,S,M,L,XL",,46,3.91,33
+p-f6883b6407a9,Roadster Solid Trousers,Roadster,Men,Bottomwear - Trousers,50.01,0.0,50.01,"S,M,L,XL,XXL",,22,4.04,43
+p-38016f7fa667,Marks & Spencer Cotton Jeans,Marks & Spencer,Men,Bottomwear - Jeans,85.39,50.0,42.7,"S,M,L,XL,XXL",L,28,4.06,71
+p-89fb8c6b1214,Levi's Textured Jeans,Levi's,Men,Bottomwear - Jeans,66.31,40.0,39.79,"S,M,L,XL,XXL",,34,4.05,104
+p-f8660e638877,Forever 21 Slim Fit Tops & Tees,Forever 21,Women,Tops & Tees,80.77,25.0,60.58,"XS,S,M,L,XL",,34,4.18,36
+p-8aad7f3e0b70,Lavie Classic Belts & Wallets,Lavie,Accessories,Belts & Wallets,58.42,10.0,52.58,One Size,,79,4.18,9
+p-dad82f0e4b87,H&M Men Casual Shirts,H&M Men,Men,Topwear - Shirts,66.88,25.0,50.16,"S,M,L,XL,XXL",L,91,4.19,102
+p-48e02a9e02b7,H&M Classic Jeans,H&M,Women,Bottomwear - Jeans,112.46,0.0,112.46,"XS,S,M,L,XL",,38,4.22,83
+p-8ef61c1d37b9,Nike Solid Sandals,Nike,Footwear,Sandals,84.36,0.0,84.36,"6,7,8,9,10,11",8,49,3.85,57
+p-4ea83f207299,H&M Men Athletic Trousers,H&M Men,Men,Bottomwear - Trousers,78.72,0.0,78.72,"S,M,L,XL,XXL",L,17,4.63,30
+p-2303cf2178e4,Marks & Spencer Formal T-Shirts,Marks & Spencer,Men,Topwear - T-Shirts,56.16,25.0,42.12,"S,M,L,XL,XXL",,112,4.24,100
+p-becd7da83732,Levi's Oversized Jeans,Levi's,Men,Bottomwear - Jeans,52.14,15.0,44.32,"S,M,L,XL,XXL",,58,4.16,100
+p-5c33e20b658f,Reebok Athletic Formal Shoes,Reebok,Footwear,Formal Shoes,55.14,15.0,46.87,"6,7,8,9,10,11",,86,4.52,6
+p-a8a1bc87483c,Zara Men Textured Trousers,Zara Men,Men,Bottomwear - Trousers,85.57,20.0,68.46,"S,M,L,XL,XXL",,14,4.62,24
+p-e37e6586069e,H&M Classic Tops & Tees,H&M,Women,Tops & Tees,105.29,40.0,63.17,"XS,S,M,L,XL",,40,4.49,83
+p-8493fde57fa9,Zara Textured Jeans,Zara,Women,Bottomwear - Jeans,31.88,0.0,31.88,"XS,S,M,L,XL",,14,4.25,4
+p-f4f11faeb9e4,Levi's Oversized Shirts,Levi's,Men,Topwear - Shirts,48.75,15.0,41.44,"S,M,L,XL,XXL",,40,4.37,17
+p-c9da5f0d71d8,Puma Casual Running Shoes,Puma,Footwear,Running Shoes,67.45,30.0,47.21,"6,7,8,9,10,11",,29,3.7,41
+p-f6e7a298a440,Reebok Textured Formal Shoes,Reebok,Footwear,Formal Shoes,134.59,0.0,134.59,"6,7,8,9,10,11",,71,4.42,107
+p-c2a751d47ec2,H&M Men Oversized Trousers,H&M Men,Men,Bottomwear - Trousers,38.07,15.0,32.36,"S,M,L,XL,XXL",,43,3.71,24
+p-6bb27067a2fb,Zara Cotton Ethnic Wear,Zara,Women,Ethnic Wear,39.94,0.0,39.94,"XS,S,M,L,XL",,82,4.16,40
+p-48da289a0d6d,Vero Moda Textured Ethnic Wear,Vero Moda,Women,Ethnic Wear,57.2,15.0,48.62,"XS,S,M,L,XL",,37,3.86,8
+p-3bb32aa3accc,Nike Formal Sneakers,Nike,Footwear,Sneakers,92.59,15.0,78.7,"6,7,8,9,10,11",,23,4.32,40
+p-f8de2716ffdd,Roadster Textured Trousers,Roadster,Men,Bottomwear - Trousers,37.92,20.0,30.34,"S,M,L,XL,XXL",,34,3.22,58
+p-b7e4b63c01fa,Mango Cotton Jeans,Mango,Women,Bottomwear - Jeans,81.14,15.0,68.97,"XS,S,M,L,XL",,20,4.32,19
+p-4a5437e1765a,Lavie Classic Belts & Wallets,Lavie,Accessories,Belts & Wallets,30.0,0.0,30.0,One Size,,91,4.69,42
+p-88e3ba46f668,Tommy Hilfiger Athletic Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,104.08,0.0,104.08,One Size,,35,4.16,6
+p-e3a5dd7ffd71,Red Tape Textured Formal Shoes,Red Tape,Footwear,Formal Shoes,125.66,10.0,113.09,"6,7,8,9,10,11",,64,3.88,197
+p-dbc16fda56c7,Roadster Linen T-Shirts,Roadster,Men,Topwear - T-Shirts,37.73,15.0,32.07,"S,M,L,XL,XXL",,30,3.9,169
+p-ff3ec914fec6,Mango Formal Tops & Tees,Mango,Women,Tops & Tees,86.54,0.0,86.54,"XS,S,M,L,XL",S,24,4.44,14
+p-b9f259c3ba6e,Vero Moda Regular Fit Dresses,Vero Moda,Women,Dresses,99.59,20.0,79.67,"XS,S,M,L,XL",,83,4.53,14
+p-760bb7e89043,Mango Floral Print Ethnic Wear,Mango,Women,Ethnic Wear,46.72,10.0,42.05,"XS,S,M,L,XL",,42,4.47,104
+p-0372cfb42422,H&M Slim Fit Jeans,H&M,Women,Bottomwear - Jeans,72.91,0.0,72.91,"XS,S,M,L,XL",S,21,4.51,28
+p-5b3e95b59e55,Forever 21 Textured Tops & Tees,Forever 21,Women,Tops & Tees,96.3,0.0,96.3,"XS,S,M,L,XL",S,28,4.28,7
+p-f21e009c1eab,Vero Moda Textured Tops & Tees,Vero Moda,Women,Tops & Tees,76.93,50.0,38.47,"XS,S,M,L,XL",,92,3.81,126
+p-963d03d20f07,Levi's Solid T-Shirts,Levi's,Men,Topwear - T-Shirts,29.35,15.0,24.95,"S,M,L,XL,XXL",,21,4.36,48
+p-8230811db577,Reebok Textured Sandals,Reebok,Footwear,Sandals,78.33,0.0,78.33,"6,7,8,9,10,11",,55,3.48,36
+p-d561f70813da,Mango Athletic Ethnic Wear,Mango,Women,Ethnic Wear,79.77,0.0,79.77,"XS,S,M,L,XL",,59,3.38,107
+p-367d873527ab,Puma Oversized Sandals,Puma,Footwear,Sandals,87.09,20.0,69.67,"6,7,8,9,10,11",,63,4.41,3
+p-4766df4614eb,Nike Vintage Wash Sandals,Nike,Footwear,Sandals,136.51,50.0,68.25,"6,7,8,9,10,11",,91,4.64,25
+p-2dbe80b10a07,H&M Men Cotton Shirts,H&M Men,Men,Topwear - Shirts,64.93,50.0,32.47,"S,M,L,XL,XXL",L,37,4.62,90
+p-ec721a4ca8e0,Forever 21 Vintage Wash Tops & Tees,Forever 21,Women,Tops & Tees,53.61,0.0,53.61,"XS,S,M,L,XL","S,M",38,3.99,39
+p-9b86ccff2371,H&M Classic Ethnic Wear,H&M,Women,Ethnic Wear,83.48,0.0,83.48,"XS,S,M,L,XL",,44,3.78,18
+p-b171f82a3aa9,Allen Solly Cotton Trousers,Allen Solly,Men,Bottomwear - Trousers,86.25,15.0,73.31,"S,M,L,XL,XXL",M,77,4.59,7
+p-81385bda2299,Urban Chic Casual Jeans,Urban Chic,Women,Bottomwear - Jeans,116.34,40.0,69.8,"XS,S,M,L,XL","S,M",37,4.08,90
+p-f62724aab2a5,Biba Vintage Wash Dresses,Biba,Women,Dresses,104.22,15.0,88.59,"XS,S,M,L,XL","M,S",53,4.28,7
+p-f064d042df39,Tommy Hilfiger Vintage Wash Sunglasses,Tommy Hilfiger,Accessories,Sunglasses,56.7,30.0,39.69,One Size,,69,4.0,35
+p-ff63105a12a0,Urban Chic Solid Ethnic Wear,Urban Chic,Women,Ethnic Wear,96.21,10.0,86.59,"XS,S,M,L,XL",,22,4.0,27
+p-8cb78c65b913,Roadster Floral Print Shirts,Roadster,Men,Topwear - Shirts,57.18,0.0,57.18,"S,M,L,XL,XXL","M,L",36,3.97,119
+p-d19aae08c4dd,Red Tape Cotton Sandals,Red Tape,Footwear,Sandals,82.71,0.0,82.71,"6,7,8,9,10,11",,55,4.19,83
+p-904e4033c8e6,Puma Formal Sneakers,Puma,Footwear,Sneakers,106.3,50.0,53.15,"6,7,8,9,10,11",,39,3.81,38
+p-b83c6142a2ce,Zara Casual Jeans,Zara,Women,Bottomwear - Jeans,103.42,0.0,103.42,"XS,S,M,L,XL",,31,4.02,20
+p-be8db09b6ceb,Biba Floral Print Jeans,Biba,Women,Bottomwear - Jeans,79.51,0.0,79.51,"XS,S,M,L,XL",M,50,4.44,31
+p-1e4f7041d239,H&M Men Solid T-Shirts,H&M Men,Men,Topwear - T-Shirts,38.81,0.0,38.81,"S,M,L,XL,XXL",,42,4.07,43
+p-2ceaa39d7440,Allen Solly Solid Shirts,Allen Solly,Men,Topwear - Shirts,41.13,50.0,20.57,"S,M,L,XL,XXL",,27,4.28,20
+p-0f529b5d300d,Biba Casual Dresses,Biba,Women,Dresses,41.21,0.0,41.21,"XS,S,M,L,XL",,41,4.42,28
+p-4264354cb59a,Nike Floral Print Formal Shoes,Nike,Footwear,Formal Shoes,89.69,50.0,44.84,"6,7,8,9,10,11",9,46,3.96,96
+p-18ac482d2577,Levi's Athletic Trousers,Levi's,Men,Bottomwear - Trousers,43.04,0.0,43.04,"S,M,L,XL,XXL",,62,4.06,58
+p-cf720ea3ad1f,Vero Moda Formal Jeans,Vero Moda,Women,Bottomwear - Jeans,95.27,0.0,95.27,"XS,S,M,L,XL",,61,4.67,16
+p-f6078bb565ea,Fossil Slim Fit Sunglasses,Fossil,Accessories,Sunglasses,28.31,30.0,19.82,One Size,,26,3.6,88
+p-47640c4a2ee0,Zara Linen Jeans,Zara,Women,Bottomwear - Jeans,52.88,10.0,47.59,"XS,S,M,L,XL",,51,4.67,228
+p-2c383945ff0e,Vero Moda Regular Fit Dresses,Vero Moda,Women,Dresses,54.69,0.0,54.69,"XS,S,M,L,XL","S,M",64,4.48,61
+p-c6ce6ab36cbf,Zara Solid Dresses,Zara,Women,Dresses,65.24,25.0,48.93,"XS,S,M,L,XL",M,46,4.36,73
+p-2d839c9d3ca5,H&M Solid Dresses,H&M,Women,Dresses,81.32,40.0,48.79,"XS,S,M,L,XL",,47,4.6,48
+p-1a609bdefd2a,Fastrack Textured Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,35.03,20.0,28.02,One Size,,74,4.06,38
+p-f6da5c3405a0,H&M Men Athletic Shirts,H&M Men,Men,Topwear - Shirts,74.29,20.0,59.43,"S,M,L,XL,XXL",M,13,4.4,77
+p-0adbae413a84,Levi's Casual Shirts,Levi's,Men,Topwear - Shirts,32.59,10.0,29.33,"S,M,L,XL,XXL",,16,4.28,9
+p-11de036e0e11,Nike Athletic Formal Shoes,Nike,Footwear,Formal Shoes,101.35,0.0,101.35,"6,7,8,9,10,11",,49,4.1,51
+p-b2a3645e0b76,Urban Chic Solid Jeans,Urban Chic,Women,Bottomwear - Jeans,56.75,40.0,34.05,"XS,S,M,L,XL",,68,3.99,18
+p-d469a3b87ced,Zara Textured Jeans,Zara,Women,Bottomwear - Jeans,51.28,0.0,51.28,"XS,S,M,L,XL",,25,4.47,247
+p-893c4b2edf29,H&M Men Athletic T-Shirts,H&M Men,Men,Topwear - T-Shirts,56.61,40.0,33.97,"S,M,L,XL,XXL",M,70,3.96,21
+p-37254b519c5d,Zara Regular Fit Jeans,Zara,Women,Bottomwear - Jeans,54.31,20.0,43.45,"XS,S,M,L,XL",,35,4.85,17
+p-88da2cd0834b,Zara Men Solid Trousers,Zara Men,Men,Bottomwear - Trousers,36.62,0.0,36.62,"S,M,L,XL,XXL",,82,3.9,7
+p-373910a7c95a,Reebok Floral Print Formal Shoes,Reebok,Footwear,Formal Shoes,100.2,40.0,60.12,"6,7,8,9,10,11",,30,4.38,10
+p-4ea1ddfb4e56,Fastrack Regular Fit Bags & Backpacks,Fastrack,Accessories,Bags & Backpacks,93.55,15.0,79.52,One Size,,34,3.19,53
+p-fc317284f08c,Urban Chic Oversized Ethnic Wear,Urban Chic,Women,Ethnic Wear,58.85,0.0,58.85,"XS,S,M,L,XL","S,M",40,3.9,24
+p-dfdf8d04322d,H&M Regular Fit Dresses,H&M,Women,Dresses,74.22,0.0,74.22,"XS,S,M,L,XL",,80,3.6,65
+p-11dc4a6d3fca,Vero Moda Solid Jeans,Vero Moda,Women,Bottomwear - Jeans,62.87,0.0,62.87,"XS,S,M,L,XL",,41,4.17,32
+p-f090c95f3446,Allen Solly Oversized Trousers,Allen Solly,Men,Bottomwear - Trousers,47.14,50.0,23.57,"S,M,L,XL,XXL","L,M",21,4.86,118
+p-a6ed54e18bf0,H&M Classic Tops & Tees,H&M,Women,Tops & Tees,96.76,0.0,96.76,"XS,S,M,L,XL",,68,4.14,34
+p-ee91cc692e57,Allen Solly Casual T-Shirts,Allen Solly,Men,Topwear - T-Shirts,67.03,30.0,46.92,"S,M,L,XL,XXL",,14,4.5,46
+p-c89e331b86d9,Biba Athletic Dresses,Biba,Women,Dresses,126.72,30.0,88.7,"XS,S,M,L,XL","S,M",23,4.14,53
+p-0bbf536fa576,Zara Formal Tops & Tees,Zara,Women,Tops & Tees,61.06,0.0,61.06,"XS,S,M,L,XL",,26,4.12,24
+p-5d46b4dfb44a,Urban Chic Athletic Jeans,Urban Chic,Women,Bottomwear - Jeans,69.03,0.0,69.03,"XS,S,M,L,XL",,35,4.49,11
+p-0f8e0ab00784,Tommy Hilfiger Athletic T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,32.36,0.0,32.36,"S,M,L,XL,XXL",,98,4.65,67
+p-deaefd8692e3,H&M Men Slim Fit T-Shirts,H&M Men,Men,Topwear - T-Shirts,91.39,0.0,91.39,"S,M,L,XL,XXL",,27,4.29,35
+p-41bad0829174,Allen Solly Casual T-Shirts,Allen Solly,Men,Topwear - T-Shirts,64.47,0.0,64.47,"S,M,L,XL,XXL",,63,4.57,24
+p-31720c9ca1de,Allen Solly Slim Fit T-Shirts,Allen Solly,Men,Topwear - T-Shirts,69.29,0.0,69.29,"S,M,L,XL,XXL","L,M",60,4.18,211
+p-eaf01572b984,Mango Linen Ethnic Wear,Mango,Women,Ethnic Wear,55.41,25.0,41.56,"XS,S,M,L,XL",,32,4.6,23
+p-9736f1b8b5ff,Zara Regular Fit Ethnic Wear,Zara,Women,Ethnic Wear,45.45,40.0,27.27,"XS,S,M,L,XL",,47,4.19,133
+p-57a8417fcd12,H&M Athletic Tops & Tees,H&M,Women,Tops & Tees,53.56,25.0,40.17,"XS,S,M,L,XL",S,16,3.92,67
+p-6769e6b598fd,Allen Solly Casual T-Shirts,Allen Solly,Men,Topwear - T-Shirts,33.77,0.0,33.77,"S,M,L,XL,XXL",,18,4.32,33
+p-6b66312e1b57,Vero Moda Floral Print Jeans,Vero Moda,Women,Bottomwear - Jeans,43.0,25.0,32.25,"XS,S,M,L,XL",,38,3.76,31
+p-d422e80b330e,Fastrack Athletic Belts & Wallets,Fastrack,Accessories,Belts & Wallets,107.07,0.0,107.07,One Size,,25,4.19,90
+p-7559726b91cb,Mango Floral Print Dresses,Mango,Women,Dresses,68.75,0.0,68.75,"XS,S,M,L,XL","S,M",47,4.46,103
+p-0dd7e833ed25,Fossil Casual Watches,Fossil,Accessories,Watches,106.53,0.0,106.53,One Size,,42,4.1,41
+p-c93cf2ddec0c,Zara Vintage Wash Ethnic Wear,Zara,Women,Ethnic Wear,81.92,0.0,81.92,"XS,S,M,L,XL","S,M",38,4.34,82
+p-e9b9ac428b90,H&M Casual Jeans,H&M,Women,Bottomwear - Jeans,84.94,0.0,84.94,"XS,S,M,L,XL",,26,4.49,133
+p-70f485889dd0,Puma Floral Print Sandals,Puma,Footwear,Sandals,61.89,20.0,49.51,"6,7,8,9,10,11",,35,4.47,16
+p-46408a46f14e,Allen Solly Classic Shirts,Allen Solly,Men,Topwear - Shirts,59.96,0.0,59.96,"S,M,L,XL,XXL",M,55,3.97,31
+p-4781eba0fded,Reebok Vintage Wash Running Shoes,Reebok,Footwear,Running Shoes,82.9,20.0,66.32,"6,7,8,9,10,11","8,9",55,3.74,78
+p-1c3c50318000,Urban Chic Athletic Tops & Tees,Urban Chic,Women,Tops & Tees,91.21,30.0,63.85,"XS,S,M,L,XL",,44,3.65,112
+p-904e12a7997d,Clarks Formal Formal Shoes,Clarks,Footwear,Formal Shoes,61.49,10.0,55.34,"6,7,8,9,10,11",,27,4.07,39
+p-b66e5f0d4761,Vero Moda Formal Dresses,Vero Moda,Women,Dresses,30.53,30.0,21.37,"XS,S,M,L,XL",,35,4.21,95
+p-09e47873b171,Clarks Casual Formal Shoes,Clarks,Footwear,Formal Shoes,84.24,10.0,75.82,"6,7,8,9,10,11",,57,4.24,37
+p-4013d5e888a4,Zara Solid Jeans,Zara,Women,Bottomwear - Jeans,59.43,20.0,47.54,"XS,S,M,L,XL",,16,4.44,13
+p-420e089ce7e7,Fastrack Linen Watches,Fastrack,Accessories,Watches,43.96,0.0,43.96,One Size,,53,4.65,23
+p-2b8e931b1f38,Titan Floral Print Sunglasses,Titan,Accessories,Sunglasses,65.74,0.0,65.74,One Size,,54,4.48,30
+p-6b7f7e796058,Forever 21 Slim Fit Tops & Tees,Forever 21,Women,Tops & Tees,57.11,25.0,42.83,"XS,S,M,L,XL",,58,4.11,3
+p-0b126e25de6e,Levi's Casual Shirts,Levi's,Men,Topwear - Shirts,51.53,0.0,51.53,"S,M,L,XL,XXL",,30,3.77,9
+p-90c6661528cc,Vero Moda Formal Dresses,Vero Moda,Women,Dresses,48.62,10.0,43.76,"XS,S,M,L,XL",,26,4.19,56
+p-46e2a518589e,Tommy Hilfiger Casual Shirts,Tommy Hilfiger,Men,Topwear - Shirts,84.19,40.0,50.51,"S,M,L,XL,XXL",L,45,4.25,22
+p-3dce55a40c71,Zara Men Linen T-Shirts,Zara Men,Men,Topwear - T-Shirts,71.78,30.0,50.25,"S,M,L,XL,XXL",M,90,3.9,15
+p-996d646ba63d,Allen Solly Cotton Trousers,Allen Solly,Men,Bottomwear - Trousers,38.43,25.0,28.82,"S,M,L,XL,XXL","M,L",74,3.93,91
+p-a21a125ce712,Urban Chic Oversized Ethnic Wear,Urban Chic,Women,Ethnic Wear,74.14,20.0,59.31,"XS,S,M,L,XL",,31,4.0,82
+p-9cfec85a6966,Adidas Athletic Running Shoes,Adidas,Footwear,Running Shoes,75.58,0.0,75.58,"6,7,8,9,10,11",,39,3.98,5
+p-fdc433c8f9e0,Allen Solly Textured Trousers,Allen Solly,Men,Bottomwear - Trousers,76.53,40.0,45.92,"S,M,L,XL,XXL",L,20,4.69,85
+p-809148084a54,Clarks Slim Fit Sandals,Clarks,Footwear,Sandals,53.39,0.0,53.39,"6,7,8,9,10,11",,51,4.19,52
+p-d660e4723d1d,Lavie Classic Belts & Wallets,Lavie,Accessories,Belts & Wallets,49.4,50.0,24.7,One Size,,44,4.17,73
+p-3e6c2fce3bf6,Urban Chic Textured Tops & Tees,Urban Chic,Women,Tops & Tees,69.12,50.0,34.56,"XS,S,M,L,XL","S,M",21,4.04,31
+p-8b8481aac396,Nike Vintage Wash Sneakers,Nike,Footwear,Sneakers,79.06,50.0,39.53,"6,7,8,9,10,11",9,66,3.76,21
+p-dbc8381ee4d8,Fastrack Textured Belts & Wallets,Fastrack,Accessories,Belts & Wallets,59.24,15.0,50.35,One Size,,29,4.78,60
+p-5465204dee28,Roadster Solid Shirts,Roadster,Men,Topwear - Shirts,34.51,0.0,34.51,"S,M,L,XL,XXL",,71,3.99,44
+p-2623c0ae8527,Mango Floral Print Tops & Tees,Mango,Women,Tops & Tees,81.03,30.0,56.72,"XS,S,M,L,XL",,38,4.49,42
+p-c268f3dd934a,Red Tape Athletic Running Shoes,Red Tape,Footwear,Running Shoes,80.36,40.0,48.22,"6,7,8,9,10,11",,19,4.38,24
+p-ac03768ee89c,Red Tape Athletic Formal Shoes,Red Tape,Footwear,Formal Shoes,110.31,0.0,110.31,"6,7,8,9,10,11",,52,4.13,8
+p-afb5ca535eb3,Mango Formal Jeans,Mango,Women,Bottomwear - Jeans,61.88,0.0,61.88,"XS,S,M,L,XL",,46,3.86,75
+p-81736c770af9,Fossil Regular Fit Belts & Wallets,Fossil,Accessories,Belts & Wallets,91.28,50.0,45.64,One Size,,39,4.65,37
+p-3116bbd538a8,Mango Casual Jeans,Mango,Women,Bottomwear - Jeans,54.82,20.0,43.86,"XS,S,M,L,XL",,76,3.88,4
+p-fb7c95fbe64b,Vero Moda Solid Dresses,Vero Moda,Women,Dresses,67.31,25.0,50.48,"XS,S,M,L,XL",,41,5.0,24
+p-21d4d7d48c86,Tommy Hilfiger Classic Jeans,Tommy Hilfiger,Men,Bottomwear - Jeans,52.35,10.0,47.12,"S,M,L,XL,XXL",,24,3.84,111
+p-50e4a57bf0ad,H&M Casual Dresses,H&M,Women,Dresses,41.41,0.0,41.41,"XS,S,M,L,XL","S,M",25,4.63,91
+p-c7acd6517cec,Fossil Oversized Bags & Backpacks,Fossil,Accessories,Bags & Backpacks,49.42,0.0,49.42,One Size,,66,4.39,41
+p-0f0d5021ca07,Zara Solid Jeans,Zara,Women,Bottomwear - Jeans,70.5,0.0,70.5,"XS,S,M,L,XL",S,39,4.77,13
+p-81b0e6a4662a,Mango Vintage Wash Dresses,Mango,Women,Dresses,95.7,10.0,86.13,"XS,S,M,L,XL",,53,4.42,7
+p-02a748155c54,Tommy Hilfiger Linen T-Shirts,Tommy Hilfiger,Men,Topwear - T-Shirts,82.02,25.0,61.52,"S,M,L,XL,XXL",,23,4.02,18
+p-0355fccdaa84,H&M Men Floral Print Shirts,H&M Men,Men,Topwear - Shirts,72.21,0.0,72.21,"S,M,L,XL,XXL",L,15,3.92,44
+p-22f13aba5242,Forever 21 Linen Ethnic Wear,Forever 21,Women,Ethnic Wear,81.95,25.0,61.46,"XS,S,M,L,XL",,69,4.11,32
