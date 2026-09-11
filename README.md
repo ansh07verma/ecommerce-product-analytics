@@ -287,6 +287,59 @@ User Search Request
 
 ---
 
+
+## Experiment Design: How We Would Prove the Product Decision
+
+To determine whether Automated Query Relaxation genuinely improves customer behavior rather than generating empty curiosity clicks, we designed an offline A/B experiment simulation framework and statistical protocol (`src/ab_experiment.py`, `docs/AB_EXPERIMENT_DESIGN.md`).
+
+```
+Hypothesis
+    │
+    ▼
+User-Level Randomization [MD5(experiment_id + user_id) % 100]
+    │
+    ├─────────────────────────────┬─────────────────────────────┐
+    ▼                             ▼                             ▼
+Control (50%)               Eligibility Filter            Treatment (50%)
+Strict Keyword Search       (Tokens >= 4 & Results < 3)   Strict + Query Relaxation
+    │                             │                             │
+    └─────────────────────────────┼─────────────────────────────┘
+                                  ▼
+                     Primary: Search -> PDP CTR
+                                  │
+                                  ▼
+                Two-Proportion Z-Test (alpha=0.05, power=0.80)
+                                  │
+                                  ▼
+                     Guardrail Validation (Latency <= 50ms)
+                                  │
+                                  ▼
+                     SHIP / ITERATE / DO NOT SHIP
+```
+
+### Experiment Scenarios & Sensitivity Analysis
+
+| Metric / Scenario | Baseline `[OBSERVED]` | Null (0.0 pp) | Moderate (+1.5 pp) | Target (+3.5 pp) `[SIMULATED]` | High (+5.0 pp) | Status / Rule `[ASSUMPTION]` |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **Control CTR** | 2.60% | 2.60% | 2.60% | 2.60% | 2.60% | Historical Observed |
+| **Treatment CTR** | — | 2.50% | 4.17% | **5.83%** | 6.25% | Counterfactual Sim. |
+| **Absolute Lift** | — | -0.10 pp | +1.56 pp | **+3.23 pp** | +3.65 pp | Two-Proportion Test |
+| **P-Value** | — | 0.9202 | 0.1859 | **0.0141** | 0.0068 | Stat. Sig. ($p < 0.05$) |
+| **Decision** | — | DO NOT SHIP | ITERATE | **SHIP** | SHIP | Ship if lift $\ge +1.5$ pp |
+| **Required Total N**| — | 40,446 | 5,140 | **1,178** | 660 | Sized for 80% Power |
+| **Modeled Duration**| — | 2,579 days | 328 days | **76 days (~2.5 mo)**| 43 days | At ~15.7 searches/day |
+
+```bash
+# Run A/B experiment simulator across all sensitivity scenarios
+python src/ab_experiment.py --scenario all
+
+# Run power analysis and duration estimation
+python src/ab_experiment.py --power-analysis
+
+# Generate presentation-ready experiment charts (saved to reports/figures/)
+python src/plot_ab_experiment.py
+```
+
 ## Repository Structure
 
 ```

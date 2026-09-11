@@ -115,3 +115,87 @@ This document provides rigorous, interview-ready answers to the 15 most critical
 2. If reformulation analysis reveals widespread use of unindexed colloquial terms $\to$ *I would fast-track the Fashion Synonym Graph*.
 3. If offline benchmarking shows that a fine-tuned dense vector model outperforms BM25+Relaxation by $>15\%$ in NDCG@10 on high-intent queries without exceeding 100 ms latency $\to$ *I would accelerate the V2.0 Vector Search migration*.
 4. If A/B testing reveals that customers abandon relaxed searches due to perceived loss of precision $\to$ *I would pivot toward an interactive attribute filter chip UI rather than automated query rewriting*."
+
+---
+
+## 5. Experimentation & Hypothesis Validation (Stage 6)
+
+### Q25: Why did you randomize at the user level rather than at the query or session level?
+**Answer**:
+User-level deterministic randomization (`MD5(experiment_id + user_id) % 100`) is mandatory in e-commerce search for four reasons:
+1. **Prevents Cross-Variant Contamination**: If a user runs multiple searches in a shopping session, query-level randomization exposes them to fluctuating search paradigms (e.g., search 1 relaxes, search 2 fails strictly).
+2. **Avoids Inconsistent User Experience**: Repeated searches for identical or related products would produce discordant results, eroding user trust.
+3. **Clean Downstream Conversion Attribution**: Product views, cart adds, and orders occur at the session and user level. Query-level assignment breaks downstream causal attribution because multiple queries in different variants contribute to a single purchase.
+4. **Simplifies Interpretation**: Enables unambiguous cohort analysis and customer lifetime value impact modeling.
+
+---
+
+### Q26: Why is Search -> PDP CTR your primary metric instead of GMV or Order Conversion?
+**Answer**:
+Search $	o$ PDP CTR is the closest direct behavioural readout of search discovery quality.
+1. **Direct Proximal Signal**: A search engine's immediate job is to return relevant items that convince the customer to click into a Product Detail Page.
+2. **Statistical Sensitivity**: Search $	o$ PDP CTR occurs at a baseline of 3.08% [OBSERVED] on eligible queries, providing reasonable statistical power. Order conversion on this long-tail cohort occurs on only 2 orders out of 941 searches (~0.21%), meaning an experiment powered on GMV or order conversion would require hundreds of thousands of searches and multiple years to reach statistical significance.
+3. **Guardrail Protection**: While optimizing CTR, we monitor Add-to-Cart rate, Order conversion, and GMV as secondary and guardrail metrics to verify that clicks represent genuine purchase intent rather than "clickbait" or confusion.
+
+---
+
+### Q27: How did you choose your target Minimum Detectable Effect (MDE) of +3.5 percentage points?
+**Answer**:
+The MDE choice was driven by a deliberate trade-off between algorithmic ambition and traffic reality:
+1. **Traffic Constraint**: The marketplace generates approximately 15.7 eligible high-intent searches per day (~941 searches over 60 days) [MODELED].
+2. **Sample Size Math**: Detecting an incremental lift of +1.0 pp (from 3.08% to 4.08%) at $lpha = 0.05$ and $80\%$ power requires 10,842 total searches—or 692 days (~23 months) of experiment runtime.
+3. **Algorithmic Headroom**: Our local benchmarks demonstrated that query relaxation recovers relevant products for 91.81% of unmatchable queries. Because the baseline CTR on zero-result queries is depressed (3.08%), lifting CTR by +3.5 pp to 6.58% requires only 1,178 total searches (~76 days or ~2.5 months), making it a viable quarterly product goal.
+
+---
+
+### Q28: How did you calculate required sample sizes and determine experiment duration?
+**Answer**:
+We applied the standard two-proportion sample size formula for a two-sided z-test:
+$$n = \frac{\left(Z_{\alpha/2} \sqrt{2\bar{p}(1-\bar{p})} + Z_\beta \sqrt{p_1(1-p_1) + p_2(1-p_2)}\right)^2}{(p_2 - p_1)^2}$$
+Using baseline $p_1 = 0.0308$, target $p_2 = 0.0658$ (MDE = +0.035), $\alpha = 0.05$ ($Z_{\alpha/2} = 1.960$), and power $1 - \beta = 0.80$ ($Z_\beta = 0.842$), the formula yields 589 samples per variant (1,178 total). Dividing by the modeled daily eligible volume of 15.7 searches/day yields an estimated experiment duration of approximately 76 calendar days (~10.8 weeks) [MODELED].
+
+---
+
+### Q29: What exact criteria would lead you to ship, iterate, or abandon Query Relaxation?
+**Answer**:
+Our pre-experimental decision framework defines three clear paths [PRODUCT ASSUMPTION]:
+- **SHIP**:
+  1. Primary metric (Search $	o$ PDP CTR) demonstrates statistically significant lift ($p < 0.05$).
+  2. Absolute CTR lift meets or exceeds the minimum practical threshold of $+1.5\text{ percentage points}$.
+  3. P95 latency remains within SLA ($\le 50\text{ ms}$).
+  4. No material deterioration in downstream cart-add conversion.
+- **ITERATE**:
+  1. Directionally positive CTR lift ($0 < \text{lift} < +1.5\text{ pp}$) or inconclusive significance ($p \ge 0.05$).
+  2. CTR increases significantly, but Add-to-Cart rate drops by $>2.0\text{ pp}$ (indicating click curiosity without purchase intent). Action: Refine fallback token selection weights.
+- **DO NOT SHIP**:
+  1. Flat or negative CTR lift ($\le 0.0\text{ pp}$).
+  2. P95 latency exceeds $50\text{ ms}$.
+  3. Excessive quick-back rate ($>15\%$), indicating severe relevance degradation.
+
+---
+
+### Q30: What if Search -> PDP CTR increases significantly, but downstream Orders decrease?
+**Answer**:
+This is a classic "local optimization vs global health" dilemma:
+1. **Immediate Diagnosis**: An increase in CTR paired with a drop in orders indicates **relevance dilution**. The algorithm is showing results that look superficially attractive (triggering clicks) but fail to satisfy the user's core purchase criteria upon reading the PDP (e.g., wrong fabric, missing features, wrong style).
+2. **Action**: We would trigger the **ITERATE** or **HALT** rule. We would inspect PDP dwell time (quick-back rate) and review query-product token overlaps in the Search Debugger. We would tighten relaxation criteria by requiring a higher minimum candidate match score (e.g., raising the threshold from 0.40 to 0.60) or locking brand/attribute modifiers in addition to category nouns.
+
+---
+
+### Q31: Why can't your offline simulation prove real causal production impact?
+**Answer**:
+Data honesty is paramount in product management:
+1. **Absence of Observed Live Counterfactual**: Historical log data only shows what customers did when exposed to strict search. The historical dataset does not contain user interactions with relaxed search results.
+2. **Simulation is a Modeling Tool**: The treatment lift in our simulator (+3.5 pp) is an **explicit input assumption**, not an observed human behavior.
+3. **Purpose of the Simulator**: The offline simulator verifies experimental plumbing: deterministic hashing, eligibility filtering, sample size math, statistical testing, and decision automation. It prepares the team to run a defensible live experiment, but only a live production A/B test can measure true human causality.
+
+---
+
+### Q32: What guardrail metrics would you monitor in production, and how do you handle peeking?
+**Answer**:
+- **Guardrails**:
+  1. *P95/P99 Search Latency*: Strict search runs at 0.82 ms [LOCAL BENCHMARK]; PRD SLA requires $\le 50\text{ ms}$.
+  2. *Quick-Back Rate*: Percentage of search-driven PDP views with dwell time $< 5$ seconds (proxy for irrelevant clicks).
+  3. *Zero-Result Rate Regression*: Ensure Treatment ZRR never exceeds Control ZRR.
+- **Peeking Hazard**:
+  Standard fixed-horizon hypothesis testing requires waiting until the pre-determined sample size (1,178 searches) is reached before computing $p$-values. Repeatedly peeking at daily $p$-values and stopping when $p < 0.05$ dramatically inflates Type I error (false positives) from 5% up to 20–30%. If continuous business monitoring is required, we would adopt sequential testing methodologies (e.g., always-valid $p$-values via mSPRT).
