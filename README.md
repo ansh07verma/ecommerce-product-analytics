@@ -386,6 +386,30 @@ python src/business_impact.py --break-even
 python src/plot_business_impact.py
 ```
 
+
+## Search Health Dashboard
+
+The project includes an interactive, recruiter-facing executive PM dashboard (`src/search_dashboard.py`, `reports/search_dashboard.html`) designed to visually communicate the end-to-end product analytics narrative in approximately 60–90 seconds.
+
+```bash
+# Launch interactive local dashboard server (default: http://127.0.0.1:8050)
+python src/search_dashboard.py
+
+# Generate or update the standalone static HTML artifact
+python src/search_dashboard.py --build-static
+
+# Output dashboard metrics as raw JSON
+python src/search_dashboard.py --json
+```
+
+### The 60-Second PM Narrative Walkthrough
+1. **Search has a measurable discovery failure**: 4+ token specific queries experience an 8.23% zero-result rate (vs 1.78% on head queries), driving a 44.39% manual reformulation rate.
+2. **Failure is concentrated in multi-attribute queries**: Over-specification causes strict conjunctive boolean search to abandon users on dead-end screens.
+3. **Query relaxation recovers most eligible failures**: In local catalog benchmarks across 879 unmatchable queries, automated relaxation recovers **91.81%** of dead-end searches, reducing strict ZRR from 98.21% down to 8.40% while respecting P95 latency SLAs (<50ms).
+4. **Controlled experimentation is required**: An offline A/B experiment simulator (user-level 50/50 hashing, two-proportion z-test) demonstrates that detecting our target +3.5 pp CTR MDE requires ~76 days of traffic.
+5. **Current traffic does not justify major infrastructure investment**: Standalone annual gross GMV on current traffic volume is modest (~$1.8K/year).
+6. **Validate cheaply first, then scale**: Run a lightweight canary A/B experiment first. If the +1.5 pp ship threshold is proven, the zero-marginal-cost capability scales linearly: an **illustrative 100x traffic scenario** yields **+$180.9K/year** in incremental GMV.
+
 ## Repository Structure
 
 ```
