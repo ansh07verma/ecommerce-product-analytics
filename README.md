@@ -473,6 +473,38 @@ For deep dives into specific product deliverables:
 
 
 
+
+## Product Decision: Why Query Relaxation First?
+
+A disciplined product evaluation answered the core architectural question: **"Given the search discovery failure, what is the highest-ROI first intervention?"**
+
+```
+Problem: Over-specified multi-attribute queries returning zero results (8.23% ZRR, 3.08% CTR)
+   ↓
+Evidence: 98.21% strict catalog ZRR on 4+ tokens caused by inventory conjunction, not typos
+   ↓
+Options: Evaluated 6 interventions (Relaxation, Autocomplete, Synonyms, Fuzzy, Vector, LLM)
+   ↓
+Trade-offs: Vector/LLM add 80–800ms latency, high cloud costs, and loss of attribute precision
+   ↓
+Decision: Deploy Automated Query Relaxation as V1 MVP (RICE: 16,371 vs. 4,800 for Autocomplete)
+   ↓
+Experiment: A/B test randomized at user level to detect +3.5 pp CTR lift ($p95 \le 250$ ms)
+   ↓
+Evolution: Sequence Autocomplete (V1.1), Synonyms (V1.2), and Hybrid Vector Search (V2.0)
+```
+
+| Candidate Solution | Problem Fit | Engineering Effort | p95 Latency | Explainability | Decision Verdict |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Query Relaxation (MVP)** | **Surgical (9.5/10)** | **1.5 Person-Mo** | **38.5 ms** | **100% Deterministic** | **ACCEPTED (V1 MVP)** |
+| **Query Autocomplete** | Moderate (6.0/10) | 3.0 Person-Mo | $<30$ ms | High | Deferred to V1.1 |
+| **Fashion Synonym Graph** | Moderate (5.5/10) | 3.5 Person-Mo | $<5$ ms | High | Deferred to V1.2 |
+| **Levenshtein Fuzzy Search**| Low (4.0/10) | 1.5 Person-Mo | $+10$ ms | High | Deferred to V1.3 |
+| **Dense Vector Search** | Broad (7.5/10) | 8.0 Person-Mo | $+80$ ms | Black-Box | Deferred to V2.0 |
+| **LLM Query Rewriting** | Conversational (7.0/10) | 6.0 Person-Mo | $+800$ ms | Non-Deterministic | Deferred to V3.0 |
+
+*See full evaluation in [`docs/SEARCH_SOLUTION_EVALUATION.md`](docs/SEARCH_SOLUTION_EVALUATION.md), Architecture Decision Record in [`docs/PRODUCT_DECISION_RECORD.md`](docs/PRODUCT_DECISION_RECORD.md), and PM interview prep in [`docs/PRODUCT_INTERVIEW_QA.md`](docs/PRODUCT_INTERVIEW_QA.md).*
+
 ## Search Debugger
 
 The repository includes an **Explainable Search Debugger** that provides complete visibility into why a search succeeded, failed, or was relaxed by the recovery engine.
