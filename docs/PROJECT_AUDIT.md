@@ -101,8 +101,10 @@ The following capabilities are fully written, executable, and validated in code:
 The following components are **extensively specified in documentation and diagrams, but have NO executable implementation in the codebase**:
 
 1. **Automated Query Relaxation Engine:**
-   - *Status:* Conceptual & Algorithmic Pseudocode only.
-   - *Evidence:* Specified in `docs/final_product_spec.md` (Section 4) with tokenization rules and modifier-dropping logic, but no callable Python class or microservice exists to actually relax queries or retrieve partial matches.
+   - *Status:* **IMPLEMENTED — MVP**
+   - *Evidence & Details:* Implemented in `src/search_engine.py` (`search_with_relaxation()`) on top of the strict keyword search engine. Features catalog document frequency analysis, semantic category protection, multi-tier candidate generation, deterministic scoring, category consistency guardrails, in-stock filtering, and structured debugging output.
+   - *Verification:* 15 automated test cases in `tests/test_query_relaxation.py` pass (26 tests total in `tests/`). Evaluated in `src/benchmark_query_relaxation.py` across 1,000 distinct historical queries (91.81% recovery rate, 38.53 ms p95 latency). Documented in `docs/query_relaxation_mvp.md` and `reports/query_relaxation_benchmark.md`.
+   - *Scope Notice:* Local in-memory Python implementation indexing the 1,600-product catalog. It is NOT Elasticsearch/OpenSearch, NOT distributed production infrastructure, and NOT an AI/LLM search system.
 2. **Primary Retrieval Engine (Elasticsearch / OpenSearch):**
    - *Status:* Architecture Diagram only.
    - *Evidence:* Referenced in `README.md`, `docs/final_prd.md`, and `docs/final_product_spec.md` as the underlying search engine. No Docker container, connection client, indexing pipeline, or cluster configuration exists.
@@ -211,12 +213,12 @@ The repository contains an exhaustive analysis of search behavior:
 | **Solution Scoring & Sizing** | **Implemented** | `src/solution_prioritization.py`, `reports/solution_prioritization.csv` | Complete; validated in PRD Check 8 |
 | **PRD & Product Specification** | **Implemented** | `docs/final_prd.md`, `docs/final_product_spec.md` | Complete; 29 sections fully documented |
 | **Automated PRD Validation** | **Implemented** | `src/final_prd_validation.py` (25 assertion checks) | Complete; 25/25 checks passing |
-| **Query Relaxation Engine** | **Proposed Only** | Pseudocode in `docs/final_product_spec.md` (Sec 4) | Build executable Python prototype (`src/query_relaxation.py`) |
+| **Query Relaxation Engine** | **IMPLEMENTED — MVP** | `src/search_engine.py` (`search_with_relaxation()`, 15 tests, benchmarked) | Local deterministic engine complete (91.81% recovery, 38.5ms p95 latency) |
 | **Search Retrieval Engine** | **Implemented** | `src/search_engine.py` (strict keyword search, ranking, stock filtering, 11 tests) | Baseline established; ready for Stage 3 Query Relaxation |
 | **Search Gateway / REST API** | **Proposed Only** | Architecture flow in `docs/final_product_spec.md` (Sec 2) | Implement lightweight FastAPI endpoint simulating search service |
 | **A/B Experiment Execution** | **Proposed Only** | Spec in `docs/final_prd.md`, `reports/final_experiment_spec.csv` | Build simulation script verifying bucket assignment & metrics |
 | **Interactive Frontend / Demo** | **Not Implemented** | Only ASCII diagrams & static PNGs exist | Build an interactive Streamlit PM Portfolio Demo app |
-| **Unit Test Suite (`pytest`)** | **Implemented** | `tests/test_search_engine.py` (11 passing tests across retrieval, ranking, and stock) | Expand tests for Query Relaxation in Stage 3 |
+| **Unit Test Suite (`pytest`)** | **Implemented** | `tests/test_search_engine.py`, `tests/test_query_relaxation.py` (26 passing tests) | Complete across strict search & relaxation guardrails |
 
 ---
 
